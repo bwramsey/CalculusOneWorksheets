@@ -1,0 +1,468 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Extreme and Mean Value Theorems (MVT)}
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Extreme and Mean Value Theorems (MVT) - Solutions}
+\fi
+
+
+\input{../preamble.tex}
+\usepackage{fullpage}
+
+
+
+
+\begin{document}
+\begin{abstract}	
+	\end{abstract}
+\maketitle
+\ifcase\HCCondition
+%summary in here
+\section*{SUMMARY of the Extreme Value Theorem}
+
+A function $f$ has a \textbf{global maximum} at $x=a$, if $f(a)\ge f(x)$, for all $x$ in the domain of $f$.\\[1em]
+A function $f$ has a \textbf{global minimum} at $x=a$, if $f(a)\le f(x)$, for all $x$ in the domain of $f$.\\[2em]
+
+\begin{theorem}[Extreme Value Theorem (EVT)]
+	If a function $f$ is \textbf{continuous on the closed interval $[a,b]$}, then  $f$ attains  both 
+	a  global maximum and a global minimum on  the closed interval $[a,b]$.
+\end{theorem}
+
+\textbf{Note: }If a function $f$ has a global extremum (minimum or maximum) at $x=c$, then $c$ is either a boundary point (which means that $c=a$ or $c=b$), or $f$ has a critical point at $x=c$.\\[1em]
+So, if we have to find an extreme value of $f$ on $[a,b]$, we should check all the boundary and all the critical points of f and compare the values of $f$ at those points.
+ The biggest of those values is the maximum value of $f$ on $[a,b]$, and the smallest one is the minimum value of $f$ on $[a,b]$.\\[2em]
+
+\section*{SUMMARY of The Mean Value Theorem}
+
+
+\begin{theorem}[The Mean Value Theorem (MVT)]
+If a function $f$ is \textbf{continuous on the closed interval $[a,b]$}, and \textbf{differentiable on $(a,b)$}, then there exists a point $c$ in the open interval $(a,b)$ such that
+\[ f'(c)=\frac{f(b)-f(a)}{b-a}\]
+\end{theorem}
+\textbf{Note 1a: }The value $\frac{f(b)-f(a)}{b-a}$ is the slope of the (secant) line through the points $(a,f(a))$ and $(b,f(b))$. \\[1em]
+\textbf{Note 1b: }The line tangent to the graph of $f$ at the point where $x=c$ is \textbf{parallel} to the line through the points  $(a,f(a))$ and $(b,f(b))$. \\[1em]
+\textbf{Note 2a: }The value $\frac{f(b)-f(a)}{b-a}$ is the average rate of change of $f$ on the interval $[a,b]$. \\[1em]
+\textbf{Note 2b: }The instantaneous rate of change $f$ at the point where $x=c$ is equal to the average rate of change of $f$ on $[a,b]$. \\[1em]
+ 
+\WkstNew
+
+\section*{Recitation Questions}
+\fi
+
+\begin{problem}
+Find the x-coordinates of the points where the  function $f$ has a global max or min. 
+
+	\begin{center}
+	\begin{image}
+	\includegraphics[trim= 20 430 250 200]{Figure3.pdf}
+	\end{image}
+	\end{center}	
+\WkstHop
+	
+		\begin{freeResponse}
+(a) The function $f$ has a global minimum at $x=a$
+
+(p) The function $f$ has a  absolute maximum/local maximum at $x=p$.  
+
+
+		\end{freeResponse}	
+		
+\end{problem}
+
+\WkstNew
+
+\begin{problem}
+In each problem, sketch a graph of a function meeting the given critera.
+\begin{enumerate}
+	%part a
+	\item Sketch a possible graph of a function which is continuous on an open interval $(-1,5)$ but does not have an global maximum or minimum.
+\WkstHop
+
+	\begin{freeResponse} \hfil
+	\begin{image}
+	\includegraphics[scale=0.45]{figure5.png}
+	\end{image}	
+	\end{freeResponse}
+	
+	%part b
+	\item Sketch a possible graph of a function with an global minimum, a local maximum and a local minimum, but no global maximum on the interval $[-4,5]$.
+\WkstHop
+
+	\begin{freeResponse} \hfil
+	\begin{image}
+	\includegraphics[scale=0.45]{figure6.png}
+	\end{image}	
+	\end{freeResponse}
+	
+	%part d	
+	 \item Sketch a possible graph of a function $f$, continuous on $[1,4]$ with the following properties: $f'(x)=0$ for $x=2$ and $x=3$; $f$ has a global minimum at $x=4$; $f$ has a global maxmimum at $x=3$, and $f$ has a local minimum at $x=2$.
+\WkstHop
+		\begin{freeResponse} \hfil
+	\begin{image}
+	\includegraphics[scale=0.45]{figure7.png}
+	\end{image}	
+	\end{freeResponse} 
+	 
+	 \end{enumerate}
+	 \end{problem}
+
+\WkstNew
+
+\begin{problem}
+Find the  x-coordinates of global extrema and global extreme values  of $f$  on the given interval.
+		\begin{enumerate}
+		
+			%part a
+			\item  $f(x) = x \sqrt{2-x^2}$ on $[ -\sqrt{2}, \sqrt{2} ]$.
+\WkstHop
+				
+				\begin{freeResponse}
+				First note that $f$ is continuous on this closed interval so, by the Extreme Value Theorem, it must attain a maximum and minimum value on the interval $[-\sqrt{2}, \sqrt{2}]$. Those global extrema must occur
+				either at critical points or at the boundary points.
+				\begin{align*}
+				f'(x) &= \sqrt{2-x^2} + x \left( \frac{1}{2 \sqrt{2-x^2}} (-2x) \right) \\
+				&= \sqrt{2-x^2} - \frac{x^2}{\sqrt{2-x^2}} \\
+				&= \frac{2-x^2-x^2}{\sqrt{2-x^2}} \\
+				&= \frac{2(1-x^2)}{\sqrt{2-x^2}}
+				\end{align*}
+				
+				Critical points of $f$ occur where $f'(x) = 0$ or where $f'(x)$ does not exist.  Solving $f'(x) = 0$ yields that $2(1-x^2) = 0$, or $x = \pm 1$.  $f'(x)$ does not exist when $2-x^2 \leq 0$.  But since we are restricting to the interval $[-\sqrt{2}, \sqrt{2}]$, the only points where $f'(x)$ does not exist are the endpoints $\pm \sqrt{2}$.  
+				
+				The critical points of $f$ in the interval $[-\sqrt{2}, \sqrt{2}]$ are $x = \pm 1$. (The points $x = \pm \sqrt{2}$ technically are not critical points since they are the endpoints of the domain of $f$.)  The functin $f$ must attain its maximum and minimum values in this set $x =\{ \pm 1, \pm \sqrt{2}\}$.  
+				We compute
+				\begin{align*}
+					f(-\sqrt{2}) &= 0 \\
+					f(\sqrt{2}) &= 0\\
+					f(1) &= 1 \sqrt{2-1} = 1\\
+					f(-1) &= -1 \sqrt{2-(-1)^2} = -1
+				\end{align*}
+				
+				That means $f$ has a maximum value of $1$ (at $x= 1$) and a minimum value of -1 (at $x= -1 $) over the interval $[-\sqrt{2}, \sqrt{2}]$.
+				\end{freeResponse}
+				
+				
+				
+			%part b
+			\item  $f(x) = x^3 e^{-x}$ on $[-1,5]$.
+\WkstHop
+			
+				\begin{freeResponse}
+				First note that $f$ is continuous on this closed interval so, by the Extreme Value Theorem, it must attain a maximum and minimum value on the interval $[-1,5]$. Those global extrema must occur
+				either at critical points or at the boundary points.
+				\begin{align*}
+					f'(x) &= 3x^2 e^{-x} + x^3(-e^{-x}) \\
+					&= x^2 e^{-x} (3-x)
+				\end{align*}
+				
+				Notice that $f'(x)$ always exists so any critical point of must $f$ occur when $f'(x)=0$.  Solving this equation:
+				\begin{align*}
+					x^2 e^{-x} (3-x) &= 0 \\
+					x^2 (3-x) & = 0 \\
+				 	x & = 0 \qquad \text{or} \qquad x=3	
+				 \end{align*}
+				
+				Since both critical points are in the given interval, the global extrema must occur at the points $x=-1,0,3,5$.
+				\begin{align*}
+					f(-1) &= -e \\
+					f(0) &= 0 \\
+				 	f(3) &= 27e^{-3} \\
+				 	f(5) &= 125 e^{-5}
+				\end{align*}
+				
+				Since $-e$ is the only negative value, the minimum value of $f$ over the interval is $-e$.  Since $e^3 < 27$, $27e^{-3} > 1$.  But $e^5 > 125$, and so $125e^{-5} < 1$.  Thus the maximum value of $f$ over the interval is $27e^{-3}$.  
+		
+				\end{freeResponse}
+\WkstNew
+				
+				
+				
+			%part c
+			\item  $f(x) = x \ln \left( \frac{x}{5} \right)$ on $[0.1, 5]$.
+\WkstHop
+			
+				\begin{freeResponse}
+				First note that $f$ is continuous on this closed interval so, by the Extreme Value Theorem, it must attain a maximum and minimum value on the interval $[0.1,5]$.
+				\begin{align*}
+					f'(x) &= \ln \left( \frac{x}{5} \right) + x \cdot \frac{5}{x} \cdot \frac{1}{5} \\
+					&= \ln \left( \frac{x}{5} \right) + 1
+				\end{align*}
+				
+				Notice that $f'(x)$ exists for all values in $[0.1,5]$, and so all of the critical points of $f$ occur when $f'(x)=0$.  Solving this equation:
+				$$ \ln \left( \frac{x}{5} \right) + 1 = 0 $$
+				$$ \ln \left( \frac{x}{5} \right) = -1 $$
+				$$ \frac{x}{5} = e^{-1} $$
+				$$ x = 5e^{-1} = \frac{5}{e} $$
+				
+				Since $1 < \frac{5}{e} < 2$, $\frac{5}{e}$ is in the given interval.  So we need to consider the points $x = \frac{1}{10}, \frac{5}{e}, 5$.
+				$$ f \left( \frac{1}{10} \right) = \frac{1}{10} \ln \left( \frac{1}{50} \right)  = \frac{1}{10} \left( \ln 1 - \ln 50 \right) = -\frac{1}{10} \ln 50 $$
+				$$ f \left( \frac{5}{e} \right) = \frac{5}{e} \ln \left( \frac{1}{e} \right) = - \frac{5}{e} $$
+				$$ f(5) = 5 \ln 1 = 0 $$
+				
+				Since the first two values are negative, $0$ is the maximum value of $f$ on $[0.1,5]$.  Also, since $e^{10} > 50$, $\ln 50 < 10$ and therefore $-1 < -\frac{1}{10} \ln 50$.  But clearly $\frac{-5}{e} < -1$, and so $- \frac{5}{e}$ is the minimum value of $f$ on $[0.1, 5]$.  
+				
+				\end{freeResponse}
+				
+				
+				
+			\end{enumerate}
+
+		
+		
+		
+
+\end{problem}
+\WkstNew
+
+
+\begin{problem}
+  Verify that the given function satisfies the hypotheses of the Mean Value Theorem in the given interval.
+  Then algebraically find all numbers $c$ that satisfy the conclusion of the Mean Value Theorem.
+  Using the graph provided, label the point(s) $c$ and sketch the secant line through the points $(1,f(1))$ and $(4,f(4))$ and the tangent line at $c$.
+  $$ f(x) = \frac{x}{x+2} \qquad \text{on } [1,4] $$.
+  \begin{image}
+    \includegraphics[scale=0.45]{Images/Figure3.png}
+  \end{image}
+\WkstHop
+  \begin{freeResponse}
+    The function $f(x) = \frac{x}{x+2}$ is continuous on $[1,4]$ and differentiable on $(1,4)$ since it is a rational function, and is therefore continuous and differentiable on its domain.
+    Therefore, $f$ satisfies the hypotheses of the Mean Value Theorem.
+    We have that
+    $$ f'(x) = \frac{(x+2)(1) - x(1)}{(x+2)^2} = \frac{2}{(x+2)^2} $$
+    $$ \frac{f(4) - f(1)}{4-1} = \frac{\frac{2}{3} - \frac{1}{3}}{3} = \frac{1}{9} $$
+    So we are looking to find all points $c \in (1,4)$ which satisfy that $ f'(c) = \frac{1}{9} $.  So we solve:
+    $$ \frac{2}{(c+2)^2} = \frac{1}{9} $$
+    $$ (c+2)^2 = 18 $$
+    $$ c = \sqrt{18} - 2 = 3\sqrt{2} - 2 $$
+    Note that we omitted $-\sqrt{18} - 2$ above because it is not in the interval $(1,4)$.  Therefore, $c = 3\sqrt{2} - 2$.
+       \begin{image}
+      \includegraphics[scale=0.45]{Images/Figure4.png}
+    \end{image}
+  \end{freeResponse}
+\end{problem}
+
+\WkstNew
+
+\begin{problem}
+  A curve is given in the figure below, where $f(x) = 8/x$.
+  \begin{image}
+     \includegraphics[scale = 0.16]{Images/"Graph of hyperbola".png}
+  \end{image}
+  \begin{enumerate}
+
+      \item In the figure above, draw a secant line joining the points $A = (1, f(1))$ and $B = (8, f(8))$.
+         \begin{freeResponse}
+        \begin{image}
+     \includegraphics[scale = 0.5]{MVTimage003.png}
+  \end{image}
+    \end{freeResponse}
+     \item
+      Find the slope, $m_{\text{sec}}$, of this secant line.
+\WkstHop
+      \begin{freeResponse}
+
+          $$m_{\text{sec}} = \frac{f(8) - f(1)}{8 - 1}= \frac{1 - 8}{7} = \frac{-7}{7} = -1$$
+
+      \end{freeResponse}
+
+    \item
+      Show that the function $f$ satisfies the conditions of the Mean Value Theorem on the interval $[1, 8]$ and find a point (or points) guaranteed to exist by the Mean Value Theorem.
+\WkstHop
+      \begin{freeResponse}
+        $f$ is continuous on the interval $[1, 8]$, $f$ is differentiable on the interval $(1, 8)$.
+        By the Mean Value Theorem there exists a(t least one) point $c$ in $(1, 8)$ such that
+        \[
+          f'(c) = \frac{f(8) - f(1)}{8 - 1} = -1
+        \]
+
+        Now $f'(x) = -8/x^2$ hence
+        \begin{align*}
+          f'(c) = -1 &\iff \frac{-8}{c^2} = -1 \\
+                     &\iff c^2 = 8 \\
+                     &\iff c= \pm 2\sqrt{2}
+        \end{align*}
+        Since $c$ must be in $(1, 8)$ we have that $c = 2\sqrt{2}$ is the only point in $(1, 8)$ with $f'(c) = -1$.
+          \begin{image}
+          \includegraphics[scale = 0.4]{MVTimage004.png}
+            \end{image}
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}
+
+\WkstNew
+
+%problem 1
+\begin{problem}
+
+  Given the four functions on the interval $[1, 5]$, answer the questions below.
+  \begin{image}
+    \includegraphics[scale = 0.4]{MVTimage002.png}
+  \end{image}
+  \begin{enumerate}
+	\item List the functions that satisfy the hypothesis of the Extreme Value Theorem on $[1,5]$.
+	\WkstHop
+		\begin{freeResponse}
+			The Extreme Value Theorem only requires that the function be continuous on $[1,5]$. That means the functions in figures (A) and (C).
+		\end{freeResponse}
+	\item For each of the functions, determine if they have a global maximum, a global minimum, both, or neither.
+	\WkstHop
+		\begin{freeResponse}
+			The function in figures (A) and (C) satisfy the hypothesis of the Extreme Value Theorem, so they are guaranteed to have both a global
+			maximum and a global minimum. The points where these global extrema are attained can be seen from the graph. (A) has a maximum at $x=4$ and minimum at $x=1$. (C) has a maximum at $x=1$ and $x=4$, and minimum around $x=\frac{5}{2}$.
+			
+			The function in (B) has a maximum at $x=3$, but no global minimum. The function in (D) has a minimum at $x=1$, but no global maximum.
+		\end{freeResponse}
+    \item
+      List the functions that satisfy  the hypothesis of the Mean Value Theorem on $[1, 5]$.
+    \WkstHop
+      \begin{freeResponse}
+        Only the function in figure (C) satisfies the hypothesis of the Mean Value Theorem on $[1,5]$. The function in figure (C) is \textbf{continuous} on $[1,5]$ and \textbf{differentiable} on $(1,5)$.\\
+        The function in figure (A) is  \textbf{not differentiable}  at $x=3$, therefore it is  \textbf{not differentiable}  on $(1,5)$.\\
+ The functions in figure (B) and (D) are \textbf{not continuous}   on $[1,5]$.
+      \end{freeResponse}
+    \item
+      List the function (or functions) for which there exists a point $c$ in $(1, 5)$ such that 
+      \[
+        f'(c) = \frac{f(5) - f(1)}{5 - 1}
+      \]
+    \WkstHop
+      \begin{freeResponse}
+        Only the graphs (A) and (C). Explanation below.
+      Look at these figures.
+        \begin{image}
+    \includegraphics[scale = 0.4]{MVTimage001.png}
+  \end{image}
+  In figure(A), the secant line connecting the points $(1,f(1))$ and $(5,f(5))$ is also a tangent line to the curve  at $x$, $1<x<3$.
+    
+          (A): $\frac{f(5)-f(1)}{5-1}=\frac{1-5}{4}=-1$ and for any $c$ in $(1,5), f'(c)=-1$.\\
+          (C):$\frac{f(5)-f(1)}{5-1}$ is the slope of the secant line connecting the points $(1,f(1))$ and $(5,f(5))$. This line is parallel to two tangent lines shown in the figure (C). The lines have the same slope. The slope of either of a  tangent line is $f'(s)$, where is $(s, f(s))$ is the point where the line touches the curve.\\
+          (B): The slope of the secant line connecting $(1,f(1))$ and $(5,f(5))$ is negative On the other hand $f'(s)>0$, for $1<s<3$ and $3<s<5$.
+          So, $\frac{f(5)-f(1)}{5-1}=\frac{1-5}{4}=-\frac{1}{4}\ne f'(s)$, for all $s$ where $f'(s)$ defined.
+           (D): The slope of the secant line connecting $(1,f(1))$ and $(5,f(5))$ is given by $\frac{f(5)-f(1)}{5-1}=\frac{3-1}{4}=\frac{1}{2}$. On the other hand, on the interval $(1,5)$, the graph of the function is a line whose slope is 1.  Therefore, $f'(x)=1$, for $1<x<5$.
+         \end{freeResponse}
+  \end{enumerate}
+\end{problem}
+
+\WkstNew
+
+%problem 2
+
+
+% problem 3
+\begin{problem}
+  Heidi drives from her house in Columbus, OH to Indianapolis, IN for vacation.
+  Google maps says her driving distance is $170$ miles.
+  The drive takes her $2.5$ hours.
+  The police send her a speeding ticket in the mail, saying she must have sped to arrive so quickly.
+  She is fighting the ticket, saying she just never stopped through the whole drive.
+  Can you prove she broke the $65$ mph speed limit at some point during her drive? \textbf{EXPLAIN}.
+\WkstHop
+  \begin{freeResponse}
+    Let us define $s(t)$ to be the position function of Heidi after $t$ hours.
+    $s(t)$ will be continuous and differentiable because the position of a car is continuous and differentiable.
+    Heidi's average velocity for the whole trip is $\frac{170}{2.5}\approx 68$ mph.
+    By the Mean Value Theorem, Heidi 's instantaneous velocity, $s'(t)$, was $68$ mph at some time $t=c$: hence, she broke the $65$ mph speed limit.
+  \end{freeResponse}
+\end{problem}
+
+\WkstNew
+
+%problem 4
+\begin{problem}
+  Does the function given in the graph below satisfy the hypotheses of the Mean Value Theorem in the interval $[-1,6]$?
+  If so, estimate the values of all numbers $c$ that satisfy the conclusion of the Mean Value Theorem.  
+  \begin{image}
+    \includegraphics[scale=0.65]{Images/figure1.png}
+  \end{image}
+\WkstHop
+  \begin{freeResponse}
+    The function is continuous on $[-1,6]$ and differentiable on $(-1,6)$: \\
+    hence it satisfies the hypotheses of the Mean Value Theorem.
+    \begin{image}
+      \includegraphics[scale=0.6]{Images/Figure2.png}
+    \end{image}
+  \end{freeResponse}
+\end{problem}
+
+\WkstNew
+
+
+%problem 6
+\begin{problem}
+  Let $f(x) = (x-3)^{-2}$.
+  Show that there is no value $c$ in $(1,4)$ such that $f(4) - f(1) = f^{\prime}(c) (4-1)$.
+  Why does this not contradict the Mean Value Theorem?
+\WkstHop
+  \begin{freeResponse}
+    First notice that 
+    $$f(4)-f(1) = 1^{-2} - (-2)^{-2} = 1-\frac{1}{4} = \frac{3}{4}$$
+    and so we are looking for a value $c$ such that 
+    $$3 f^\prime (c) = \frac{3}{4} \quad \Longrightarrow \quad f^\prime (c) = \frac{1}{4} $$
+    Then since $f'(x) = \frac{-2}{(x-3)^3}$, we can compute:
+    $$ f'(c) = \frac{-2}{(c-3)^3} := \frac{1}{4}$$
+    $$ (c-3)^3 = - 8 $$
+    $$ c = 3 - 2 = 1 $$
+    But $1$ is not in the interval $(1,4)$.  This does not contradict the Mean Value Theorem since $f$ is not continuous at $x=3$.
+
+    \begin{image}
+      \includegraphics[scale=.65]{Images/Figure5.png}
+    \end{image}
+  \end{freeResponse}
+\end{problem}
+
+
+\WkstNew
+
+%problem7
+\begin{problem}
+  Two runners start a race at the same time and finish in a tie.
+  Prove that at some time during the race they have the same speed. 
+  (Hint:  Consider the function $h(t)=f(t)-g(t)$, where $f(t)$ and $g(t)$ are the position of the first and second runner at time $t$, respectively.)
+\WkstHop
+  \begin{freeResponse}
+    Let $f(t)$ be the position of the first runner at time $t$, and let $g(t)$ be the position of the second runner at time $t$.
+    Let $T$ denote the time that the two runners finish the race (which is the same, since they finish in a tie).
+    Also, let $h(t) = f(t) - g(t)$.
+    Since $h(0) = 0$ and $h(T) = 0$, by Rolle's Theorem there exists some $c$ with $0 < c < T$ such that $h'(c)=0$.
+    But since $h^\prime (t) = f^\prime (t) - g^\prime (t)$, we have that $f^\prime (c) = g^\prime (c)$.
+    Therefore, the runners have the same speed at time $c$.  
+
+    \begin{image}
+      \includegraphics[scale=.45]{Images/Figure6.png}
+    \end{image}
+  \end{freeResponse}
+\end{problem}
+
+\WkstNew
+
+\begin{problem}
+  Verify that the given function satisfies the hypotheses of the Mean Value Theorem in the given interval.
+  Then algebraically find all numbers $c$ that satisfy the conclusion of the Mean Value Theorem.
+  $$ f(x) = x+\sin{\Bigl(\frac{\pi}{4}\cdot x\Bigr)} \qquad \text{on } [0,2] $$.
+\WkstHop
+
+   \begin{freeResponse}
+   The function $f$ is continuous on $[0,2]$ and differentiable on $(0,2)$ since it is a sum of a linear polynomial and a composition of a sine function  and another linear polynomial. Therefore, $f$ satisfies the hypotheses of the Mean Value Theorem.
+    We have that
+    $$ f'(x) = 1+\frac{\pi}{4}\cdot\cos{\Bigl(\frac{\pi}{4}\cdot x\Bigr)}  $$
+    $$ \frac{f(2) - f(0)}{2-0} = \frac{3}{2} $$
+    So we are looking to find all points $c \in (0,2)$ which satisfy that $ f'(c) = \frac{3}{2} $.  So we solve:
+    $$  1+\frac{\pi}{4}\cdot\cos{\Bigl(\frac{\pi}{4}\cdot c\Bigr)} = \frac{3}{2} $$
+    Therefore,
+    $$  \frac{\pi}{4}\cdot\cos{\Bigl(\frac{\pi}{4}\cdot c\Bigr)} = \frac{1}{2} $$
+    and
+ $$  \cos{\Bigl(\frac{\pi}{4}\cdot c\Bigr)} = \frac{2}{\pi} $$
+  $$ \frac{\pi}{4}\cdot c = \arccos{\Bigl(\frac{2}{\pi}\Bigr) }$$
+    $$  c =\frac{4}{\pi}\cdot \arccos{\Bigl(\frac{2}{\pi}\Bigr)\approx 1.12 }$$
+    Let's confirm this result with the graph.
+     \begin{image}
+     \includegraphics{MVTimage005.png}
+  \end{image}
+     \end{freeResponse}
+  \end{problem}
+\end{document} 

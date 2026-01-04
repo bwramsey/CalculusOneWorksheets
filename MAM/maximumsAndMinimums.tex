@@ -1,0 +1,582 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Maximums and minimums (MAM)} 
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Maximums and minimums (MAM) - Solutions} 
+\fi
+
+
+
+\usepackage{fullpage}
+
+\input{../preamble.tex} %% we can turn off input when making a master document
+
+
+\begin{document}
+\begin{abstract}		\end{abstract}
+\maketitle
+\ifcase\HCCondition
+\section*{Recitation Questions}
+\fi
+%problem1
+\begin{problem}
+Determine whether the following statements are true or false and give either an explanation or a counterexample.
+
+	\begin{enumerate}
+	
+	%part a
+	\item  The function $f(x) = \sqrt{x}$ has a local maximum on the interval $[0,1]$.
+		\begin{freeResponse}
+		False.  Since $\sqrt{x}$ is increasing over the entire region $[0,1]$, the only candidate for a local maximum would be $x=1$.  But by definition, endpoints are never local extrema.  So $f(x) = \sqrt{x}$ has no local maximum on the interval $[0,1]$.
+		\end{freeResponse}	
+\WkstHop
+				
+	%part c
+	\item  If $f'(2)=0$, then $x=2$ is either a local maximum or local minimum of $f$.
+					\begin{freeResponse}
+				False.  Consider $f(x)=(x-2)^3$.  This has derivative $f'(x) = 3(x-2)^2$, so that $f'(2)=0$.   We can see from the graph of $f$ below, that $x=2$ is not a local extremum for $f$.
+				\begin{center}
+					\begin{tikzpicture}
+						\begin{axis}[
+							xmin=-1.5, xmax=5.5, ymin=-6.5,ymax=12.5,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={-1,...,5}, ytick={-6, -4,...,12},
+							grid=major, width=3in,
+							grid style={dashed, gray!40} 
+							]
+							\addplot[color=blue, very thick, smooth, domain=-1.5:5.5]{(x-2)^3};
+						\end{axis}
+					\end{tikzpicture}
+				\end{center}
+			\end{freeResponse}
+			\end{enumerate}
+\WkstHop		
+\end{problem}	
+
+\WkstNew
+
+%problem 2
+\begin{problem}
+	The entire graph of a function $g$ is given below.
+				\begin{center}
+					\begin{tikzpicture}
+						\begin{axis}[
+							xmin=-6.5, xmax=6.5, ymin=-4.5,ymax=4.5,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={-6,...,6}, ytick={-4,...,4},
+							grid=major, width=3in,
+							grid style={dashed, gray!40} 
+							]
+							\addplot[color=blue, very thick, smooth, domain=-6:-3]{-(2/3)*(x+3)^2+4};
+							\draw[fill=blue] (axis cs:-6,-2) circle [color=blue,radius=3pt] node [below right] {};						
+						
+							\addplot[color=blue, very thick, smooth, domain=-3:0]{(2/3)*x^2-2};						
+							\addplot[color=blue, very thick, smooth, domain=0:2]{-(1/2)*x^2-2};												
+							\addplot[color=blue, very thick, smooth, domain=2:4]{-(8^(0.5))*(4-x)^(0.5)};																		
+							\addplot[color=blue, very thick, smooth, domain=4:6]{-(3/4)*(x-4)^2+2} node[anchor=south,pos=0]{$\Large{y=g(x)}$};
+							
+							\draw[fill=blue] (axis cs:6,-1) circle [color=blue,radius=3pt] node [below right] {};						
+							\draw[fill=blue] (axis cs:4,2) circle [color=blue,radius=3pt] node [below right] {}; 					
+													
+						\draw[fill=blue] (axis cs:4,0) circle [color=blue,radius=3pt] node [below right] {};
+						\draw[fill=white] (axis cs:4,0) circle [color=white,radius=2pt] node [below right] {};
+						
+						
+						
+						\end{axis}
+					\end{tikzpicture}
+				\end{center}
+	Based on the graph of $g$, answer the questions below.
+	\begin{enumerate}
+		\item List the $x$-coordinates of all critical points of $g$.
+\WkstHop
+			\begin{freeResponse}
+				$x = -3$, $x=0$, $x=2$, and $x=4$.
+			\end{freeResponse}
+		\item List the $x$-coordinates of all critical points of $g$ where $g'(x)=0$.
+\WkstHop
+			\begin{freeResponse}
+				$x = 0$
+			\end{freeResponse}
+		\item List the $x$-coordinates of all critical points of $g$ where $g'(x)$ is \textbf{undefined}.
+\WkstHop
+			\begin{freeResponse}
+				$x = -3$, $x=2$, and $x=4$.
+			\end{freeResponse}
+		\item List the $x$-coordinates of all local maximums of $g$.
+\WkstHop
+			\begin{freeResponse}
+				$x = -3$ and $x=4$.
+			\end{freeResponse}
+		\item List the $x$-coordinates of all local minimums of $g$.
+\WkstHop
+			\begin{freeResponse}
+				$x=2$
+			\end{freeResponse}		
+		\item List all intervals where $g$ is both decreasing AND concave down.
+\WkstHop
+			\begin{freeResponse}
+				$(0,2)$ and $(4,6)$.
+			\end{freeResponse}			
+		\item List all intervals where $g$ is both decreasing AND concave up.
+\WkstHop
+			\begin{freeResponse}
+				$(-3,0)$ 
+			\end{freeResponse}
+		\item List all intervals where $g$ is both increasing AND concave down.
+\WkstHop
+			\begin{freeResponse}
+				$(-6,-3)$
+			\end{freeResponse}		
+		\item List all intervals where $g$ is both increasing AND concave up.
+\WkstHop
+			\begin{freeResponse}
+				$(2,4)$
+			\end{freeResponse}		
+		\item List the $x$-coordinates of all inflection points of $g$.
+\WkstHop
+			\begin{freeResponse}
+				$x=-3$, $x=0$, and $x=2$.
+			\end{freeResponse}		
+	\end{enumerate}
+\end{problem}
+	
+\WkstNew
+
+
+
+%problem 2
+\begin{problem}
+For each point in the interval (a,b)  and identified on the graph below, determine if the function $f$ has a critical point, a local max or min at that point.\\
+
+
+	\begin{center}
+	\begin{image}
+	\includegraphics[trim= 20 430 250 200]{Figure3.pdf}
+	\end{image}
+	\end{center}	
+\WkstHop
+	
+		\begin{freeResponse}
+
+
+(p) The function $f$ has a critical point and a local maximum at $x=p$.  
+
+(q) The function $f$ has a critical point and a local minimum at $x=q$.
+
+(r) The function $f$ has a critical point and a local maximum at $x=r$
+
+(s) The derivative of $f$ does not exist at $x=s$ because the function $f$ has a corner at $x=s$.  The function has a critical point and a local minimum at $x=s$.
+
+(t) The function $f$ has a critical point but not a local maximum or minimum at $x=t$.
+
+
+		\end{freeResponse}	
+		
+\end{problem}
+
+\WkstNew
+
+%problem8
+\begin{problem}
+Locate the critical points and use the second derivative test to determine whether they correspond to local maxima or local minima. \textbf{EXPLAIN}.
+
+$f(x)=(x+c)^4$ where $c$ is a positive constant 
+\WkstHop
+
+\begin{freeResponse}
+
+$$f'(x)=4(x+c)^3, f''(x)=12(x+c)^2$$
+
+To find the critical points: $f'(x)=0=4(x+c)^3$.  This occurs when $x=-c$
+ 
+Using the second derivative test: $f''(-c)=12(-c+c)^2=0$.  The second derivative test was inconclusive so we need to use the first derivative test.
+
+Making a sign chart we see that if we plug something a little less than $-c$ into $f'$, we'll get a negative number.  If we plug something a little greater than $-c$ into $f'$, we'll get a positive number. 
+
+      \begin{image}
+        \includegraphics[scale = 0.5]{figure4a.png}
+             \end{image}
+The derivative of $f$, $f'$, does not change sign on the intervals $(-\infty,-c)$ and on $(-c,\infty)$, therefore, we have the above chart.  From the chart, we can conclude that $f$ has a local minimum at $x=-c$, and that $f$ also has a global minimum there.  We could also have used our understanding of the family of functions $g(x)=x^4$ to reason $x=-c$ would be a minimum.
+
+At $x=-c$, $f$ has a local minimum by the first derivative test since $x=-c$ is a critical point of $f$ and the sign of $f'$ changes from negative to positive around $x=-c$.
+
+\end{freeResponse}
+\end{problem}
+\WkstNew
+
+
+
+\begin{problem}
+Let $f$ be a  function that is continuous on its domain $(-6,4)$.
+ The graph of  $f'$, the derivative of $f$, is given below.
+	%\begin{center}
+	%\begin{image}
+	%\includegraphics[scale=0.7]{Figure14a.png}
+	%\end{image}
+	%\end{center}	
+				\begin{center}
+					\begin{tikzpicture}
+						\begin{axis}[
+							xmin=-6.5, xmax=4.5, ymin=-2.5,ymax=5.5,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={-6,...,4}, ytick={-2,...,5},
+							grid=major, width=4in,
+							grid style={dashed, gray!40} 
+							]
+							\addplot[color=blue, very thick, smooth, domain=-6:0]{x+4}  node[anchor=south east,pos=0.75]{$\LARGE{y=f'(x)}$};
+							\draw[fill=blue] (axis cs:-6,-2) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:-6,-2) circle [color=white,radius=2pt] node [below right] {};
+							\draw[fill=blue] (axis cs:0,4) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:0,4) circle [color=white,radius=2pt] node [below right] {};
+						
+							\addplot[color=blue, very thick, smooth, domain=0:4]{(x-2)^2-1};
+							
+							\draw[fill=blue] (axis cs:0,3) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:0,3) circle [color=white,radius=2pt] node [below right] {};
+
+							\draw[fill=blue] (axis cs:4,3) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:4,3) circle [color=white,radius=2pt] node [below right] {};
+						
+						
+						
+						\end{axis}
+					\end{tikzpicture}
+				\end{center}
+
+	Based on the graph of $f'$, answer  the question below.\\
+	\begin{enumerate}
+		\item List x-coordinates of all critical points of $f$.
+		\WkstHop
+			\begin{freeResponse}
+			Notice, $f'(-4)=f'(1)=f'(3)=0$, and $f'(0)$ is not defined. Therefore, the function $f$ has critical points at
+			$x=-4$, $x=0$,  $x=1$ and  $x=3$.  
+			\end{freeResponse}
+		
+		\item List x-coordinates of all critical points of $f$ where $f'(x)=0$.\\ 
+		\WkstHop
+			\begin{freeResponse}
+			$x=-4$, $x=1$ and  $x=3$.  
+			\end{freeResponse}
+		\item List x-coordinates of all critical points of $f$ where $f'(x)$ is \textbf{undefined}.
+		\WkstHop
+			\begin{freeResponse}
+			$x=0$  
+			\end{freeResponse}
+		\item List x-coordinates of all local minimums of $f$. 
+		\WkstHop
+			\begin{freeResponse}
+			$x=-4$ and $x=3$. 
+			At these points the sign of $f'(x)$ changes from negative to positive. 
+			\end{freeResponse}
+		\item List x-coordinates of all local maximums of $f$. 
+		\WkstHop
+			\begin{freeResponse}
+			 $x=1$
+			 At this point the sign of $f'(x)$ changes from positive to  negative. 
+			\end{freeResponse}
+		\item List all intervals where $f$ is decreasing and concave down.
+		\WkstHop
+			\begin{freeResponse}
+			$(1,2)$  
+			Notice, $f'(x)$ is negative and decreasing there. 
+			\end{freeResponse}
+		\item List all intervals where $f$ is decreasing and concave up.
+		\WkstHop
+			\begin{freeResponse}
+			$(-6,-4)$ and $(2,3)$.  
+			Notice, $f'(x)$ is negative and increasing there. 
+			\end{freeResponse}
+		\item List all intervals where $f$ is increasing and concave down.
+		\WkstHop
+			\begin{freeResponse}
+			$(0,1)$ 
+			Notice, $f'(x)$ is positive and decreasing there. 
+			\end{freeResponse}
+		\item List all intervals where $f$ is increasing and concave up.
+		\WkstHop
+			\begin{freeResponse}
+			$(-4,0)$ and $(3,4)$.
+			Notice, $f'(x)$ is positive and increasing there. 
+			\end{freeResponse}
+		\item List x-coordinates of all inflection points of $f$. 
+		\WkstHop
+			\begin{freeResponse}
+			$x=0$, and $x=2$  $f'(x)$ is increasing on $(-6,0)$ and decreasing on $(0,2)$, then increasing on $(2,4)$.
+			\end{freeResponse}
+	\end{enumerate}
+
+\end{problem}
+	
+\WkstNew
+
+
+%problem 3
+\begin{problem}
+Find the critical points of $f$ on the given interval. Determine whether the function $f$ has a local maximum, local minimum or no local extremum at each critical point. \textbf{EXPLAIN}.
+		\begin{enumerate}
+		
+			%part a
+			\item  $f(x) = x \sqrt{2-x^2}$ on $( -\sqrt{2}, \sqrt{2} )$.
+			\WkstHop
+			
+				\begin{freeResponse}
+								\begin{align*}
+				f'(x) &= \sqrt{2-x^2} + x \left( \frac{1}{2 \sqrt{2-x^2}} (-2x) \right) \\
+				&= \sqrt{2-x^2} - \frac{x^2}{\sqrt{2-x^2}} \\
+				&= \frac{2-x^2-x^2}{\sqrt{2-x^2}} \\
+				&= \frac{2(1-x^2)}{\sqrt{2-x^2}}
+				\end{align*}
+				
+				Critical points of $f$ occur where $f'(x) = 0$ or where $f'(x)$ does not exist.  Solving $f'(x) = 0$ yields that $2(1-x^2) = 0$, or $x = \pm 1$.  $f'(x)$ does not exist when $2-x^2 \leq 0$, but the points $x=\pm \sqrt{2}$ are not in the domain.\\  
+
+				Let us use the Second Derivative Test to determine whether the function $f$ has a local maximum or local minimum at the points where $x=\pm1$.
+				\begin{align*}
+				f''(x) &=\frac{d}{dx}\frac{2(1-x^2)}{\sqrt{2-x^2}}
+				= \frac{2x(x^2-3)}{(2-x^2)^{\frac{3}{2}}}
+				\end{align*}
+				Since $f''(-1)=4$, the point $(-1,-1)$ is a local minimum by the Second Derivative Test.
+				Since $f''(1)=-4$, the point $(1,1)$ is a local maximum by the Second Derivative Test.
+								\end{freeResponse}
+				
+				
+				
+			%part b
+			\item  $f(x) = x^3 e^{-x}$ on $(-1,5)$.
+			\WkstHop
+
+				\begin{freeResponse}
+			
+				\begin{align*}
+				f'(x) &= 3x^2 e^{-x} + x^3(-e^{-x}) \\
+				&= x^2 e^{-x} (3-x)
+				\end{align*}
+				
+				Notice that $f'(x)$ always exists, and so all of the critical points of $f$ occur when $f'(x)=0$.  Solving this equation:
+				$$ x^2 e^{-x} (3-x) = 0 $$
+				$$ x^2 (3-x) = 0 $$
+				$$ x = 0 \qquad \text{or} \qquad x=3 $$
+				It is easier to use the First derivative test in order to determine whether the function $f$ has a local maximum, local minimum or no local extremum at the point where $x=0$. Since $-1<0<1$, $f'(-1)=4e>0$, and $f'(1)=2e^{-1}>0$, it follows that the sign of $f'$ does not change at $x=0$. The function $f$ has \textbf{no local extremum} at $x=0$.\\
+
+				Similarly, we will use the First derivative test in order to determine whether the function $f$ has a local maximum, local minimum or no local extremum at the points where $x=3$. Since $1<3<4$, $f'(1)=2e^{-1}>0$, and  $f'(4)=-16e^{-4}<0$ it follows that the sign of $f'$ changes from positive to negative at $x=3$. 
+				The function $f$ has \textbf{a local maximum} at $x=3$ by the First Derivative Test.
+ 
+						
+				\end{freeResponse}
+				
+			\WkstNew	
+				
+			%part c
+			\item  $f(x) = x \ln \left( \frac{x}{5} \right)$ on $(0, 5)$.
+			\WkstHop
+
+				\begin{freeResponse}
+								\begin{align*}
+				f'(x) &= \ln \left( \frac{x}{5} \right) + x \cdot \frac{5}{x} \cdot \frac{1}{5} \\
+				&= \ln \left( \frac{x}{5} \right) + 1
+				\end{align*}
+				
+				Notice that $f'(x)$ exists for all values in $(0,5)$, and so all of the critical points of $f$ occur when $f'(x)=0$.  Solving this equation:
+				$$ \ln \left( \frac{x}{5} \right) + 1 = 0 $$
+				$$ \ln \left( \frac{x}{5} \right) = -1 $$
+				$$ \frac{x}{5} = e^{-1} $$
+				$$ x = 5e^{-1} = \frac{5}{e} $$
+						\\
+				Let's use the Second Derivative Test to determine whether the function $f$ has a local maximum, local minimum or no local extremum at the points where $x= \frac{5}{e} $.
+				\begin{align*}
+				f''(x) &=\frac{d}{dx}( \ln \left( \frac{x}{5} \right) + 1)\\
+				&=\frac{d}{dx}( \ln \left( x \right) -\ln \left( 5 \right)+ 1)
+				= \frac{1}{x}
+				\end{align*}
+				Since, $f''\Bigl( \frac{5}{e}\Bigr)>0$, the point $\Bigl( \frac{5}{e},- \frac{5}{e}\Bigr)$ is a local minimum by the Second Derivative Test.
+						
+		
+				\end{freeResponse}
+				
+				
+				
+			\end{enumerate}
+
+		
+		
+		
+
+\end{problem}
+	
+\WkstNew	
+
+\begin{problem}
+Let $f(x) = \frac{1}{1 + x^2}$.  Find the following for $f$:
+
+	\begin{enumerate}
+	%part a
+	\item  $f'$ and $f''$
+\WkstHop
+	
+		\begin{freeResponse}
+			\begin{align*}
+			f'(x) &= \frac{(1+x^2)(0) - 1(2x)}{(1+x^2)^2} \\
+			&= \frac{-2x}{(1+x^2)^2}
+			\end{align*}
+			
+			\begin{align*}
+			f''(x) &= \frac{(1+x^2)^2(-2) - (-2x)(2)(1+x^2)(2x)}{(1+x^2)^4} \\
+			&= \frac{-2(1+x^2) + 8x^2}{(1+x^2)^3} \\
+			&= \frac{6x^2 - 2}{(1+x^2)^3}
+			\end{align*}
+		\end{freeResponse}
+	%part b	
+	\item  Critical points
+\WkstHop
+	
+		\begin{freeResponse}
+		Since $1+x^2 > 0$ for all $x$, $f$ is differentiable over all real numbers.  Thus all critical points of $f$ occur when $f'(x) = 0$.  But a fraction equals 0 if and only if its numerator equals 0.  So
+		$$ f'(x) = 0 \qquad \Longrightarrow \qquad -2x = 0 \qquad \Longrightarrow \qquad x=0 $$
+		Hence, the only critical point is $x=0$.  
+		\end{freeResponse}
+
+\WkstNew		
+	%part d	
+	\item  Local extrema (and check your answers with both the first and second derivative tests)
+\WkstHop
+	
+		\begin{freeResponse}
+		At $x=0$, $f'$ changes sign from positive to negative.  Thus $f$ goes from increasing to decreasing, and therefore by the first derivative test $x=0$ is a local maximum of $f$.  
+		
+		For the second derivative test, we have that
+		$$ f''(0) = \frac{6(0)^2 - 2}{(1+0^2)^3} = \frac{-2}{1} = -2 < 0 $$
+		and thus we again conclude that $x=0$ is a local maximum of $f$.
+		\end{freeResponse}
+
+	%part f	
+	\item  Inflection points. \textbf{EXPLAIN}.
+\WkstHop
+	
+		\begin{freeResponse}
+		By the results in part 
+		\begin{align*}
+ 		f''(x) &= \frac{6x^2 - 2}{(1+x^2)^3}\\
+		 &= \frac{6(x^2 - \frac{1}{3})}{(1+x^2)^3}\\
+		 &= \frac{6(x - \frac{1}{\sqrt{3}})(x + \frac{1}{\sqrt{3}})}{(1+x^2)^3}\\
+		\end{align*}
+		  which implies that the only candidates for inflection points are points where $x=\pm\frac{1}{\sqrt{3}}$.
+		On the other hand, since $-1<- \frac{1}{\sqrt{3}}<0$, $f''(-1)=\frac{1}{2}$, and $f''(0)=-2$, it follows that $f''$ changes the sign at  $x=-\frac{1}{\sqrt{3}}$. Similarly, since $0<x=\frac{1}{\sqrt{3}}<1$, $f''(0)=-2$, $f''(1)=\frac{1}{2}$, it follows that $f''$ changes the sign at  $x=\frac{1}{\sqrt{3}}$, too.
+		Since,
+		\begin{align*}
+ 		 & f\left( \frac{1}{\sqrt{3}} \right)=\frac{3}{4} \\ 
+ 		& f\left( -\frac{1}{\sqrt{3}} \right)=\frac{3}{4} \\ 
+		\end{align*}  
+		The function $f$ has inflection points at $\left( -\frac{1}{\sqrt{3}},\frac{3}{4} \right),\left( \frac{1}{\sqrt{3}},\frac{3}{4} \right)$ because $f$ is continuous at those points and $f$ changes concavity around those points.
+		\end{freeResponse}
+		
+	\end{enumerate}
+		
+\end{problem}
+
+\WkstNew
+
+
+
+
+\begin{problem}
+Sketch a possible graph of a function $f$ that has the following properties:\\
+	\begin{enumerate}
+		\item $f$ is defined on the interval $(0,6)$.
+		\item $f$ has no local maximums.
+		\item $f$ has exactly two local minimums.
+	\end{enumerate}
+\WkstHop
+	
+		\begin{freeResponse}
+		This could be the graph of $f$. Notice two local minimums: at $x=2$ and at $x=4$.
+		%\begin{image}
+		%\includegraphics{Figure 21.pdf}
+		%\end{image}
+			\begin{center}
+					\begin{tikzpicture}
+						\begin{axis}[
+							xmin=-0.3, xmax=6.3, ymin=-0.3,ymax=5.3,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={0,...,6}, ytick={0,...,5},
+							grid=major, width=4in,
+							grid style={dashed, gray!40} 
+							]
+							\addplot[color=blue, very thick, smooth, domain=0:4]{(x-2)^2};
+							\addplot[color=blue, very thick, smooth, domain=4:6]{(x-6)^2};
+
+							\draw[fill=blue] (axis cs:0,4) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:0,4) circle [color=white,radius=2pt] node [below right] {};
+							\draw[fill=blue] (axis cs:4,4) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:4,4) circle [color=white,radius=2pt] node [below right] {};
+						
+							
+							\draw[fill=blue] (axis cs:6,0) circle [color=blue,radius=3pt] node [below right] {};
+							\draw[fill=white] (axis cs:6,0) circle [color=white,radius=2pt] node [below right] {};
+							\draw[fill=blue] (axis cs:4,2) circle [color=blue,radius=3pt] node [below right] {};
+						
+						
+						
+						\end{axis}
+					\end{tikzpicture}
+				\end{center}
+
+		\end{freeResponse}	
+		
+\end{problem}
+
+
+\WkstNew
+
+
+\begin{problem}
+	Consider the parabola $f(x)=ax^2+bx+c$ where $a,b,c$ are constants.  For what values of $a,b,c$ is $f$ concave up?  For what values of $a,b,c$ is $f$ concave down?				
+	\WkstHop
+	
+	\begin{freeResponse}
+		\begin{align*}
+			f'(x)&=2ax+b\\
+			f''(x)&=2a
+		\end{align*}
+		This means the sign of $a$ will determine whether $f$ is concave up or down.  When $a<0$, $f$ is concave down, which makes sense 
+		because then the graph of $f$ is a downward opening parabola.  When $a>0$, $f$ is concave up, which makes sense because then the 
+		graph of $f$ is an upward openng parabola.  If $a=0$, $f$ has no concavity because it is a linear function.
+						
+	\end{freeResponse}
+					
+\end{problem}	
+
+
+
+
+\end{document} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,539 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Definite integrals (DI)}
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Definite integrals (DI) - Solutions}  
+\fi
+
+
+\usepackage{fullpage}
+\input{../preamble.tex} 
+
+
+\begin{document}
+\begin{abstract}
+
+\end{abstract}
+\maketitle
+\ifcase\HCCondition
+%summary in here
+\section*{SUMMARY of Definite Integrals:}
+
+\textbf{Definition} \\
+If function $f$ is continuous on interval $[a,b]$ then
+\begin{center}
+ {\large{$ \int_a^b f(x)\d x =  \lim_{n \to \infty} \sum_{k = 1}^n f(x_k^*) \Delta x$}}\\[2em]
+ \end{center}
+\textbf{Note 1: } When $f(x)\ge0$, on the interval $[a,b]$, the definite integral, $ \int_a^b f(x)\d x$, gives \\the \textbf{area} of the region between the graph of $f$ and the interval $[a,b]$ on the $x-$axis. \\[1em]
+\textbf{Note 2: } When $f(x)<0$, on some interval in $[a,b]$, then the definite integral, $ \int_a^b f(x)\d x$,\\ gives the \textbf{net area} of the region between the graph of $f$ and the interval $[a,b]$ on the $x-$axis. \\[2em]
+\textbf{Properties of Definite Integrals} \\[1em]
+(a) $ \int_a^a f(x)\d x =0$\\[0.8em]
+(b) $ \int_a^c f(x)\d x =\int_a^b f(x)\d x +  \int_b^c f(x)\d x$\\[0.8em]
+(c) $ \int_a^b f(x)\d x = - \int_b^a f(x)\d x $\\[0.8em]
+(d) $ \int_a^b k\cdot f(x)\d x = k\cdot \int_a^b f(x)\d x $\\[0.8em]
+(e) $ \int_a^b ( f(x)+g(x))\d x = \int_a^b f(x)\d x +  \int_a^b g(x)\d x$; 
+      $ \int_a^b ( f(x)-g(x))\d x = \int_a^b f(x)\d x -  \int_a^b g(x)\d x$\\[2em]
+      \textbf{Note 3: } If the function $f$ is \textbf{odd}, i.e, if $f(-x)=-f(x)$, for all $x$ in $[-a,a]$, then
+      \begin{center}
+      {\large{ $ \int_{-a}^a f(x)\d x =0$}}
+        \end{center}
+           \textbf{Note 4: } If the function $f$ is \textbf{even}, i.e, if $f(-x)=f(x)$, for all $x$ in $[-a,a]$, then
+      \begin{center}
+      {\large{ $ \int_{-a}^a f(x)\d x =2\cdot \int_{0}^a f(x)\d x$}}
+        \end{center}
+\WkstNew
+
+\section*{Recitation Questions}
+\fi
+
+
+
+%problem 1
+%problem 2
+\begin{problem}
+  Consider the following limit of Riemann sums of a function $g$ on $[a, b]$:
+  \[
+    \lim_{n \to \infty} \sum_{k = 1}^n (x_k^* + \cos(x_k^*)) \Delta x\mbox{ , $[0, \pi]$.}
+  \]
+  Express the limit as a definite integral. Use geometry to evaluate the resulting definite integral.
+  \begin{freeResponse}
+    We have 
+    \[
+      \int_0^\pi(x + \cos(x))\d x = \lim_{n \to \infty} \sum_{k = 1}^n (x_k^* + \cos(x_k^*)) \Delta x.
+    \]
+    
+    To evaluate this definite integral, we'll start by writing $\displaystyle \int_0^\pi(x + \cos(x))\d x = \int_0^\pi x \d x + \int_0^\pi \cos(x) \d x$.
+    
+    The first term is the definite integral $\displaystyle \int_0^\pi x \d x$ which is the net area under the graph of $y = x$ on the interval $[0,\pi]$. This is a triangle of base $\pi$ and height $\pi$, so it has area $\dfrac{1}{2} \pi ^ 2$.
+ 
+    The second term $\displaystyle \int_0^\pi \cos(x) \d x$ is the net area between the graph of $y = \cos(x)$ and the $x$-axis on the interval $[0, \pi]$. In the interval $[0,\frac{\pi}{2}]$ the function is positive, and in the interval $[\frac{\pi}{2}, \pi]$ the function is negative. By the symmetry of the cosine function, these two regions have the same geometric area, so the net area is zero.
+ 
+    $\displaystyle \int_0^\pi(x + \cos(x))\d x = \int_0^\pi x \d x + \int_0^\pi \cos(x) \d x = \dfrac{\pi^2}{2}$.
+  \end{freeResponse}
+\WkstHop
+\end{problem}
+
+\WkstNew
+
+%problem 3
+\begin{problem}
+Let $f(x)$ and $g(x)$ be functions for which we only know the following:
+$$ \int_1^4 f(x)\d x = 7	\qquad	\int_2^4 f(x)\d x = 5	\qquad	\int_1^4 g(x)\d x = 2 $$
+Compute the following integrals, if possible.  If it is not possible, give examples explaining why not.
+	\begin{enumerate}
+	
+	%part a 
+	\item  $\int_1^4 (8f(x) - 7g(x))\d x $
+		\begin{freeResponse}
+			\begin{align*}
+			\int_1^4 (8f(x) - 7g(x))\d x &= 8 \int_1^4 f(x) \d x - 7 \int_1^4 g(x) \d x  \\
+			&= 8(7) - 7(2) \\
+			&= 56 - 14 = 42
+			\end{align*}
+		\end{freeResponse}
+		
+\WkstHop		
+		
+	%part b
+	\item  $\int_1^2 (-f(x)) \d x $
+		\begin{freeResponse}
+		First notice that
+			\begin{equation*}
+			\int_1^4 f(x) \d x = \int_1^2 f(x) \d x + \int_2^4 f(x) \d x
+			\end{equation*}
+			Therefore,
+			\begin{equation*}
+			\int_1^4 f(x) \d x- \int_2^4 f(x) \d x = \int_1^2 f(x) \d x 
+			\end{equation*}
+			
+		So
+			\begin{align*}
+			\int_1^2 (-f(x)) \d x &= - \int_1^2 f(x) \d x  \\
+			&= - \left( \int_1^4 f(x)\d x - \int_2^4 f(x)\d x \right)  \\
+			&= - (7 - 5) = -2.
+			\end{align*}
+			
+			%\begin{align*}
+			%\int_1^2 (-f(x)) \d x &= - \int_1^2 f(x) \d x  \\
+			%&= - \left( \int_1^4 f(x)\d x + \int_4^2 f(x)\d x \right)  \\
+			%&= - \left( \int_1^4 f(x)\d x - \int_2^4 f(x)\d x \right)  \\
+			%&= - (7 - 5) = -2
+			%\end{align*}
+		\end{freeResponse}
+		
+		
+\WkstHop		
+	%part c
+	\item  $\int_1^4 \left| f(x) \right| \d x$
+		\begin{freeResponse}
+		We are not given enough information to solve this integral because we do not know the regions where $f$ is positive or negative.
+		Consider the following two functions $f_1(x)$ and $f_2(x)$:  
+		\begin{image}
+\includegraphics[scale=.4]{DIimage002.png}
+\includegraphics[scale=.6]{DIimage001.png}
+\end{image}
+
+			
+	Just using geometry, one can check that
+	$$ \int_1^4 f_1(x)\d x = 7	\qquad	\int_2^4 f_1(x)\d x = 5	\qquad	\int_1^4 f_2(x)\d x = 7	\qquad	\int_2^4 f_2(x)\d x = 5 $$
+	and so both $f_1$ and $f_2$ satisfy the assumptions of $f$.  But notice that
+	$$\int_1^4 \left| f_1(x) \right| \d x =11	\qquad	\text{and}		\qquad	\int_1^4 \left| f_2(x) \right| \d x = 7  $$
+	These two examples demonstrate that we were not given enough information to solve this problem.
+		
+		\end{freeResponse}
+
+\WkstHop
+	%part d
+	\item  $\int_1^4 \left( 2 - x + f(x) \right) \d x$
+		\begin{freeResponse}
+		First notice that since the integral is linear over addition:
+			\begin{equation}\label{3d}
+			\int_1^4 \left( 2 - x + f(x) \right) \d x = \int_1^4 2 \d x - \int_1^4 x \d x + \int_1^4 f(x) \d x = \int_1^4 2 \d x - \int_1^4 x \d x + 7.
+			\end{equation}
+		By using geometry, we can see that
+			\begin{equation*}
+			\int_1^4 2 \d x = 2(4-1) = 6
+			\end{equation*}
+			\begin{equation*}
+			\int_1^4 x \d x = 1(4-1) + \frac{1}{2} (4-1)(4-1) = 3 + \frac{9}{2} = \frac{15}{2}.
+			\end{equation*}
+		Then substituting into equation \eqref{3d} gives:
+			\begin{equation*}
+			\int_1^4 \left( 2 - x + f(x) \right) \d x = 6 - \frac{15}{2} + 7 = \frac{11}{2}.
+			\end{equation*}
+		\end{freeResponse}
+\WkstHop
+	\end{enumerate}
+\end{problem}
+
+\WkstNew
+%problem 4
+\begin{problem}
+  Evaluate the following sums:
+  \begin{enumerate}
+  \item $\sum_{k=1}^{4} k^5 $
+    \begin{freeResponse}
+      $\sum_{k=1}^{4}k^5 = 1^5 + 2^5 + 3^5 + 4^5 = 1 + 32 + 243 +
+      1024 = 1300$.
+    \end{freeResponse}
+
+\WkstHop
+
+  \item $\sum_{k=1}^{400} (5(k+1)^2 + 3) $
+    \begin{freeResponse}
+      \begin{align*}
+        \sum_{k=1}^{400} (5(k+1)^2 + 3) 
+        &= \sum_{k=1}^{400} (5(k^2 + 2k + 1) + 3) \\
+        &= \sum_{k=1}^{400} (5k^2 + 10k + 8) \\
+        &= \sum_{k=1}^{400} 5k^2 + \sum_{k=1}^{400} 10k + \sum_{k=1}^{400} 8  \\
+        &= 5\sum_{k=1}^{400}k^2 + 10 \sum_{k=1}^{400} k + 8(400)  \\
+        &= 5 \left( \frac{400(400+1)(2(400) + 1)}{6} \right) + 10 \left( \frac{400(400+1)}{2} \right) + 3,200  \\
+        &= 5 (200)(401)(267) + 10(200)(401) + 3,200  \\
+        &= 107,067,000 + 802,000 + 3,200 = 107,872,200
+      \end{align*}
+    \end{freeResponse}
+\WkstHop
+
+  \end{enumerate}
+\end{problem}
+
+%problem 5
+\WkstNew
+
+%problem 6
+\begin{problem}
+Use geometry to evaluate the definite integral.  Sketch the graph of the function and shade the relevant regions.
+\begin{enumerate}
+
+
+	\item $\int_1^3 (2x-4) \d x$
+
+		\begin{freeResponse}
+		\begin{image}
+		\includegraphics[scale=.4]{DIimage007.png}
+		
+		\end{image}
+		
+		We want to find the net area of the shaded region.  We have two identical triangles, each with base $1$ and height $2$.  Since the triangles will have identical area and one lies above and the other below the $x$-axis, the total area will be $0$.
+		
+		Therefore, $\int_1^3 (2x-4) \d x=0$
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item $\int_1^3 |2x-4| \d x$
+
+		\begin{freeResponse}
+		
+		The functions changes the sign at $x=2$. Therefore, we will split the integral into two integrals:
+		
+		 $\int_1^3 |2x-4| \d x=\int_1^2 |2x-4| \d x+\int_2^3 |2x-4| \d x$.
+		 
+		 Since the function is negative for $x<2$ and positive for $x>2$, we write
+		 
+		$\int_1^3 |2x-4| \d x=-\int_1^2 (2x-4) \d x+\int_2^3 (2x-4) \d x=1+1=2$.
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item  $\int_0^1 (2x-4) \d x$
+
+		\begin{freeResponse}
+		\begin{image}
+		\includegraphics[scale=.35]{DIimage008.png}
+		\end{image}
+		
+		Here we need to find the area of a trapezoid.  The trapezoid is made up of a rectangular top with area $(2)(1)=2$ and triangle bottom with area $(1/2)(1)(2)=1$.  This gives us an area of $3$, but, since $f$ is negative on the interval $(0,1)$, the value of the integral is the negative of this area.
+		
+		Therefore,$\int_0^1 (2x-4) \d x=-3$
+		
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item  $\int_{-1}^3 \sqrt{4-(x-1)^2} \d x$
+		\begin{freeResponse}
+		
+		\begin{image}
+		\includegraphics[scale=.4]{DIimage006.png}
+		\end{image}
+		
+		
+		We are looking for the area of the entire semi-circle above the $x$-axis.  This is a circle with radius $2$ so we have $(1/2)\pi 2^2=2 \pi$
+		
+		
+		$\int_{-1}^3 \sqrt{4-(x-1)^2} \d x= 2\pi$
+		
+		
+		\end{freeResponse}
+\WkstHop
+
+\end{enumerate}
+
+\end{problem}
+
+\WkstNew
+
+\begin{problem}
+
+  \begin{enumerate}
+    \item
+    If $f$ is an odd function, why is it true that $\int_{-a}^a f(x)
+    \d x = 0$?  
+    Support your reasoning with a picture.
+    \begin{freeResponse}
+      If $f$ is odd, then the regions between the graph of $f$ and the $x$-axis from $[-a,0]$ and $[0,a]$ are reflections of each other through the origin.
+      Thus, these two regions will have the same area but with opposite signs since they are on opposite sides of the $x$-axis.
+      They will therefore cancel each other out.
+		
+     % \begin{image}
+     %   \includegraphics[scale=.7]{Images/Figure1.png}
+   %   \end{image}
+    \end{freeResponse}
+
+\WkstHop		
+
+    \item
+      If $f$ is an even function, why is it true that $\int_{-a}^a f(x) \d x = 2 \int_0^a f(x) \d x$?
+      Support your reasoning with a picture.
+      \begin{freeResponse}
+        If $f$ is even, then the regions between the graph of $f$ and the $x$-axis from $[-a,0]$ and $[0,a]$ are reflections of each other through the $y$-axis.
+        Thus, these two regions will have the same area with the same sign since they are on the same sides of the $x$-axis.
+        So you can only find one of these areas and then double it.
+     % \begin{image}
+       % \includegraphics[scale=.7]{figureD2.png}
+    %  \end{image}
+    \end{freeResponse}
+\WkstHop
+
+    \end{enumerate}
+\end{problem}
+
+\WkstNew
+%problem 2
+\begin{problem}
+
+  \begin{enumerate}
+    \item
+      Find the following definite integral:
+	\begin{equation*}
+          \int_{-4}^4 \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}} \d x
+	\end{equation*}
+	\begin{freeResponse}
+          Let $f(x) = \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}}$.  
+	  Then notice that
+          \begin{align*}
+            f(-x) &= \frac{(-x)^2 \sin^3(-x)}{\sqrt{(-x)^4 + 1}}  \\
+                  &= \frac{x^2 (- \sin(x))^3}{\sqrt{x^4 + 1}}  \quad \text{(since } \sin(x) \text{ is an odd function)}  \\
+                  &= \frac{- x^2 \sin^3(x)}{\sqrt{x^4 + 1}}  \\
+                  &= -f(x).
+          \end{align*}
+          Thus, $f$ is an odd function and therefore
+          \begin{equation*}
+            \int_{-4}^4 \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}} \d x = 0.
+          \end{equation*}
+          We can illustrate our computation with the graph of the function $f$, where \\[2em]
+           $f(x)=\frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}}$, for $-4\leq x\leq 4$.
+             \begin{image}
+       \includegraphics[scale=.5]{DIimage003.png}
+  \end{image}
+	\end{freeResponse}
+
+\WkstHop
+		
+	\item
+          Suppose that $f$ is an even function.
+          Given that $\int_0^6 f(x) \d x = 13$, find $\int_{-6}^6 (5f(x) + 14) \d x$.
+          \begin{freeResponse}
+            First notice that
+            \begin{equation}\label{linear integral}
+              \int_{-6}^6 (5f(x) + 14) \d x = 5 \int_{-6}^6 f(x) \d x + \int_{-6}^6 14 \d x.
+            \end{equation}
+            
+            Since $f$ is even, we know that
+            \begin{equation}\label{int of f}
+              \int_{-6}^6 f(x) \d x = 2 \int_0^6 f(x) \d x = 2 (13) = 26.
+            \end{equation}
+            
+            We also know that $g(x)=14$ is also an even function.  We have:
+             $\int_{-6}^6 14 \d x = 2\int_{0}^6 14 \d x$
+            \begin{equation}\label{int of 14}
+              2\int_{0}^6 14 \d x =  2(14)(6) = 168.
+            \end{equation}
+            
+            Then substituting equations \eqref{int of f} and \eqref{int of 14} into equation \eqref{linear integral} gives:
+            \begin{equation*}
+              \int_{-6}^6 (5f(x) + 14) \d x = 5(26) + 168 = 130 + 168 = 298.
+            \end{equation*}
+          \end{freeResponse}
+\WkstHop
+	\end{enumerate}
+\end{problem}
+
+\WkstNew
+
+%problem 3
+\begin{problem}
+Evaluate the following integrals using symmetry arguments.
+
+\begin{enumerate}
+
+   \item    $\int_{-\pi/4}^{\pi/4} \sin(t) \d t$
+
+      \begin{freeResponse}
+        Since the function $f(t) = \sin(t)$ is odd,    
+       $ \int_{-\pi/4}^{\pi/4} \sin(t) \d t=0$
+       
+         We can illustrate our computation with the graph of the function $f$, where \\[2em]
+           $f(t)=\sin{t}$, for $-\dfrac{\pi}{4}\leq x\leq \dfrac{\pi}{4}$.
+          \begin{image}
+       \includegraphics[scale=.5]{DIimage004.png}
+  \end{image}
+
+      \end{freeResponse}
+
+\WkstHop
+      
+      \item $\int_{-2}^2 (1+x+3x^7-x^9) \d x$
+      \begin{freeResponse}
+	In order to take advantage of symmetry, we will split the given polynomial into a sum of its even and odd parts.  We will then integrate each part separately:
+        $$\int_{-2}^2 (1+x+3x^7-x^9) \d x= \int_{-2}^{2}1 \d x + \int_{-2}^{2} (x+3x^7-x^9) \d x$$
+        
+        We will first integrate an even function:\\
+$\int_{-2}^{2} 1 \d x =2\int_{0}^{2}1\d x=2(2)=4$
+
+Then an odd function:\\
+$\int_{-2}^{2} (x+3x^7-x^9) \d x=0$
+
+Therefore:$\int_{-2}^2 (1+x+3x^2-x^9) \d x=4$
+      \end{freeResponse}
+
+\WkstHop
+      
+      \item
+     $\int_{-\pi}^{\pi} x\cos(x) \d x$ 
+      \begin{freeResponse}
+         
+        $\int_{-\pi}^{\pi} x\cos(x) \d x=0$ , since the product of an odd and even function is odd.\\[1em]
+           We can illustrate our computation with the graph of the function $f$, where \\[2em]
+           $f(x)=x\cos{x}$, for $-\pi\leq x\leq \pi$.
+          \begin{image}
+       \includegraphics[scale=.5]{DIimage005.png}
+  \end{image}
+
+      \end{freeResponse}
+\WkstHop
+      
+      
+\end{enumerate}
+\end{problem}
+
+%problem 4
+
+
+
+\end{document} 
+\begin{problem}
+Snow is starting to fall with a rate at any time $t$ after the start being 
+$$ f'(t) = \frac{3}{2} t - \frac{1}{4} t^2 + \frac{3}{10} $$
+inches per hour for $t$ in $[0,4]$ (i.e., the snow falls for 4 hours - from noon until 4pm).  
+There were already $5$ inches of snow on the ground when the storm started.  
+	\begin{enumerate}
+	
+	%part a 
+	\item  Use the formula for a right Riemann sum to estimate how much snow fell during the storm using $n$ rectangles.
+		\begin{freeResponse}
+		$\Delta x = \frac{b-a}{n} = \frac{4-0}{n} = \frac{4}{n}$.
+		
+		$x_i = a + i \Delta x = 0 + i \frac{4}{n} = \frac{4i}{n}$.
+			\begin{align*}
+			f'(x_i) = f' \left( \frac{4i}{n} \right) &= \frac{3}{10} + \frac{3}{2} \left( \frac{4i}{n} \right) - \frac{1}{4} \left( \frac{4i}{n} \right)^2  \\
+			&= \frac{3}{10} + \frac{6i}{n} - \frac{4i^2}{n^2}
+			\end{align*}
+			
+		So our approximate area is:
+			\begin{align*}
+			\sum_{i=1}^n f'(x_i) \Delta x &= \sum_{i=1}^n \left[ \left( \frac{3}{10} + \frac{6i}{n} - \frac{4i^2}{n^2} \right) \left( \frac{4}{n} \right) \right]  \\
+			&= \frac{4}{n} \sum_{i=1}^n \left( \frac{3}{10} + \frac{6i}{n} - \frac{4i^2}{n^2} \right)  \\
+			&= \frac{4}{n} \sum_{i=1}^n \left( \frac{3}{10} \right) + \frac{4}{n} \sum_{i=1}^n \left( \frac{6i}{n} \right) - \frac{4}{n} \sum_{i=1}^n \left( \frac{4i^2}{n^2} \right)  \\
+			&= \frac{6}{5n} \sum_{i=1}^n 1 + \frac{24}{n^2} \sum_{i=1}^n i - \frac{16}{n^3} \sum_{i=1}^n i^2  \\
+			&= \frac{6}{5n} (n) + \frac{24}{n^2} \left( \frac{n(n+1)}{2} \right) - \frac{16}{n^3} \left( \frac{n(n+1)(2n+1)}{6} \right)  \\
+			&= \frac{6}{5} + \frac{12(n+1)}{n} - \frac{8(n+1)(2n+1)}{3n^2}.
+			\end{align*}
+		\end{freeResponse}
+		
+		
+		
+	%part b
+	\item  Take the limit as $n$ goes to infinity to find the exact amount of snow that fell.
+		\begin{freeResponse}
+			\begin{align*}
+			&  \lim_{n \to \infty} \left( \frac{6}{5} + \frac{12(n+1)}{n} - \frac{8(n+1)(2n+1)}{3n^2} \right)  \\
+			&= \lim_{n \to \infty} \left( \frac{6}{5} + 12 \left( 1 + \frac{1}{n} \right) - \frac{8(1 + \frac{1}{n})(2 + \frac{1}{n})}{3} \right)  \\
+			&= \frac{6}{5} + 12(1 + 0) - \frac{8(1+0)(2+0)}{3}  \\
+			&= \frac{6}{5} + 12 - \frac{16}{3} = \frac{18 + 180 - 80}{15} = \frac{118}{15}.
+			\end{align*}
+		\end{freeResponse}
+		
+		
+		
+	\end{enumerate}
+	
+\end{problem}
+\begin{problem}
+  The \dfn{velocity} function for a man walking along a straight road which runs east and west is given by $v(t) = -t^2 + 4t - 3$ ft/min.
+  \begin{enumerate}
+    
+  \item  Set up a definite integral for the man's \dfn{displacement} during the time interval from $2$ minutes to $6$ minutes after he began running.
+    \begin{freeResponse}
+      \begin{align*}
+        \int_2^6 v(t) \d t &= \lim_{n \to \infty} \sum_{i=1}^n v(t_i) \Delta t
+      \end{align*}
+      Where:  \\	
+      $\Delta t = \frac{b-a}{n} = \frac{6-2}{n} = \frac{4}{n}$.
+      
+      $t_i = a + i \Delta t = 2 + i \frac{4}{n} = 2 + \frac{4i}{n}$.
+    \end{freeResponse}
+    
+  \item  \dfn{At home:}  Evaluate the definite integral using the limit of a right Riemann sum.
+    \begin{freeResponse}
+      \begin{align*}
+        v(t_i) &= -\left(2 + \frac{4i}{n} \right)^2 + 4 \left( 2 + \frac{4i}{n} \right) - 3  \\
+               &= - \left( 4 + \frac{16i}{n} + \frac{16i^2}{n^2} \right) + 8 + \frac{16i}{n} - 3  \\
+               &= 1 - \frac{16i^2}{n^2}
+      \end{align*}
+      
+      So we compute:
+      \begin{align*}
+        \int_2^6 v(t) \d t &= \lim_{n \to \infty} \sum_{i=1}^n \left[ \left( 1 - \frac{16i^2}{n^2} \right) \left( \frac{4}{n} \right) \right]  \\
+                           &= \lim_{n \to \infty} \sum_{i=1}^n \left( \frac{4}{n} - \frac{64 i^2}{n^3} \right)  \\
+                           &= \lim_{n \to \infty} \left[ \frac{4}{n} \sum_{i=1}^n 1 - \frac{64}{n^3} \sum_{i=1}^n i^2 \right]  \\
+                           &= \lim_{n \to \infty} \left[ \frac{4}{n} (n) - \frac{64}{n^3} \left( \frac{n(n+1)(2n+1)}{6} \right) \right]  \\
+                           &= 4 - \frac{64}{3} = \frac{12-64}{3} = - \frac{52}{3}.
+      \end{align*}
+    \end{freeResponse}
+    
+  \item  Is this the same as the total \dfn{distance} the man walked from $2$ minutes to $6$ minutes?
+    Why or why not?
+    \begin{freeResponse}
+      This number is not the same as the total distance.
+      The man starts his walk by going east (the positive direction) but eventually ends his walk west of where he started.
+      
+      The total distance that the man walks would be measured by computing 
+      $$\int_2^6 \left| v(t) \right| \d t$$  
+      \begin{image}
+      \includegraphics[scale=.7]{figure1.png}
+            \end{image}
+    \end{freeResponse}
+  \end{enumerate}
+\end{problem}
+\end{document}
+

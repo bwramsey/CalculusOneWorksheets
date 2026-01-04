@@ -1,0 +1,569 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Optimization (O)}
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Optimization (O)- Solutions}  
+\fi
+\input{../preamble.tex}
+
+
+
+\begin{document}
+\begin{abstract}
+\end{abstract}
+\maketitle
+\ifcase\HCCondition
+%summary in here
+\section*{SUMMARY: How to Solve an Optimization Problem }
+
+\begin{enumerate}
+	\item Identify \textbf{variables}; draw and label the picture of the problem\\
+	\item Identify the \textbf{objective function} (a quantity to be optimized);\\
+		 write a \textbf{formula} for the objective function in terms of variables of the problem\\
+	\item Identify the \textbf{constraint(s)};\\ use the constraint(s)  to express all the variables in terms of a \textbf{single variable}\\
+	\item Write the \textbf{objective function in terms of a single variable};\\ find the \textbf{interval of interest}\\
+	\item Using the methods of calculus, find the \textbf{global maximum/minimum}; \\\textbf{justify} your answer\\
+ \end{enumerate}
+
+\textbf{REMINDER: The Interval of Interest tells you the method to use to solve an optimization problem.}\\
+ \textbf{CASE 1}: The interval of interest is a closed interval  $[a,b]$ \\[0.8em]
+In this case, the Extreme Value Theorem (EVT)  guarantees that both global extrema of $f$ exist!\\
+If $f$ has an global minimum and an global maximum which either occur at a critical point or at a boundary point (which means $a$ or $b$). 
+To find an extreme values of $f$ on $[a,b]$, we:
+\begin{itemize}
+	\item Find all critical points and plug them into $f$. 
+	\item Evaluate $f$ at both boundary points. 
+	\item Compare the values. The biggest of those values is the maximum value of $f$ on $[a,b]$, and the least one is the minimum value of $f$ on $[a,b]$.
+ \end{itemize}
+ 
+\textbf{CASE 2}: The interval of interest is any interval.\\[0.5em]
+In this case, the global minimum/maximum \textbf{may not exist}. 
+Our approach is then:
+\begin{itemize}
+	\item Find all critical points of $f$ on the interval.
+	\item Use 1st or 2nd Derivative Test to classify those critical points as \textbf{local maxima/minima}.
+	\item If there is \emph{exactly one local extremum}, then it is an global extremum of the same type. (That is, if it is a local minimum then it is automatically a global minimum...)
+\end{itemize}
+
+OTHER CASES (e.g., An interval with multiple local extrema, etc) can be approached similar to how we graphed functions: check the boundary points, check the critical points, use the sign chart etc.
+
+\newpage
+
+\section*{Recitation Questions}
+\fi
+%problem 1
+\begin{problem}
+
+  Suppose you want to maximize a continuous function on a closed interval, but you find that it only has one local extremum on the  interval which happens to be a local minimum.
+  Where else should you check for the solution? \textbf{EXPLAIN}.
+\WkstHop
+\begin{freeResponse}
+  By the Extreme Value Theorem, the global maximum must occur either at a critical point or at an endpiont of the domain. If the only local extremum is a local minimum, the maximum will occur at one of the endpoints.
+\end{freeResponse}	
+\end{problem}
+
+
+\WkstNew
+
+%problem 2
+\begin{problem}
+
+  A rectangular flower garden with an area of $30 \, m^2$ is surrounded by a grass border $1 \, m$ wide on two sides and $2 \, m$ wide on the other two sides (see figure).
+  What dimensions of the garden minimize the combined area of the garden and borders?
+  
+  \begin{image}
+    \includegraphics[trim= 100 480 250 250]{Images/Figure1.pdf}
+  \end{image}
+
+  \begin{enumerate}
+    \item  Label the picture with variables.
+      \begin{freeResponse}
+        \begin{image}
+          \includegraphics[trim= 640 500 250 210]{Images/Figure6.pdf}
+	\end{image}
+      \end{freeResponse}
+
+    \item  What are you trying to maximize or minimize?
+      Write an equation for it in terms of the variables from (a).
+ \WkstHop
+     \begin{freeResponse}
+        We want to minimize the combined area of the garden and border.  If $A$ denotes this area, then an equation for $A$ is
+        $$ A = (x+4)(y+2) $$
+      \end{freeResponse}
+
+    \item  What is your constraint?
+      Write a constraint equation in terms of the variables from (a).
+\WkstHop
+      \begin{freeResponse}
+        We know that the area of the flower garden is $30 \, m^2$.  So our constraint equation is
+        $$ xy = 30 $$
+      \end{freeResponse}
+      
+    \item  Reduce your optimization equation to one variable using the constraint equation.
+
+\WkstHop[2]
+      \begin{freeResponse}
+        $$ x = \frac{30}{y} \quad (\text{Note that } y \neq 0) $$
+        \begin{align}
+          A &= \left( \frac{30}{y} + 4 \right)(y+2) \\
+            &= 30 + 4y + \frac{60}{y} + 8 \\
+            &=4y + \frac{60}{y} + 38 \label{eqn3}
+        \end{align}
+      \end{freeResponse}
+		
+    \item  What is the interval on which your variable makes sense?
+      Is it open or closed?
+      What does this mean for the method of finding the global max or min?
+\WkstHop[2]
+      \begin{freeResponse}
+        $0 < y < \infty$, which is an open interval.
+        So we need there to only be one critical point to equation \eqref{eqn3} in the domain of $y$, and then we need to show that this critical point is a local minimum.
+        This will imply that the critical point is a global minimum (since there is only one local extremum).  
+      \end{freeResponse}
+		
+    \item  Use the appropriate method to find and justify your global extremum.
+\WkstHop[4]
+      \begin{freeResponse}
+        We need to differentiate equation \eqref{eqn3} with respect to $y$, set this derivative equal to $0$, and then solve:
+        $$ \dd[A]{y} = 4 - \frac{60}{y^2} :=0 $$
+        $$ \frac{60}{y^2} = 4 $$
+        $$ 4y^2 = 60 $$
+        $$ y^2 = 15 $$
+        $$ y = \pm \sqrt{15} $$
+        Since $-\sqrt{15}$ is not in our domain, the only critical point of $A(y)$ in the interval $(0,\infty)$ is $\sqrt{15}$.  
+        Thus, if $y=\sqrt{15}$ is a local minimum for $A$, then it will be a global minimum.  
+        Using the second derivative test:
+        $$ \dd[^2A]{y^2} = \frac{120}{y^3} $$
+        $$ \eval{\dd[^2A]{y^2}}_{y=\sqrt{15}} = \frac{120}{15 \sqrt{15}} > 0. $$
+        
+        Since $A(y)$ is concave up at $y=\sqrt{15}$, this point is a local (and thus, global) minimum of $A(y)$.  
+        Note that we also could have used the first derivative test to show that $y=\sqrt{15}$ was a local minimum of $A$.
+      \end{freeResponse}
+      
+    \item  Be sure to answer the question asked in the original problem.
+      \begin{freeResponse}
+        Since $y=\sqrt{15} \, m$, we have that
+        $$ x = \frac{30}{y} = \frac{30}{\sqrt{15}} = \frac{30 \sqrt{15}}{15} = 2 \sqrt{15} \, m $$
+      \end{freeResponse}
+    \end{enumerate}
+\end{problem}
+
+
+\WkstNew
+
+%problem 3
+\begin{problem}
+
+  A part of a circle centered at the origin with radius $r = 7 \text{ cm}$ is given in the figure (A) below.
+  A right triangle is formed in the first quadrant (see figure (A)).
+  One of its sides lies on the $x$-axis.
+  Its hypotenuse runs from the origin to a point on the circle.
+  The hypotenuse makes an angle $\theta$ with the $x$-axis.
+
+  \begin{image}
+    \includegraphics[scale = 0.1]{Images/"maximize triangle in circle".png}
+    \includegraphics[scale = 0.1]{Images/figure7.png}
+  \end{image}
+  Make sure to label the picture.
+
+  \begin{enumerate}
+    \item
+      Draw 2 more examples of such a triangle in the figure (B).
+      \begin{freeResponse} \hfil
+      
+  \begin{image}
+    \includegraphics[scale = 0.15]{Images/"Two more triangles".png}
+      \end{image}
+ 
+      \end{freeResponse}
+
+    \item
+      Express the area of such a triangle as a function of $\theta$ and state its domain.
+\WkstHop
+
+      \begin{freeResponse}
+        The area of a triangle is $(1/2)\cdot\mbox{ base } \cdot \mbox{ height }$.
+        The base of the triangle is $7\cos(\theta)$ and the height is $7\sin(\theta)$.
+
+        Therefore:
+        \begin{align*}
+          A(\theta) &= \frac{1}{2}\cdot 7\cos(\theta) \cdot 7\sin(\theta)\\
+                    &= \frac{49}{2}\cos(\theta)\sin(\theta)
+        \end{align*}
+
+        and
+        \begin{align*}
+          \mbox{Domain of $A$ = $[0,\pi/2]$}
+        \end{align*}
+      \end{freeResponse}
+
+    \item
+      Find the value of $\theta$ which maximizes the area in part (b).
+      Show your work and justify your answer.
+\WkstHop[2]
+      \begin{freeResponse}
+        Finding critical points:
+        \begin{align*}
+          A'(\theta) &= \frac{-49}{2} \sin(\theta)\sin(\theta) + \frac{49}{2}\cos(\theta)\cos(\theta) \\
+          &\implies A'(\theta) = 0\\
+          &\implies \cos^2(\theta) = \sin^2(\theta)\\
+          &\implies \cos(\theta) = \sin(\theta)\\
+          &\implies \theta = \frac{\pi}{4}
+        \end{align*}
+
+        Locating global maximum:
+        \begin{align*}
+          A(0) = 0, A(\pi/4) = \frac{49}{4}, A(\pi/2) = 0 &\implies \mbox{global maximum at $\theta = \pi/4$}
+        \end{align*}
+      \end{freeResponse}
+  \end{enumerate}
+\end{problem}
+
+\WkstNew
+
+ % for drawing cube in Optimization problem
+\usetikzlibrary{quotes,arrows.meta}
+\tikzset{
+  annotated cuboid/.pic={
+    \tikzset{%
+      every edge quotes/.append style={midway, auto},
+      /cuboid/.cd,
+      #1
+    }
+    \draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+    (0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+    (o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+    (o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+    \path [every edge/.append style={pic actions, |-|}]
+    (b) +(0,-5pt) coordinate (b1) edge ["y"'] (b1 -| c)
+    (b) +(-5pt,0) coordinate (b2) edge ["x"] (b2 |- a)
+    (c) +(3.5pt,-3.5pt) coordinate (c2) edge ["x"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+    ;
+  },
+  /cuboid/.search also={/tikz},
+  /cuboid/.cd,
+  width/.store in=\cubex,
+  height/.store in=\cubey,
+  depth/.store in=\cubez,
+  units/.store in=\cubeunits,
+  scale/.store in=\cubescale,
+  width=10,
+  height=10,
+  depth=10,
+  units=cm,
+  scale=.1,
+}
+\begin{problem}
+A box with two square sides is constructed to have a volume of 27. Denote the dimensions of the length of the base as $y$, and the width and height as $x$, as labeled in the diagram below. Find the dimensions needed to minimize the surface area of the box.
+		\begin{center}
+		\begin{tikzpicture}
+			\pic {annotated cuboid={width=120, height=95, depth=95, scale=.02, units=cm}};
+		\end{tikzpicture}
+		\end{center}
+		Solve the problem by performing the following steps.
+
+		
+		\begin{enumerate}
+			\item Find a formula for $S(x)$ the surface area of the box, as a function of only the variable $x$.
+ 
+ 	\WkstHop
+
+			\begin{freeResponse}
+        				The volume of the box is given by $V=x^2 y$ and the surface area is given by $S = 2x^2 + 4xy$. We are told that the volume of the box is 27, which means our constraint is that $x^2y = 27$, so that $y = \frac{27}{x^2}$. Plugging this into the surface area formula gives 
+        				\[ S(x) = 2x^2 + 4x\left( \frac{27}{x^2} \right) = 2x^2 + \frac{108}{x} \]
+			      \end{freeResponse}
+			\item Find the{interval of interest} for $S(x)$. 
+\WkstHop
+ 				\begin{freeResponse}
+        				Because $x$ represents a side-length of this box, it cannot be negative. Moreover, the function $S(x)$ is not defined at $x=0$,
+        				so $x$ has to be positive. The Interval of Interest is $(0,\infty)$.
+			      \end{freeResponse}
+			      
+			\item Find the $x$-value that gives the minimum surface area over all 
+				such boxes.
+\WkstHop[2]
+				\begin{freeResponse}
+        				Our objective function $S(x) = 2x^2 + \frac{108}{x}$ is continuous on the open interval $(0,\infty)$. This domain is an 
+        				open interval, so to find the global minimum we start by finding the local extrema.
+        				
+        				$S'(x) = 4x - \frac{108}{x^2}$. This exists for all nonzero values of $x$, and since $x=0$ is not in our interval of interest,
+        				our critical points must have $S'(x)=0$.
+        				\begin{align*}
+        					S'(x) &= 0\\
+        					4x - \frac{108}{x^2} &= 0\\
+						4x &= \frac{108}{x^2}\\
+						x^3 &= 27\\
+						x &= 3.
+        				\end{align*} 
+        				
+        				There is one critical point, at $x=3$. Since $S''(x) = 4 + \frac{216}{x^3}$, we have $S''(3) = 4 + \frac{216}{27} > 0$. By the
+        				Second Derivative Test, $x=3$ is a local minimum.
+        				
+        				Since $x=3$ was the only local extremum on the open interval $(0,\infty)$, it is the global minimum as well.
+			      \end{freeResponse}
+			      
+	\end{enumerate}	
+
+\end{problem}
+
+
+\WkstNew
+
+
+
+%problem 4
+\begin{problem}
+Find the radius of a cylindrical container with a volume of $2 \pi\ m^3$ that minimizes the surface area.
+
+
+  \begin{image}
+    \includegraphics[scale = 0.4]{Images/figure1.png}
+  \end{image}
+\WkstHop
+
+\begin{freeResponse}
+
+We have two formulas: $V=\pi r^2h$ and $S=2 \pi rh+2r^2\pi$.  We know $V=2\pi$ and want to find the $r$ that minimizes $S$.  Since we need a forumula for $S$ only in terms of $r$ we are going to rewrite $V=\pi r^2h$ to give us a formula for for $h$ in terms of $r$.
+
+\begin{align*}
+V=2\pi \text{and}\ V=\pi r^2h \implies 2\pi &= \pi r^2h\\
+\frac{2\pi}{\pi r^2}&=h\\
+\frac{2}{r^2}&=h\\
+\implies S(r)&=2 \pi r\left(\frac{2}{r^2}\right)+2r^2\pi\\
+S(r)&=\frac{4\pi}{r}+2r^2\pi
+\end{align*}
+
+The domain is $(0,\infty)$.
+
+Next, we need to minimize $S$.
+\begin{align*}
+S'(r)&=\frac{-4\pi}{r^2}+4\pi r\\
+&=4\pi \left(r-\frac{1}{r^2}\right)
+\end{align*}
+
+To find the critical points:
+\begin{align*}
+r-\frac{1}{r^2}&=0\\
+r&=\frac{1}{r^2}\\
+r^3&=1\\
+r&=1
+\end{align*}
+
+The only critical point of $S$ is at $r=1$.  We need to verify $r=1$ is a local extremum.
+
+We can use the second derivative test:
+\begin{align*}
+S''(r)&=8\pi r^{-3}+4\pi\\
+\implies S''(1)&=8\pi+4\pi>0
+\end{align*}
+
+The function $S$ has a local minimum at $r=1$.  So $(1,S(1)$ is the global minimum since this is the only local extremum.  (See Theorem 4.5).
+
+
+\end{freeResponse}
+
+\end{problem}
+
+
+
+\WkstNew
+
+
+
+
+\begin{problem}
+  A cone is constructed by cutting a sector from a circular sheet of metal with radius 20.
+  The cut sheet is then folded and welded.
+  Find the radius and height of the cone with maximum volume that can be formed this way.
+
+  \begin{image}
+    \includegraphics[trim= 100 530 250 190]{Images/Figure2.pdf}
+  \end{image}
+\WkstHop
+	
+  \begin{freeResponse}
+    First, recall that the volume of a cone is
+    \begin{equation}
+      \label{cone volume}
+      V = \frac{1}{3} \pi r^2 h
+    \end{equation}
+		
+    Equation \eqref{cone volume} has two variables, $r$ and $h$.  
+    So we need to find a constraint equation.  
+    Notice that the length of the cone is a fixed length of 20.  
+    So using Pythagorean's Theorem we have that:
+    \begin{equation}
+      \label{constraint}
+      r^2 + h^2 = 20^2 = 400
+    \end{equation}
+		
+    Solving equation \eqref{constraint} for $r^2$, we get $r^2 = 400 - h^2$.  
+    Plugging this into equation \eqref{cone volume} gives
+    \begin{equation}
+      \label{V(h)}
+      V = \frac{1}{3} \pi (400-h^2) h = \frac{1}{3} \pi (400h - h^3) 
+    \end{equation}
+    Note that, due to the settings of the problem, the domain for $h$ is $[0,20]$.  
+		
+    It is worth pointing out that it is a lot easier algebraically to solve for $r^2$ in equation \eqref{constraint} and then plug into equation \eqref{cone volume} instead of doing the same thing for $h$.
+
+    Now we need to differentiate equation \eqref{V(h)} with respect to $h$, set this equal to $0$, and solve for $h$.
+    $$ \dd[V]{h} = \frac{1}{3} \pi (400 - 3h^2) := 0 $$
+    $$ 400 - 3h^2 = 0 $$
+    $$ 3h^2 = 400 $$
+    $$ h^2 = \frac{400}{3} $$
+    $$ h = \pm \sqrt{\frac{400}{3}} = \pm \frac{20}{\sqrt{3}} $$
+    but $- \frac{20}{\sqrt{3}}$ is not in our domain for $h$, and so the only critical point for $V(h)$ is $h = \frac{20}{\sqrt{3}}$.  
+    We need to show that this is a global maximum for $V(h)$ on $[0,20]$.  
+    Since $[0,20]$ is a closed interval, the Extreme Value Theorem says we need to evaluate $V(h)$ at $h=0, \frac{20}{\sqrt{3}}, 20$.  
+    \begin{align}
+      V(0) &= \frac{1}{3} \pi (0-0) = 0 \\
+      V \left( \frac{20}{\sqrt{3}} \right) &= \frac{1}{3} \pi \left( \frac{20^3}{\sqrt{3}} - \frac{20^3}{\left( \sqrt{3} \right)^3} \right) > 0 \label{inequality} \\
+      V(20) &= \frac{1}{3} \pi (20^3 - 20^3) = 0 
+    \end{align}
+		
+    Thus $h=\frac{20}{\sqrt{3}}$ maximizes the volume of the cone.
+    Then $$r^2 = 400 - h^2 = 400 - \left( \frac{20}{\sqrt{3}} \right)^2 = 400 - \frac{400}{3} = \frac{800}{3}$$ and so $$ r = 20 \sqrt{\frac{2}{3}}. $$
+		
+    If you are not comfortable with inequality \eqref{inequality} above without a calculator, then a nice alternative is to use the second derivative test instead to check that $h=\frac{20}{\sqrt{3}}$ maximizes the volume of the cone.
+    This works since this is the only critical point in the domain of $h$.
+    To do this, compute
+    $$ \dd[^2V]{h^2} = \frac{1}{3} \pi (-6h) $$
+    $$ \eval{\dd[^2V]{h^2}}_{h=\frac{20}{\sqrt{3}}} = \frac{1}{3} \pi \left( -6 \left(\frac{20}{\sqrt{3}} \right) \right) < 0 $$
+    and thus this value for $h$ gives a local (and therefore, global) maximum value for $V(h)$.  
+  \end{freeResponse}
+\end{problem}
+
+%problem 5
+
+\WkstNew
+
+
+%problem 6
+\begin{problem}
+  What point on the parabola $y=5-x^2$ is closest to the point $(4,7)$?
+\WkstHop
+
+  \begin{freeResponse}
+    \begin{image}
+      \includegraphics[scale = 0.3]{Images/"distance to parabola".png}
+    \end{image}
+
+    We have ``to minimize $d \iff$ to minimize $d^2$''.
+
+    Objective function:
+    \begin{align*}
+      d^2 = (x-4)^2 + (y-7)^2 \mbox{ and } y = 5 - x^2 &\implies d^2 = (x-4)^2 + \left((5 - x^2) -7 \right)^2\\
+      &\implies f(x) = (x-4)^2 + (x^2 + 2)^2
+    \end{align*}
+    We may assume $\mbox{Domain}(f) = [0, \sqrt{5}]$.
+
+    Critical points:
+    \begin{align*}
+      f'(x) &= 2(x-4) + 2(x^2 + 2) \cdot 2x\\
+      &= 4x^3 + 10x - 8.
+    \end{align*}
+    $f'$ is defined everywhere on $(0, \sqrt{5}) \implies$ critical points only occur where $f'(x) = 0$:
+    \begin{align*}
+      f'(x) = 0 &\iff 4x^3 + 10x - 8 = 0\\
+     \text{using a calculator to find an approximate value of}\ x &\implies x \approx 0.67628 
+    \end{align*}
+
+    Find global minimum:
+    \begin{align*}
+      f(0) &= 20\\
+      f(0.67628) &\approx 17.1\\
+      f(\sqrt{5}) &\approx 52.1\\
+      &\implies \mbox{global minimum at $x \approx 0.67628$}
+    \end{align*}
+  \end{freeResponse}
+\end{problem}
+
+\WkstNew
+
+%problem 7
+\begin{problem}
+  A rectangle is constructed with one side on the positive $x$-axis, one side on the positive $y$-axis, and the vertex opposite the origin on the line $y=10-2x$.
+  What dimensions maximize the area of the rectangle?
+  What is the maximum area?
+\WkstHop
+
+  \begin{freeResponse}
+    The four vertices of the rectangle are $(0, 0)$, $(x, 0)$, $(x, y)$, and $(0, y)$:
+    \begin{center}
+      \includegraphics[scale = .5]{Images/figure8.png}
+    \end{center}
+    We're trying to maximize the area $A = x \cdot y$.
+
+    First, we want to turn this area formula into a function of $x$.
+    To do that we use the constraint $y = 10 - 2x$.
+    Substituting, we find the function we're trying to maximize is $A(x) = x (10 - 2x) = 10x - 2x^2$.
+
+    Next, we need to identify the domain of $A$.
+  
+    To find the largest value we compute the $x$-intercept of $y = 10 - 2x$:
+    \begin{align*}
+      10 - 2x = 0 &\implies x = 5.
+    \end{align*}
+    Therefore $\mathrm{Domain}(A) = (0, 5)$.
+
+    Next we locate the critical points of $A$.
+    Since $A'(x) = 10 - 4x$ is defined on $(0, 5)$, to locate critical points solve 
+    \begin{align*}
+      A'(x) = 0 &\iff 10 - 4x = 0\\
+                &\iff x = \frac{5}{2}.
+    \end{align*}
+To finish, we check the sign of the derivative an intervals $(0,\frac{5}{2})$, and $(\frac{5}{2},5)$.
+Since $A'(x) = 10 - 4x=-4(x-\frac{5}{2})$, it follows that $A'(x)>0$ on the interval $(0,\frac{5}{2})$ and $A'(x)<0$ on the interval $(\frac{5}{2},5)$.
+Therfore the function $A$ has a local maximum at $x=\frac{5}{2}$. This also a global maximum, since the function is increasing  on $(0,\frac{5}{2})$, and decreasing on $(\frac{5}{2},5)$.
+    Therefore the maximum area occurs when the rectangle has a base with length $5/2$ units and height with length of $5$ units.
+    The area with these dimensions is $25/2$.
+  \end{freeResponse}
+\end{problem}
+\begin{problem}
+Suppose you own a tour bus and you book groups of $20$ to $80$ people for a day tour. The cost per person is $ \$30$ minus $ \$ 0.25$ for every ticket sold. If gas and other miscellaneous costs are $ \$300$, how many tickets should you sell to maximize your profit? Treat the number of tickets as a nonnegative real number.
+  \begin{freeResponse}
+  Let $x$ denote the number of tickets sold.
+  Then the revenue, $R$ is given by
+  \[
+  R(x)=x(30-x\cdot 0.25).
+  \]
+  Therefore, the profit, P,  is given by
+  \[
+  P(x)=R(x)-C(x)=x(30-x\cdot 0.25)-300.
+  \]
+  So, we have to find the maximum of the function $P$ on its domain, $[20,80]$.\\
+  Since $P$ is continuous on the closed interval, the Extreme Value Theorem guarantees that the maximum of $P$ is attained on $[20,80]$.
+  We have to find the critical points of $P$ and evaluate the function at critical points and at end points, and compare the values.\\
+  Since
+  \[
+  P'(x)=30-0.5x
+  \]
+  we have to solve the equation 
+  \[
+30-0.5x=0.
+  \]
+ It follows that the function $P$ has its only critical points at $x=60$.
+  Since 
+  \[
+  P(60)=60(30-60\cdot 0.25)-300=60\cdot 15-300=600,
+  \]
+  \[
+  P(20)=20(30-20\cdot 0.25)-300=20\cdot 25-300=200,
+  \]
+  \[
+   P(80)=80(30-80\cdot 0.25)-300=800-300=500,
+  \]
+  it follows that the maximum profit is $\$ 600$ and it is attained  when $60$ tickets are sold, i.e. at $x=60$.
+    \end{freeResponse}
+\end{problem}
+
+
+
+
+\end{document} 

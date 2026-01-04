@@ -1,0 +1,360 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Product Rule and Quotient Rule (PRAQR)}
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Product Rule and Quotient Rule (PRAQR) - Solutions}
+\fi
+
+\usepackage{booktabs}
+\usepackage{fullpage}
+\input{../preamble.tex} %% we can turn off input when making a master document
+
+
+\begin{document}
+\begin{abstract}		\end{abstract}
+\maketitle
+
+\ifcase\HCCondition
+%summary in here
+
+\begin{itemize}
+	\item \textbf{The Product Rule}: If $f$ and $g$ are differentiable functions, then $\displaystyle \ddx \left( f(x) g(x) \right) = f'(x) g(x) + f(x)g'(x)$.
+\WkstHop
+	\item \textbf{The Quotient Rule}: If $f$ and $g$ are differentiable functions, then $\displaystyle \ddx \dfrac{ f(x)}{g(x)} = \dfrac{f'(x) g(x) - f(x)g'(x)}{g(x)^2}$.
+\WkstHop
+\end{itemize}
+\WkstHop[2]
+\section*{Recitation Questions}
+\fi
+
+
+%problem1
+\begin{problem} Differentiate the functions using product or quotient rule.
+\begin{enumerate}
+	\item $h(u)=7ue^u$
+\WkstHop
+	\begin{freeResponse}
+ Applying the power rule:
+  \begin{align*}
+    h(u) &=7ue^u\\
+    &\implies h'(u) = (7ue^u) '\\
+    &= 7\cdot e^u+7u \cdot e^u
+  \end{align*}
+  \end{freeResponse}
+	
+	\item $s(t)=\frac{\sqrt{t}}{e^t}$
+\WkstHop
+	\begin{freeResponse}
+ Applying the quotient rule:
+  \begin{align*}
+    s(t)&=\frac{\sqrt{t}}{e^t}\\
+    &\implies s'(t) = \left(\frac{\sqrt{t}}{e^t}\right)' \\
+    &= \frac{\frac{1}{2}t^{-1/2} \cdot e^t -  \sqrt{t}\cdot e^t}{e^{2t}}
+  \end{align*}
+  \end{freeResponse}
+\end{enumerate}
+\end{problem}
+\WkstNew
+
+%Problem2
+\begin{problem}
+ Differentiate the function $f$ defined by $f(x) = 1/x^8$ in two different ways.
+ \WkstHop
+  \begin{freeResponse}
+    Applying the quotient rule:
+    \begin{align*}
+      f'(x) &= \frac{(1)' \cdot x^8 - (1 \cdot (x^8)')}{(x^8)^2} \\
+            &= \frac{(0 \cdot x^8) - (1 \cdot 8x^7)}{x^{16}} \\
+            &= \frac{-8x^7}{x^{16}}\\
+            &= \frac{-8}{x^9}. 
+    \end{align*}
+
+  Applying the power rule:
+  \begin{align*}
+    f(x) &= \frac{1}{x^8} = x^{-8}\\
+    &\implies f'(x) = (x^{-8})'\\
+    &= -8\cdot x^{-8 -1}\\
+    &= -8x^{-9}
+  \end{align*}
+  \end{freeResponse}
+\end{problem}
+\WkstNew
+	
+%problem 3			
+\begin{problem}
+Suppose that $f(5) = 7$, $f'(5) = 8$, $g(5) = 3$, and $g'(5) = -4$.  Find:
+
+	\begin{enumerate}
+
+	\item  $(fg)'(5)$.
+\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		(fg)'(5) &= (f'(5) \cdot g(5)) + (f(5) \cdot g'(5))  \\
+		&= (8)(3) + (7)(-4)  \\
+		&= 24 - 28 = -4.
+		\end{align*}
+		\end{freeResponse}
+		
+		
+
+	\item $\left[ \ddx \left( \frac{f}{g} \right) \right]_{x=5}$
+\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		\left[ \ddx \left( \frac{f}{g} \right) \right] (5) &= \frac{(g(5) \cdot \left[ \ddx f \right] (5)) - (f(5) \cdot \left[ \ddx g \right](5))}{(g(5))^2}  \\
+		&= \frac{(3)(8) - (7)(-4)}{3^2}  \\
+		&= \frac{24 + 28}{9} = \frac{52}{9}.
+		\end{align*}
+		\end{freeResponse}
+		
+		
+	\item $ \left( \frac{g}{f} \right)' (5)$
+\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		\left( \frac{g}{f} \right)' (5) &= \frac{(f(5) \cdot g'(5)) - (g(5) \cdot f'(5))}{(f(5))^2}  \\
+		&= \frac{(7)(-4) - (3)(8)}{7^2}  \\
+		&= \frac{-28 - 24}{49} = - \frac{52}{49}.
+		\end{align*}
+		\end{freeResponse}
+		
+	\item  $\eval{ \ddx \left( \frac{g(x)}{x+2} \right)}_{x=5}$
+\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		\eval{\ddx \left( \frac{g(x)}{x+2} \right)}_{x=5} &= \eval{\frac{(x+2) \cdot g'(x)) - (g(x) \cdot (x+2)'}{(x+2)^2}}_{x=5}  \\
+		&= \frac{(5+2)(-4) - (3)(1)}{(5+2)^2}  \\
+		&= \frac{(7)(-4) - (3)(1)}{7^2}  \\
+		&= \frac{-28 - 3}{49} = - \frac{31}{49}
+		\end{align*}
+		\end{freeResponse}
+
+
+
+	\item $\eval{ \ddx \left( \frac{xf(x)}{g(x)} \right)}_{x=5}$
+\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		\eval{\ddx \left( \frac{xf(x)}{g(x)} \right)}_{x=5} &= \eval{\frac{(((xf(x))' \cdot g(x)) - (g'(x) \cdot (xf(x)))}{(g(x))^2}}_{x=5}  \\
+		&= \eval{\frac{\left( (x)' \cdot f(x)+x \cdot f'(x) \right) \cdot g(x)) - (g'(x) \cdot (xf(x))}{(g(x))^2}}_{x=5}  \\
+		&= \frac{(1 \cdot 7+ 5 \cdot 8)(3) - (-4)(5)(7)}{(3)^2}  \\
+		&= \frac{141+140}{9}  \\
+		&= \frac{281}{9}
+		\end{align*}
+		\end{freeResponse}
+
+	\item $\displaystyle \lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5}$. \textbf{EXPLAIN}.
+\WkstHop
+		\begin{freeResponse}
+		
+		We first note that this limit has form $\ZeroOverZero$, but with no formula for $g(x)$ there is no simplification we can perform.
+		Notice that if we set $w(x) = x^2 g(x)$, then $w(5) = (5)^2 g(5) = 75$. This limit is the definition of the derivative, $w'(5)$.
+		\begin{align*}
+			\lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5} &= w'(5) \\
+				&= \eval{\ddx( x^2 g(x) )}_{x=5}\\
+				&= \eval{2x g(x) + x^2 g'(x) }_{x=5}\\
+				&= 2(5) g(5) + (5)^2 g'(5)\\
+				&= -70
+		\end{align*}
+	$\displaystyle \lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5} = -70$ by the product rule since this is the definition of the derivative of $x^2 g(x)$ at $x=5$.	
+		\end{freeResponse}
+		
+	\item $\displaystyle \lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5}$. \textbf{EXPLAIN}.
+\WkstHop
+		\begin{freeResponse}
+		
+		We first note that this limit has form $\ZeroOverZero$.
+		Notice that if we set $k(x) = \frac{x+2}{f(x)}$, then $k(5) = \frac{5+2}{f(5)} = 1$. This limit is the definition of the derivative, $k'(5)$.
+		\begin{align*}
+			\lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5} &= k'(5) \\
+				&= \eval{\ddx \left( \frac{x+2}{f(x)} \right)}_{x=5}\\
+				&= \eval{ \dfrac{f(x) - (x+2)f'(x)}{(f(x))^2} }_{x=5}\\
+				&= \dfrac{f(5) - (5+2)f'(5)}{(f(5))^2}\\
+				&= \dfrac{7 - 7(8)}{(7)^2}\\
+				&= -1
+		\end{align*}
+	$\displaystyle \lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5} = -1$ by the quotient rule since this is the definition of the derivative of $\frac{x+2}{f(x)}$ at $x=5$.		
+		\end{freeResponse}		
+	\end{enumerate}
+		
+\end{problem}
+\WkstNew
+
+
+
+%problem 4	
+\begin{problem}
+  Use the given information to find the equation of the tangent line.
+  \begin{enumerate}
+    \item
+      Given $g(x) = x^3 f(x)$, $f(2) = 4$, and $f'(2) = 7$, find the equation of the tangent line to the graph of $g$ at $x = 2$.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line to the graph of $g$ at the point where $x = 2$:
+        \begin{align*}
+          g'(x) &= 3x^2 f(x) + x^3 f'(x)\\
+          &\implies g'(2) = 12(4) + 8(7) = 48 + 56 = 104.
+        \end{align*}
+
+        Point on tangent line where $x=2$: $(2, g(2)) = (2, 8f(2)) = (2, 32)$.
+
+        Equation of tangent line:
+        \begin{align*}
+          y-32 &= 104(x-2)\\
+          &\implies y = 104x - 176.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item
+      Given $h(z) = \frac{z s(z)}{z-3}$, $s(2) = 4$, and $s'(2) = 7$, find the equation of the tangent line to the graph of $h$ at $z = 2$.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line to the graph of $h$ at the point where $z = 2$:
+        \begin{align*}
+          h'(z) &= \frac{ (z-3)(z s(z))' - z s(z)(z-3)'}{(z-3)^2}  \\
+		&= \frac{(z-3)(s(z) + z s'(z)) - z s(z)(1)}{(z-3)^2} \\
+                &\implies h'(2) = \frac{(2-3)(s(2) + 2 s'(2)) - 2s(2)}{(2-3)^2} = -26.
+        \end{align*}
+
+        Point on tangent line where $z=2$: $(2, h(2)) = (2, \frac{2s(2)}{2-3}) = (2, -8)$.
+
+        Equation of tangent line to the graph of $h$ at the point where $z=2$:
+        \begin{align*}
+          y-(-8) &= -26(z-2) \\
+          &\implies y = -26z + 44.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item
+      Given
+      \begin{center}
+        \begin{tabular}{cccccc}
+       \toprule
+          $x$ & 1 & 2 & 3 & 4 & 5\\
+     \midrule
+          $f(x)$ & 5 & 3 & 0 &$-4$ & 3\\
+          $f'(x)$ & $-3$ & $-5$ & $-2$ & 6& $-4$\\
+          $g(x)$ & 6 &9&$-8$&13&15\\
+          $g'(x)$ & 8 & 5 & $-10$ &7& 6\\
+  	\bottomrule
+        \end{tabular}
+      \end{center}
+      find the equation of the tangent line of 
+      \[
+        \frac{f(x)}{e^xg(x)}
+      \]
+      at $x = 2$.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line to the graph of $ \frac{f(x)}{e^xg(x)} $ at the point where $x=2$:
+        \begin{align*}
+          \left( \frac{f(x)}{e^x g(x)} \right)'
+          &= \frac{e^x g(x) f'(x) - f(x)(e^x g(x) + e^x g'(x))}{(e^x g(x))^2}.  \\
+          &\implies \frac{d}{dx}\left(\frac{f(x)}{e^x g(x)}\right) \bigg|_{x=2}
+          = \frac{e^2 g(2) f'(2) - f(2)(e^2 g(2) + e^2 g'(2))}{(e^2 g(2))^2}  \\
+		&= \frac{e^2 (9)(-5) - (3)(9e^2 + 5e^2)}{(9e^2)^2}  \\
+		&= \frac{-45e^2 -42e^2}{81e^4}  \\
+		&= \frac{-87e^2}{81e^4}\\
+                  &= \frac{-87}{81e^2}
+        \end{align*}
+
+        Point on tangent line where $x=2$: $(2, f(2)/(e^2g(2))) = (2, 3/(9e^2)) = (2, 1/(3e^2))$.
+
+        Equation of tangent line where $x=2$:
+        \begin{align*}
+          y - \frac{1}{3e^2} &= \frac{-87}{81e^2}(x - 2)\\
+                             &\implies y = \frac{-87}{81e^2}x  + \frac{67}{27e^2}.
+        \end{align*}
+      \end{freeResponse}
+   \end{enumerate}
+\end{problem}
+\WkstNew
+
+%problem 5
+\begin{problem}
+Differentiate the following functions:
+
+	\begin{enumerate}
+	
+	%part a
+	\item  Given $f(x) = (x^2 + 4x - 7) e^{-x}$, show $f'(x)= (11-x^2 -2x) e^{-x}$.
+\WkstHop
+			\begin{freeResponse}
+			\begin{align*}
+			f'(x) &= \ddx \Bigl(\frac{x^2 + 4x - 7}{e^{x}}\Bigr)  \\
+			&= \frac{(2x+4)e^{x}-(x^2 + 4x - 7)e^{x}}{e^{2x}} \\
+			&= \frac{e^{x}(2x + 4-x^2 - 4x + 7)}{e^{2x}} \\ 
+			&=  \frac{11-x^2 - 2x }{e^{x}} \\ 
+			&=(11-x^2 -2x) e^{-x}
+			\end{align*}
+			\end{freeResponse}
+			
+			
+			
+	%part b
+	\item  Given $g(x) = \frac{x^2 + 4x - 7}{e^{-x}}$, show $g'(x)=\frac{x^2 + 6x - 3}{e^{-x}}$
+\WkstHop
+			\begin{freeResponse}
+			\begin{align*}
+			g'(x) &=  \ddx \Bigl(\frac{x^2 + 4x - 7}{e^{-x}}\Bigr)  \\
+			&= \ddx \Bigl((x^2 + 4x - 7)e^{x} \Bigr) \\
+			&= \ddx(x^2 + 4x - 7)e^{x} +(x^2 + 4x - 7)\ddx e^{x}\\
+			&=(2x+4)e^{x}+(x^2 + 4x - 7)e^{x}\\
+			&=e^{x}(2x+4+x^2 + 4x - 7)\\
+			&=e^{x}(x^2 + 6x - 3)\\
+			&=\frac{x^2 + 6x - 3}{e^{-x}}\\
+			\end{align*}
+			\end{freeResponse}
+			
+	\end{enumerate}		
+\end{problem}
+\WkstNew
+	
+%problem6
+\begin{problem}
+	The graph of a function $g$ is given below.  Using the graph, estimate the derivative at the given point: \\
+	$\ddx \left({\frac{xg(x)}{x+3}}\right)\ \text{at}\ x=1$
+
+   \begin{image}
+     \includegraphics[scale = 0.5]{Figure1.png}
+   \end{image}
+\WkstHop
+	\begin{freeResponse}
+		From the graph it appears that $g(1)=2$.  We can draw the line tangent to the curve $y=g(x)$ at the point $(1,g(1))$
+  		 \begin{image}
+    			 \includegraphics[scale = 0.5]{Figure2.png}
+ 		  \end{image}
+		
+		Since $g'(1)$ is the slope of the line tangent to the curve $y=g(x)$ at the point $(1,g(1))$, we can estimate it from the figure above.  The tangent line seems to pass through the points $(1,2)$ and $(2,3)$, so its slope is $\frac{3-2}{2-1}=1$.
+
+	\begin{align*}
+	\eval{ \ddx \left( \frac{xg(x)}{x+3}\right)}_{x=1}&= \eval{\frac{(g(x)+xg'(x))(x+3)-xg(x)}{(x+3)^2}}_{x=1}\\
+	&=\frac{(g(1)+1g'(1))(1+3)-(1)g(1)}{(1+3)^2} \\
+	& \approx \frac{(2+1(1))(4)-1(2)}{4^2}\\
+	&=\frac{(2+1)(4)-2}{16}\\
+	&= \frac{3(4)-2}{16}\\
+	&= \frac{12-2}{16}\\
+	&= \frac{10}{16}\\
+	&=\frac{5}{8}
+	\end{align*}
+
+
+
+	\end{freeResponse}
+
+\end{problem}	
+	
+	
+			
+			
+
+
+\end{document}

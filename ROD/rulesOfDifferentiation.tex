@@ -1,0 +1,445 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{ Rules of differentiation (ROD)} 
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{ Rules of differentiation (ROD) - Solutions}
+\fi
+
+\input{../preamble.tex} %% we can turn off input when making a master document
+\usepackage{fullpage}
+
+\begin{document}
+\begin{abstract}		\end{abstract}
+\maketitle
+
+\ifcase\HCCondition
+%summary in here
+
+\begin{itemize}
+	\item \textbf{The Power Rule}: For any real number $n$, $\displaystyle \ddx x^n = n x^{n-1}$.
+	\item \textbf{The Natural Exponential Function}: $\displaystyle \ddx e^x = e^x$.
+	\item \textbf{The Sine Function}: $\displaystyle \ddx \sin(x) = \cos(x)$.
+		
+	\item \textbf{The Sum Rule}: If $f(x)$ and $g(x)$ are differentiable functions and $c$ is a constant, then:
+		\begin{itemize}
+			\item $\displaystyle \ddx\left( f(x) + g(x) \right) = f'(x) + g'(x)$,
+			\item $\displaystyle \ddx\left( f(x) - g(x) \right) = f'(x) - g'(x)$,
+			\item $\displaystyle \ddx\left( c \cdot f(x) \right) = c \cdot f'(x)$.			
+		\end{itemize}
+\end{itemize}
+\WkstHop
+
+\section*{Recitation Questions}
+\fi
+
+
+
+%problem 1
+\begin{problem}
+For each of the following functions, use the "short cut derivative rules" to compute their derivative.
+	
+	\begin{enumerate}
+	
+	\item $f(x) = \sqrt{x}$
+	\WkstHop
+		\begin{freeResponse}
+		$$f(x) = \sqrt{x} = x^{\frac{1}{2}}.$$ 
+		\begin{align*}
+		f'(x) &= \frac{1}{2} x^{\frac{1}{2} - 1}\\
+		&= \frac{1}{2} x^{-\frac{1}{2}} \\
+		&= \frac{1}{2\sqrt{x}}
+		\end{align*}
+		\end{freeResponse}
+			
+
+	\item $s(u) = \frac{5}{u^2}$
+	\WkstHop
+		\begin{freeResponse}
+		$$s(u) = \frac{5}{u^2} = 5u^{-2}.$$  
+		\begin{align*}
+		s'(u) &= 5(-2) u^{-2-1}\\
+		 &= -10u^{-3}\\
+		&= \frac{-10}{u^3} 
+		\end{align*}
+		\end{freeResponse}
+			
+			
+
+	\item $p(t) = t^5 + 4t^3 + \pi $
+	\WkstHop
+		\begin{freeResponse}
+		\begin{align*}
+		p'(t) &= 5t^{5-1} + 4(3)t^{3-1} + 0\\ 
+		&= 5t^4 + 12t^2
+		\end{align*}  
+		Note that $\ddx (\pi) = 0$ because $\pi$ is a constant.	
+		\end{freeResponse}
+			
+			
+	\end{enumerate}
+\end{problem}
+
+\WkstNew
+	
+%problem2	
+\begin{problem}
+  Given the polynomial function $q$ defined by $q(v) = 2v^3 - 5v^2 + 7v - 9$ find:
+  \begin{enumerate}
+
+    \item
+      The slope of the tangent line to the graph of $q$ at the point where $v = 3$ using the limit definition of a derivative.
+      \WkstHop
+      \begin{freeResponse}
+        To compute $q'(3)$ from the limit definition we use either 
+        \[
+          \lim_{v \to 3} \frac{q(v)-q(3)}{v-3} \quad \text{or} \quad \lim_{h \to 0} \frac{q(3+h)-q(3)}{h}.
+        \]
+
+        
+        Using the second formula:
+        \begin{align*}
+          q'(3) &= \lim_{h \to 0} \frac{q(3+h)-q(3)}{h}  \textrm{ which has form } \ZeroOverZero\\
+          &= \lim_{h \to 0} \frac{(2(3+h)^3 - 5(3+h)^2 + 7(3+h) - 9) - (54 - 45 + 21 - 9)}{h}\\
+          &= \lim_{h \to 0} \frac{(2(27+27h+9h^2+h^3) - 5(9+6h+h^2) + 21+7h - 9) - 21}{h} \\
+          &= \lim_{h \to 0} \frac{54+54h+18h^2+2h^3-45-30h-5h^2+21+7h-9-21}{h} \\
+          &= \lim_{h \to 0} \frac{31h+13h^2+2h^3}{h} \\
+          &= \lim_{h \to 0} (31+13h+2h^2)\\
+          &= 31.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item
+      The slope of the tangent line to the graph of $q$ at the point where $v = 3$ using the ``short-cut derivative rules'' to find a formula for $q'$ and evaluating $q'(3)$.
+\WkstHop
+      \begin{freeResponse} \hfil
+
+        \begin{align*}
+          q'(v) &= (2v^3 - 5v^2 + 7v - 9)'\\
+          &= (2v^3)' + (-5v^2)' + (7v)' + (-9)' \\
+          &= 3\cdot 2 \cdot v^{3-1} +  -5\cdot(2)\cdot v^{2-1} +  7\cdot1\cdot v^{1-1} + 0 \\
+          &= 6v^2 - 10v + 7\\
+          &\implies q'(3) = 6\cdot3^2 - 10\cdot3 + 7 = 31.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item     The equation of the tangent line to the graph of $q$ at $v = 3$.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line to the graph of $q$ at the point where $v=3$: $q'(3) = 6\cdot3^2 - 10\cdot3 + 7 = 31$.
+
+        Point on tangent line at the point where $v=3$: $(3, q(3)) = (3, 21)$.
+
+        Equation of tangent line to the graph of $q$ at the point where $v=3$:
+        \begin{align*}
+          y-21&=31(x-3)\\
+              &\implies y = 31x -72.
+        \end{align*}
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}
+
+			
+%problem3			
+\begin{problem}
+ Find $s'$ of the function $s$ defined by $s(t) = 3t^2 + 5e^t - \frac{1}{t}$.
+\WkstHop
+  % Find $s'$, $s''$, and $s'''$ of the function $s$ defined by $s(t) = 3t^2 + 5e^t - \frac{1}{t}$.
+   \begin{freeResponse}
+     $s'(t) = 6t + 5e^t + \frac{1}{t^2}$.
+
+   %  $s''(t) = 6 + 5e^t - \frac{2}{t^3}$.
+
+    % $s'''(t) = 5e^t + \frac{6}{t^4}$.
+   \end{freeResponse}
+
+\end{problem}
+\WkstNew
+
+%problem4
+\begin{problem}
+
+  Use the given graphs of $f$ and $g$ and their accompanying derivatives to answer the following questions.
+  \begin{image}
+    \hspace*{-7em}
+     \includegraphics[scale = 0.3]{"Graph of squaring function".png}
+     \hspace{2em}
+     \includegraphics[scale = 0.3]{"Graph of derivative of squaring function".png}
+   \end{image}
+   \begin{image}
+     \includegraphics[scale = 0.23]{"Graph of identity function".png}
+   \end{image}
+
+   \begin{enumerate}
+     \item
+	Write an equation for the tangent line to $f$ at $x=2$.
+\WkstHop
+	\begin{freeResponse}
+	$f(2)=4$,\quad $f'(2)=4$, \quad $y-4=4(x-2)$, \quad $y=4x-4$
+	\end{freeResponse}
+
+	\item Draw the graph of $g'$
+	\WkstHop
+		\begin{freeResponse}
+	   \begin{image}
+     \includegraphics[scale = 0.23]{"Graph of derivative of identity function".png}
+   \end{image}	
+		\end{freeResponse}
+       \item Compute the value of the $(5f+3g)'(2)$.
+\WkstHop
+       \begin{freeResponse}
+         \begin{align*}
+           (5f+3g)'(2) &= 5\cdot f'(2) + 3 \cdot g'(2)\\
+                       &= 5 \cdot 4 + 3 \cdot 1 \\
+                       &= 20 + 3 = 23.
+         \end{align*}
+       \end{freeResponse}
+
+	\item Find the equation of the tangent line to the graph of $(5f+3g)$ at the point where $x=2$.
+\WkstHop
+	\begin{freeResponse}
+         \begin{align*}
+           (5f+3g)(2) &= 5\cdot f(2) + 3 \cdot g(2)\\
+                       &= 5 \cdot 4 + 3 \cdot 2 \\
+                       &= 20 + 6 = 26\\\\
+	y-26 &=23(x-2)\\
+	y&=23x-20
+         \end{align*}
+	\end{freeResponse}
+
+	\item Use the given graph of $f'$ and $g'$ to find the following:
+	\begin{enumerate}
+		\item A formula for $f'$
+\WkstHop
+			\begin{freeResponse}
+				$f'(x)=2x$.  The graph shows a linear function through the point $(0,0)$ and $(1,2)$.
+			\end{freeResponse}
+	
+		\item A formula for $g'$
+\WkstHop
+			\begin{freeResponse}
+				$g'(x)=1$.  The graph shows a linear function with slope $0$ and through the point $(0,1)$.
+			\end{freeResponse}
+	\end{enumerate}
+
+	\item Find the expression for $(5f+3g)'(x)$.
+\WkstHop	
+	\begin{freeResponse}
+         \begin{align*}
+           (5f+3g)'(x) &= 5\cdot f'(x) + 3 \cdot g'(x)\\
+                       &= 5 \cdot 2x + 3 \cdot 1 \\
+                       &= 10x+3
+         \end{align*}
+	\end{freeResponse}
+
+  
+
+   \end{enumerate}
+
+\end{problem}
+\WkstNew
+%problem5
+\begin{problem}
+Sketch the graph of the derivative of the given function:
+
+  \begin{image}
+   \hspace*{-3em}
+    \includegraphics[scale = 0.2]{"Graph of derivative".png}
+  \end{image}
+\WkstHop
+\begin{freeResponse} \hfil
+  \begin{image}
+    \hspace*{-3em}
+    \includegraphics[scale=.9]{"Solution for graph the derivative".png}
+  \end{image}
+
+\end{freeResponse}
+\end{problem}
+\WkstNew
+
+\begin{problem}
+A company is producing cell phones. The cost of producing  $x$ cell phones is given by $C(x)$, defined by
+\[
+C(x)=-0.01x^2+40x+400, \text{  for } 0\le x<1000.
+\]
+AVERAGE cost of producing the first $x$ cell phones is given by
+
+\[
+C_{AVG}=\frac{C(x)}{x}
+\]
+
+If the company has produced $x$ cell phones, the cost of producing one more item is given by
+
+
+\[
+\text{COST of producing one more item}=C(x+1)-C(x)
+\]
+
+MARGINAL COST is approximation of the cost of producing one more cell phone
+
+\[
+\text{MARGINAL COST}=C'(x)
+\]
+ 
+
+\begin{enumerate}
+\item Compute the average cost of the first $300$ cellphones that the company produces.
+\WkstHop
+	\begin{freeResponse}
+		The first 300 cell phones costs, on average, 
+		
+		\[
+		C_{AVG}=\frac{C(300)}{300}=38.33
+		\]
+	\end{freeResponse}
+	\item Compute the cost of producing one more cell phone, if the company has produced $300$ cell phones.
+	\begin{freeResponse}
+\[
+C(301)-C(300)=-0.01(301)^2+40(301)+400-(-0.01(300)^2+40(300)+400)=33.99
+\]
+\end{freeResponse}
+\item Compute the marginal cost, if $300$ cell phones have been produced.
+\WkstHop
+\begin{freeResponse}
+\[
+\text{MARGINAL COST}=C'(300)=\bigl[0.02x+40\bigr]_{x=300} =34
+\]
+\end{freeResponse}
+\item Why is the marginal cost a good approximation of the cost of producing one more item?  Explain!
+\WkstHop
+\begin{freeResponse}
+		By the definition of the derivative we have that
+		
+		\[
+		C'(300)=\lim_{h \to 0}\dfrac{C(300+h)-C(300)}{h}\approx \dfrac{C(300+h)-C(300)}{h}
+		\]
+		for any $h$ near $0$. In particular, for $h=1$, we obtain
+		\[
+		C'(300)\approx \dfrac{C(300+1)-C(300)}{1}=C(301)-C(300),
+		\]
+Therefore, marginal cost at $x=300 \approx$ the cost of producing one more item!
+	\end{freeResponse}
+\end{enumerate} 
+\end{problem}
+	
+
+\end{document} 
+ %% \item
+       Compute the value of $(5f+3g)''(2)$.
+       \begin{freeResponse}
+         \begin{align*}
+		(5f+3g)''(2)&=[(5f+3g)]'(2)\\
+		&=[5f'+3g']'(2)\\
+		&=[5f''+3g''](2)
+	\end{align*}
+	Finding $f''$:
+         \begin{align*}
+           \mbox{$f'$ is a linear function with slope 2} &\implies f''(x) = 2.
+         \end{align*}
+
+         Finding $g''$:
+         \begin{align*}
+           \mbox{$g'$ is a constant function} &\implies g''(x) = 0.
+         \end{align*}
+         
+         Computing $(5f+3g)''(2)$:
+         \begin{align*}
+           (5f+3g)''(2) &= 5\cdot f''(2) + 3 \cdot g''(2) \\
+                        &= 5 \cdot 2 + 3 \cdot 0 = 10.
+         \end{align*}
+       \end{freeResponse}
+
+  %% \item
+       Compute the value of $(5f+3g)''(2)$.
+       \begin{freeResponse}
+         \begin{align*}
+		(5f+3g)''(2)&=[(5f+3g)]'(2)\\
+		&=[5f'+3g']'(2)\\
+		&=[5f''+3g''](2)
+	\end{align*}
+	Finding $f''$:
+         \begin{align*}
+           \mbox{$f'$ is a linear function with slope 2} &\implies f''(x) = 2.
+         \end{align*}
+
+         Finding $g''$:
+         \begin{align*}
+           \mbox{$g'$ is a constant function} &\implies g''(x) = 0.
+         \end{align*}
+         
+         Computing $(5f+3g)''(2)$:
+         \begin{align*}
+           (5f+3g)''(2) &= 5\cdot f''(2) + 3 \cdot g''(2) \\
+                        &= 5 \cdot 2 + 3 \cdot 0 = 10.
+         \end{align*}
+       \end{freeResponse}
+\begin{problem}
+A company is producing cell phones. The cost of producing  $x$ cellphones is given by $C(x)$, defined by
+\[
+C(x)=-0.01x^2+40x+400, \text{  for } 0\le x<1000.
+\]
+AVERAGE cost of producing the first $x$ cellphones is given by
+
+\[
+C_{AVG}=\frac{C(x)}{x}
+\]
+
+If the company has produced $x$ cellphones, the cost of producing one more item is given by
+
+
+\[
+\text{COST of producing one more item}=C(x+1)-C(x)
+\]
+
+MARGINAL COST is approximation of the cost of producing one more cellphone
+
+\[
+\text{MARGINAL COST}=C'(x)
+\]
+ 
+
+\begin{enumerate}
+\item Compute the average cost of the first $300$ cellphones that the company produces.
+
+	\begin{freeResponse}
+		The first 300 cellphones costs, on average, 
+		
+		\[
+		C_{AVG}=\frac{C(300)}{300}=38.33
+		\]
+	\end{freeResponse}
+	\item Compute the cost of producing one more cellphone, if the company has produced $300$ cellphones.
+	\begin{freeResponse}
+\[
+C(301)-C(300)=-0.01(301)^2+40(301)+400-(-0.01(300)^2+40(300)+400)=33.99
+\]
+\end{freeResponse}
+\item Compute the marginal cost, if $300$ cellphones have been produced.
+\begin{freeResponse}
+\[
+\text{MARGINAL COST}=C'(300)=\bigl[0.02x+40\bigr]_{x=300} =34
+\]
+\end{freeResponse}
+\item Why is the marginal cost a good approximation of the cost of producing one more item?  Explain!
+\begin{freeResponse}
+		By the definition of the derivative we have that
+		
+		\[
+		C'(300)=\lim_{h \to 0}\dfrac{C(300+h)-C(300)}{h}\approx \dfrac{C(300+h)-C(300)}{h}
+		\]
+		for any $h$ near $0$. In particular, for $h=1$, we obtain
+		\[
+		C'(300)\approx \dfrac{C(300+1)-C(300)}{1}=C(301)-C(300),
+		\]
+Therefore, marginal cost at $x=300 \approx$ the cost of producing one more item!
+	\end{freeResponse}
+\end{enumerate} 
+\end{problem}
+	

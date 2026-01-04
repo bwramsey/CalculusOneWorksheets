@@ -1,0 +1,277 @@
+%Add code to compile both versions from makefile at same time
+\providecommand{\HCCondition}{0}
+%Define each of the conditions
+\ifcase\HCCondition
+	%\condition=0 -> handout
+	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
+	\title{Definition of the derivative (DOTD)} 
+\or	%\condition=1 -> Soln
+	\documentclass[nooutcomes,noauthor]{ximera}
+	\title{Definition of the derivative (DOTD) - Solutions}
+\fi
+
+\input{../preamble.tex} %% we can turn off input when making a master document
+\usepackage{fullpage}
+
+  
+
+\begin{document}
+\begin{abstract}		\end{abstract}
+\maketitle
+\ifcase\HCCondition
+%summary in here
+\begin{itemize}
+	\item The \textit{average rate of change}, $AvRCh$, of a function $f$ across an interval $[a,b]$ is given by
+		\begin{align*} 
+			AvRCh &= \frac{\Delta f}{\Delta x} \\
+				&= \frac{f(b)-f(a)}{b-a}
+		\end{align*}
+	\item The slope, $m_{sec}$, of the line secant to the graph of a function $f$ at the points $(a, f(a))$ and $(b, f(b))$ is given by
+		\begin{align*} 
+			m_{sec} &= \frac{\Delta y}{\Delta x} \\
+				&= \frac{f(b)-f(a)}{b-a}
+		\end{align*}
+	\item The \textit{derivative} of the function $f$ at $a$, denoted $f'(a)$, is given by
+		\[
+			f'(a) = \lim_{x \to a} \frac{f(x)-f(a)}{x-a} = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h}
+		\]
+		and represents the instantaneous rate of change of $f$ with respect to $x$ at $x=a$ and also the slope of the line 
+		tangent to the graph of $y=f(x)$ at the point $(a, f(a))$.
+\end{itemize}
+\newpage
+\section*{Recitation Questions}
+\fi
+
+%problem1
+\begin{problem}
+ Consider the following two figures depicting the same graph $y=f(x)$ and the same two lines, and the same two points $P$ and $Q$:
+  \[
+    \begin{array}{lr}
+      \includegraphics[trim= 150 350 250 180]{Figure2.pdf} &		   \includegraphics[trim= 140 350 250 180]{Figure3.pdf}
+    \end{array}
+  \]
+  \begin{enumerate}
+    \item
+      In Figure 1 on the left, what are the coordinates of $P$ and $Q$?  In Figure 2 on the right, what are the expressions for the coordinates of $P$ and $Q$?
+
+	\WkstHop \begin{freeResponse}
+	Figure 1 on the left: $P(a,f(a))$ and $Q(x,f(x))$ \\
+	Figure 2 on the right: $P(a,f(a))$ and $Q((a+h),f(a+h))$
+
+	\end{freeResponse}
+
+	\item Express the slope of the secant line through $P$ and $Q$ in terms of the above coordinates for each Figure 1 and Figure 2.
+
+      \WkstHop \begin{freeResponse}
+	Figure 1: $\frac{f(x)-f(a)}{x-a}$ \quad
+	Figure 2: $\frac{f(a+h)-f(a)}{h}$
+        \end{freeResponse}
+	
+	\item
+	Express the slope of the tangent line at the point $P$ in terms of the above coordinates for each Figure 1 and Figure 2.
+
+	\WkstHop \begin{freeResponse}
+        	Figure 1:  $ \lim_{x \to a} \frac{f(x)-f(a)}{x-a}$\quad
+	Figure 2: $\lim_{h \to 0} \frac{f(a+h)-f(a)}{h}$
+      \end{freeResponse}
+
+    \item 
+      What is the difference?
+      \WkstHop \begin{freeResponse}
+	Just the variable we use, $x$ or $h$ where $x=a+h \iff h=x-a$
+      \end{freeResponse}
+
+
+    \item 
+      For each of the two graphs, which lines are the secant lines?
+      \WkstHop \begin{freeResponse}
+        The green line is the secant line in each of the two graphs.        
+      \end{freeResponse}
+
+    \item 
+      For each of the two graphs, which lines are the tangent lines?
+      \WkstHop \begin{freeResponse}
+        The red line is the tangent line in each of the two graphs.        
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}\WkstNew
+
+		
+		
+%problem2
+\begin{problem}
+ For each of the following functions find an equation of the tangent line at the given point.
+  \begin{enumerate}
+    \item
+      $f(x) = -5x^2 + 7x - 9$\quad at $x = 3$.
+      \WkstHop \begin{freeResponse}
+        The slope of tangent line is given by this limit: $\displaystyle  f'(3) = \lim_{x \to 3} \frac{f(x) -f(3)}{x-3}$. Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+          f'(3) = \lim_{x \to 3} \frac{f(x) -f(3)}{x-3}
+		&= \lim_{x \to 3} \frac{(-5x^2 + 7x - 9) - (-45 + 21 - 9)}{x-3}  \\
+		&= \lim_{x \to 3} \frac{-5x^2 + 7x - 9 + 33}{x-3}  \\
+		&= \lim_{x \to 3} \frac{-5x^2 + 7x + 24}{x-3}  \\
+		&= \lim_{x \to 3} \frac{(x-3)(-5x -8)}{x-3}  \\
+		&= \lim_{x \to 3} (-5x - 8)  \\
+		&= -5(3) - 8 = -23.
+	\end{align*}
+        
+        Point on tangent line: $(3, f(3)) = (3, -33)$.
+
+        An equation of tangent line is:
+        \[ y + 33 = -23(x-3) \]
+%       \begin{align*}
+%	
+%          y - f(3) = -23(x-3) &\implies y + 33 = -23x + 69\\
+%          &\implies y = -23x + 36.
+%        \end{align*}
+      \end{freeResponse}
+
+    \item
+      $g(u) = \sqrt{5u-4}$\quad at $u = 3$.
+      \WkstHop \begin{freeResponse}
+        The slope of tangent line is given by: $\displaystyle g'(3)= \lim_{h \to 0} \frac{g(3+h) - g(3)}{h}$.  Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+          g'(3)= \lim_{h \to 0} \frac{g(3+h) - g(3)}{h}
+            &= \lim_{h \to 0} \frac{\sqrt{5(3+h) - 4} - \sqrt{11}}{h}\\
+          		&=\lim_{h \to 0} \frac{\sqrt{5(3+h) - 4} - \sqrt{11}}{h} \cdot \frac{\sqrt{5(3+h) - 4} + \sqrt{11}}{\sqrt{5(3+h) - 4} + \sqrt{11}} \\
+		&= \lim_{h \to 0} \frac{5(3+h) - 4 - 11}{h \left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \lim_{h \to 0} \frac{5h + 15 - 15}{h \left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \lim_{h \to 0} \frac{5}{\left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \frac{5}{\sqrt{5(3+0) - 4} + \sqrt{11}}  \\
+		&= \frac{5}{2 \sqrt{11}}.
+        \end{align*}
+
+        Point on tangent line: $(3, g(3)) = (3, \sqrt{11})$.
+
+        Equation of tangent line:
+		\[ y - \sqrt{11} =  \frac{5}{2 \sqrt{11}} \left( u - 3\right) \]
+%        \begin{align*}
+%          y - g(3) = \frac{5}{2\sqrt{11}}(u-3)
+%          &\implies y - \sqrt{11} = \frac{5}{2\sqrt{11}}(u - 3)\\
+%          &\implies y = \frac{5}{2\sqrt{11}}u - \frac{15}{2\sqrt{11}} + \sqrt{11}.
+%        \end{align*}
+      \end{freeResponse}
+
+    \item
+      $\displaystyle s(z) = \frac{z}{z-5}$\quad at $z = 3$.
+      \WkstHop \begin{freeResponse}
+        The slope of tangent line is given by: $\displaystyle  s'(3) = \lim_{z \to 3} \frac{s(z) - s(3)}{z-3} $. Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+       s'(3) &= \lim_{z \to 3} \frac{s(z) - s(3)}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{z}{z-5} - \frac{3}{3-5}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{z}{z-5} + \frac{3}{2}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{2z}{2(z-5)} + \frac{3(z-5)}{2(z-5)}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{2z + 3z - 15}{2(z-5)}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5z-15}{2(z-5)} \cdot \frac{1}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5(z-3)}{2(z-5)} \cdot \frac{1}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5}{2(z-5)}  \\
+		&= \frac{5}{2(3-5)} = -\frac{5}{4}.
+	\end{align*}
+
+        Point on tangent line: $(3, s(3)) = (3, -3/2)$.
+
+        Equation of tangent line:
+	\[ y + \dfrac{3}{2} = -\dfrac{5}{4}(z - 3) \]
+%        \begin{align*}
+%          y - s(3) = - \frac{5}{4}(z-3) &\implies y + \frac{3}{2} = - \frac{5}{4}z + \frac{15}{4}\\
+%          &\implies y = - \frac{5}{4} z + \frac{9}{4}.
+%        \end{align*}
+      \end{freeResponse}
+  \end{enumerate}
+\end{problem}\WkstNew
+
+
+%problem3
+\begin{problem} Find an equation of the tangent line at the given point.  Then graph the function and the tangent line on the same plot.
+$f(x)=\sqrt{x+1}$ at $x=3$
+
+	\WkstHop \begin{freeResponse}
+	The slope of tangent line is given by: $\displaystyle f'(3) = \lim_{h \to 0} \frac{f(3+h) - f(3)}{h}$. This limit has form $\ZeroOverZero$, so it is an indeterminate form.
+	\begin{align*}	
+	f'(3) = \lim_{h \to 0} \frac{f(3+h) - f(3)}{h}&=\lim_{h \to 0}\frac{\sqrt{3+h+1} - \sqrt{4}}{h}\\
+	&=\lim_{h \to 0}\frac{\sqrt{4+h} - \sqrt{4}}{h} \cdot \frac{\sqrt{4+h} + \sqrt{4}}{\sqrt{4+h} + \sqrt{4}}\\
+	&=\lim_{h \to 0}\frac{4+h-4}{h(\sqrt{4+h} + \sqrt{4})}\\
+	&=\lim_{h \to 0}\frac{h}{h(\sqrt{4+h} + 2)}\\
+	&=\lim_{h \to 0}\frac{1}{\sqrt{4+h} + 2}\\
+	&=\frac{1}{\sqrt{4+0} + 2}\\
+	&=\frac{1}{4}
+	\end{align*}
+
+        Point on tangent line: $(3, f(3)) = (3, 2)$.
+
+        Equation of tangent line:
+        \begin{align*}
+          y - f(3) =  \frac{1}{4}(x-3) &\implies y - 2 = \frac{1}{4}x - \frac{3}{4}\\
+          &\implies y = \frac{1}{4}x + 1\frac{1}{4}.
+        \end{align*}
+	        \begin{image}
+          \includegraphics[scale = 0.5]{Figure5.JPG}
+        \end{image}
+
+	\end{freeResponse}
+
+\end{problem}\WkstNew
+
+%problem4
+\begin{problem}
+
+The graph of a function $p$ and a point in its domain, $b$, are shown in the figure below.
+	        \begin{image}
+          \includegraphics[scale = 0.5]{Figure6.png}
+        \end{image}
+
+	\begin{enumerate}
+		\item In the figure above, draw and mark clearly the quantity $\Delta y=p(b)-p(1)$ and the quantity $\Delta x=b-1$.
+		\WkstHop \begin{freeResponse}\hfil
+	        \begin{image}
+          \includegraphics[scale = 0.7]{Figure7.png}
+        \end{image}
+
+		\end{freeResponse}
+
+		\item Complete the sentence.  The quotient $\frac{p(b)-p(1)}{b-1}$ is the slope...
+
+		\WkstHop \begin{freeResponse}
+			The quotient $\frac{p(b)-p(1)}{b-1}$ is the slope of the secant line through the points $(b,p(b))$ and $(1,p(1))$
+		\end{freeResponse}
+
+		\item Complete the sentence.  Provided it exists, the limit $\lim_{x \to 1}\frac{p(x)-p(1)}{x-1}$ is the slope...
+		\WkstHop \begin{freeResponse}
+			 Provided it exists, the limit $\lim_{x \to 1}\frac{p(x)-p(1)}{x-1}$ is the slope of the tangent line to the curve $y=p(x)$ at the point $(1,p(1))$
+		\end{freeResponse}
+	\end{enumerate}
+\end{problem}\WkstNew
+\begin{problem}
+An object moving along a straight line has a position given by
+ $\displaystyle s(t)=\dfrac{1}{t-4}$, where $s$ is measured in meters and $t$ in seconds. Find the velocity of the object at time $t=6$.
+
+	
+	\WkstHop \begin{freeResponse}
+
+	 $v(6)=s'(6)=\displaystyle \lim_{t \to6} \dfrac{s(t)-s(6) }{t-6}$. When we check the form of this limit, we see that it has form $\ZeroOverZero$.
+	  $s'(6) =\displaystyle \lim_{t \to6} \dfrac{\dfrac{1}{t-4}-\dfrac{1}{2} }{t-6}=\displaystyle \lim_{t \to6} \dfrac{\dfrac{2-(t-4)}{2(t-4)} }{t-6}=\displaystyle \lim_{t \to6} \dfrac{(2-t+4)}{2(t-4)(t-6)} =$\\[1em]
+\ $=\displaystyle \lim_{t \to6} \dfrac{(6-t)}{2(t-4)(t-6)} =\displaystyle \lim_{t \to6} \dfrac{-1}{2(t-4)} =\dfrac{-1}{2(6-4)} =\dfrac{-1}{4}$ m/s.
+
+	\end{freeResponse}
+\end{problem}\WkstNew
+\end{document} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
