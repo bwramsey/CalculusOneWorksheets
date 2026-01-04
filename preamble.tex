@@ -1,0 +1,35 @@
+\newcommand{\RR}{\mathbb R}
+\renewcommand{\d}{\,d}
+\newcommand{\dd}[2][]{\frac{d #1}{d #2}}
+\renewcommand{\l}{\ell}
+\newcommand{\ddx}{\frac{d}{dx}}
+\newcommand{\dfn}{\textbf}
+\newcommand{\eval}[1]{\bigg[ #1 \bigg]}
+\renewcommand{\theenumii}{\textup{(\roman{enumii})}}
+\renewcommand{\labelenumii}{\theenumii}
+
+\usepackage{graphicx}
+\usepackage{multicol}
+\usepackage{tkz-euclide}
+%\usepackage{unicode-math}
+
+\usepackage{pgfplots}   % <- for graphics
+\pgfplotsset{compat=newest}
+
+
+\renewenvironment{freeResponse}{
+\ifhandout\setbox0\vbox\bgroup\else
+\begin{trivlist}\item[\hskip \labelsep\bfseries Solution:\hspace{2ex}]
+\fi}
+{\ifhandout\egroup\else
+\end{trivlist}
+\fi}
+
+\newcommand*{\ZeroOverZero}{\ensuremath{\dfrac{0}{0}}}
+
+\providecommand{\HCCondition}{0}
+\newcommand{\WkstHop}[1][1]{\if\HCCondition 0
+	\vspace*{\stretch{#1}} \fi} 
+\newcommand{\WkstNew}{\if\HCCondition 0
+	\newpage
+	 \fi} 
