@@ -5,25 +5,25 @@
 #
 ## Graphics - recommend to be ignored, as TikZ-generated pictures should NOT be committed
 *.svg
-*.png
+#*.png
 *.svg
-*.pdf
+#*.pdf
 ## Folder xmPictures is in the graphicspath, and should contain the pictures used in \includegraphics
 ## So png,svg,pdf,jpg in (subfolders of) xmPictures presumably must be committed
 ## but everything else in there should be ignored
-xmPictures/**
-!xmPictures
-!xmPictures/**/
-!xmPictures/**/*.jpg
-!xmPictures/**/*.svg
-!xmPictures/**/*.pdf
-!xmPictures/**/*.png
-!xmPictures/**/*.tex
+#xmPictures/**
+#!xmPictures
+#!xmPictures/**/
+#!xmPictures/**/*.jpg
+#!xmPictures/**/*.svg
+#!xmPictures/**/*.pdf
+#!xmPictures/**/*.png
+#!xmPictures/**/*.tex
 ## Note: capital JPG/PDF/PNG should NOT be used ...
-!xmPictures/**/*.JPG
-!xmPictures/**/*.SVG
-!xmPictures/**/*.PDF
-!xmPictures/**/*.PNG
+#!xmPictures/**/*.JPG
+#!xmPictures/**/*.SVG
+#!xmPictures/**/*.PDF
+#!xmPictures/**/*.PNG
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof
