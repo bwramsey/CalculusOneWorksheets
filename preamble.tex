@@ -11,25 +11,17 @@
 \usepackage{graphicx}
 \usepackage{multicol}
 \usepackage{tkz-euclide}
-%\usepackage{unicode-math}
+\usepackage{unicode-math}
+
+\usepackage{fullpage}
+\usepackage{float}
+\usepackage{lmodern}
 
 \usepackage{pgfplots}   % <- for graphics
-\pgfplotsset{compat=newest}
+\pgfplotsset{compat=1.18}
+% global for TikZ nodes
+\tikzset{font=\rmfamily}
 
-
-\renewenvironment{freeResponse}{
-\ifhandout\setbox0\vbox\bgroup\else
-\begin{trivlist}\item[\hskip \labelsep\bfseries Solution:\hspace{2ex}]
-\fi}
-{\ifhandout\egroup\else
-\end{trivlist}
-\fi}
 
 \newcommand*{\ZeroOverZero}{\ensuremath{\dfrac{0}{0}}}
 
-\providecommand{\HCCondition}{0}
-\newcommand{\WkstHop}[1][1]{\if\HCCondition 0
-	\vspace*{\stretch{#1}} \fi} 
-\newcommand{\WkstNew}{\if\HCCondition 0
-	\newpage
-	 \fi} 

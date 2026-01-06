@@ -1,25 +1,35 @@
+
+
+\newcommand{\wkstTitle}{Understanding functions (UF)}
+\newcommand{\solnTitle}{\wkstTitle \, - Solutions}
+
 %Add code to compile both versions from makefile at same time
 \providecommand{\HCCondition}{0}
 %Define each of the conditions
 \ifcase\HCCondition
 	%\condition=0 -> handout
 	\documentclass[nooutcomes,noauthor,space,handout]{ximera}
-	\title{Understanding functions (UF)}
+	\title{\wkstTitle}
 \or	%\condition=1 -> Soln
 	\documentclass[nooutcomes,noauthor]{ximera}
-	\title{Understanding functions (UF) - Solutions} 
+	\title{\solnTitle} 
 \fi
 
 \input{../preamble.tex} %% we can turn off input when making a master document
 
-\usepackage{fullpage}
+
+
 
 \begin{document}
 \begin{abstract}		\end{abstract}
-\maketitle
+
+\makeTagTitle
 
 \ifcase\HCCondition
-{\large{\textbf{SUMMARY: What we need to know about functions}}}\\[0.8em]
+
+\subsection*{SUMMARY: What we need to know about functions}
+
+
 \begin{itemize}
 	\item State the definition of a function.
 	\item Find the domain and range of a function.
@@ -43,11 +53,17 @@
          \item Relate the domain and range of $f$ and the domain and range of $f^{-1}$.  
 	\item Use a sign-chart to determine where the function is positive/negative.
 \end{itemize}
+
 \WkstNew
 
-\section*{Recitation Questions}
+\subsection*{Recitation Questions}
 
 \fi
+
+
+
+
+
 %problem 1
 \begin{problem}
 
@@ -58,8 +74,10 @@ What is the range of $f$? Is the function $f$ linear?
 %		\includegraphics[scale=.4]{figure11a.png}
 %	\end{image}	
 
-	  \begin{center}
-		\begin{tikzpicture}
+	  \begin{figure}[H]
+	  	\centering
+		
+		\begin{tikzpicture}[alt={Graph of piecewise-linear function for questions below.}]
 			\begin{axis}[
 				xmin=-0.3, xmax=3.3, ymin=-0.3,ymax=6.5,    
 				axis lines =middle, 
@@ -76,7 +94,8 @@ What is the range of $f$? Is the function $f$ linear?
 				\draw[fill=white] (axis cs:3,6) circle [color=white,radius=2pt];
 			\end{axis}
 		\end{tikzpicture}
-	\end{center}
+	\end{figure}
+
 
 \WkstHop
 
@@ -92,6 +111,8 @@ $f(x) =   \left\{ \begin{array}{cl}
 	\end{freeResponse}
 
 \end{problem}
+
+
 \WkstNew
 \begin{problem}
 
@@ -102,25 +123,32 @@ Express the perimeter of the mirror P (in inches) as a function of $x$ (in inche
 %	\begin{image}		 
 %		\includegraphics[scale=.4]{figure11b.png}
 %	\end{image}
-	\begin{center}
-		\begin{tikzpicture}
+
+	\begin{figure}[H]
+		
+		\centering
+		
+		\begin{tikzpicture}[alt={A rectangle of height y with a semicircle of radius x on it.}]
+
 			\draw[very thick] (2,0) arc(0:180:2) -- (-2,-3) -- (2, -3) -- cycle node[pos=0.5, right]{\large{$y$}};;
 			\draw[dashed] (0,0) -- (2,0) node[pos=0.5, above]{\large{$x$}};
+
 		\end{tikzpicture}
-	\end{center}
+
+	\end{figure}
 
 \WkstHop
 
 	\begin{freeResponse} 
-Since the area $A=32=2xy+\dfrac{x^{2}\pi}{2}$, it follows that $y=\dfrac{16}{x}-\dfrac{x\pi}{4}$ and that
+Since the area $A=32=2xy+\dfrac{x^{2}\pi}{2}$, it follows that $y=\dfrac{16}{x}-\dfrac{x\pi}{4}$ and that\
 $P(x) =  2x + 2y +x\pi= 2x +\dfrac{32}{x}-\dfrac{x\pi}{2} +x\pi=2x+\dfrac{x\pi}{2}+\dfrac{32}{x}$
-			
-
-	
-		
+					
 	\end{freeResponse}
 	
 \end{problem}
+
+
+
 \WkstNew
 %problem 1
 \begin{problem}
@@ -130,22 +158,26 @@ Define
 	\text{? }			&	\qquad \text{if }  x > 0 	\\		\end{array} \right.  $
 \begin{enumerate}	
 	\item  Find an expression for "?" such that $f$ will be even.
+
 \WkstHop	
+
 	\begin{freeResponse} 
-			If $f$ is even then $f(x)=f(-x)$.  
-			\begin{align*}
+		If $f$ is even then $f(x)=f(-x)$.  
+		\begin{align*}
 			f(x)&=f(-x)\ \text{for}\ x>0\\
-			&=(-x)^2-1\\
-			&=x^2-1	
-			\end{align*}
+				&=(-x)^2-1\\
+				&=x^2-1	
+		\end{align*}
 
 % replaced by the tikzpic below
 %	\begin{image}		
 %	\includegraphics[scale=.4]{UFFigure1.png}
 %	\end{image}
 
-	  \begin{center}
-		\begin{tikzpicture}
+	  \begin{figure}[H]
+	  	\centering
+	  	
+		\begin{tikzpicture}[alt={The graph of the parabola, with vertex at the point (0,-1) removed.}]
 			\begin{axis}[
 				xmin=-4.3, xmax=4.3, ymin=-4.3,ymax=4.3,    
 				axis lines =middle, 
@@ -161,12 +193,15 @@ Define
 				\draw[fill=white] (axis cs:0,-1) circle [color=white,radius=2pt];
 			\end{axis}
 		\end{tikzpicture}
-	\end{center}
+
+	\end{figure}
 		
 	\end{freeResponse}
 	
 	\item  Find an expression for "?" such that $f$ will be odd.
+
 \WkstHop	
+
 	\begin{freeResponse}
 	   If $f$ is odd then $f(-x)=-f(x)$. 
 			\begin{align*}
@@ -180,8 +215,10 @@ Define
 	%\begin{image}		
 	%\includegraphics[scale=.4]{UFFigure11.png}
 	%\end{image}
-	  \begin{center}
-		\begin{tikzpicture}
+	  \begin{figure}[H] 
+	  	\centering
+		
+		\begin{tikzpicture}[alt={The graph whose left-side coincides with the parabola y=x^2-1, and whose right-side coincides with y=1-x^2.}]
 			\begin{axis}[
 				xmin=-4.3, xmax=4.3, ymin=-4.3,ymax=4.3,    
 				axis lines =middle, 
@@ -201,7 +238,7 @@ Define
 				\draw[fill=white] (axis cs:0,1) circle [color=white,radius=2pt];
 			\end{axis}
 		\end{tikzpicture}
-	\end{center}		
+	\end{figure}
 
 	\end{freeResponse}
 
@@ -222,28 +259,32 @@ Define
 Given $y(t)=t- \frac{\pi}{3}$ and $w(t)=\sin(t)$.  Find:
 \begin{enumerate}	
 	\item  $y(w(t))$
-\WkstHop
+		\WkstHop
+
 		\begin{freeResponse}
 			$y(w(t))=y\left( \sin(t) \right)=\sin(t)-\frac{\pi}{3}$
 		\end{freeResponse}	
 
 
 	\item  $w(y(t))$
-\WkstHop
+		\WkstHop
+
 		\begin{freeResponse}
 		$w(y(t))=w\left( t-\frac{\pi}{3}\right)=\sin\left( t-\frac{\pi}{3}\right)$
 		\end{freeResponse}	
 
 
 	\item  $w \left(y \left(\frac{4\pi}{3} \right)\right)$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 		$w \left(y \left(\frac{4\pi}{3} \right)\right)=\sin \left(\frac{4\pi}{3}-\frac{\pi}{3}\right)=sin(\pi)=0$
 		\end{freeResponse}	
 
 
 	\item  $y(w(\frac{4\pi}{3}))$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 		$y \left(w \left(\frac{4\pi}{3} \right)\right)=\sin \left(\frac{4\pi}{3}\right)-\frac{\pi}{3}=\frac{-\sqrt{3}}{2}-\frac{\pi}{3}$
 
@@ -265,46 +306,48 @@ Define
 	\cos(x)			&	\qquad \text{if }  x \geq 0  	\\		\end{array} \right.  $
 \begin{enumerate}	
 	\item  Sketch a graph of $g$
-\WkstHop
-\WkstHop
+		\WkstHop
+		\WkstHop
+
 		\begin{freeResponse} \hfil
-			% replaced by tikzpic below
-			%\begin{image}			
-			%\includegraphics[scale=.7]{UFFigure6.png}
-			%\end{image}
 
-	  \begin{center}
-		\begin{tikzpicture}
-			\begin{axis}[
-				xmin=-4.3, xmax=9.3, ymin=-1.3,ymax=7.3,    
-				axis lines =middle, 
-				every axis y label/.style={at=(current axis.above origin),anchor=south},
-				every axis x label/.style={at=(current axis.right of origin),anchor=west},
-				xtick={-4,...,9}, ytick={-1,...,7},
-				grid=major, width=4in, height = 2.5in,
-				grid style={dashed, gray!40}
-				]
-				\addplot[color=blue, ultra thick, domain=-4.3:0]{2-x}node[pos=0.25, above right]{\large{$y=g(x)$}};
-				\addplot[color=blue, ultra thick, smooth, domain=0:9.3]{cos(deg(x))};%node[pos=0.1, above right]{\large{$y=1-x^2$}};		
+			  \begin{figure}[H] 
+			  	\centering
+				
+				\begin{tikzpicture}[alt={A  sketch of the graph. The left-side is the line y=-x+2, and the right-side is the curve y=cos(x).}]
+					\begin{axis}[
+						xmin=-4.3, xmax=9.3, ymin=-1.3,ymax=7.3,    
+						axis lines =middle, 
+						every axis y label/.style={at=(current axis.above origin),anchor=south},
+						every axis x label/.style={at=(current axis.right of origin),anchor=west},
+						xtick={-4,...,9}, ytick={-1,...,7},
+						grid=major, width=4in, height = 2.5in,
+						grid style={dashed, gray!40}
+						]
+						\addplot[color=blue, ultra thick, domain=-4.3:0]{2-x}node[pos=0.25, above right]{\large{$y=g(x)$}};
+						\addplot[color=blue, ultra thick, smooth, domain=0:9.3]{cos(deg(x))};%node[pos=0.1, above right]{\large{$y=1-x^2$}};		
+		
+						\draw[fill=blue] (axis cs:0,2) circle [color=blue,radius=3pt];
+						\draw[fill=white] (axis cs:0,2) circle [color=white,radius=2pt];
+		
+						\draw[fill=blue] (axis cs:0,1) circle [color=blue,radius=3pt];
+					\end{axis}
+				\end{tikzpicture}
 
-				\draw[fill=blue] (axis cs:0,2) circle [color=blue,radius=3pt];
-				\draw[fill=white] (axis cs:0,2) circle [color=white,radius=2pt];
-
-				\draw[fill=blue] (axis cs:0,1) circle [color=blue,radius=3pt];
-			\end{axis}
-		\end{tikzpicture}
-	\end{center}
+			\end{figure}
 	
 		\end{freeResponse}
 
 	\item  Find the domain and range of $g$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}	
 			Domain: $(-\infty,\infty)$, Range: $[-1,1]\cup(2,\infty)$
 		\end{freeResponse}		
 	
 	\item  Find the values of $g(\pi)$ and $g(-\pi)$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}	
 			$g(\pi)=\cos (\pi)=-1$ and $g(-\pi)=|-\pi-2|=\pi+2$
 		\end{freeResponse}
@@ -323,8 +366,10 @@ The entire graph of $f(x)$ is given below.
 %	\includegraphics[scale=.5]{UFFigure2.png}
 %	\end{image}
 
-	  \begin{center}
-		\begin{tikzpicture}
+	  \begin{figure}[H] 
+	  	\centering
+		
+		\begin{tikzpicture}[alt={Graph of piecewise-defined function for reading domains, ranges, and intervals of increasing and decreasing.}]
 			\begin{axis}[
 				xmin=-4.3, xmax=4.3, ymin=-4.3,ymax=4.3,    
 				axis lines =middle, 
@@ -353,40 +398,46 @@ The entire graph of $f(x)$ is given below.
 				\draw[fill=white] (axis cs:2,3) circle [color=white,radius=2pt];
 			\end{axis}
 		\end{tikzpicture}
-	\end{center}
+
+	\end{figure}
 	
 \begin{enumerate}	
 	\item  Find the domain and range of $f$
-\WkstHop
+		\WkstHop
+
 		\begin{freeResponse}
 			Domain: $[-4,-3]\cup\left\{-2\right\}\cup(-1,4]$
 			Range: $[-4,-3)\cup\left\{-2\right\}\cup[-1,3)$
 		\end{freeResponse}	
 
 	\item  Find the values of $f(-3),f(-2), f(-1),f(2)$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 		$f(-3)=0, f(-2)=-2, f(-1)\ \text{does not exist}, f(2)=-1$
 		\end{freeResponse}	
 
 	\item  Find the intervals on which $f(x)$ is positive.  Find the intervals on which $f(x)$ is negative.
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 		 $f(x)$ is postive on $(1,2)$. $f(x)$ is negative on $[-4,-3),\left\{-2\right\},(-1,1),[2,4)$
 		\end{freeResponse}
 	
 	\item Find the intervals on which $f$ is increasing.  Find the intervals on which $f$ is decreasing.
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
-		$f$ is increasing on $(-4,-3),(0,2), (2,4)$.  $f$ is decreasing on $(-1,0)$. It would also be OK to say that		
-		$f$ is increasing on $[-4,-3],[0,2), [2,4]$ and $f$ is decreasing on $(-1,0]$. Typically we will not be including endpoints of intervals
-		when we talk about increasing/decreasing.
+			$f$ is increasing on $(-4,-3),(0,2), (2,4)$.  $f$ is decreasing on $(-1,0)$. It would also be OK to say that		
+			$f$ is increasing on $[-4,-3],[0,2), [2,4]$ and $f$ is decreasing on $(-1,0]$. Typically we will not be including endpoints of intervals
+			when we talk about increasing/decreasing.
 		\end{freeResponse}
 	
 	\item True or False: $f(1.5) < f(2)$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
-		False, $f(2) < f(1.5)$
+			False, $f(2) < f(1.5)$
 		\end{freeResponse}	
 	
 	\end{enumerate}
@@ -404,17 +455,19 @@ Determine if the function is even, odd, or neither.
 
 \begin{enumerate}	
 	\item  $h(x)=x^4+x^2-3$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 
-		A function is even if $f(x)=f(-x)$, for all $x$ in the domain, which means its graph is symmetic about the y-axis.  A function is odd if $f(-x)=-f(x)$, for all $x$ in the domain, which means its graph is symmetic about the origin. 
-		 $$h(x)=x^4+x^2-3$$
-			$$h(-x)=(-x)^4+(-x)^2-3=x^4+x^2-3$$
-			$h(x)=h(-x)$.  Hence $h$ is even.  This can be verified by graphing $h$ and seeing that its graph is symmetric about the y-axis.
+			A function is even if $f(x)=f(-x)$, for all $x$ in the domain, which means its graph is symmetic about the y-axis.  A function is odd if $f(-x)=-f(x)$, for all $x$ in the domain, which means its graph is symmetic about the origin. 
+			 $$h(x)=x^4+x^2-3$$
+				$$h(-x)=(-x)^4+(-x)^2-3=x^4+x^2-3$$
+				$h(x)=h(-x)$.  Hence $h$ is even.  This can be verified by graphing $h$ and seeing that its graph is symmetric about the y-axis.
 		\end{freeResponse}
 
 	\item  $s(t)=t^2-t$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 			$$s(t)=t^2-t$$
 			$$s(-t)=(-t)^2-(-t)=t^2+t$$ This does not equal $s(t)$ so $s(t)$ is not even.
@@ -422,19 +475,21 @@ Determine if the function is even, odd, or neither.
 		\end{freeResponse}
 
 	\item  We know that $\sin(\theta)$ is odd and $\cos(\theta)$ is even.  Is $g(\theta)=\tan(\theta)$ even, odd, or neither?
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
-		 $$g(\theta)=\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
-			\begin{align*}
-			g(-\theta)&=\frac{\sin(-\theta)}{\cos(-\theta)}\\
-			&=\frac{-\sin(\theta)}{\cos(\theta)}\\
-			&=-\frac{\sin(\theta)}{\cos(\theta)}
-			\end{align*}
-			\begin{center}
-			$$-g(\theta)=-\frac{\sin(\theta)}{\cos(\theta)}$$
-			$g(-\theta)=-g(\theta) \implies g$ odd
-			\end{center}
+			 $$g(\theta)=\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
+				\begin{align*}
+				g(-\theta)&=\frac{\sin(-\theta)}{\cos(-\theta)}\\
+				&=\frac{-\sin(\theta)}{\cos(\theta)}\\
+				&=-\frac{\sin(\theta)}{\cos(\theta)}
+				\end{align*}
+				\begin{center}
+				$$-g(\theta)=-\frac{\sin(\theta)}{\cos(\theta)}$$
+				$g(-\theta)=-g(\theta) \implies g$ odd
+				\end{center}
 		\end{freeResponse}
+
 	\end{enumerate}
 	
 
@@ -450,23 +505,29 @@ Using the known graphs of $y=\sqrt{x}$ and $y=\frac{1}{x}$, sketch the graphs of
 
 \begin{enumerate}
  	\item $y=\sqrt{x+2}-3$
-\WkstHop
+	\WkstHop
+	
 	\begin{freeResponse}
-		This is a shift of $y=\sqrt{x}$ moved left 2 units and down three units.
+
+		This is a shift of $y=\sqrt{x}$ moved left two units and down three units.
+	
 		\begin{image}		
-			\includegraphics[scale = 0.5]{UFFigure8.png}
+			\includegraphics[scale = 0.5, alt={Graph of square root function and of it shifted 2 units down and 3 units to the left.}]{UFFigure8.png }
 		\end{image}
+
 	\end{freeResponse}
 	
 
 	\item $y=\frac{1}{x-4}+1$
-\WkstHop
-	\begin{freeResponse}
-		This is a shift of $y=\frac{1}{x}$ moved right 4 units and up one unit.
-		\begin{image}		
-	\includegraphics[scale=0.5]{UFFigure4.png}
-	\end{image}
-	\end{freeResponse}
+		\WkstHop
+	
+		\begin{freeResponse}
+			This is a shift of $y=\frac{1}{x}$ moved right four units and up one unit.
+			\begin{image}		
+				\includegraphics[scale=0.5, alt={Graph of 1 over x function and of it shifted 4 units right and 1 unit up.}]{UFFigure4.png}
+			\end{image}
+		\end{freeResponse}
+
 \end{enumerate}
 
 \end{problem}
@@ -479,46 +540,50 @@ Find the domain of the function.  Determine whether the function is odd, even, o
 
 \begin{enumerate}
 	\item $f(x)=\frac{x}{\sqrt{x^2-9}}$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
 			To find the domain, recall that a rational expression cannot have $0$ in the denominator and a square root expression cannot have a negative number under the square root.  Thus, $x^2-9>0$.
 			$\implies (x-3)(x+3)>0$  The zeros are located at $x=-3,3$.  From this we can draw a sign chart  for the expression, $x^2-9$, and test values.
-		\begin{image}		
-	\includegraphics[scale=0.6]{UFFigure21.png}
-	\end{image}
-		We see that $x^2-9>0$ on the interval $(-\infty,-3)\cup (3,\infty)$.  Thus our domain is $(-\infty,-3)\cup (3,\infty)$.\\ \\
-
-		Next we check for even/odd/neither.\\
-		$f(-x)=\frac{-x}{\sqrt{(-x)^2-9}}$ which does not equal $f(x)$ so $f$ is not even\\
-		$-f(x)=-\frac{x}{\sqrt{x^2-9}}$ which is equal to $f(-x)$ so $f$ is odd.
+			\begin{image}		
+				\includegraphics[scale=0.6, alt={Sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}]{UFFigure21.png}
+			\end{image}
+			We see that $x^2-9>0$ on the interval $(-\infty,-3)\cup (3,\infty)$.  Thus our domain is $(-\infty,-3)\cup (3,\infty)$.
+	
+			Next we check for even/odd/neither.\\
+			$f(-x)=\frac{-x}{\sqrt{(-x)^2-9}}$ which does not equal $f(x)$ so $f$ is not even\\
+			$-f(x)=-\frac{x}{\sqrt{x^2-9}}$ which is equal to $f(-x)$ so $f$ is odd.
 		
 		\end{freeResponse}
 
 	\item $g(x)= \frac{\sin(x)}{x}$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
-	To find the domain, recall that a rational expression cannot have $0$ in the denominator.  Therefore, our domain is $(-\infty,0) \cup (0,\infty)$\\ \\
-	
-	Next we check for even/odd/neither.\\
-		$f(-x)= \frac{\sin(-x)}{-x}=\frac{-\sin(x)}{-x}=\frac{\sin(x)}{x}$ which equals $f(x)$ so $f$ is even
-
+		
+			To find the domain, recall that a rational expression cannot have $0$ in the denominator.  Therefore, our domain is $(-\infty,0) \cup (0,\infty)$
+			
+			Next we check for even/odd/neither.\\
+				$f(-x)= \frac{\sin(-x)}{-x}=\frac{-\sin(x)}{-x}=\frac{\sin(x)}{x}$ which equals $f(x)$ so $f$ is even
 
 		\end{freeResponse}
 
 	\item $h(t)= \ln(t^3-1)$
-\WkstHop
+		\WkstHop
+		
 		\begin{freeResponse}
-		To find the domain, recall that we cannot take the natural logarithm of $0$ or a negative number.  Therefore, $t^3-1>0$.
+		
+			To find the domain, recall that we cannot take the natural logarithm of $0$ or a negative number.  Therefore, $t^3-1>0$.
 			$\implies (t-1)(t^2+t+1)>0$.  The zero is located at $t=1$.  From this we can draw a sign chart and test values.
 
-	\begin{image}		
-	\includegraphics[scale=0.2]{Figure10.png}
-	\end{image}
-		We see that $t^3-1>0$ on the interval $(1,\infty)$.  Thus our domain is $ (1,\infty)$.\\ \\
-		
-		Next we check for even/odd/neither.\\
-		$h(t)$ is neither even nor odd because if $t$ is in the domain, then $-t$ is not in the domain.
+			\begin{image}		
+				\includegraphics[scale=0.2, alt={Sign-chart showing t^3-1 is negative for t < 1 and positive for t>1.}]{Figure10.png}
+			\end{image}
 
+			We see that $t^3-1>0$ on the interval $(1,\infty)$.  Thus our domain is $ (1,\infty)$.\\ \\
+		
+			Next we check for even/odd/neither.\\
+			$h(t)$ is neither even nor odd because if $t$ is in the domain, then $-t$ is not in the domain.
 
 		\end{freeResponse}
 
@@ -534,60 +599,71 @@ Find the domain of the function.  Determine whether the function is odd, even, o
   \textbf{True or False:}
   If the point $(2, 1/5)$ lies on the graph of $g$, then the point $(2, 5)$ lies on the graph of $g^{-1}$.
 \WkstHop
-  \begin{freeResponse}
-    This statement is \textbf{false}: we have $g(2) = 1/5 \iff 2 = g^{-1}(1/5)$.
-    The notation $g^{-1}$ never, in this course, means $1/g$.
-  \end{freeResponse}
+
+	 \begin{freeResponse}
+	    This statement is \textbf{false}: we have $g(2) = 1/5 \iff 2 = g^{-1}(1/5)$.
+	    The notation $g^{-1}$ never, in this course, means $1/g$.
+	  \end{freeResponse}
+
 \end{problem}
+
+
+
 
 \begin{problem}
   Each of the following functions are invertible on their given domains.
   For each one find a formula for its inverse and give the domain and range of the inverse.
   \begin{enumerate}
-    \item
-      The function $f$ defined by $f(x)=x^2-4x-5$ for every $x \ge 2$.
-\WkstHop
-      \begin{freeResponse}
-        To help find the a formula for $f^{-1}$ we will first ``complete the square'':
-        \begin{align*}
-          x^2-4x-5 &= x^2 - 4x + 4 - 4 - 5,\\
-                   &= (x - 2)^2 - 9.
-        \end{align*}
-    
-        Setting $y = f(x) = x^2-4x-5 = (x - 2)^2 - 9$, we can follow the procedures outlined for algebracially finding the formula for an inverse function.
-        \begin{align*}
-          &\mbox{} y = (x - 2)^2 - 9\\
-          &\implies y + 9 = (x - 2)^2\\
-          &\implies \sqrt{y + 9} = |x - 2| \\
-          &\implies \sqrt{y + 9} = x - 2 \hspace{1em} \mbox{(since $x \ge 2$)}\\
-          &\implies \sqrt{y + 9} + 2 = x \\
-          &\implies 2 + \sqrt{x + 9} = y \hspace{1em} \mbox{\parbox[b][]{6cm}{(interchange $x$ and $y$ along with minor rewriting)}}
-        \end{align*}
-        Therefore we have that $f^{-1}$ is defined by $f^{-1}(x) = 2 + \sqrt{x + 9}$.
-        The domain of $f^{-1}(x)$ is $[-9, \infty)$ and the range is $[2, \infty)$.
-      \end{freeResponse}
+	\item The function $f$ defined by $f(x)=x^2-4x-5$ for every $x \ge 2$.
+		\WkstHop
+	
+		\begin{freeResponse}
+			To help find the a formula for $f^{-1}$ we will first ``complete the square'':
+		        
+		        \begin{align*}
+		          x^2-4x-5 &= x^2 - 4x + 4 - 4 - 5,\\
+		                   &= (x - 2)^2 - 9.
+		        \end{align*}
+		    
+		        Setting $y = f(x) = x^2-4x-5 = (x - 2)^2 - 9$, we can follow the procedures outlined for algebracially finding the formula for an inverse function.
+		        
+		        \begin{align*}
+			          &\mbox{} y = (x - 2)^2 - 9\\
+			          &\implies y + 9 = (x - 2)^2\\
+			          &\implies \sqrt{y + 9} = |x - 2| \\
+			          &\implies \sqrt{y + 9} = x - 2 \hspace{1em} \textrm{(since $x \ge 2$)}\\
+			          &\implies \sqrt{y + 9} + 2 = x \\
+			          &\implies 2 + \sqrt{x + 9} = y \hspace{1em} \textrm{(interchange $x$ and $y$ along with rewriting)}
+		        \end{align*}
+		        
+		        Therefore we have that $f^{-1}$ is defined by $f^{-1}(x) = 2 + \sqrt{x + 9}$.
+		        The domain of $f^{-1}(x)$ is $[-9, \infty)$ and the range is $[2, \infty)$.
+		      \end{freeResponse}
 \WkstNew
-    \item
-      The function $g$ defined by $g(u) = \sqrt[4]{u + 2}$.
-\WkstHop
-      \begin{freeResponse}
-        Following the procedure to algebraically find the formula for the inverse function we have
-        \begin{align*}
-          &\mbox{} z = \sqrt[4]{u + 2}\\
-          &\implies z = (u+2)^{1/4}\\
-          &\implies z^4 = u + 2\\
-          &\implies z^4 - 2 = u\\
-          &\implies u^4 - 2 = z \hspace{1em} \mbox{(interchange $u$ and $z$)}
-        \end{align*}
-        Therefore we have that $g^{-1}$ is defined by $g^{-1}(u) = u^4 - 2$.
-        The domain of $g^{-1}$ is $[0, \infty)$ and the range is $[-2, \infty)$.
-      \end{freeResponse}
 
-    \item
-      The function $h$ defined by $h(t) = 1/(t+2)^2$ for every $t > -2$.
-\WkstHop
-      \begin{freeResponse}
+	\item The function $g$ defined by $g(u) = \sqrt[4]{u + 2}$.
+		\WkstHop
+
+		 \begin{freeResponse}
+		        Following the procedure to algebraically find the formula for the inverse function we have
+		        
+		        \begin{align*}
+		          &\mbox{} z = \sqrt[4]{u + 2}\\
+		          &\implies z = (u+2)^{1/4}\\
+		          &\implies z^4 = u + 2\\
+		          &\implies z^4 - 2 = u\\
+		          &\implies u^4 - 2 = z \hspace{1em} \mbox{(interchange $u$ and $z$)}
+		        \end{align*}
+		        Therefore we have that $g^{-1}$ is defined by $g^{-1}(u) = u^4 - 2$.
+		        The domain of $g^{-1}$ is $[0, \infty)$ and the range is $[-2, \infty)$.
+	      \end{freeResponse}
+
+    \item The function $h$ defined by $h(t) = 1/(t+2)^2$ for every $t > -2$.
+	\WkstHop
+      
+      	\begin{freeResponse}
         Following the procedure to algebraically find  the formula for the inverse function we have
+
         \begin{align*}
           &\mbox{} s = \frac{1}{(t+2)^2}\\
           &\implies (t+2)^2 = \frac{1}{s}\\
@@ -599,6 +675,7 @@ Find the domain of the function.  Determine whether the function is odd, even, o
         Therefore we have $h^{-1}$ is defined by $h^{-1} = \frac{1}{\sqrt{t}} - 2$.
         The domain of $h^{-1}$ is $(0, \infty)$ and the range is $(-2, \infty)$.
       \end{freeResponse}
+  
   \end{enumerate}
 \end{problem}
 
@@ -613,6 +690,7 @@ Explain what each of the following means:
     % part a
   \item $f^{-1}(x)$
 \WkstHop
+
     \begin{freeResponse}
       This denotes the inverse function of $f$, $f^{-1}$, evauluated at $x$.
     \end{freeResponse}
@@ -620,6 +698,7 @@ Explain what each of the following means:
     % part b
   \item $f(x^{-1})$
 \WkstHop
+
     \begin{freeResponse}
       This means $f \left( \frac{1}{x} \right)$.
     \end{freeResponse}
@@ -627,6 +706,7 @@ Explain what each of the following means:
     % part c
   \item $\left( f(x) \right)^{-1}$
 \WkstHop
+
     \begin{freeResponse}
       This means $f(x)$ raised to the $-1$ power,
       i.e. $\frac{1}{f(x)}$.
@@ -638,6 +718,7 @@ Explain what each of the following means:
 \begin{problem}
 If $f(x)$ represents the number of packages of buns needed for $x$ packages of hotdogs, what does $f^{-1}(x)$ represent?
 \WkstHop
+
 \begin{freeResponse}
 $f^{-1}(x)$ represents the numbers of packages of hotdogs needed for $x$ packages of buns.
 \end{freeResponse}
@@ -657,8 +738,10 @@ $f^{-1}(x)$ represents the numbers of packages of hotdogs needed for $x$ package
 %    \includegraphics[scale = 0.4]{UFFigure112.png}
 %  \end{image}
 
-	  \begin{center}
-		\begin{tikzpicture}
+	  \begin{figure}[H] 
+	  	\centering
+		
+		\begin{tikzpicture}[alt={Graph piecewise-defined function to read info about domain, range, and one-to-one information.}]
 			\begin{axis}[
 				xmin=-3.3, xmax=3.3, ymin=-2.3,ymax=4.3,    
 				axis lines =middle, 
@@ -687,62 +770,64 @@ $f^{-1}(x)$ represents the numbers of packages of hotdogs needed for $x$ package
 				\draw[fill=white] (axis cs:1,-1) circle [color=white,radius=2pt];
 			\end{axis}
 		\end{tikzpicture}
-	\end{center}
+	\end{figure} 
+	
   Use this graph to answer the following questions:
   \begin{enumerate}
   %a
-    \item
-      What is the domain of this function?
-\WkstHop
+    \item What is the domain of this function?
+	\WkstHop
+
       \begin{freeResponse}
         $(-\infty, 1) \cup (1, \infty)$
       \end{freeResponse}
       
     %b
-    \item
-      What is the range of this function?
-\WkstHop
+    \item What is the range of this function?
+	\WkstHop
+      
       \begin{freeResponse}
         $(-\infty, -1) \cup (0, \infty)$
       \end{freeResponse}
 
     %c
-    \item
-      What is the value of $f(0)$, $f(1)$, and $f(2)$?
+    \item What is the value of $f(0)$, $f(1)$, and $f(2)$?
 \WkstHop
+      
       \begin{freeResponse}
         $f(0) = 3$, $f(1)$ does not exist, $f(2) = -2$
       \end{freeResponse}
 
    %d
-    \item
-      Does this function have an inverse?
-      (Why or why not?)
-\WkstHop
-      \begin{freeResponse}
+    \item Does this function have an inverse? (Why or why not?)
+	\WkstHop
+      
+      	\begin{freeResponse}
         No, the function does not have an inverse.
         It is not one-to-one (that is, it does not pass the horizontal line test).
       \end{freeResponse}
       
      %e
-    \item
-      Find at least two intervals on which the function is one-to-one.
-\WkstHop
+    \item Find at least two intervals on which the function is one-to-one.
+	\WkstHop
+      
       \begin{freeResponse}
         The function becomes one-to-one when we restrict its domain to $(-\infty, 0)$:
+        
         \begin{image}
-          \includegraphics[scale = 0.4]{UFFigure122.png}
+      	    \includegraphics[scale = 0.4, alt={Graph of restriction of the function to x<0, showing that the graph is one-to-one here.}]{UFFigure122.png}
         \end{image}
         The function also becomes one-to-one when we restrict its domain to $[0, 1) \cup (1,\infty)$:
+       
         \begin{image}
-          \includegraphics[scale = 0.4]{UFFigure222.png}
+          \includegraphics[scale = 0.4, alt={Graph of restriction to [0,1) union (1, infinity), showing that the graph is one-to-one here.}]{UFFigure222.png}
           \end{image}
       \end{freeResponse}
 
    %f
-    \item
-      Find $f^{-1}(3)$ on a restricted domain of $f$.
-\WkstHop
+    \item Find $f^{-1}(3)$ on a restricted domain of $f$.
+	\WkstHop
+      
       \begin{freeResponse}
         In this case restrict the domain of $f$ to $[0, 1)\cup(1,\infty)$.
         By definition we have $f^{-1}(3) = y \iff 3 = f(y)$.
@@ -753,25 +838,25 @@ $f^{-1}(x)$ represents the numbers of packages of hotdogs needed for $x$ package
       \end{freeResponse}
 \WkstNew      
       %g
-	\item
-	Using the restricted domain for $f$ of $(-\infty,0)$, sketch a graph of $f^{-1}$.  
-\WkstHop
+	\item Using the restricted domain for $f$ of $(-\infty,0)$, sketch a graph of $f^{-1}$.  
+	\WkstHop
+	
 	\begin{freeResponse}
 	To graph the inverse, we can think of the graph being reflected over the line $y=x$.  Another way to obtain the graph is to remember than if $(x,y)$ is a point on the graph of $f$, then $(y,x)$ is a point on the graph of $f^{-1}$.  For example, $(-1,1)$ is on the graph of $f$ so $(1,-1)$ is on the graph of $f^{-1}$.
 	
 	 \begin{image}
-          \includegraphics[scale = 0.4]{UFFigure223.png}
+          \includegraphics[scale = 0.4, alt={Graph showing the restriction of the function, the line y=x, and the reflection of the restriction across that line.}]{UFFigure223.png}
         \end{image}
 	\end{freeResponse}	
 	 %h
-	\item
-	Using the restricted domain for $f$ of $[0,1)\cup(1,\infty)$, sketch a graph of $f^{-1}$.  
-\WkstHop
+	\item Using the restricted domain for $f$ of $[0,1)\cup(1,\infty)$, sketch a graph of $f^{-1}$.  
+	\WkstHop
+	
 	\begin{freeResponse}
 	We can graph the inverse of $f$, when restricted to $[0,1)\cup(1,\infty)$, in pieces from left to right.  Since $(0,3)$ is a point on the graph of $f$, the point $(3,0)$ in on the graph of $f^{-1}$.  Then, we see on the graph of $f$, there is a linear piece going from $(0,1)$ to $(1,0)$.  When we imagine reflecting this part of the graph of $f$ over the line $y=x$, it reflects onto itself.  The last piece of the graph of $f$ is a line from $(1,-1)$ which appears to also contain the point $(-2,2)$.  Reflecting this part of $f$ over the line $y=x$, we obtain a line starting at $(-1,1)$ and through the point $(-2,2)$.
 	
 	 \begin{image}
-          \includegraphics[scale = 0.4]{UFFigure333.png}
+          \includegraphics[scale = 0.4, alt={Graph showing the restriction of the function, the line y=x, and the reflection of the restriction across that line.}]{UFFigure333.png}
         \end{image}
 	
 	
