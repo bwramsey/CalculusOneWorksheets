@@ -1,0 +1,51 @@
+% Extracted from antiderivativesAndArea.tex, problem #4
+\begin{problem}
+  The \dfn{velocity} function for a man walking along a straight road which runs east and west is given by $v(t) = -t^2 + 4t - 3$ ft/min.
+  \begin{enumerate}
+    
+  \item  Set up a definite integral for the man's \dfn{displacement} during the time interval from $2$ minutes to $6$ minutes after he began running.
+\WkstHop    \begin{freeResponse}
+      \begin{align*}
+        \int_2^6 v(t) \d t &= \lim_{n \to \infty} \sum_{k=1}^n v(t_k) \Delta t
+      \end{align*}
+      Where:  \\	
+      $\Delta t = \frac{b-a}{n} = \frac{6-2}{n} = \frac{4}{n}$.
+      
+      $t_k = a + k \Delta t = 2 + k \frac{4}{n} = 2 + \frac{4k}{n}$.
+    \end{freeResponse}
+    
+  \item  \dfn{At home:}  Evaluate the definite integral using the limit of a right Riemann sum.
+\WkstHop
+    \begin{freeResponse}
+      \begin{align*}
+        v(t_k) &= -\left(2 + \frac{4k}{n} \right)^2 + 4 \left( 2 + \frac{4k}{n} \right) - 3  \\
+               &= - \left( 4 + \frac{16k}{n} + \frac{16k^2}{n^2} \right) + 8 + \frac{16k}{n} - 3  \\
+               &= 1 - \frac{16k^2}{n^2}
+      \end{align*}
+      
+      So we compute:
+      \begin{align*}
+        \int_2^6 v(t) \d t &= \lim_{n \to \infty} \sum_{k=1}^n \left[ \left( 1 - \frac{16k^2}{n^2} \right) \left( \frac{4}{n} \right) \right]  \\
+                           &= \lim_{n \to \infty} \sum_{k=1}^n \left( \frac{4}{n} - \frac{64 k^2}{n^3} \right)  \\
+                           &= \lim_{n \to \infty} \left[ \frac{4}{n} \sum_{k=1}^n 1 - \frac{64}{n^3} \sum_{k=1}^n k^2 \right]  \\
+                           &= \lim_{n \to \infty} \left[ \frac{4}{n} (n) - \frac{64}{n^3} \left( \frac{n(n+1)(2n+1)}{6} \right) \right]  \\
+                           &= 4 - \frac{64}{3} = \frac{12-64}{3} = - \frac{52}{3}.
+      \end{align*}
+    \end{freeResponse}
+    
+  \item  Is this the same as the total \dfn{distance} the man walked from $2$ minutes to $6$ minutes?
+    Why or why not?
+\WkstHop
+    \begin{freeResponse}
+      This number is not the same as the total distance.
+      The man starts his walk by going east (the positive direction) but eventually ends his walk west of where he started.
+      
+      The total distance that the man walks would be measured by computing 
+      $$\int_2^6 \left| v(t) \right| \d t$$  
+      \begin{image}
+      \includegraphics[scale=.7]{figureAAA3a.png}
+            \end{image}
+            $\int_2^6 \left| v(t) \right| \d t=\int_2^3 \left| v(t) \right| \d t+\int_3^6 \left| v(t) \right| \d t=\int_2^3  v(t) \d t+\int_3^6(- v(t))  \d t=\int_2^3  v(t) \d t-\int_3^6v(t)  \d t$
+    \end{freeResponse}
+  \end{enumerate}
+\end{problem}

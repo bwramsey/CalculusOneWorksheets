@@ -1,0 +1,83 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from derivativesAsFunctions.tex, problem #3
+\begin{problem}
+Let $f(x) = |5-x|$.
+	
+	\begin{enumerate}
+	
+	%a
+	\item For $a < 5$, find $f'(a)$.
+	
+		\begin{explanation}
+		Recall that 
+		$$f'(a) = \lim_{x \to a} \frac{f(x) - f(a)}{x-a}.$$
+		When $a < 5$, $0 < 5-a$ and so $f(a) = |5-a| = 5-a$.  Since we are considering the limit as $x$ approaches $a$, (and therefore interested in values of $x$  really close to $a$), we may also assume that $x < 5$ and therefore $f(x) = 5-x$.  Thus
+		\begin{align*}
+		f'(a) &= \lim_{x \to a} \frac{f(x) - f(a)}{x-a}  \\
+		&= \lim_{x \to a} \frac{(5-x) - (5-a)}{x-a}  \textrm{ which has form } \ZeroOverZero \\
+		&= \lim_{x \to a} \frac{-(x-a)}{x-a}  \\
+		&= \lim_{x \to a} -1 = -1.
+		\end{align*}
+
+		\end{explanation}
+%b
+	\item For $a > 5$, find $f'(a)$.
+	
+		\begin{explanation}
+		When $a > 5$, $0 > 5-a$ and so $f(a) = |5-a| = -(5-a) = a-5$.  Since we are considering the limit as $x$ approaches $a$, we may also assume that $x > 5$ and therefore $f(x) = x-5$.  Thus
+		\begin{align*}
+		f'(a) &= \lim_{x \to a} \frac{f(x) - f(a)}{x-a}  \\
+		&= \lim_{x \to a} \frac{(x-5) - (a-5)}{x-a}  \textrm{ which has form } \ZeroOverZero \\
+		&= \lim_{x \to a} \frac{x-a}{x-a}  \\
+		&= \lim_{x \to a} 1 = 1.
+		\end{align*}
+
+		\end{explanation}
+%c
+	\item Determine whether $f'(5)$ exists.  
+	
+		\begin{explanation}
+		If  $f'(5)$ exists then $\lim_{x \to 5} \frac{f(x) - f(5)}{x-5}$ exists.  But when $x$ is close to $5$ it may be that $x>5$ or $x<5$.   So in order to find this limit, we have to check whether the two one-sided limits are equal.\\
+		This means,  $\lim_{x \to 5^-} \frac{f(x) - f(5)}{x-5}=\lim_{x \to 5^+} \frac{f(x) - f(5)}{x-5}$\\  Each of these has form $\ZeroOverZero$.
+
+
+		\begin{align*}
+		\lim_{x \to 5^-} \frac{f(x) - f(5)}{x-5}&=\lim_{x \to 5^-} \frac{-(x-5) - (0)}{x-5}=-1\\
+		\lim_{x \to 5^+} \frac{f(x) - f(5)}{x-5}&=\lim_{x \to 5^+} \frac{(x-5) - (0)}{x-5}=1\\
+		\lim_{x \to 5^-} \frac{f(x) - f(5)}{x-5} &\ne\lim_{x \to 5^+} \frac{f(x) - f(5)}{x-5}
+		\end{align*}
+		Therefore, $f'(5)$ does not exist.\\\\
+			$f'(a) =   \left\{ \begin{array}{cl}
+	1	 	&	\qquad \text{if } a>5					\\ \\
+	\text{undefined}	&	\qquad \text{if } a=5	\\ \\
+	-1			&	\qquad \text{if } a<5				\end{array} \right.  $
+		\end{explanation}
+\item Sketch a graph of the function $f(x)$ and its derivative $f'(x)$
+\begin{explanation} \hfil
+\begin{image}
+\includegraphics[scale = .3]{Figure12.png}
+\end{image} 
+\begin{image}
+\includegraphics[scale = .9]{Figure13.png}
+\end{image} 
+		\end{explanation}
+
+	\end{enumerate}
+
+
+\end{problem}
+
+
+
+\end{document}

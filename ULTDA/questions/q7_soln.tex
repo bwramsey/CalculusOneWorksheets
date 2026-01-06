@@ -1,0 +1,56 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 7]{Problem 7}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #7
+\begin{problem}
+The function $f$ is  defined by $\displaystyle f(x) = \frac{6e^x+1}{3e^x+5}$.
+  \begin{enumerate}
+    \item
+      Find all vertical asymptotes of $f$.  \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\begin{explanation}
+       Since the exponential function, $e^x$, is always positive, it follows that the denominator of the function $f$ is also  always positive.
+       Since the exponential function, $e^x$, is continuous on $(-\infty,\infty)$, it follows that the functions  $6e^x+1$ and $3e^x+5$ are also continuous on $(-\infty,\infty)$.
+       Therefore, the function $f$ is also continuous there, since it is a quotient of two continuous functions, and the function in the denominator is never $0$. \\
+       
+       Therefore, $f$ has no vertical asymptotes, since it is continuous on $(-\infty,\infty)$.
+        \end{explanation}
+          \item
+      Find all horizontal asymptotes of $f$.  \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\begin{explanation}
+       	Check End Behavior as $x \to \infty$:\\[2em]
+        $\lim_{x \to \infty} \frac{6e^x+1}{3e^x+5}$ is of the form: $\frac{\infty}{\infty}$\\[2em]
+     
+  
+                 $  \lim_{x \to \infty} \frac{6e^x+1}{3e^x+5}=   \lim_{x \to \infty} \frac{6e^x+1}{3e^x+5}\cdot \frac{\frac{1}{e^x}}{\frac{1}{e^x}}=$ \\
+                  
+ 
+        $= \lim_{x \to \infty}  \frac{6+\frac{1}{e^x}}{3+\frac{5}{e^x}}=  \frac{6 + 0}{3 +0}=2$ \\
+        
+              
+       The line $y = 2$ is a horizontal asymptote of $f$ because $\lim_{x\to \infty} f(x) = 2$.\\
+  
+        Check End Behavior as $x \to -\infty$:\\
+
+
+         $ \lim_{x \to -\infty}\frac{6e^x+1}{3e^x+5}  =\frac{0+1}{0+5}= \frac{1}{5}$ \\
+     
+     
+      The line $y = \frac{1}{5}$ is a horizontal asymptote of $f$ because $\lim_{x\to -\infty} f(x) = \frac{1}{5}$.
+	
+      \end{explanation}
+ \end{enumerate}
+
+\end{problem}
+
+
+
+\end{document}

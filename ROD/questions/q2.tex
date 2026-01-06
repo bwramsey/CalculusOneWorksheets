@@ -1,0 +1,59 @@
+% Extracted from rulesOfDifferentiation.tex, problem #2
+\begin{problem}
+  Given the polynomial function $q$ defined by $q(v) = 2v^3 - 5v^2 + 7v - 9$ find:
+  \begin{enumerate}
+
+    \item
+      The slope of the tangent line to the graph of $q$ at the point where $v = 3$ using the limit definition of a derivative.
+      \WkstHop
+      \begin{freeResponse}
+        To compute $q'(3)$ from the limit definition we use either 
+        \[
+          \lim_{v \to 3} \frac{q(v)-q(3)}{v-3} \quad \text{or} \quad \lim_{h \to 0} \frac{q(3+h)-q(3)}{h}.
+        \]
+
+        
+        Using the second formula:
+        \begin{align*}
+          q'(3) &= \lim_{h \to 0} \frac{q(3+h)-q(3)}{h}  \textrm{ which has form } \ZeroOverZero\\
+          &= \lim_{h \to 0} \frac{(2(3+h)^3 - 5(3+h)^2 + 7(3+h) - 9) - (54 - 45 + 21 - 9)}{h}\\
+          &= \lim_{h \to 0} \frac{(2(27+27h+9h^2+h^3) - 5(9+6h+h^2) + 21+7h - 9) - 21}{h} \\
+          &= \lim_{h \to 0} \frac{54+54h+18h^2+2h^3-45-30h-5h^2+21+7h-9-21}{h} \\
+          &= \lim_{h \to 0} \frac{31h+13h^2+2h^3}{h} \\
+          &= \lim_{h \to 0} (31+13h+2h^2)\\
+          &= 31.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item
+      The slope of the tangent line to the graph of $q$ at the point where $v = 3$ using the ``short-cut derivative rules'' to find a formula for $q'$ and evaluating $q'(3)$.
+\WkstHop
+      \begin{freeResponse} \hfil
+
+        \begin{align*}
+          q'(v) &= (2v^3 - 5v^2 + 7v - 9)'\\
+          &= (2v^3)' + (-5v^2)' + (7v)' + (-9)' \\
+          &= 3\cdot 2 \cdot v^{3-1} +  -5\cdot(2)\cdot v^{2-1} +  7\cdot1\cdot v^{1-1} + 0 \\
+          &= 6v^2 - 10v + 7\\
+          &\implies q'(3) = 6\cdot3^2 - 10\cdot3 + 7 = 31.
+        \end{align*}
+      \end{freeResponse}
+
+
+    \item     The equation of the tangent line to the graph of $q$ at $v = 3$.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line to the graph of $q$ at the point where $v=3$: $q'(3) = 6\cdot3^2 - 10\cdot3 + 7 = 31$.
+
+        Point on tangent line at the point where $v=3$: $(3, q(3)) = (3, 21)$.
+
+        Equation of tangent line to the graph of $q$ at the point where $v=3$:
+        \begin{align*}
+          y-21&=31(x-3)\\
+              &\implies y = 31x -72.
+        \end{align*}
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}

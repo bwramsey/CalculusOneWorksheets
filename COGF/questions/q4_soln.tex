@@ -1,0 +1,79 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from conceptsOfGraphingFunctions.tex, problem #4
+\begin{problem}
+  \outcome{Determine how the graph of a function looks based on an analytic description of the function.}
+  \mbox{}
+  \begin{enumerate}
+    \item
+      You are given that $f''(x) > 0$ for all $x$.
+      Which of the following must be true about $f(x)$ on the region $0 \leq x \leq 2$?
+      \begin{enumerate}
+        \item
+          There is a critical point between $0$ and $2$.
+
+      
+        \item
+          There is a local maximum, but not enough information is given to determine where.
+
+        \item
+          $f$ need not have a local maximum.
+      \end{enumerate}
+\begin{explanation}
+        Only  (iii) must be true.
+        The following picture provides a counterexample for both (i) and (ii):
+        \begin{image}
+          \includegraphics[trim= 70 470 250 190]{Figure1.pdf}
+        \end{image}
+      \end{explanation}
+		
+     \item
+       You are told that $f''(x) > 0$ for all $x$.
+       Which of the following must be true about the graph of $y=f(x)$?
+       \begin{enumerate}
+         \item
+           The graph is a straight line.
+
+         \item 
+           The graph crosses the $x$-axis at most once.
+         
+         \item
+           The graph is concave down.
+
+         \item
+           The graph crosses the $y$-axis more than once.
+
+         \item
+           The graph is concave up.
+       \end{enumerate}
+\begin{explanation}
+         Only (v) must be true.
+         For (i), the function $f(x) = e^x$ provides a counterexample:
+         \begin{image}
+           \includegraphics[trim= 70 470 250 190]{Figure2.pdf}
+         \end{image}
+			
+         For part (ii), the function $f(x) = x^2 -2$ provides a counterexample:
+         \begin{image}
+           \includegraphics[trim= 70 470 250 190]{Figure3.pdf}
+         \end{image}
+			
+         Part (iii) is clearly false since $f''(x) > 0$ means that $f$ is concave up.
+         Part (iv) is false for any function.
+       \end{explanation}
+    \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

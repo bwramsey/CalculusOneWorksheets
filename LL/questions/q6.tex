@@ -1,0 +1,107 @@
+% Extracted from limitLaws.tex, problem #6
+\begin{problem}
+	Two functions, $h$ and $g$, are given
+	\[
+	h(x)=\frac{x^2-4}{4},\  1 <x < 3
+	\]
+	\[
+	g(x)=x-2,\  1 < x < 3
+	\]
+The graph of the function $h$ is given in the figure below.  
+Let $f$ be a function defined on the interval $(1,3)$ that satisfies the following inequalities
+	\[
+	g(x) \le f(x) \le h(x),\ 1 < x < 3
+	\]
+
+\begin{enumerate}
+	
+	\item In the figure below, sketch and label the graph of $g$ and a possible graph of $f$.  (All three functions have a common domain $(1,3)$.)
+
+% replaced by tikzpic below
+%		\begin{image}
+%			\includegraphics{Figure1}
+%		\end{image}
+
+	  \begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				xmin=-0.3, xmax=3.3, ymin=-1.8,ymax=1.8,    
+				axis lines =middle, 
+				every axis y label/.style={at=(current axis.above origin),anchor=south},
+				every axis x label/.style={at=(current axis.right of origin),anchor=west},
+				xtick={0,...,3}, ytick={-1.5,-1,...,1.5},
+				grid=major, width=3in, height = 2.5in,
+				grid style={dashed, gray!40}
+				]
+				\addplot[color=blue, ultra thick, domain=1:3]{0.25*x^2-1}node[pos=0.75, above left]{\large{$y=h(x)$}};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+\WkstHop	
+		\begin{freeResponse}	
+%	replaced by tikzpic below
+%			\begin{image}
+%				\includegraphics{Figure2}
+%			\end{image}
+	  \begin{center}
+		\begin{tikzpicture}
+			\begin{axis}[
+				xmin=-0.3, xmax=3.3, ymin=-1.8,ymax=1.8,    
+				axis lines =middle, 
+				every axis y label/.style={at=(current axis.above origin),anchor=south},
+				every axis x label/.style={at=(current axis.right of origin),anchor=west},
+				xtick={0,...,3}, ytick={-1.5,-1,...,1.5},
+				grid=major, width=5in, height = 5in,
+				grid style={dashed, gray!40}
+				]
+				\addplot[color=blue, ultra thick, domain=1:3]{0.25*x^2-1}node[pos=0.75, above left]{\large{$y=h(x)$}};
+				\addplot[color=red, ultra thick, domain=1:3]{x-2}node[pos=0.15, below right]{\large{$y=g(x)$}};
+				\addplot[color=green, ultra thick, domain=1:3]{0.1*(x+3)^2-2.5}node[pos=0, left]{\large{$y=f(x)$}};
+			\end{axis}
+		\end{tikzpicture}
+	\end{center}
+		\end{freeResponse}
+
+	\item	Evaluate the limit, or state that it does not exist.  Justify your answer.
+		\begin{enumerate}
+			\item $\displaystyle \lim_{x \to 2} f(x)$
+		\WkstHop
+			\begin{freeResponse}
+				$g$ and $h$ are both continuous function since they are both polynomials so we have:
+				\[
+					\lim_{x \to 2} g(x)=g(2)=0
+				\]
+				\[
+					\lim_{x \to 2} h(x)=h(2)=0
+				\]
+
+				We have $g(x) \le f(x) \le h(x)$ so by the squeeze theorem, $\lim_{x \to 2} f(x)=0$ since
+				$g(x)\leq f(x) \leq h(x)$ with $\lim_{x\to 2}g(x) = \lim_{x\to 2}h(x) = 0$.
+
+			\end{freeResponse}
+
+			\item $\displaystyle \lim_{x \to 2} \frac{f(x)+2}{x-1}$
+		\WkstHop
+			\begin{freeResponse}
+				\[
+					\lim_{x \to 2}\frac{f(x)+2}{x-1}=\frac{\lim_{x \to 2}(f(x)+2)}{\lim_{x \to 2}(x-1)}\\
+						= \frac{0+2}{2-1}\\
+						= \frac{2}{1}\\
+						= 2
+				\]
+			\end{freeResponse}
+			\item $\displaystyle \lim_{x \to 2} g(1+e^{f(x)})$
+		\WkstHop
+				\begin{freeResponse}
+					\[
+						\lim_{x \to 2} g\Bigl(1+e^{f(x)}\Bigr)= g \Bigl(\lim_{x \to 2} (1+e^{f(x)})\Bigr)= g \Bigl(\lim_{x \to 2} 1+\lim_{x \to 2}e^{f(x)})\Bigr)
+							=g \Bigl(1+e^{\lim_{x \to 2}f(x)}\Bigr)
+					\]
+					\[
+						=g\Bigl(1+e^0\Bigr)=g(2)=0
+					\]
+			\end{freeResponse}
+
+		\end{enumerate}
+	\end{enumerate}
+	\end{problem}

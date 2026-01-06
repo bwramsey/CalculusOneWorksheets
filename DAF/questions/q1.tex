@@ -1,0 +1,68 @@
+% Extracted from derivativesAsFunctions.tex, problem #1
+\begin{problem}
+	
+	\begin{enumerate}
+
+    \item
+   
+      Suppose $f'(2)$ exists. Which of the following must be true?
+      \begin{enumerate}
+        \item
+          $\lim_{x \to 2} f(x)$ must exist, but $\lim_{x \to 2} f(x) \ne f(2)$
+
+        \item
+          $\lim_{x \to 2} f(x) = f(2)$.
+
+        \item
+          $\lim_{x \to 2} f(x) = f'(2)$
+
+        \item
+          $\lim_{x \to 2} f(x)$ need not exist.
+      \end{enumerate}
+      \begin{freeResponse}
+        The correct answer is (ii):
+        \begin{align*}
+          \mbox{$f'(2)$ exists} &\iff \mbox{$f$ differentiable at $x = 2$}\\
+                                &\implies \mbox{$f$ continuous at $x = 2$}\\
+                                &\iff \lim_{x \to 2} f(x) = f(2)
+        \end{align*}
+      \end{freeResponse}
+\WkstHop
+
+    \item
+
+      Assuming that $\lim_{x \to 0} \frac{\sin(x)}{x} = 1$, which of the following is true?
+      \begin{enumerate}
+        \item
+          $\frac{0}{0} = 1$
+        \item
+          the tangent line to $y = \sin(x)$ at $(0,0)$ has slope $1$.
+
+        \item
+          you can cancel the $x$'s.
+
+        \item
+          for all $x$ near $0$, $\sin(x) = x$.
+
+        \item
+          for all $x$ near $0$, $\sin(x) \approx x$.
+      \end{enumerate}
+      \begin{freeResponse}
+        This problem has two correct answers: (ii) and (v).
+
+        Statement (ii) is true:
+        \begin{align*}
+          f'(0) &= \lim_{h \to 0} \frac{\sin(0 + h) - \sin (0)}{h} \textrm{ Which has form } \ZeroOverZero \\
+                &= \lim_{h \to 0} \frac{\sin(h)}{h} \\
+                &= 1\\
+          &\implies \mbox{slope of tangent line at $(0,0)$ is $1$}
+        \end{align*}
+
+        Statement (v) is true:
+        When $x$ is near $0$ the tangent line $y = x$ is a good approximation to $f$.
+      \end{freeResponse}
+\WkstHop
+  \end{enumerate}
+
+	
+\end{problem}

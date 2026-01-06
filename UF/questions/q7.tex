@@ -1,0 +1,47 @@
+% Extracted from understandingFunctions.tex, problem #7
+\begin{problem}
+Determine if the function is even, odd, or neither.
+
+
+\begin{enumerate}	
+	\item  $h(x)=x^4+x^2-3$
+		\WkstHop
+		
+		\begin{freeResponse}
+
+			A function is even if $f(x)=f(-x)$, for all $x$ in the domain, which means its graph is symmetic about the y-axis.  A function is odd if $f(-x)=-f(x)$, for all $x$ in the domain, which means its graph is symmetic about the origin. 
+			 $$h(x)=x^4+x^2-3$$
+				$$h(-x)=(-x)^4+(-x)^2-3=x^4+x^2-3$$
+				$h(x)=h(-x)$.  Hence $h$ is even.  This can be verified by graphing $h$ and seeing that its graph is symmetric about the y-axis.
+		\end{freeResponse}
+
+	\item  $s(t)=t^2-t$
+		\WkstHop
+		
+		\begin{freeResponse}
+			$$s(t)=t^2-t$$
+			$$s(-t)=(-t)^2-(-t)=t^2+t$$ This does not equal $s(t)$ so $s(t)$ is not even.
+			$$-s(t)=-(t^2-t)=-t^2+t$$  This does not equal $s(-t)$ so $s$ is not odd.  Hence, $s(t)$ is neither even, nor odd.
+		\end{freeResponse}
+
+	\item  We know that $\sin(\theta)$ is odd and $\cos(\theta)$ is even.  Is $g(\theta)=\tan(\theta)$ even, odd, or neither?
+		\WkstHop
+		
+		\begin{freeResponse}
+			 $$g(\theta)=\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
+				\begin{align*}
+				g(-\theta)&=\frac{\sin(-\theta)}{\cos(-\theta)}\\
+				&=\frac{-\sin(\theta)}{\cos(\theta)}\\
+				&=-\frac{\sin(\theta)}{\cos(\theta)}
+				\end{align*}
+				\begin{center}
+				$$-g(\theta)=-\frac{\sin(\theta)}{\cos(\theta)}$$
+				$g(-\theta)=-g(\theta) \implies g$ odd
+				\end{center}
+		\end{freeResponse}
+
+	\end{enumerate}
+	
+
+	
+\end{problem}

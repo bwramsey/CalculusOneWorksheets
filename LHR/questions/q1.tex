@@ -1,0 +1,28 @@
+% Extracted from lHopitalsRule.tex, problem #1
+\begin{problem}
+State the form of the limit. Determine whether the form is determinate or indeterminate. Evaluate each limit.  
+  \begin{enumerate}
+      \item  $\lim_{x \to 0}\frac{\sin(x)-\cos(x)+1}{x^2-x}$
+    \WkstHop \begin{freeResponse}
+    The form is $\frac{0}{0}$; indeterminate. we can apply L.R.\\
+     $\lim_{x \to 0}\frac{\sin(x)-\cos(x)+1}{x^2-x}=\lim_{x \to 0}\frac{\cos(x)+\sin(x)}{2x-1}=\frac{\cos(0)+\sin(0)}{2(0)-1}=\frac{1}{-1}=-1$
+
+    \end{freeResponse}
+  \item  $\lim_{x \to 0}\frac{e^x-1-x}{x^2}$
+    \WkstHop \begin{freeResponse}
+    The form is $\frac{0}{0}$; indeterminate.\\
+     $\lim_{x \to 0}\frac{e^x-1-x}{x^2}= \lim_{x \to 0}\frac{e^x-1}{2x}$, by L.R.\\
+     The last limit also has  the form $\frac{0}{0}$, so, we can apply L.R. again.\\
+     $\lim_{x \to 0}\frac{e^x-1-x}{x^2}= \lim_{x \to 0}\frac{e^x-1}{2x}= \lim_{x \to 0}\frac{e^x}{2}=\frac{1}{2}$
+    \end{freeResponse}
+     \item  $\lim_{x \to \infty}\frac{e^x}{x^4}$
+    \WkstHop \begin{freeResponse}
+    The form is $\frac{\infty}{\infty}$; indeterminate.\\
+    $\lim_{x \to \infty}\frac{e^x}{x^4}=\lim_{x \to \infty}\frac{e^x}{4x^3}$ , by L.R.\\
+     The last limit also has  the form $\frac{\infty}{\infty}$. It turns out that we can apply L.R. again, and again, and again:\\
+     $\lim_{x \to \infty}\frac{e^x}{x^4}=\lim_{x \to \infty}\frac{e^x}{4x^3}= \lim_{x \to \infty}\frac{e^x}{12x^2}= \lim_{x \to \infty}\frac{e^x}{24x}= \lim_{x \to \infty}\frac{e^x}{24}=\infty$\\
+     This result shows that the function $e^x$ grows much faster than $x^4$, as $x$ goes to $\infty$.
+        \end{freeResponse}
+  
+      \end{enumerate}
+      \end{problem}

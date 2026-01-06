@@ -1,0 +1,48 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from logarithmicDifferentiation.tex, problem #3
+\begin{problem}
+  True or False:
+  \begin{enumerate}
+    \item[(1)]
+      If $f(x) = (x-2)^x$, then $f'(x) = x (x-2)^{x-1}$.
+\begin{explanation}
+        False.
+        Any time that you have a function of $x$ raised to a function of $x$, in order to compute the derivative you need to use logarithmic differentiation (or something equivalent).
+
+        Correct derivative of $f$:
+        \begin{align*}
+          f(x) &= (x-2)^x \implies f(x) = e^{x \ln(x-2)} \\
+          &\implies f'(x) = e^{x \ln(x-2)} \cdot \left(1\cdot\ln(x-2) + x \cdot \frac{1}{x-2}\right) \\
+          &\implies f'(x) = (x-2)^x \cdot \left(\ln(x-2) + \frac{x}{x-2}\right)
+        \end{align*}
+        \end{explanation}	
+		
+      \item[(2)]
+        If $f(x) = (3x)^x$, then $f'(x) = (3x)^x \ln (3x)$.
+\begin{explanation}
+          False.  Same as part (1).
+
+          Correct derivative of $f$:
+          \begin{align*}
+            f(x) &= (3x)^x \implies f(x) = e^{x \cdot \ln(3x)} \\
+            &\implies f'(x)  = e^{x \cdot \ln(3x)} \left(1 \cdot \ln(3x) + x \cdot \frac{3}{3x} \right) \\
+            &\implies f'(x)  = (3x)^x \left(\ln(3x) + 1 \right)
+          \end{align*}
+	\end{explanation}	
+	\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

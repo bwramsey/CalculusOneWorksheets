@@ -1,0 +1,66 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 5]{Problem 5}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from chainRule.tex, problem #5
+\begin{problem}
+Differentiate each function (with respect to $x$)
+	\begin{enumerate}
+	
+	%part a
+	\item  $\cos \left( \sqrt{x+7} \right) $
+		\begin{explanation}
+		\begin{align*}
+		\ddx \left( \cos \left( \sqrt{x+7} \right) \right) &= -\sin \left( \sqrt{x+7} \right) \cdot \frac{1}{2} (x+7)^{\frac{-1}{2}} (1) \\
+		&= \frac{-\sin \left( \sqrt{x+7} \right) }{2 \sqrt{x+7}}
+		\end{align*}
+		\end{explanation}
+%part b
+	\item  $\sqrt{ \cos(x) + 7}$
+		\begin{explanation}
+		\begin{align*}
+		\ddx \left( \sqrt{ \cos(x) + 7} \right) &= \frac{1}{2} \left( \cos(x) + 7 \right)^{\frac{-1}{2}} \left( -\sin(x) \right) \\
+		&= \frac{- \sin(x) }{2 \sqrt{\cos(x) + 7 }}
+		\end{align*}
+		\end{explanation}
+%part c
+	\item $\sqrt{\cos(x)} + 7$
+		\begin{explanation}
+		\begin{align*}
+		\ddx \left( \sqrt{\cos(x)} + 7 \right) &=  \frac{1}{2} \left( \cos(x) \right)^{\frac{-1}{2}} \left( -\sin(x) \right) + 0  \\
+		&= \frac{- \sin(x)}{2 \sqrt{\cos(x)}}
+		\end{align*}
+		\end{explanation}
+%part d
+	\item  $\cos \left( \sqrt{x} + 7 \right)$
+		\begin{explanation}
+		\begin{align*}
+		\ddx \left( \cos \left( \sqrt{x} + 7 \right) \right) &= - \sin \left( \sqrt{x} + 7 \right) \cdot \frac{1}{2} x^{\frac{-1}{2}} \\
+		&=  \frac{- \sin \left( \sqrt{x} + 7 \right) }{2 \sqrt{x}}
+		\end{align*}
+		\end{explanation}
+\item  $\cos(x) \cdot\left( \sqrt{x} + 7 \right) $
+		\begin{explanation}
+		\begin{align*}
+		\ddx\left(\cos(x)\cdot \left( \sqrt{x} + 7 \right) \right) &= - \sin(x)\cdot \left( \sqrt{x} + 7 \right)+\cos(x)\cdot\frac{1}{2} x^{\frac{-1}{2}} \\
+		&= - \sin(x)\cdot \left( \sqrt{x} + 7 \right)+\frac{\cos(x)}{2\sqrt{x}}
+		\end{align*}
+		\end{explanation}
+\end{enumerate}
+		
+		
+		
+		
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,162 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 2]{Problem 2}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from anApplicationOfLimits.tex, problem #2
+\begin{problem}
+ Part of the given parabola can be used to model the ``position-time'' graph of a ball thrown straight up into the air.  The graph gives the height of the ball in feet $t$ seconds after being thrown into the air.\\
+  Let the function $f$ be defined by  $f(t)=-16t^2+128t+144$.\\
+  Use this graph, and the given function, $f$, to answer the following questions.
+  \begin{image}
+    \includegraphics[scale = 0.5]{figure2.png}
+  \end{image}
+	
+	
+		\begin{enumerate}
+		\item Mark the part of the parabola that can be used to model the position of the ball.		
+		\begin{explanation} \hfil
+       		 \begin{center}
+       	  	 \includegraphics[scale = 0.4]{ptGraphOfBall.png}
+        		\end{center}
+		\end{explanation}		
+
+		 \item  What are the units on the $t$ axis?  What are the units on the $y$ axis?
+		 \begin{explanation}		 
+	The units on the $t$ axis are ``seconds'' (for time), while the units on the $y$ axis are ``feet'' (for height).        
+		\end{explanation}
+			
+		\item  If you were watching a movie of the ball being thrown, is the graph a picture of the path that the ball follows?  Why or why not?
+		\begin{explanation}		 
+	 No, the position-time graph is \emph{not} the path the ball follows.
+        The graph shows the height of the ball at a given \emph{time}.
+        The ball is thrown straight up and has no horizontal movement so its path is on a vertical line.
+		\end{explanation}
+	
+		\item Let $f(t)$ denote the height of the ball at time $t, t\geq 0$.  What is the height of the ball at time $t=0$?
+		\begin{explanation}
+		The height can be found by finding $f(0)$
+		\begin{align*}
+			f(0)&=-16(0)^2+128(0)+144 \\
+			f(0)&=144\  \text{feet}
+ 			\end{align*}
+
+		\end{explanation}
+		\item  When will the ball hit the ground?
+		\begin{explanation}		 
+		The ball will hit the ground when the height $f(t)$ equals zero.
+			\begin{align*}
+			0&=-16t^2+128t+144 \\
+			0&=-16(t^2-8t-9) \\
+ 			0&=-16(t+1)(t-9) \\
+ 			t&=-1, 9 
+ 			\end{align*}
+		The ball will hit the ground at $t=9$ or 9 seconds after the ball is thrown into the air.  
+		\end{explanation}
+
+		\item  What is the domain of the position function, $f$, of the ball?
+
+		 \begin{explanation}
+     	   The domain of $f$ is the interval $[0, 9]$.   The ball is thrown straight up at $t=0$ and hits the ground at $t=9$.
+     	   With this domain, the position-time graph of the ball is given by
+       		 \begin{center}
+       	  	 \includegraphics[scale = 0.4]{ptGraphOfBall.png}
+        		\end{center}
+     	 \end{explanation}
+
+		
+		
+		\item Use the table of values to find the average velocity of the ball between $t=8.9$ and $t=9$ seconds.
+	\[
+\begin{array}{|l|l|}
+			\hline
+			t & \approx f(t)  \\
+			\hline
+			8.9 & 15.84  \\
+			\hline
+			8.99 & 1.6  \\
+			\hline
+			8.999 & 0.159984  \\
+			\hline
+			8.9999 &  0.015998  \\
+			\hline
+			9 &  0  \\
+			\hline
+			\end{array}
+		\]
+  \begin{explanation}
+    The average velocity of the ball between $t = 8.9$ seconds and $t = 9$ seconds is
+    \[
+       \frac{f(9) - f(8.9)}{9- 8.9} = \frac{0- 15.84}{0.1} = -158.4\  \text{feet per second}
+    \]
+  \end{explanation}
+
+
+		\item  Use the table of average velocities to approximate the instantaneous velocity of the ball when it hits the ground.
+			 \[
+			\renewcommand*{\arraystretch}{2.5}	
+			\begin{array}{|l|l|}
+			\hline
+			\text{Time Interval} & \text{Average Velocity}  \\
+			\hline
+			[8.9, 9] & \frac{f(9)-f(8.9)}{.1}=\frac{0-15.84}{.1}=-158.4  \\
+			\hline
+			[8.99,9] & \frac{f(9)-f(8.99)}{.01}=\frac{0-1.5984}{.01}=-159.84 \\
+			\hline
+			[8.999, 9] & \frac{f(9)-f(8.999)}{.001}=\frac{0-.159984}{.001}=-159.984 \\
+			\hline
+			[8.9999, 9] &  \frac{f(9)-f(8.999)}{.0001}=\frac{0-.0159998}{.0001}=-159.998  \\
+			\hline
+			\end{array} 
+			\]
+		
+
+		\begin{explanation}
+		 The instantaneous velocity of the ball hitting the ground appears to be $-160$ ft/sec.
+		\end{explanation}
+		
+		\item   Compute $v_{AV(t)}$ the average velocity of the ball on the time interval  $[t, 9]$, where $t<9$.
+
+		\begin{explanation}
+		
+		\begin{align*}		 
+		v_{AV(t)}&=\dfrac{f(9)-f(t)}{9-t}\\
+		&=\dfrac{0-(-16t^2+128t+144)}{9-t}\\
+		&=\dfrac{16t^2-128t-144)}{9-t}\\
+         &=\dfrac{16(t^2-8t-9 )}{9-t}\\
+         &=\dfrac{16(t-9)(t+1)}{9-t}\\
+          &=\dfrac{-16(9-t)(t+1)}{9-t}\\
+            &=-16(t+1)\  \text{feet per second}\\
+            	\end{align*}
+	\end{explanation}
+\item   Compute $v(9)$, the \textbf{instantaneous} velocity of the ball at $t=9$.
+
+		\begin{explanation}
+
+		\begin{align*}		 
+		v(9)&=\lim_{t \to 9^{-}}v_{AV(t)}\\
+		&=\lim_{t \to 9^{-}}\dfrac{f(9)-f(t)}{9-t}\\
+		\end{align*}
+		Notice that this is an indeterminate form, with form $\ZeroOverZero$.
+				
+		\begin{align*}		 
+		v(9)&=\lim_{t \to 9^{-}}v_{AV(t)}\\
+		&=\lim_{t \to 9^{-}}\dfrac{f(9)-f(t)}{9-t}\\
+            &=\lim_{t \to 9^{-}}-16(t+1)\\
+            &=-16(9+1)\\
+              &=-160 \  \text{feet per second}
+	\end{align*}
+     		\end{explanation}			
+		\end{enumerate}	
+\end{problem}
+
+
+
+\end{document}

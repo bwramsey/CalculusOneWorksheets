@@ -1,0 +1,37 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 9]{Problem 9}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from linearApproximation.tex, problem #9
+\begin{problem}
+
+  By using linear approximation, determine which of the following is the best estimate of $e^{0.002}$.
+  \begin{enumerate}
+    \item1.00100050016679834166
+    \item 1.00200200133400026675
+    \item 1.00300450450337702601
+    \item 1.02020134002675581016
+  \end{enumerate}
+	\begin{explanation}
+    Let $f(x) = e^x$ and $a=0$.  Then since $f'(x) = e^x$, we have that
+    \begin{align*}
+      L(x) &= f(a) + f'(a)(x-a) \\
+           &=  f(0) + f'(0)(x-0) \\
+           &= e^0 + e^0x \\
+           &= 1 + x
+    \end{align*}
+    Then since $L(0.002) = 1 + 0.002 = 1.002$, the answer is (b).
+  \end{explanation}	
+\end{problem}
+
+
+
+\end{document}

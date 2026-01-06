@@ -1,0 +1,49 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from maximumsAndMinimums.tex, problem #1
+\begin{problem}
+Determine whether the following statements are true or false and give either an explanation or a counterexample.
+
+	\begin{enumerate}
+	
+	%part a
+	\item  The function $f(x) = \sqrt{x}$ has a local maximum on the interval $[0,1]$.
+		\begin{explanation}
+		False.  Since $\sqrt{x}$ is increasing over the entire region $[0,1]$, the only candidate for a local maximum would be $x=1$.  But by definition, endpoints are never local extrema.  So $f(x) = \sqrt{x}$ has no local maximum on the interval $[0,1]$.
+		\end{explanation}	
+%part c
+	\item  If $f'(2)=0$, then $x=2$ is either a local maximum or local minimum of $f$.
+					\begin{explanation}
+				False.  Consider $f(x)=(x-2)^3$.  This has derivative $f'(x) = 3(x-2)^2$, so that $f'(2)=0$.   We can see from the graph of $f$ below, that $x=2$ is not a local extremum for $f$.
+				\begin{center}
+					\begin{tikzpicture}
+						\begin{axis}[
+							xmin=-1.5, xmax=5.5, ymin=-6.5,ymax=12.5,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={-1,...,5}, ytick={-6, -4,...,12},
+							grid=major, width=3in,
+							grid style={dashed, gray!40} 
+							]
+							\addplot[color=blue, very thick, smooth, domain=-1.5:5.5]{(x-2)^3};
+						\end{axis}
+					\end{tikzpicture}
+				\end{center}
+			\end{explanation}
+			\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

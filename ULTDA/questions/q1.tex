@@ -1,0 +1,127 @@
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #1
+\begin{problem}
+  \outcome{Match graphs of functions with their equations based on vertical asymptotes.}
+  Without using a graphing utility, match each graph of functions in A-F with the algebraic representation of functions in a-f:
+
+  \begin{center}
+    \includegraphics[trim= 250 360 300 185]{Figure1.pdf}
+  \end{center}
+
+  \begin{enumerate}
+    \item
+      The function $f$ defined by $\displaystyle f(x) = \frac{x}{x^2 + 1}$.
+\WkstHop
+      \begin{freeResponse}
+        Since there is no real number $x$ such that $x^2 + 1 = 0$, we have no candidates for vertical asymptotes.
+        Hence the graph of $f$ should not contain any vertical asymptotes.
+        The only listed graph with no vertical asymptote is graph D.
+      \end{freeResponse}
+
+    \item 
+      The function $g$ defined by $\displaystyle g(x) = \frac{x}{x^2 -1}$.
+\WkstHop
+      \begin{freeResponse}
+        \emph{Candidates} for vertical asymptotes:
+        \begin{align*}
+          x^2 -1 = 0 &\implies \mbox{$x = 1$ or $x = -1$.}
+        \end{align*}
+
+        Test of candidate $x = 1$:
+        \begin{align*}
+          \lim_{x \to 1^+} \frac{x}{x^2 -1} &= \lim_{x \to 1^+}\frac{x}{(x-1)(x+1)} = \infty \\
+               \end{align*}
+	\text{Note: the  limit is of the form} $\frac{ \#}{0}$, the numerator  positive, the denominator also positive. \\
+       Therefore, vertical asymptote at $x = 1$.
+   
+        
+        Test of candidate $x = -1$:
+        \begin{align*}
+          \lim_{x \to -1^-} \frac{x}{x^2 -1} &= \lim_{x \to -1^-} \frac{x}{(x-1)(x+1)}= -\infty \\
+                \end{align*}
+	Note: the limit is of the form  $\frac{ \#}{0}$, the numerator  negative, the denominator positive. \\
+        Therefore, vertical asymptote at $x = -1$.
+  
+
+        Since $g(0) = 0$, the only listed graph that can match is graph C.
+      \end{freeResponse}
+
+\WkstNew
+    \item 
+      The function $h$ defined by $\displaystyle h(x) = \frac{1}{x^2 -1}$.
+\WkstHop
+      \begin{freeResponse}
+        \emph{Candidates} for vertical asymptotes: $x = 1$ and $x = -1$.
+
+        Test of candidate $x = 1$:
+        \begin{align*}
+          \lim_{x \to 1^+} \frac{1}{x^2 -1} &= \lim_{x \to 1^+} \frac{1}{(x-1)(x+1)} = \infty\\
+             \end{align*}
+	Note:  the limit is of the form $ \frac{ \#}{0}$, the numerator  positive, the denominator positive. \\
+          Therefore, vertical asymptote at $x = 1$.
+     
+
+        Test of candidate $x = -1$:
+        \begin{align*}
+          \lim_{x \to -1^-} \frac{1}{x^2 -1} &= \lim_{x \to -1^-} \frac{1}{(x-1)(x+1)} = \infty\\
+            \end{align*}
+Note:  the limit is of the form $ \frac{ \#}{0}$, the numerator  positive, the denominator positive. \\
+Therefore, vertical asymptote at $x = -1$.
+      
+        Since $h(0) = -1$, the only listed graph that can match is graph F.
+      \end{freeResponse}
+
+    \item 
+      The function $a$ defined by $\displaystyle a(x) = \frac{x}{(x-1)^2}$.
+\WkstHop
+      \begin{freeResponse}
+        Candidate for the vertical asymptote: $x = 1$.
+
+        Test of candidate $x = 1$:
+
+        \begin{align*}
+          \lim_{x \to 1^+}\frac{x}{(x-1)^2} &= \infty \\
+           \end{align*}
+	Note: the limit is of the form $ \frac{ \#}{0}$, the numerator positive, the denominator positive.\\
+     Therefore, vertical asymptote at $x = 1$.
+       
+        Since $a(0) = 0$ the graph is graph B.
+      \end{freeResponse}
+
+    \item 
+      The function $s$ defined by $\displaystyle s(x) = \frac{1}{(x-1)^2}$.
+\WkstHop
+      \begin{freeResponse}
+        Candidate for the vertical asymptote: $x = 1$.
+
+        Test of candidate $x = 1$:
+
+        \begin{align*}
+          \lim_{x \to 1^+} \frac{1}{(x-1)^2} &= \infty \\
+              \end{align*}
+	Note: the limit is of the form $ \frac{\#}{0}$, the numerator positive, the denominator positive.  \\
+       Therefore, vertical asymptote at $x = 1$.
+    
+        Since $s(0) = 1$ the graph is graph A.        
+      \end{freeResponse}
+
+
+    \item
+      The function $r$ defined by $\displaystyle r(x) = \frac{x}{x+1}$.
+\WkstHop
+      \begin{freeResponse}
+        Candidate for the vertical asymptote: $x = -1$.
+
+        Test of candidate $x = -1$:
+
+        \begin{align*}
+          \lim_{x \to -1^+} \frac{x}{x+1} &= -\infty \\
+              \end{align*}
+	Note:  the limit is of the form $ \frac{\#}{0} $, the numerator  negative, the denominator positive.\\
+       Therefore, vertical asymptote at $x = -1$.
+    
+        Since $r(0) = 0$ the graph is graph E.
+      \end{freeResponse}
+
+  \end{enumerate}
+
+\end{problem}

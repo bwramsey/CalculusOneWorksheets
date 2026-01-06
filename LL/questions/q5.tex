@@ -1,0 +1,18 @@
+% Extracted from limitLaws.tex, problem #5
+\begin{problem}
+ For all $x$ near 0, the inequalities $1 - \dfrac{x^2}{6} \leq \dfrac{\sin(x)}{x} \leq 1$ are true.
+ Use these inequalities to find $\displaystyle\lim_{x \to 0} \frac{\sin(x)}{x}$. \textbf{EXPLAIN}.
+\WkstHop
+  \begin{freeResponse}
+	$1-x^2/6$ is a polynomial, so it is continuous at $x=0$. 
+	That means $\lim_{x\to 0} \left(1 - \frac{x^2}{6}\right) = 1$. The function $1$ is continuous since it is a constant, so $\lim_{x \to 0} 1 = 1$.
+
+	That means $\lim_{x\to 0} \frac{\sin(x)}{x} = 1$ by the Squeeze Theorem, since
+	$1 - \dfrac{x^2}{6} \leq \dfrac{\sin(x)}{x} \leq 1$ and
+	$\lim_{x \to 0} \left(1 - \frac{x^2}{6}\right)  = \lim_{x \to 0} 1 = 1$.
+
+  \end{freeResponse}
+
+
+
+\end{problem}

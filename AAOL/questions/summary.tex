@@ -1,0 +1,27 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+Suppose an object is traveling along a straight line, with displacement given by a function $s(t)$.
+\begin{itemize}
+	\item The \textit{average velocity}, $v_{av}$, of the object between time $t=a$ and time $t=b$ is given by 
+		\begin{align*} 
+			v_{av} &= \frac{\Delta s}{\Delta t} \\
+				&= \frac{s(b)-s(a)}{b-a}
+		\end{align*}
+	\item The \textit{instantaneous velocity} of the object at time $t=a$ is given by
+		\begin{align*}
+			v(a) &= \lim_{\Delta t \to 0} \frac{\Delta s}{\Delta t}\\
+				&= \lim_{t\to a} \frac{s(t)-s(a)}{t-a}\\
+				&= \lim_{t \to a} v_{av}(t)
+		\end{align*}
+		where $v_{av}(t)$ denotes the average velocity on the interval $[a,t]$ if $t > a$, and $[t, a]$ if $t < a$.
+\end{itemize}
+
+\end{document}

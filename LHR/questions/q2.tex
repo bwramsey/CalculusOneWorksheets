@@ -1,0 +1,62 @@
+% Extracted from lHopitalsRule.tex, problem #2
+\begin{problem}
+
+State the form of the limit. Determine whether the form is determinate or indeterminate. Evaluate each limit.  
+  \begin{enumerate}
+  \item  $\lim_{x \to \infty}\left( \ln (1 + e^{-x}) \right)^x $
+    \WkstHop \begin{freeResponse}
+      Since $\lim_{x \to \infty} (1 + e^{-x}) = 1 + 0 = 1$ and $\ln (1) = 0$, this limit is of the form $0^{\infty}$.
+      This is a determinate form.
+     $\lim_{x \to \infty} \left( \ln (1 + e^{-x}) \right)^x = 0$.
+    \end{freeResponse}
+    
+  \item  $\lim_{x \to \infty} \left( \frac{1}{x} + 1 \right)^{\frac{1}{x}} $
+    \WkstHop \begin{freeResponse}
+      This limit is of the form $1^0$, which is a determinate form.\\
+      Thus, $\lim_{x \to \infty} \left( \frac{1}{x} + 1 \right)^{\frac{1}{x}} = 1 $
+    \end{freeResponse}
+    
+  \item  $\lim_{x \to \infty} \left( \frac{\arctan(x)}{x} \right) $
+    \WkstHop \begin{freeResponse}
+      Since $\lim_{x \to \infty} \arctan(x) = \frac{\pi}{2}$, this limit is of the form $\frac{\text{\#}}{\infty}$, which is a determinate form.\\[1em]
+      Thus, $\lim_{x \to \infty} \left( \frac{\arctan(x)}{x} \right) = 0$  
+    \end{freeResponse}
+    \WkstNew
+    
+  \item  $\lim_{x \to \infty} (x-\ln(x)) $
+    \WkstHop \begin{freeResponse}
+      This limit is of the form $\infty - \infty$, which is an indeterminate form.  We can rewrite this as:
+   
+      $$\lim_{x \to \infty} (x-\ln(x))= \lim_{x \to \infty} \left(x\left(1-\frac{\ln(x)}{x}\right)\right)$$
+     
+     We can see that $\lim_{x \to \infty}\left(\frac{\ln(x)}{x}\right)$ is of the form $\frac{\infty}{\infty}$,  so we can use L'Hopital's Rule.
+     
+      $$\stackrel{L.R.}{\implies} \lim_{x \to \infty}\left(\frac{1/x}{1}\right)=\lim_{x \to \infty}\left(\frac{1}{x}\right)=0$$
+      
+      Now we have: 
+      $$\lim_{x \to \infty} \left(x\left(1-\frac{\ln(x)}{x}\right)\right)$$
+      This limit has the form $\infty \cdot 1$.  This is a determinate form, and, therefore,
+
+	 $\lim_{x \to \infty} (x-\ln(x)) =\infty$
+   
+    \end{freeResponse}
+
+  \item  $\lim_{x \to \infty} \left( x \ln \left( \frac{1}{x} \right) \right) $
+    \WkstHop \begin{freeResponse}
+      As $x$ approaches $\infty$, $\frac{1}{x}$ approaches $0$ from the right.
+      So  $$\lim_{x \to \infty} \ln \left( \frac{1}{x} \right) = - \infty $$
+      Therefore, the limit in question is of the form $\infty \cdot - \infty$, which is a determinate form.\\
+      Thus, 
+      $$ \lim_{x \to \infty} \left( x \ln \left( \frac{1}{x} \right) \right) = - \infty $$
+    \end{freeResponse}
+
+  \item  $\lim_{x \to 0^+} (\sin(x) \cot(x) ) $
+    \WkstHop \begin{freeResponse}
+      Since $\lim_{x \to 0^+} \cot(x) = \infty$, this limit is of the form $0 \cdot \infty$.
+      This is an indeterminate form.
+      
+     Note: $\cot(x) = \frac{\cos(x) }{\sin(x)}$.  So
+      $$\lim_{x \to 0^+} (\sin(x) \cot(x) ) = \lim_{x \to 0^+} \cos(x) = 1 .$$
+    \end{freeResponse}
+  \end{enumerate}
+\end{problem}

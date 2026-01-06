@@ -1,0 +1,96 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 2]{Problem 2}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from optimization.tex, problem #2
+\begin{problem}
+
+  A rectangular flower garden with an area of $30 \, m^2$ is surrounded by a grass border $1 \, m$ wide on two sides and $2 \, m$ wide on the other two sides (see figure).
+  What dimensions of the garden minimize the combined area of the garden and borders?
+  
+  \begin{image}
+    \includegraphics[trim= 100 480 250 250]{Figure1.pdf}
+  \end{image}
+
+  \begin{enumerate}
+    \item  Label the picture with variables.
+      \begin{explanation}
+        \begin{image}
+          \includegraphics[trim= 640 500 250 210]{Figure6.pdf}
+	\end{image}
+      \end{explanation}
+
+    \item  What are you trying to maximize or minimize?
+      Write an equation for it in terms of the variables from (a).
+ \begin{explanation}
+        We want to minimize the combined area of the garden and border.  If $A$ denotes this area, then an equation for $A$ is
+        $$ A = (x+4)(y+2) $$
+      \end{explanation}
+
+    \item  What is your constraint?
+      Write a constraint equation in terms of the variables from (a).
+\begin{explanation}
+        We know that the area of the flower garden is $30 \, m^2$.  So our constraint equation is
+        $$ xy = 30 $$
+      \end{explanation}
+      
+    \item  Reduce your optimization equation to one variable using the constraint equation.
+
+[2]
+      \begin{explanation}
+        $$ x = \frac{30}{y} \quad (\text{Note that } y \neq 0) $$
+        \begin{align}
+          A &= \left( \frac{30}{y} + 4 \right)(y+2) \\
+            &= 30 + 4y + \frac{60}{y} + 8 \\
+            &=4y + \frac{60}{y} + 38 \label{eqn3}
+        \end{align}
+      \end{explanation}
+		
+    \item  What is the interval on which your variable makes sense?
+      Is it open or closed?
+      What does this mean for the method of finding the global max or min?
+[2]
+      \begin{explanation}
+        $0 < y < \infty$, which is an open interval.
+        So we need there to only be one critical point to equation \eqref{eqn3} in the domain of $y$, and then we need to show that this critical point is a local minimum.
+        This will imply that the critical point is a global minimum (since there is only one local extremum).  
+      \end{explanation}
+		
+    \item  Use the appropriate method to find and justify your global extremum.
+[4]
+      \begin{explanation}
+        We need to differentiate equation \eqref{eqn3} with respect to $y$, set this derivative equal to $0$, and then solve:
+        $$ \dd[A]{y} = 4 - \frac{60}{y^2} :=0 $$
+        $$ \frac{60}{y^2} = 4 $$
+        $$ 4y^2 = 60 $$
+        $$ y^2 = 15 $$
+        $$ y = \pm \sqrt{15} $$
+        Since $-\sqrt{15}$ is not in our domain, the only critical point of $A(y)$ in the interval $(0,\infty)$ is $\sqrt{15}$.  
+        Thus, if $y=\sqrt{15}$ is a local minimum for $A$, then it will be a global minimum.  
+        Using the second derivative test:
+        $$ \dd[^2A]{y^2} = \frac{120}{y^3} $$
+        $$ \eval{\dd[^2A]{y^2}}_{y=\sqrt{15}} = \frac{120}{15 \sqrt{15}} > 0. $$
+        
+        Since $A(y)$ is concave up at $y=\sqrt{15}$, this point is a local (and thus, global) minimum of $A(y)$.  
+        Note that we also could have used the first derivative test to show that $y=\sqrt{15}$ was a local minimum of $A$.
+      \end{explanation}
+      
+    \item  Be sure to answer the question asked in the original problem.
+      \begin{explanation}
+        Since $y=\sqrt{15} \, m$, we have that
+        $$ x = \frac{30}{y} = \frac{30}{\sqrt{15}} = \frac{30 \sqrt{15}}{15} = 2 \sqrt{15} \, m $$
+      \end{explanation}
+    \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

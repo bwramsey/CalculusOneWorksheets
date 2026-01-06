@@ -1,0 +1,50 @@
+% Extracted from FTC.tex, problem #4
+\begin{problem}
+  Compute the following integrals:
+  \begin{enumerate}
+    
+
+  \item  $\int_0^1 e^{5x} \d x$
+    \begin{freeResponse}
+      $\int_0^1 e^{5x} \d x  = \eval{\frac{1}{5} e^{5x}}_0^1= \frac{1}{5} \left( e^5 - e^0 \right) = \frac{1}{5} (e^5 - 1)$
+    \end{freeResponse}
+    \WkstHop
+
+  \item  $\int\limits_{-2}^{-1} \frac{1}{x^3} \d x$
+    \begin{freeResponse}
+      \begin{align*}
+        \int\limits_{-2}^{-1} \frac{1}{x^3} \d x &= \int\limits_{-2}^{-1} x^{-3} \d x  \\
+                                                 &= \eval{\frac{x^{-2}}{-2}}_{-2}^{-1}  \\
+                                                 &= \eval{\frac{-1}{2x^2}}_{-2}^{-1}  \\
+                                                 &= - \frac{1}{2} - \left( - \frac{1}{8} \right)  \\
+                                                 &= - \frac{1}{2} + \frac{1}{8} = - \frac{3}{8}
+      \end{align*}
+    \end{freeResponse}
+\WkstHop
+
+  \item  $\int _0^4 \left( 3x - 5 + 7 \sqrt{16-x^2} \right) \d x$
+    \begin{freeResponse}
+      First notice that:
+      \begin{equation}\label{eq1}
+        \int _0^4 \left( 3x - 5 + 7 \sqrt{16-x^2} \right) \d x = \int_0^4 ( 3x - 5) \d x + 7 \int_0^4 \sqrt{16-x^2} \d x.
+      \end{equation}
+      To get the easy part out of the way first:
+      \begin{equation}\label{eq2}
+        \int_0^4 (3x-5) \d x = \eval{\frac{3}{2} x^2 - 5x}_0^4 = (24 - 20) - (0-0) = 4. 
+      \end{equation}
+      So the real issue is in computing $\int_0^4 \sqrt{16-x^2} \d x$.  
+      
+      We do not know how to integrate $\sqrt{16-x^2}$ directly, but recall that the solution set to the equation $x^2 + y^2 = 16$ is a circle with radius $4$ centered at the origin.  
+      Solving for $y$ we get $y = \pm \sqrt{16-x^2}$.  
+      So if we restrict ourselves to $y=\sqrt{16-x^2}$ and $0 \leq x \leq 4$, this gives us the upper-right quarter of the circle (draw a picture and convince yourself of this).  
+      Since the total area of the circle of $\pi (4)^2 = 16\pi$, the area under this portion of the curve is $\frac{1}{4} (16\pi) = 4\pi$.  
+      Thus we have computed (geometrically) that 
+      \begin{equation}\label{eq3}
+        \int_0^4 \sqrt{16-x^2} \d x = 4\pi. 
+      \end{equation}
+      So, $\int _0^4 \left( 3x - 5 + 7 \sqrt{16-x^2} \right) \d x = 4 + 7(4\pi) = 4 + 28\pi$ by (1),(2), and (3)
+      \end{freeResponse}
+	\WkstHop[3]
+
+  \end{enumerate}
+\end{problem}

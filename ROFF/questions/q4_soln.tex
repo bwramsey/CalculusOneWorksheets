@@ -1,0 +1,48 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from reviewOfFamousFunctions.tex, problem #4
+\begin{problem}
+
+  Find all real numbers which satisfy each of the equations.  In the previous problem, we used $\theta$ to denote the radian measure of the angle.  However, we can use any variable to represent the angle measure.  For example, in part a, $x$ is the variable representing the radian measure of the angle.
+  \begin{enumerate}
+    \item
+      $\cos(x) = 1$
+\begin{explanation}
+        This is asking for the collection of all angles such that cosine of that angle equals 1.
+
+        The unit circle shows that one such angle is $0$ (since $\cos(0) = 1$).
+        There is a slight trick here: since cosine has period $2\pi$ we actually have $\cos(0 + 2\pi n) = 1$ for every integer $n$.
+        In summary, $x = 2\pi n$, where $n$ is any integer, gives all the solutions to this equation.
+      \end{explanation}
+
+    \item
+      $\sin(3 \theta) = \sqrt{3}/2$ for $0 \leq \theta \leq 2\pi$
+\begin{explanation}
+        Finding all numbers $\theta$ with $0 \leq \theta \leq 2\pi$ that satisfy $\sin(3 \theta) = \sqrt{3}/2$ is a bit tricky.
+        We first perform a useful trick from algebra~---~variable substitution.
+
+        Let $x = 3\theta$.
+        So, we are trying to find all numbers $x$ such that $\sin(x) = \sqrt{3}/2$ for $0 \leq x/3 \leq 2\pi$.
+        Then $ x= \frac{\pi}{3} + 2 \pi n$ or $ x = \frac{2 \pi }{3} + 2 \pi n $ for $n$ any integer as long as $0 \leq \theta \leq 2\pi$
+        Since $x = 3 \theta$, we can solve for $\theta$ to obtain $\theta = \pi/9 + (2 \pi n)/3$ or $\theta = (2\pi)/9 + (2\pi n)/3$, where $n$ is again any integer as long as $0 \leq \theta \leq 2\pi$.
+        We are only looking for solutions of $\theta$ in $[0, 2\pi ]$, and so our solutions are
+        \[
+        \theta = \frac{\pi}{9}, \frac{2\pi}{9}, \frac{7\pi}{9}, \frac{8\pi}{9}, \frac{13\pi}{9}, \frac{14\pi}{9}. 
+        \]
+      \end{explanation}
+  \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

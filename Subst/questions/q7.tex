@@ -1,0 +1,16 @@
+% Extracted from substitution.tex, problem #7
+\begin{problem}
+	Compute the integral: $\displaystyle \int \dfrac{1+3x}{4+4x^2} \, dx$.
+\WkstHop
+	\begin{freeResponse}
+		First notice that
+		\[ \int \dfrac{1+3x}{4+4x^2} \, dx = \dfrac{1}{4}\int \dfrac{1+3x}{1+x^2} \, dx = \dfrac{1}{4} \int \left(\dfrac{1}{1+x^2} + \dfrac{3x}{1+x^2} \right) \, dx.\]
+		The first integral is $\arctan(x)$, so we have
+		\[ \int \dfrac{1+3x}{4+4x^2} \, dx = \dfrac{1}{4}\arctan(x) + \dfrac{3}{4}\int \dfrac{x}{1+x^2} \, dx.\]
+		We can evaluate the second integral by substitution. If we set $u = 1+x^2$, then $du = 2x dx$ and $\dfrac{1}{2}du = x dx$.
+		\[ \int \dfrac{x}{1+x^2} dx = \frac{1}{2} \int \frac{1}{u} du = \frac{1}{2} \ln|u| + C = \frac{1}{2}\ln\left(1+x^2\right)+C.\]
+		
+		Plugging this into our calculation from above gives
+		\[ \int \dfrac{1+3x}{4+4x^2} \, dx = \dfrac{1}{4}\arctan(x) + \dfrac{3}{8}\ln\left(1+x^2\right)+C.\]
+	\end{freeResponse}
+\end{problem}

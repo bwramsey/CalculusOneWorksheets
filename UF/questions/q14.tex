@@ -1,0 +1,135 @@
+% Extracted from understandingFunctions.tex, problem #14
+\begin{problem}
+
+  We're given the following graph of a function:
+% replaced by the tikzpic below
+%  \begin{image}
+%    \includegraphics[scale = 0.4]{UFFigure112.png}
+%  \end{image}
+
+	  \begin{figure}[H] 
+	  	\centering
+		
+		\begin{tikzpicture}[alt={Graph piecewise-defined function to read info about domain, range, and one-to-one information.}]
+			\begin{axis}[
+				xmin=-3.3, xmax=3.3, ymin=-2.3,ymax=4.3,    
+				axis lines =middle, 
+				every axis y label/.style={at=(current axis.above origin),anchor=south},
+				every axis x label/.style={at=(current axis.right of origin),anchor=west},
+				xtick={-3,...,3}, ytick={-2,...,4},
+				grid=major, width=3.5in, height = 3.5in,
+				grid style={dashed, gray!40}
+				]
+				\addplot[color=blue, ultra thick, smooth, samples=200, domain=-2.3:0]{x^2}node[pos=0.75, left]{\large{$f$}};;				
+				\path[draw, color=blue, very thick] (axis cs:0,1) --  (axis cs:1,0);
+				\path[draw, color=blue, very thick] (axis cs:1,-1) --  (axis cs:3,-3);
+				 
+				\draw[fill=blue] (axis cs:0,3) circle [color=blue,radius=3pt];		
+	
+				\draw[fill=blue] (axis cs:0,0) circle [color=blue,radius=3pt];
+				\draw[fill=white] (axis cs:0,0) circle [color=white,radius=2pt];
+
+				\draw[fill=blue] (axis cs:1,0) circle [color=blue,radius=3pt];
+				\draw[fill=white] (axis cs:1,0) circle [color=white,radius=2pt];
+
+				\draw[fill=blue] (axis cs:0,1) circle [color=blue,radius=3pt];
+				\draw[fill=white] (axis cs:0,1) circle [color=white,radius=2pt];
+
+				\draw[fill=blue] (axis cs:1,-1) circle [color=blue,radius=3pt];
+				\draw[fill=white] (axis cs:1,-1) circle [color=white,radius=2pt];
+			\end{axis}
+		\end{tikzpicture}
+	\end{figure} 
+	
+  Use this graph to answer the following questions:
+  \begin{enumerate}
+  %a
+    \item What is the domain of this function?
+	\WkstHop
+
+      \begin{freeResponse}
+        $(-\infty, 1) \cup (1, \infty)$
+      \end{freeResponse}
+      
+    %b
+    \item What is the range of this function?
+	\WkstHop
+      
+      \begin{freeResponse}
+        $(-\infty, -1) \cup (0, \infty)$
+      \end{freeResponse}
+
+    %c
+    \item What is the value of $f(0)$, $f(1)$, and $f(2)$?
+\WkstHop
+      
+      \begin{freeResponse}
+        $f(0) = 3$, $f(1)$ does not exist, $f(2) = -2$
+      \end{freeResponse}
+
+   %d
+    \item Does this function have an inverse? (Why or why not?)
+	\WkstHop
+      
+      	\begin{freeResponse}
+        No, the function does not have an inverse.
+        It is not one-to-one (that is, it does not pass the horizontal line test).
+      \end{freeResponse}
+      
+     %e
+    \item Find at least two intervals on which the function is one-to-one.
+	\WkstHop
+      
+      \begin{freeResponse}
+        The function becomes one-to-one when we restrict its domain to $(-\infty, 0)$:
+        
+        \begin{image}
+      	    \includegraphics[scale = 0.4, alt={Graph of restriction of the function to x<0, showing that the graph is one-to-one here.}]{UFFigure122.png}
+        \end{image}
+        The function also becomes one-to-one when we restrict its domain to $[0, 1) \cup (1,\infty)$:
+       
+        \begin{image}
+          \includegraphics[scale = 0.4, alt={Graph of restriction to [0,1) union (1, infinity), showing that the graph is one-to-one here.}]{UFFigure222.png}
+          \end{image}
+      \end{freeResponse}
+
+   %f
+    \item Find $f^{-1}(3)$ on a restricted domain of $f$.
+	\WkstHop
+      
+      \begin{freeResponse}
+        In this case restrict the domain of $f$ to $[0, 1)\cup(1,\infty)$.
+        By definition we have $f^{-1}(3) = y \iff 3 = f(y)$.
+        Looking at the second graph of the restricted function we see that $f(0) = 3$, that is, $f^{-1}(3) = 0$.
+
+        (If we restrict the domain of $f$ to $(-\infty, 0)$, then $f^{-1}(3) = y \iff 3 = f(y)$ implies that $f(-1.7) \approx 3$.
+        Hence $-1.7 \approx f^{-1}(3)$.)
+      \end{freeResponse}
+\WkstNew      
+      %g
+	\item Using the restricted domain for $f$ of $(-\infty,0)$, sketch a graph of $f^{-1}$.  
+	\WkstHop
+	
+	\begin{freeResponse}
+	To graph the inverse, we can think of the graph being reflected over the line $y=x$.  Another way to obtain the graph is to remember than if $(x,y)$ is a point on the graph of $f$, then $(y,x)$ is a point on the graph of $f^{-1}$.  For example, $(-1,1)$ is on the graph of $f$ so $(1,-1)$ is on the graph of $f^{-1}$.
+	
+	 \begin{image}
+          \includegraphics[scale = 0.4, alt={Graph showing the restriction of the function, the line y=x, and the reflection of the restriction across that line.}]{UFFigure223.png}
+        \end{image}
+	\end{freeResponse}	
+	 %h
+	\item Using the restricted domain for $f$ of $[0,1)\cup(1,\infty)$, sketch a graph of $f^{-1}$.  
+	\WkstHop
+	
+	\begin{freeResponse}
+	We can graph the inverse of $f$, when restricted to $[0,1)\cup(1,\infty)$, in pieces from left to right.  Since $(0,3)$ is a point on the graph of $f$, the point $(3,0)$ in on the graph of $f^{-1}$.  Then, we see on the graph of $f$, there is a linear piece going from $(0,1)$ to $(1,0)$.  When we imagine reflecting this part of the graph of $f$ over the line $y=x$, it reflects onto itself.  The last piece of the graph of $f$ is a line from $(1,-1)$ which appears to also contain the point $(-2,2)$.  Reflecting this part of $f$ over the line $y=x$, we obtain a line starting at $(-1,1)$ and through the point $(-2,2)$.
+	
+	 \begin{image}
+          \includegraphics[scale = 0.4, alt={Graph showing the restriction of the function, the line y=x, and the reflection of the restriction across that line.}]{UFFigure333.png}
+        \end{image}
+	
+	
+	 \end{freeResponse} 
+
+  \end{enumerate}
+\end{problem}

@@ -1,0 +1,45 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Problem 5]{Problem 5}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+% Extracted from lHopitalsRule.tex, problem #5
+\begin{problem}
+Let $f$ and $g$ be two functions such that $\lim_{x\to\infty}f(x)=\lim_{x\to\infty}g(x)=\infty$.\\[1em]
+
+We say that $f$   \textbf{grows faster} than $g$ as $x$ goes to $\infty$  if  $\lim_{x\to\infty}\frac{f(x)}{g(x)}=\infty$, or, equivalently, if\\
+
+ $\lim_{x\to\infty}\frac{g(x)}{f(x)}=0$.\\
+
+If the limit exists, namely, if  $\lim_{x\to\infty}\frac{f(x)}{g(x)}=M$, for some positive number $M$,\\
+
+ then we say that the functions $f$ and $g$ have \textbf{comparable growth rates}.\\
+
+In other words, we compare the growth rates of  functions $f$ and $g$ by computing the limit of the form $\frac{\infty}{\infty}$: $\lim_{x\to\infty}\frac{f(x)}{g(x)}$ .\\
+
+For each of the following pairs of functions, determine which of the pair grows faster or state that they have comparable growth rates.  Justify your answer by computing the limit $\lim_{x\to\infty}\frac{f(x)}{g(x)}$.
+
+\begin{enumerate}
+	\item$b^x; x^x; b>1$
+		\item $x^x; \left(\frac{x}{e}\right)^x$
+		\item $x^3;  x^3 \cdot \ln(x)$
+		\item $a^x; b^x; 0<a<b$
+	\item $\log_a(x); \log_b(x); 1<a<b$
+	\item $\ln^{3} (x); x^{1/2}$
+		%part g	
+	\item $x; \ln(x)\sqrt{x}$
+		%part h
+		\item Challenge: $x^{40}; 1.004^x$ (Hint: Use the substitution $x=\ln(t)$.)
+			%part i
+	\item Put the following functions in order of growth rate.\\
+	$$x^3 \cdot \ln(x), \ln^{3} (x), x^x, 1.004^x, x^{40}, x^3$$
+	
+	\end{enumerate}
+\end{problem}
+
+\end{document}

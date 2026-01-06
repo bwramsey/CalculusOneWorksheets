@@ -1,0 +1,72 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 6]{Problem 6}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from definiteIntegrals.tex, problem #6
+\begin{problem}
+
+  \begin{enumerate}
+    \item
+      Find the following definite integral:
+	\begin{equation*}
+          \int_{-4}^4 \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}} \d x
+	\end{equation*}
+	\begin{explanation}
+          Let $f(x) = \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}}$.  
+	  Then notice that
+          \begin{align*}
+            f(-x) &= \frac{(-x)^2 \sin^3(-x)}{\sqrt{(-x)^4 + 1}}  \\
+                  &= \frac{x^2 (- \sin(x))^3}{\sqrt{x^4 + 1}}  \quad \text{(since } \sin(x) \text{ is an odd function)}  \\
+                  &= \frac{- x^2 \sin^3(x)}{\sqrt{x^4 + 1}}  \\
+                  &= -f(x).
+          \end{align*}
+          Thus, $f$ is an odd function and therefore
+          \begin{equation*}
+            \int_{-4}^4 \frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}} \d x = 0.
+          \end{equation*}
+          We can illustrate our computation with the graph of the function $f$, where \\[2em]
+           $f(x)=\frac{x^2 \sin^3(x)}{\sqrt{x^4 + 1}}$, for $-4\leq x\leq 4$.
+             \begin{image}
+       \includegraphics[scale=.5]{DIimage003.png}
+  \end{image}
+	\end{explanation}
+
+\item
+          Suppose that $f$ is an even function.
+          Given that $\int_0^6 f(x) \d x = 13$, find $\int_{-6}^6 (5f(x) + 14) \d x$.
+          \begin{explanation}
+            First notice that
+            \begin{equation}\label{linear integral}
+              \int_{-6}^6 (5f(x) + 14) \d x = 5 \int_{-6}^6 f(x) \d x + \int_{-6}^6 14 \d x.
+            \end{equation}
+            
+            Since $f$ is even, we know that
+            \begin{equation}\label{int of f}
+              \int_{-6}^6 f(x) \d x = 2 \int_0^6 f(x) \d x = 2 (13) = 26.
+            \end{equation}
+            
+            We also know that $g(x)=14$ is also an even function.  We have:
+             $\int_{-6}^6 14 \d x = 2\int_{0}^6 14 \d x$
+            \begin{equation}\label{int of 14}
+              2\int_{0}^6 14 \d x =  2(14)(6) = 168.
+            \end{equation}
+            
+            Then substituting equations \eqref{int of f} and \eqref{int of 14} into equation \eqref{linear integral} gives:
+            \begin{equation*}
+              \int_{-6}^6 (5f(x) + 14) \d x = 5(26) + 168 = 130 + 168 = 298.
+            \end{equation*}
+          \end{explanation}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

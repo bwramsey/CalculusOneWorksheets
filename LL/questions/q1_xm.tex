@@ -1,0 +1,32 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+% Extracted from limitLaws.tex, problem #1
+\begin{problem}
+
+  The following argument shows 
+  \[
+    \lim_{x \to 3} \frac{5x^3 - 4 \sqrt{x}}{\sqrt{x^5 - 87}} = \frac{135 - 4\sqrt{3}}{\sqrt{156}}.
+  \]
+  State which limit law is used to justify each step.
+  (A particular step may have more than one limit law as a justification.)
+
+  \begin{align*}
+    \lim_{x \to 3} \frac{5x^3 - 4 \sqrt{x}}{\sqrt{x^5 - 87}}
+    &= \frac{\lim_{x \to 3} \left(5x^3 - 4 \sqrt{x}\right)}{\lim_{x \to 3}\sqrt{x^5 - 87}}\\
+     &= \frac{\Big(\lim_{x \to 3}5\Big)\Big(\lim_{x \to 3}(x^3)\Big) - \Big(\lim_{x \to 3}4 \Big)\Big(\lim_{x \to 3}\sqrt{x}\Big)}{\sqrt{\lim_{x \to 3}(x^5 - 87)}}\\
+    &= \frac{5\lim_{x \to 3}(x^3) - 4 \lim_{x \to 3}\sqrt{x}}{\sqrt{\lim_{x \to 3}(x^5 - 87)}}\\
+    &= \frac{5(\lim_{x \to 3}x)^3 - 4 \sqrt{3}}{\sqrt{\lim_{x \to 3}(x^5) - \lim_{x \to 3} (87)}}\\
+    &= \frac{5(3)^3 - 4 \sqrt{3}}{\sqrt{3^5 - 87}}\\
+    &= \frac{135 - 4\sqrt{3}}{\sqrt{156}}
+  \end{align*}
+\end{problem}
+
+\end{document}

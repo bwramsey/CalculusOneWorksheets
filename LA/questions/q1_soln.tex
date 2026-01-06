@@ -1,0 +1,52 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from linearApproximation.tex, problem #1
+\begin{problem}
+
+
+
+
+  \begin{enumerate}
+    \item
+      Find the linearization, $L(x)$, of the function $f(x) = e^{2x}$ at $a = 0$.
+      \begin{explanation}
+        Recall that $L(x) = f(a) + f'(a)(x - a)$.\\
+        Hence  $f'(x) = 2e^{2x} \implies f'(0) = 2e^{0} = 2$  and $ f(0) = e^{0} = 1$.\\
+        Therefore $L(x) = 1 + 2\cdot x$
+      \end{explanation}
+
+    \item
+    Using the linearization, $L(x)$, from the part (a), approximate $e$.
+      \begin{explanation}
+        \begin{align*}
+          e &= e^{2\cdot(1/2)}\\
+          &= f(1/2) \approx L(1/2)\\
+          &\approx 1 + 2\cdot(1/2)\\
+          &\approx 2
+        \end{align*}
+      \end{explanation}
+
+    \item
+    Is the estimation found in part (b) an overestimate or an underestimate? \textbf{EXPLAIN}.
+      [2]
+      \begin{explanation}
+	$f''(x) = 4e^{2x}$ is positive on the interval $\left(0, \dfrac{1}{2}\right)$. That means the graph of $f$ is concave up between $x=0$ 
+	and $x=\dfrac{1}{2}$, so this estimate is an underestimate. (The graph of the linearization $L$ lies below the graph of the function $f$.)
+      \end{explanation}
+      
+  \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

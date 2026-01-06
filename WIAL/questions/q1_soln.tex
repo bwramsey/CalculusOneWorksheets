@@ -1,0 +1,53 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from whatIsALimit.tex, problem #1
+\begin{problem} \hfil
+	\begin{enumerate}
+
+	\item  True or False: To find $\lim_{x \to 2} f(x)$, it's enough to know the values of $f(2.1)$, $f(2.01)$, $f(2.001)$, and so on.
+\begin{explanation}
+		 False.  These values will only help us make a guess at $\lim_{x \to 2^+} f(x)$, the right hand limit of $f$ 
+		as $x$ approaches $2$.  To determine $\lim_{x \to 2} f(x)$, we also need to know $\lim_{x \to 2^-} f(x)$ which
+ 		we cannot determine from the above values.  For example, consider the function
+	 	 \[
+	          f(x) =
+	        \begin{cases}
+		         -1 & \mbox{if $x < 2$,}\\
+		          0 & \mbox{if $x = 2$, and}\\
+		          1 & \mbox{if $2 < x$.}
+	        \end{cases}
+	        \]
+
+	Looking at the graph of this function below, we can see that $\lim_{x \to 2^+} f(x) = 1$ and $\lim_{x \to 2^-} f(x) = -1$.  Thus, since $\lim_{x \to 2^+} f(x) \neq \lim_{x \to 2^-} f(x)$, $\lim_{x \to 2} f(x)$ does not exist.
+	
+		\begin{image}
+          \includegraphics[scale = 0.6, alt={Graph of function that is 1 for x>2, -1 for x<2, and with f(2)=0}]{graphPiecewiseFunction.png}
+		\end{image}
+
+	\end{explanation}
+	
+	
+	
+	\item  True or False: If we know the value of $f(2)$, then can we conclude that $\lim_{x \to 2} f(x)=f(2)$?
+\begin{explanation}
+		False.  In the above example, we have that $f(2) = 0$, while $\lim_{x \to 2} f(x)$ does not exist.
+		\end{explanation}
+
+	\end{enumerate}
+
+
+\end{problem}
+
+
+
+\end{document}

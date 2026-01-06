@@ -1,0 +1,63 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 6]{Problem 6}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from chainRule.tex, problem #6
+\begin{problem}
+Find the derivative of the following functions:
+
+	\begin{enumerate}
+	\item  $f(x) = \sin(x) \cos(x)$
+			\begin{explanation}
+			$$f'(x) = (\cos(x))(\cos(x)) + (\sin(x))(-\sin(x)) = \cos^2(x) - \sin^2(x).$$
+			\end{explanation}			
+\item  $f(x) = \frac{e^x \tan(x)}{\sec(x) + 2}$
+			\begin{explanation}
+			\begin{align*}
+			f'(x) &= \frac{(\sec(x)+2)(e^x \tan(x) + e^x \sec^2(x)) - e^x \tan(x) (\sec(x) \tan(x))}{(\sec(x) + 2)^2}  \\
+			&= \frac{e^x[(\sec(x) + 2)(\tan(x) + \sec^2(x)) - \sec(x) \tan^2(x)]}{(\sec(x) + 2)^2}.
+			\end{align*}
+			\end{explanation}
+\item  $f(x) = e^{x \tan(x)}$
+			\begin{explanation}
+			\[	
+			f'(x) = e^{x \tan(x)}\left(\tan{(x)}+x\sec^{2}(x)\right) 
+		         \]
+			\end{explanation}			
+\item  $f(x) = \sin(x) \cos(x) e^{3x}$
+			\begin{explanation}
+			\begin{align*}
+			f'(x) &= \ddx[\sin(x) \cos(x)] e^{3x} + \left(\sin(x) \cos(x)\right) \ddx(e^{3x})  \\
+			&= \left(\cos^2(x) - \sin^2(x)\right)e^{3x} + 3e^{3x} \sin(x) \cos(x)  \\
+			&= e^{3x}\left(\cos^2(x) + 3\sin(x) \cos(x) - \sin^2(x)\right).
+			\end{align*}
+			\end{explanation}
+\item  $f(x) = \frac{x+5}{7x^6 + \cot(x)}$
+			\begin{explanation}
+			\begin{align*}
+			f'(x) &= \frac{(7x^6 + \cot(x))(1) - (x+5)(42x^5 - \csc^2(x))}{(7x^6 + \cot(x))^2}  \\
+			&= \frac{7x^6 + \cot(x) - (x+5)(42x^5 - \csc^2(x))}{(7x^6 + \cot(x))^2}.
+			\end{align*}
+			\end{explanation}	
+\item  $f(x) = \sin{\left(2x\right)}\sec^{3}{\left(x^2+4x\right)}$
+			\begin{explanation}
+			\begin{align*}
+			f'(x) &=2\cos{\left(2x\right)}\sec^{3}{\left(x^2+4x\right)}+\sin{\left(2x\right)}3\sec^{2}{\left(x^2+4x\right)} \sec{\left(x^2+4x\right)}\tan{\left(x^2+4x\right)}\left(2x+4\right)  \\
+			&=2\cos{\left(2x\right)}\sec^{3}{\left(x^2+4x\right)}+3\sin{\left(2x\right)}\sec^{3}{\left(x^2+4x\right)} \tan{\left(x^2+4x\right)}\left(2x+4\right)  .
+			\end{align*}
+			\end{explanation}
+\end{enumerate}
+		
+\end{problem}
+
+
+
+\end{document}

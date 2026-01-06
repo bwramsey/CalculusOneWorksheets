@@ -1,0 +1,108 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from productRuleAndQuotientRule.tex, problem #3
+\begin{problem}
+Suppose that $f(5) = 7$, $f'(5) = 8$, $g(5) = 3$, and $g'(5) = -4$.  Find:
+
+	\begin{enumerate}
+
+	\item  $(fg)'(5)$.
+\begin{explanation}
+		\begin{align*}
+		(fg)'(5) &= (f'(5) \cdot g(5)) + (f(5) \cdot g'(5))  \\
+		&= (8)(3) + (7)(-4)  \\
+		&= 24 - 28 = -4.
+		\end{align*}
+		\end{explanation}
+		
+		
+
+	\item $\left[ \ddx \left( \frac{f}{g} \right) \right]_{x=5}$
+\begin{explanation}
+		\begin{align*}
+		\left[ \ddx \left( \frac{f}{g} \right) \right] (5) &= \frac{(g(5) \cdot \left[ \ddx f \right] (5)) - (f(5) \cdot \left[ \ddx g \right](5))}{(g(5))^2}  \\
+		&= \frac{(3)(8) - (7)(-4)}{3^2}  \\
+		&= \frac{24 + 28}{9} = \frac{52}{9}.
+		\end{align*}
+		\end{explanation}
+		
+		
+	\item $ \left( \frac{g}{f} \right)' (5)$
+\begin{explanation}
+		\begin{align*}
+		\left( \frac{g}{f} \right)' (5) &= \frac{(f(5) \cdot g'(5)) - (g(5) \cdot f'(5))}{(f(5))^2}  \\
+		&= \frac{(7)(-4) - (3)(8)}{7^2}  \\
+		&= \frac{-28 - 24}{49} = - \frac{52}{49}.
+		\end{align*}
+		\end{explanation}
+		
+	\item  $\eval{ \ddx \left( \frac{g(x)}{x+2} \right)}_{x=5}$
+\begin{explanation}
+		\begin{align*}
+		\eval{\ddx \left( \frac{g(x)}{x+2} \right)}_{x=5} &= \eval{\frac{(x+2) \cdot g'(x)) - (g(x) \cdot (x+2)'}{(x+2)^2}}_{x=5}  \\
+		&= \frac{(5+2)(-4) - (3)(1)}{(5+2)^2}  \\
+		&= \frac{(7)(-4) - (3)(1)}{7^2}  \\
+		&= \frac{-28 - 3}{49} = - \frac{31}{49}
+		\end{align*}
+		\end{explanation}
+
+
+
+	\item $\eval{ \ddx \left( \frac{xf(x)}{g(x)} \right)}_{x=5}$
+\begin{explanation}
+		\begin{align*}
+		\eval{\ddx \left( \frac{xf(x)}{g(x)} \right)}_{x=5} &= \eval{\frac{(((xf(x))' \cdot g(x)) - (g'(x) \cdot (xf(x)))}{(g(x))^2}}_{x=5}  \\
+		&= \eval{\frac{\left( (x)' \cdot f(x)+x \cdot f'(x) \right) \cdot g(x)) - (g'(x) \cdot (xf(x))}{(g(x))^2}}_{x=5}  \\
+		&= \frac{(1 \cdot 7+ 5 \cdot 8)(3) - (-4)(5)(7)}{(3)^2}  \\
+		&= \frac{141+140}{9}  \\
+		&= \frac{281}{9}
+		\end{align*}
+		\end{explanation}
+
+	\item $\displaystyle \lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5}$. \textbf{EXPLAIN}.
+\begin{explanation}
+		
+		We first note that this limit has form $\ZeroOverZero$, but with no formula for $g(x)$ there is no simplification we can perform.
+		Notice that if we set $w(x) = x^2 g(x)$, then $w(5) = (5)^2 g(5) = 75$. This limit is the definition of the derivative, $w'(5)$.
+		\begin{align*}
+			\lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5} &= w'(5) \\
+				&= \eval{\ddx( x^2 g(x) )}_{x=5}\\
+				&= \eval{2x g(x) + x^2 g'(x) }_{x=5}\\
+				&= 2(5) g(5) + (5)^2 g'(5)\\
+				&= -70
+		\end{align*}
+	$\displaystyle \lim_{x\to 5} \dfrac{x^2 g(x) - 75 }{x-5} = -70$ by the product rule since this is the definition of the derivative of $x^2 g(x)$ at $x=5$.	
+		\end{explanation}
+		
+	\item $\displaystyle \lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5}$. \textbf{EXPLAIN}.
+\begin{explanation}
+		
+		We first note that this limit has form $\ZeroOverZero$.
+		Notice that if we set $k(x) = \frac{x+2}{f(x)}$, then $k(5) = \frac{5+2}{f(5)} = 1$. This limit is the definition of the derivative, $k'(5)$.
+		\begin{align*}
+			\lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5} &= k'(5) \\
+				&= \eval{\ddx \left( \frac{x+2}{f(x)} \right)}_{x=5}\\
+				&= \eval{ \dfrac{f(x) - (x+2)f'(x)}{(f(x))^2} }_{x=5}\\
+				&= \dfrac{f(5) - (5+2)f'(5)}{(f(5))^2}\\
+				&= \dfrac{7 - 7(8)}{(7)^2}\\
+				&= -1
+		\end{align*}
+	$\displaystyle \lim_{x\to 5} \dfrac{\frac{x+2}{f(x)} - 1 }{x-5} = -1$ by the quotient rule since this is the definition of the derivative of $\frac{x+2}{f(x)}$ at $x=5$.		
+		\end{explanation}		
+	\end{enumerate}
+		
+\end{problem}
+
+
+
+\end{document}

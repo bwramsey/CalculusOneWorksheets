@@ -1,0 +1,52 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+% Extracted from moreThanOneRate.tex, problem #4
+\begin{problem}
+	A \textbf{rectangle in the first quadrant} is constructed by taking a point $(x,y)$ on the graph of the function $f(x)=9-x^2$, drawing a line segment vertically downward 
+		to the $x$-axis and a line segment horizontally leftward to the $y$-axis, as in the picture below. 
+		Denote the \textbf{length of the base} (along the $x$-axis) of the rectangle by $x$, the 
+		\textbf{height of the rectangle} (along the $y$-axis) by $y$ (in meters), and the \textbf{PERIMETER} of the rectangle by $P$. 
+		When $x = 2$ m (and only at that moment), the height $y$ is shrinking at a rate of $\dfrac{1}{5}$ m/s.  
+		Find the value of $\displaystyle \eval{\dd[P]{t}}_{x=2 m}$ \textbf{by performing the steps below}.\\
+		\begin{center}
+			  \begin{tikzpicture}
+						\begin{axis}[
+							xmin=-0.2, xmax=3.2, ymin=-0.5,ymax=9.5,    
+							axis lines =middle, 
+							every axis y label/.style={at=(current axis.above origin),anchor=south},
+							every axis x label/.style={at=(current axis.right of origin),anchor=west},
+							xtick={0,...,3}, ytick={0,...,9},
+							grid=major, width=2.5in, height = 2.5in,
+							grid style={dashed, gray!40}
+							]
+							
+							\addplot[color=blue, very thick, smooth, samples=200, domain=0:3.2]{9-x^(2)};
+							\draw[fill=gray!10] (0,0) -- (1.8, 0) -- (1.8, 5.76) -- (0, 5.76) --  cycle;
+							\closedcircle{(1.8, 5.76)};
+							\node[above right] at (1.8, 5.76){$(x,y)$};
+						\end{axis}
+	
+			  \end{tikzpicture}
+		\end{center}
+
+		\begin{enumerate}			
+			\item\label{partA} \textbf{Find a formula} for the height, $y$, of the rectangle as a function of $x$. (This is denoted as $y(x)$.) \\
+
+\item\label{partB} \textbf{Find the value} of $\displaystyle \eval{\dd[x]{t}}_{x=2 m}$.
+
+\item\label{partC} \textbf{Find a formula} for the perimeter, $P$, of the rectangle as a function of $x$. (This is denoted as $P(x)$.)\\[1em]
+\item\label{partD} \textbf{Find the value} of $\displaystyle \eval{\dd[P]{t}}_{x=2 m}$.
+\item \textbf{Write a sentence to explain} what the value found in \ref{partD} means about the rectangle. (Don't forget UNITS.)
+\end{enumerate}
+		
+\end{problem}
+
+\end{document}

@@ -1,0 +1,37 @@
+% Extracted from derivativesAsFunctions.tex, problem #2
+\begin{problem}
+  \mbox{}
+  \begin{enumerate}
+    \item
+
+
+      Fill in the blanks
+      \[
+        f'(x) = \lim_{\text{???}} \frac{\text{????}}{h}
+      \]
+      if the limit exists.
+	\begin{freeResponse}
+      \[
+        f'(x) = \lim_{h \to 0} \frac{f(x + h) - f(x)}{h}
+      \]
+      if the limit exists.
+	\end{freeResponse}
+\WkstHop
+    \item
+      Let 
+      \[
+        f(x) = \frac{1}{x + 4}.
+      \]
+      Use the (limit) \emph{definition} of derivative in (a) to find $f'(x)$.
+      \begin{freeResponse}
+        \begin{align*}
+          f'(x) &= \lim_{h \to 0} \frac{f(x + h) - f(x)}{h} \\
+          & = \lim_{h \to 0} \frac{\frac{1}{x+h +4}-\frac{1}{x+4}}{h} \textrm{ which has form } \ZeroOverZero\\
+          &= \lim_{h \to 0} \frac{\frac{x+4 -(x+h +4)}{(x+h +4)(x+4)}}{h}\\
+          &= \lim_{h \to 0} \frac{1}{h} \cdot \frac{-h}{(x+h +4)(x+4)} \\
+          &= \lim_{h \to 0} \frac{-1}{(x+h +4)(x+4)} = \frac{-1}{(x+4)^2}
+        \end{align*}
+      \end{freeResponse}
+\WkstHop[3]
+  \end{enumerate}
+\end{problem}

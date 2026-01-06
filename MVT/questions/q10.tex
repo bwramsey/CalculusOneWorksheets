@@ -1,0 +1,19 @@
+% Extracted from meanValueTheorem.tex, problem #10
+\begin{problem}
+  Two runners start a race at the same time and finish in a tie.
+  Prove that at some time during the race they have the same speed. 
+  (Hint:  Consider the function $h(t)=f(t)-g(t)$, where $f(t)$ and $g(t)$ are the position of the first and second runner at time $t$, respectively.)
+\WkstHop
+  \begin{freeResponse}
+    Let $f(t)$ be the position of the first runner at time $t$, and let $g(t)$ be the position of the second runner at time $t$.
+    Let $T$ denote the time that the two runners finish the race (which is the same, since they finish in a tie).
+    Also, let $h(t) = f(t) - g(t)$.
+    Since $h(0) = 0$ and $h(T) = 0$, by Rolle's Theorem there exists some $c$ with $0 < c < T$ such that $h'(c)=0$.
+    But since $h^\prime (t) = f^\prime (t) - g^\prime (t)$, we have that $f^\prime (c) = g^\prime (c)$.
+    Therefore, the runners have the same speed at time $c$.  
+
+    \begin{image}
+      \includegraphics[scale=.45]{iFigure6.png}
+    \end{image}
+  \end{freeResponse}
+\end{problem}

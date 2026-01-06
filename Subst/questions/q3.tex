@@ -1,0 +1,72 @@
+% Extracted from substitution.tex, problem #3
+\begin{problem}
+Suppose that 
+\(
+\int_{1}^{3} f(x)\d x=4
+\)
+\begin{enumerate}
+\item Evaluate the following integrals.
+	\begin{enumerate}
+	\item $\int_{0}^{2} f(x+1)\d x$
+\WkstHop
+	  \begin{freeResponse}
+	  Let $u=x+1$. Then $\d u=\d x$; when $x=0$, $u=1$; when $x=2$, $u=3$.
+	   Therefore,\\[1em]
+	$\int_{0}^{2} f(x+1)\d x=\int_{1}^{3} f(u)\d u=4$\\[1em]
+	Notice that the region whose net area is given by the integral  $\int_{0}^{2} f(x+1)\d x$  is just the region whose net area is given by the integral  $\int_{1}^{3} f(x)\d x$, only ``shifted to the left by 1".
+	Obviously, their net areas  have to be equal. We illustrate this in the figure below. \\
+	 \includegraphics[scale = 0.5]{Substitutionimage002.png}
+	    \end{freeResponse}
+	\item $\int_{1}^{9} 3\dfrac{f(\sqrt{x})}{\sqrt{x}}\d x$
+\WkstHop
+	  \begin{freeResponse}
+	  Let $u=\sqrt{x}$. Then $\d u=\dfrac{1}{2\sqrt{x}} \d x$; when $x=1$, $u=1$; when $x=9$, $u=3$.
+	  Therefore,\\[1em]
+	  $\int_{1}^{9} 3\dfrac{f(\sqrt{x})}{\sqrt{x}}\d x=\int_{1}^{9} 3\cdot 2\cdot\dfrac{f(\sqrt{x})}{2\cdot\sqrt{x}}\d x=\int_{1}^{3} 6f(u)\d u=6\int_{1}^{3} f(u)\d u=6\cdot 4=24  $
+	    \end{freeResponse}
+	\item  $\int_{\frac{1}{3}}^{1} f(3x)\d x$
+\WkstHop
+	  \begin{freeResponse}
+	  Let $u=3x$. Then $\d u=3\d x$; when $x=\frac{1}{3}$, $u=1$; when $x=1$, $u=3$.
+	  Therefore,\\[1em]
+	  $\int_{\frac{1}{3}}^{1} f(3x)\d x=\int_{\frac{1}{3}}^{1}\dfrac{3}{3} f(3x)\d x=\int_{1}^{3} \dfrac{1}{3}f(u)\d u= \dfrac{1}{3}\int_{1}^{3}f(u)\d u= \dfrac{1}{3}\cdot4= \dfrac{4}{3}$
+	    \end{freeResponse}
+	\item $\int_{2}^{4} 3f(x-1)\d x$
+\WkstHop
+	  \begin{freeResponse}
+	  Let $u=x-1$. Then $\d u=\d x$; when $x=1$, $u=1$;  when $x=4$, $u=3$.
+	    Therefore,\\[1em]
+    	$\int_{2}^{4} 3f(x-1)\d x= \int_{1}^{3} 3f(u)\d u=3\int_{1}^{3} f(u)\d u=3\cdot4=12$
+	    \end{freeResponse}
+	\item $\int_{0}^{\sqrt{2}} 3x f(x^2+1)\d x$
+\WkstHop
+	  \begin{freeResponse}
+	  Let $u=x^2+1$. Then $\d u= 2x\d x$; when $x=0$, $u=1$; when $x=\sqrt{2}$, $u=3$.
+	   Therefore,\\[1em]
+	   $\int_{0}^{\sqrt{2}} 3x f(x^2+1)\d x=\int_{0}^{\sqrt{2}} 3\cdot \dfrac{2}{2}\cdot x f(x^2+1)\d x=\int_{1}^{3}  \dfrac{3}{2}\cdot  f(u)\d u= \dfrac{3}{2}\cdot \int_{1}^{3}  f(u)\d u= \dfrac{3}{2}\cdot 4=6$
+	    \end{freeResponse}
+	
+	\end{enumerate}
+\WkstNew
+
+\item Assume that $f$ is odd. Evaluate   $\int_{-3}^{-1} f(x)\d x$
+\WkstHop
+  \begin{freeResponse}
+  Since $f$ is odd, then $f(-x)=-f(x)$ or $f(x)=-f(-x)$, for all $x$ in its domain.\\
+   Let $u=-x$. Then $\d u=-\d x$; when $x=-3$, $u=3$; when $x=-1$, $u=1$. \\[1em]
+       Therefore,\\[1em]
+  $\int_{-3}^{-1} f(x)\d x=\int_{-3}^{-1}[ -f(-x)]\d x=\int_{3}^{1}f(u)\d u=-\int_{1}^{3}f(u)\d u=-4$
+  
+    \end{freeResponse}
+\item Assume that $f$ is even. Evaluate   $\int_{-3}^{-1} f(x)\d x$
+\WkstHop
+  \begin{freeResponse}
+   Since $f$ is even, then $f(-x)=f(x)$, for all $x$ in its domain.\\
+   Let $u=-x$. Then $\d u=-\d x$; when $x=-3$, $u=3$; when $x=-1$, $u=1$. \\[1em]
+       Therefore,\\[1em]
+  $\int_{-3}^{-1} f(x)\d x=\int_{-3}^{-1}[ f(-x)]\d x=-\int_{-3}^{-1}[ f(-x)](-\d x)=-\int_{3}^{1}f(u)\d u=\int_{1}^{3}f(u)\d u=4$
+  
+
+    \end{freeResponse}
+\end{enumerate}
+\end{problem}

@@ -1,0 +1,43 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 5]{Problem 5}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from linearApproximation.tex, problem #5
+\begin{problem}
+Consider a square with a side $x$. Let $A$ be the area of the square.
+\begin{enumerate}
+\item Compute $\Delta A$, the change in area if the side increases by $\Delta x=\d x$.
+ 	\begin{explanation}
+  $\Delta A= A(x+\d x)-A(x)= (x+\d x)^2-x^2= x^2+2x\cdot \d x +(\d x)^2-x^2=2x\cdot \d x +(\d x)^2$
+    \end{explanation}
+    \item Compute $\d A$, the differential of $A$ at $x$,  and compare it to  $\Delta A$.
+ 	\begin{explanation}
+  $\d A= A'(x)\d x= 2x\cdot \d x$
+  
+  $\Delta A=[2x\cdot \d x] +(\d x)^2=\d A +(\d x)^2$
+    \end{explanation}
+     \item In the figure below the shaded part represents the change $\Delta A$. Shade the part that represents $\d A$.
+       \begin{image}
+      \includegraphics[scale = .3]{LAfigure1.png}
+    \end{image}
+ 	\begin{explanation}
+ Since  $\d A= A'(x)\d x= 2x\cdot \d x$, we shade the part as shown in the figure below.
+\begin{image}
+      \includegraphics[scale = .3]{LAfigure2.png}
+    \end{image}
+    The picture illustrates that $\Delta A\approx\d A$.
+    \end{explanation}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

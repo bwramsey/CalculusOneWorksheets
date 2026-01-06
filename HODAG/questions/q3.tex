@@ -1,0 +1,30 @@
+% Extracted from higherOrderDerivativesAndGraphs.tex, problem #3
+\begin{problem}
+Let $f(x) = 2x^3-4x^2+1151$ and $g(x) = x^3\sin(x)$.  Compute $f^{(4)}(x)$ and $g^{(4)}(x)$. 
+\WkstHop
+
+\begin{freeResponse}
+Let's find the first four derivatives of $f$.
+
+	\begin{align*}
+	f^{(0)}(x)&=2x^3-4x^2+1151\\
+	f^{(1)}(x)&=6x^2-8x\\
+	f^{(2)}(x)&=12x-8\\
+	f^{(3)}(x)&=12\\
+	f^{(4)}(x)&=0
+	\end{align*}
+	Let's find the first four derivatives of $g$.
+\begin{align*}
+	g^{(0)}(x)&=x^3\sin{x}\\
+	g^{(1)}(x)&=3x^2\sin{x}+x^3\cos{x}\\
+	g^{(2)}(x)&=6x\sin{x}+3x^2\cos{x}+3x^2\cos{x}-x^3\sin{x}\\
+	&=(6x-x^3)\sin{x}+(6x^2)\cos{x}\\
+	g^{(3)}(x)&=(6-3x^2)\sin{x}+(6x-x^3)\cos{x}+(12x)\cos{x}-(6x^2)\sin{x}\\
+	&=(6-3x^2-6x^2)\sin{x}+(6x-x^3+12x)\cos{x}\\
+	&=(6-9x^2)\sin{x}+(18x-x^3)\cos{x}\\
+	g^{(4)}(x)&=(-18x)\sin{x}+(6-9x^2)\cos{x}+(18-3x^2)\cos{x}-(18x-x^3)\sin{x}\\
+	&=(-18x-18x+x^3)\sin{x}+(6-9x^2+18-3x^2)\cos{x}\\
+	&=(-36x+x^3)\sin{x}+(24-12x^2)\cos{x}
+	\end{align*}
+\end{freeResponse}
+\end{problem}

@@ -1,0 +1,102 @@
+% Extracted from lHopitalsRule.tex, problem #5
+\begin{problem}
+Let $f$ and $g$ be two functions such that $\lim_{x\to\infty}f(x)=\lim_{x\to\infty}g(x)=\infty$.\\[1em]
+
+We say that $f$   \textbf{grows faster} than $g$ as $x$ goes to $\infty$  if  $\lim_{x\to\infty}\frac{f(x)}{g(x)}=\infty$, or, equivalently, if\\
+
+ $\lim_{x\to\infty}\frac{g(x)}{f(x)}=0$.\\
+
+If the limit exists, namely, if  $\lim_{x\to\infty}\frac{f(x)}{g(x)}=M$, for some positive number $M$,\\
+
+ then we say that the functions $f$ and $g$ have \textbf{comparable growth rates}.\\
+
+In other words, we compare the growth rates of  functions $f$ and $g$ by computing the limit of the form $\frac{\infty}{\infty}$: $\lim_{x\to\infty}\frac{f(x)}{g(x)}$ .\\
+
+For each of the following pairs of functions, determine which of the pair grows faster or state that they have comparable growth rates.  Justify your answer by computing the limit $\lim_{x\to\infty}\frac{f(x)}{g(x)}$.
+
+
+
+\begin{enumerate}
+	\item$b^x; x^x; b>1$
+		\WkstHop \begin{freeResponse}
+		$\lim_{x \to \infty}\frac{b^x}{x^x}=\lim_{x \to \infty}\left(\frac{b}{x}\right)^x=0$.  Since this limit is of the form $0^{\infty}$, which is a determinate form.
+		Therefore, $x^x$ grows faster.
+		
+		\end{freeResponse}
+	
+	\item $x^x; \left(\frac{x}{e}\right)^x$
+		\WkstHop \begin{freeResponse}
+		$\lim_{x \to \infty}\frac{x^x}{(x/e)^x}=\lim_{x \to \infty}\frac{x^x}{\frac{x^x}{e^x}}=\lim_{x \to \infty}{x^x}\cdot{\frac{e^x}{x^x}}=\lim_{x \to \infty}{e^x}=\infty$  Therefore, $x^x$ grows faster.
+		
+		\end{freeResponse}
+	
+
+\WkstNew
+	
+	\item $x^3;  x^3 \cdot \ln(x)$
+		\WkstHop \begin{freeResponse}
+		$\lim_{x \to \infty}\frac{x^3}{x^3 \cdot \ln(x)}=\lim_{x \to \infty}\frac{1}{\ln(x)}=0$.  
+		Therefore, $x^3 \cdot \ln(x)$ grows faster.
+		
+		\end{freeResponse}
+	\item $a^x; b^x; 0<a<b$
+	\WkstHop \begin{freeResponse}
+		$\lim_{x \to \infty}\frac{a^x}{b^x}=\lim_{x \to \infty}\left(\frac{a}{b}\right)^x=0$
+		Therefore, $b^x$ grows faster
+	
+	
+	\end{freeResponse}
+	\item $\log_a(x); \log_b(x); 1<a<b$
+	\WkstHop \begin{freeResponse}
+	$\lim_{x \to \infty}\frac{\log_a(x)}{\log_b(x)}$\\
+	By L'Hopital's Rule: $\lim_{x \to \infty}\frac{\frac{1}{x\ln(a)}}{\frac{1}{x\ln(b)}}=\lim_{x \to \infty}\left(\frac{1}{x\ln(a)} \cdot \frac{x\ln(b)}{1}\right)=\frac{\ln b}{\ln a}$\\
+	Therefore, $\log_a(x)$ and $\log_b(x)$ grow at comparable rates.
+	
+		\end{freeResponse}
+	\item $\ln^{3} (x); x^{1/2}$
+		\WkstHop \begin{freeResponse}
+	$\lim_{x \to \infty}\frac{\ln^{3}(x)}{x^{1/2}}$\\
+	By L'Hopital's Rule:$\lim_{x \to \infty}\frac{\ln^{3}(x)}{x^{1/2}}=\lim_{x \to \infty}\frac{3\ln^2 (x) \cdot (1/x)}{(1/2)x^{-1/2}}=\lim_{x \to \infty}\frac{6 \cdot \ln^2 (x)}{x^{1/2}}$\\
+	By L'Hopital's Rule:$\lim_{x \to \infty}\frac{12\ln (x) \cdot (1/x)}{(1/2)x^{-1/2}}=\lim_{x \to \infty}\frac{24 \cdot \ln (x)}{x^{1/2}}$\\
+	By L'Hopital's Rule: $\lim_{x \to \infty}\frac{48}{x^{1/2}}=0$
+	Therefore, $x^{1/2}$ grows faster
+		\end{freeResponse}
+
+\WkstNew	
+		%part g	
+	\item $x; \ln(x)\sqrt{x}$
+		\WkstHop \begin{freeResponse}
+	
+	$\lim_{x \to \infty}\frac{x}{\ln (x)\sqrt{x}}=\lim_{x \to \infty}\frac{x^{1/2}}{\ln(x)}$\\
+	By L'Hopital's Rule:$\lim_{x \to \infty}\frac{(1/2)x^{-1/2}}{x^{-1}}=\lim_{x \to \infty}{(1/2)x^{1/2}}=\infty$\\
+		Therefore, $x$ grows faster
+		\end{freeResponse}
+		
+		%part h
+		\item Challenge: $x^{40}; 1.004^x$ (Hint: Use the substitution $x=\ln(t)$.)
+			\WkstHop \begin{freeResponse}
+			\begin{align*}
+			\lim_{x \to \infty}\frac{x^{40}}{1.004^x} &=\lim_{t \to \infty}\frac{[\ln(t)]^{40}}{1.004^{\ln(t)}}\\
+			&=\lim_{t \to \infty}\frac{\ln(t)^{40}}{{e^{\ln(1.004)}}^{\ln(t)}}\\
+			&=\lim_{t \to \infty}\frac{\ln(t)^{40}}{t^{\ln(1.004)}}\\
+			&=\lim_{t \to \infty}\left(\frac{\ln(t)}{t^{1.004/40}}\right)^{40}\\
+			&=\left[\lim_{t \to \infty}\left(\frac{\ln(t)}{t^{1.004/40}}\right)\right]^{40}\\
+			&\stackrel{L.R.}{=} \left[\lim_{t \to \infty}\frac{\frac{1}{t}}{(1.004/40)t^{(1.004/40)-1}}\right]^{40}\\
+			&=\left[\lim_{t \to \infty}\frac{1}{(1.004/40)t^{((1.004/40)-1+1)}}\right]^{40}\\
+			&=0^{40}\\
+			&=0	
+				\end{align*}
+		Therefore, $1.004^x$ grows faster.
+		\end{freeResponse}
+	%part i
+	\item Put the following functions in order of growth rate.\\
+	$$x^3 \cdot \ln(x), \ln^{3} (x), x^x, 1.004^x, x^{40}, x^3$$
+	
+	\WkstHop \begin{freeResponse}
+	
+	$$ \ln^{3} (x)<<x^{3}<<x^3 \cdot \ln(x)<< x^{40}<< 1.004^x <<x^x$$
+	
+	\end{freeResponse}
+	
+\end{enumerate}
+\end{problem}

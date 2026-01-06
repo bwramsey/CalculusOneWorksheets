@@ -1,0 +1,46 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+\subsection*{Indeterminate Forms - Part I}
+
+(1) $\frac{0}{0}$ refers to a limit of the form $\lim_{x \to a} \frac{f(x)}{g(x)}$, where $\lim_{x \to a}f(x)= 0 $ and $\lim_{x \to a}g(x)=0$\\
+(2) $\frac{\infty}{\infty}$ refers to a limit of the form $\lim_{x \to a} \frac{f(x)}{g(x)}$, where $\lim_{x \to a}f(x) = \pm \infty$ and $\lim_{x \to a}g(x)=\pm \infty$. (The signs do not need to match.)\\[0.8em]
+How do we determine whether the limit of this form  exists and, if it does, \\how do we evaluate the limit? We can apply L'H\^{o}pital's Rule to limits of the form $\frac{0}{0}$  or $\frac{\infty}{\infty}$.\\[0.4em]
+\textbf{L'H\^{o}pital's Rule} (LHR)\\[0.3em]
+Let $f(x)$ and $g(x)$ be functions that are differentiable near $a$.\\  If
+$\lim_{x \to a} f(x) = \lim_{x \to a}g(x) = 0$ 
+ and $g'(x) \neq 0$
+for all $x$ near $a$, then \\
+
+\hspace{1in}$\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}$,
+
+provided that $\lim_{x \to a} \frac{f'(x)}{g'(x)}$ exists.
+
+  L'H\^{o}pital's rule applies also when $\lim_{x \to a}f(x) = \pm \infty$ and $\lim_{x \to a}g(x)=\pm \infty$.\\[1em]
+
+\subsection*{Indeterminate Forms - Part II}
+
+(3) $0\cdot \infty$ refers to a limit of the form $\lim_{x \to a} f(x)\cdot g(x)$, where $\lim_{x \to a}f(x)=0$, and $\lim_{x \to a}g(x)=\pm \infty$\\
+(4)$\infty-\infty$ refers to a limit of the form $\lim_{x \to a}(f(x)-g(x))$, where $\lim_{x \to a}f(x)=\lim_{x \to a}g(x)=\infty$\\[1em]
+How do we determine whether the limit of this form  exists and, if it does, \\how do we evaluate the limit? By performing convenient algebraic operations, \\we show that the limit is equivalent to a limit of the form $\frac{0}{0}$ or $\frac{\infty}{\infty}$, so that we can apply the LHR.\\[1em]
+ 
+ \subsection*{Indeterminate Forms - Part III} 
+
+(5) $1^{\infty}$ refers to a limit of the form $\lim_{x \to a} f(x)^{ g(x)}$, where $\lim_{x \to a}f(x)=1$, and $\lim_{x \to a}g(x)=\infty$\\
+(6) $0^0$ refers to a limit of the form $\lim_{x \to a} f(x)^{ g(x)}$, where $\lim_{x \to a}f(x)=\lim_{x \to a}g(x)=0$\\
+(7)  $\infty^{0}$ refers to a limit of the form $\lim_{x \to a} f(x)^{ g(x)}$, where $\lim_{x \to a}f(x)=\infty$, and $\lim_{x \to a}g(x)=0$\\[1em]
+How do we determine whether the limit of this form  exists and, if it does, \\how do we evaluate the limit? By performing the following steps
+
+\[\lim_{x \to a} f(x)^{g(x)}=\lim_{x \to a} [e^{\ln{(f(x))}}]^{g(x)}=\lim_{x \to a} e^{ g(x)\ln{(f(x))}}={\large{e}}^{\lim_{x \to a} g(x)\ln{(f(x))}}\]
+we end up with the limit of simpler form (in the exponent).
+
+
+
+\end{document}

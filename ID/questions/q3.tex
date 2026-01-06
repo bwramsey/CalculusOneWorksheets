@@ -1,0 +1,61 @@
+% Extracted from implicitDifferentiation.tex, problem #3
+\begin{problem}  A part of the curve with equation $\cos(\pi x y) + x + y = 1$ is sketched below.
+
+  \begin{image}
+    \includegraphics[scale = 0.3]{figure4.png}
+  \end{image}
+  \begin{enumerate}
+    \item
+      Use the implicit differentiation to find the derivative $dy/dx$.
+\WkstHop
+      \begin{freeResponse}
+        Implicitly differentiate equation:
+        \begin{align*}
+          \ddx( \cos(\pi x y) + x + y) = \ddx(1) &\implies -\sin(\pi x y)\cdot(\pi y + \pi x \dd[y]{x}) + 1 + \dd[y]{x} = 0 
+        \end{align*}
+
+        Solve for $\dd[y]{x}$:
+        \begin{align*}
+          -\sin(\pi x y)\cdot(\pi y + \pi x \dd[y]{x}) + 1 + \dd[y]{x} = 0 &\implies -\pi y \sin(\pi x y) - \pi x \dd[y]{x} \sin(\pi x y) + 1 + \dd[y]{x} = 0 \\
+          &\implies  \bigl(1 - \pi x \sin(\pi x y)\bigr)\dd[y]{x} = \pi y \sin(\pi x y) - 1 \\
+          &\implies \dd[y]{x} = \frac{\pi y \sin(\pi x y) - 1}{1 - \pi x \sin(\pi x y)} \hspace{2em} \mbox{if $1 - \pi x \sin(\pi x y) \ne 0$}\\
+        \end{align*}
+      \end{freeResponse}
+
+    \item
+      Consider the point $(1, 1)$.
+      Show (algebraically) that this point lies on the curve.
+\WkstHop
+      \begin{freeResponse}
+        $(1, 1)$ lies on this curve:
+        \begin{align*}
+          \cos(\pi \cdot 1 \cdot 1) + 1 + 1 &= \cos(\pi) + 2\\
+          &= -1 + 2 = 1
+        \end{align*}
+      \end{freeResponse}
+
+    \item
+      Find the equation of the line tangent to the curve at $(1,1)$.
+      Draw this line in the figure above.
+\WkstHop
+      \begin{freeResponse}
+        Slope of tangent line:
+        \begin{align*}
+          \eval{\dd[y]{x}}_{(1,1)} &= \frac{\pi \cdot (1) \cdot\sin(\pi (1) \cdot 1) - 1}{1 - \pi \cdot (1) \cdot \sin(\pi (1) \cdot (1))} \\
+          &= \frac{\pi\sin(\pi) - 1}{1 - \pi \sin(\pi)}\\
+          &= \frac{-1}{1} = -1
+        \end{align*}
+
+        Equation of tangent line:
+        \begin{align*}
+          y - 1 = -1(x - 1) &\implies y = -x + 2
+        \end{align*}
+
+        Graph of tangent line:
+        \begin{image}
+          \includegraphics[scale = 0.5]{figure5.png}
+        \end{image}
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}

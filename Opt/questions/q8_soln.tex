@@ -1,0 +1,53 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 8]{Problem 8}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from optimization.tex, problem #8
+\begin{problem}
+  A rectangle is constructed with one side on the positive $x$-axis, one side on the positive $y$-axis, and the vertex opposite the origin on the line $y=10-2x$.
+  What dimensions maximize the area of the rectangle?
+  What is the maximum area?
+\begin{explanation}
+    The four vertices of the rectangle are $(0, 0)$, $(x, 0)$, $(x, y)$, and $(0, y)$:
+    \begin{center}
+      \includegraphics[scale = .5]{figure8.png}
+    \end{center}
+    We're trying to maximize the area $A = x \cdot y$.
+
+    First, we want to turn this area formula into a function of $x$.
+    To do that we use the constraint $y = 10 - 2x$.
+    Substituting, we find the function we're trying to maximize is $A(x) = x (10 - 2x) = 10x - 2x^2$.
+
+    Next, we need to identify the domain of $A$.
+  
+    To find the largest value we compute the $x$-intercept of $y = 10 - 2x$:
+    \begin{align*}
+      10 - 2x = 0 &\implies x = 5.
+    \end{align*}
+    Therefore $\mathrm{Domain}(A) = (0, 5)$.
+
+    Next we locate the critical points of $A$.
+    Since $A'(x) = 10 - 4x$ is defined on $(0, 5)$, to locate critical points solve 
+    \begin{align*}
+      A'(x) = 0 &\iff 10 - 4x = 0\\
+                &\iff x = \frac{5}{2}.
+    \end{align*}
+To finish, we check the sign of the derivative an intervals $(0,\frac{5}{2})$, and $(\frac{5}{2},5)$.
+Since $A'(x) = 10 - 4x=-4(x-\frac{5}{2})$, it follows that $A'(x)>0$ on the interval $(0,\frac{5}{2})$ and $A'(x)<0$ on the interval $(\frac{5}{2},5)$.
+Therfore the function $A$ has a local maximum at $x=\frac{5}{2}$. This also a global maximum, since the function is increasing  on $(0,\frac{5}{2})$, and decreasing on $(\frac{5}{2},5)$.
+    Therefore the maximum area occurs when the rectangle has a base with length $5/2$ units and height with length of $5$ units.
+    The area with these dimensions is $25/2$.
+  \end{explanation}
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,47 @@
+% Extracted from meanValueTheorem.tex, problem #5
+\begin{problem}
+  A curve is given in the figure below, where $f(x) = 8/x$.
+  \begin{image}
+     \includegraphics[scale = 0.16]{graphHyperbola.png}
+  \end{image}
+  \begin{enumerate}
+
+      \item In the figure above, draw a secant line joining the points $A = (1, f(1))$ and $B = (8, f(8))$.
+         \begin{freeResponse}
+        \begin{image}
+     \includegraphics[scale = 0.5]{MVTimage003.png}
+  \end{image}
+    \end{freeResponse}
+     \item
+      Find the slope, $m_{\text{sec}}$, of this secant line.
+\WkstHop
+      \begin{freeResponse}
+
+          $$m_{\text{sec}} = \frac{f(8) - f(1)}{8 - 1}= \frac{1 - 8}{7} = \frac{-7}{7} = -1$$
+
+      \end{freeResponse}
+
+    \item
+      Show that the function $f$ satisfies the conditions of the Mean Value Theorem on the interval $[1, 8]$ and find a point (or points) guaranteed to exist by the Mean Value Theorem.
+\WkstHop
+      \begin{freeResponse}
+        $f$ is continuous on the interval $[1, 8]$, $f$ is differentiable on the interval $(1, 8)$.
+        By the Mean Value Theorem there exists a(t least one) point $c$ in $(1, 8)$ such that
+        \[
+          f'(c) = \frac{f(8) - f(1)}{8 - 1} = -1
+        \]
+
+        Now $f'(x) = -8/x^2$ hence
+        \begin{align*}
+          f'(c) = -1 &\iff \frac{-8}{c^2} = -1 \\
+                     &\iff c^2 = 8 \\
+                     &\iff c= \pm 2\sqrt{2}
+        \end{align*}
+        Since $c$ must be in $(1, 8)$ we have that $c = 2\sqrt{2}$ is the only point in $(1, 8)$ with $f'(c) = -1$.
+          \begin{image}
+          \includegraphics[scale = 0.4]{MVTimage004.png}
+            \end{image}
+      \end{freeResponse}
+
+  \end{enumerate}
+\end{problem}

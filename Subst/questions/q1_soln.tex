@@ -1,0 +1,54 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from substitution.tex, problem #1
+\begin{problem}
+	Compute the following indefinite integrals.
+	\begin{enumerate}
+		\item $\displaystyle \int 2t \sin(t^2) \, \d t$.
+			\begin{explanation}
+        		Let $w=t^2$. Then $\d w = 2t \, \d t$ so
+        		\begin{align*}
+        			\int 2t \sin(t^2) \, \d t &= \int \sin(2) \, \d w\\
+        				&= -\cos(w) + C\\
+        				&= -\cos(t^2) + C.
+        		\end{align*}
+        	\end{explanation}
+	
+		\item $\displaystyle \int \cos(x) \sqrt{\sin(x)} \, \d x$.
+	\begin{explanation}
+		Set $v = \sin(x)$. Then $dv = \cos(x) \, dx$, so
+		\begin{align*}
+			\int \cos(x) \sqrt{\sin(x)} \, \d x &= \int \sqrt{v} \, dv\\
+				&= \dfrac{2}{3} v^{3/2} + C\\
+				&= \dfrac{2}{3} (\sin(x))^{3/2} + C
+		\end{align*}
+	\end{explanation}
+		
+	\item $\displaystyle \int \left( 3t^2-4+\dfrac{1}{t} \right) e^{t^3-4t+\ln(t)-9}\, \d t$.
+	\begin{explanation}
+		This problem looks a lot more difficult than it really is. Let $u = t^3-4t+\ln(t)-9$. Then $\d u = \left( 3t^2- 4+\dfrac{1}{t} \right) \, \d t$, 
+		which is exactly the factor in front of the exponential.
+		\begin{align*}
+			\int \left( 3t^2-4+\dfrac{1}{t} \right) e^{t^3-4t+\ln(t)-9}\, \d t &= \int e^u \, \d u\\
+				&= e^u + C\\
+				&= e^{t^3-4t+\ln(t)-9}+C.
+		\end{align*}
+	\end{explanation}
+
+	\end{enumerate}
+	
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,38 @@
+% Extracted from productRuleAndQuotientRule.tex, problem #5
+\begin{problem}
+Differentiate the following functions:
+
+	\begin{enumerate}
+	
+	%part a
+	\item  Given $f(x) = (x^2 + 4x - 7) e^{-x}$, show $f'(x)= (11-x^2 -2x) e^{-x}$.
+\WkstHop
+			\begin{freeResponse}
+			\begin{align*}
+			f'(x) &= \ddx \Bigl(\frac{x^2 + 4x - 7}{e^{x}}\Bigr)  \\
+			&= \frac{(2x+4)e^{x}-(x^2 + 4x - 7)e^{x}}{e^{2x}} \\
+			&= \frac{e^{x}(2x + 4-x^2 - 4x + 7)}{e^{2x}} \\ 
+			&=  \frac{11-x^2 - 2x }{e^{x}} \\ 
+			&=(11-x^2 -2x) e^{-x}
+			\end{align*}
+			\end{freeResponse}
+			
+			
+			
+	%part b
+	\item  Given $g(x) = \frac{x^2 + 4x - 7}{e^{-x}}$, show $g'(x)=\frac{x^2 + 6x - 3}{e^{-x}}$
+\WkstHop
+			\begin{freeResponse}
+			\begin{align*}
+			g'(x) &=  \ddx \Bigl(\frac{x^2 + 4x - 7}{e^{-x}}\Bigr)  \\
+			&= \ddx \Bigl((x^2 + 4x - 7)e^{x} \Bigr) \\
+			&= \ddx(x^2 + 4x - 7)e^{x} +(x^2 + 4x - 7)\ddx e^{x}\\
+			&=(2x+4)e^{x}+(x^2 + 4x - 7)e^{x}\\
+			&=e^{x}(2x+4+x^2 + 4x - 7)\\
+			&=e^{x}(x^2 + 6x - 3)\\
+			&=\frac{x^2 + 6x - 3}{e^{-x}}\\
+			\end{align*}
+			\end{freeResponse}
+			
+	\end{enumerate}		
+\end{problem}

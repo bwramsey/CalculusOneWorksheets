@@ -1,0 +1,48 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+\subsection{How to Solve an Optimization Problem }
+
+\begin{enumerate}
+	\item Identify \textbf{variables}; draw and label the picture of the problem\\
+	\item Identify the \textbf{objective function} (a quantity to be optimized);\\
+		 write a \textbf{formula} for the objective function in terms of variables of the problem\\
+	\item Identify the \textbf{constraint(s)};\\ use the constraint(s)  to express all the variables in terms of a \textbf{single variable}\\
+	\item Write the \textbf{objective function in terms of a single variable};\\ find the \textbf{interval of interest}\\
+	\item Using the methods of calculus, find the \textbf{global maximum/minimum}; \\\textbf{justify} your answer\\
+ \end{enumerate}
+
+\textbf{REMINDER: The Interval of Interest tells you the method to use to solve an optimization problem.}\\
+ \textbf{CASE 1}: The interval of interest is a closed interval  $[a,b]$ \\[0.8em]
+In this case, the Extreme Value Theorem (EVT)  guarantees that both global extrema of $f$ exist!\\
+If $f$ has an global minimum and an global maximum which either occur at a critical point or at a boundary point (which means $a$ or $b$). 
+To find an extreme values of $f$ on $[a,b]$, we:
+\begin{itemize}
+	\item Find all critical points and plug them into $f$. 
+	\item Evaluate $f$ at both boundary points. 
+	\item Compare the values. The biggest of those values is the maximum value of $f$ on $[a,b]$, and the least one is the minimum value of $f$ on $[a,b]$.
+ \end{itemize}
+ 
+\textbf{CASE 2}: The interval of interest is any interval.\\[0.5em]
+In this case, the global minimum/maximum \textbf{may not exist}. 
+Our approach is then:
+\begin{itemize}
+	\item Find all critical points of $f$ on the interval.
+	\item Use 1st or 2nd Derivative Test to classify those critical points as \textbf{local maxima/minima}.
+	\item If there is \emph{exactly one local extremum}, then it is an global extremum of the same type. (That is, if it is a local minimum then it is automatically a global minimum...)
+\end{itemize}
+
+OTHER CASES (e.g., An interval with multiple local extrema, etc) can be approached similar to how we graphed functions: check the boundary points, check the critical points, use the sign chart etc.
+
+
+
+
+\end{document}

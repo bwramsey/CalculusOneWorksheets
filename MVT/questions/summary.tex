@@ -1,0 +1,39 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+\subsection{Extreme Value Theorem}
+
+A function $f$ has a \textbf{global maximum} at $x=a$, if $f(a)\ge f(x)$, for all $x$ in the domain of $f$.\\[1em]
+A function $f$ has a \textbf{global minimum} at $x=a$, if $f(a)\le f(x)$, for all $x$ in the domain of $f$.\\[2em]
+
+\begin{theorem}[Extreme Value Theorem (EVT)]
+	If a function $f$ is \textbf{continuous on the closed interval $[a,b]$}, then  $f$ attains  both 
+	a  global maximum and a global minimum on  the closed interval $[a,b]$.
+\end{theorem}
+
+\textbf{Note: }If a function $f$ has a global extremum (minimum or maximum) at $x=c$, then $c$ is either a boundary point (which means that $c=a$ or $c=b$), or $f$ has a critical point at $x=c$.\\[1em]
+So, if we have to find an extreme value of $f$ on $[a,b]$, we should check all the boundary and all the critical points of f and compare the values of $f$ at those points.
+ The biggest of those values is the maximum value of $f$ on $[a,b]$, and the smallest one is the minimum value of $f$ on $[a,b]$.\\[2em]
+
+\subsection{The Mean Value Theorem}
+
+
+\begin{theorem}[The Mean Value Theorem (MVT)]
+If a function $f$ is \textbf{continuous on the closed interval $[a,b]$}, and \textbf{differentiable on $(a,b)$}, then there exists a point $c$ in the open interval $(a,b)$ such that
+\[ f'(c)=\frac{f(b)-f(a)}{b-a}\]
+\end{theorem}
+\textbf{Note 1a: }The value $\frac{f(b)-f(a)}{b-a}$ is the slope of the (secant) line through the points $(a,f(a))$ and $(b,f(b))$. \\[1em]
+\textbf{Note 1b: }The line tangent to the graph of $f$ at the point where $x=c$ is \textbf{parallel} to the line through the points  $(a,f(a))$ and $(b,f(b))$. \\[1em]
+\textbf{Note 2a: }The value $\frac{f(b)-f(a)}{b-a}$ is the average rate of change of $f$ on the interval $[a,b]$. \\[1em]
+\textbf{Note 2b: }The instantaneous rate of change $f$ at the point where $x=c$ is equal to the average rate of change of $f$ on $[a,b]$. \\
+
+
+
+\end{document}

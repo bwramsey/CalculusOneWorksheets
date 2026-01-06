@@ -1,0 +1,47 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 5]{Problem 5}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from definiteIntegrals.tex, problem #5
+\begin{problem}
+
+  \begin{enumerate}
+    \item
+    If $f$ is an odd function, why is it true that $\int_{-a}^a f(x)
+    \d x = 0$?  
+    Support your reasoning with a picture.
+    \begin{explanation}
+      If $f$ is odd, then the regions between the graph of $f$ and the $x$-axis from $[-a,0]$ and $[0,a]$ are reflections of each other through the origin.
+      Thus, these two regions will have the same area but with opposite signs since they are on opposite sides of the $x$-axis.
+      They will therefore cancel each other out.
+		
+     % \begin{image}
+     %   \includegraphics[scale=.7]{Images/Figure1.png}
+   %   \end{image}
+    \end{explanation}
+
+\item
+      If $f$ is an even function, why is it true that $\int_{-a}^a f(x) \d x = 2 \int_0^a f(x) \d x$?
+      Support your reasoning with a picture.
+      \begin{explanation}
+        If $f$ is even, then the regions between the graph of $f$ and the $x$-axis from $[-a,0]$ and $[0,a]$ are reflections of each other through the $y$-axis.
+        Thus, these two regions will have the same area with the same sign since they are on the same sides of the $x$-axis.
+        So you can only find one of these areas and then double it.
+     % \begin{image}
+       % \includegraphics[scale=.7]{figureD2.png}
+    %  \end{image}
+    \end{explanation}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

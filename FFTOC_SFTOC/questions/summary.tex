@@ -1,0 +1,43 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+
+\textbf{The First Fundamental Theorem of Calculus:}
+
+Given a continuous function $f$ on the interval $[a,b]$, we define an accumulation function, $A$ by 
+\[ A(x)= \int_{a}^{x} f(t)\d t\]
+
+ The First Fundamental Theorem of Calculus (FFTOC) states that
+\[A'(x)=f(x)\]
+ or, equivalently, that
+\[ \frac{d}{dx} \int_{a}^{x} f(t)\d t =f(x) \]
+
+ \textbf{Note 1: } $A(a)=0$\\[0.5em]
+ \textbf{Note 2: } The function $A$ is an antiderivative of $f$.\\
+  Therefore, any antiderivative, $G$ of $f$ can be written as
+ {\large{$G(x)=A(x)+C $}},  or, equivalently,  \[G(x)=\int_{a}^{x} f(t)\d t +C.\]
+Since $G(a)=A(a)+C=0+C=C$, it follows that   {\large{$G(x)=A(x)+G(a) $}},\\
+ or, equivalently, that   \[G(x)= G(a)+\int_{a}^{x} f(t)\d t\]
+ 
+ \textbf{Note 3: } Let $f'$, the derivative of $f$, be continuous on $[a,b]$. Since $f$ is its antiderivative, we have
+ \[f(x)= f(a)+\int_{a}^{x} f'(t)\d t\]
+
+\textbf{The Second Fundamental Theorem of Calculus:}
+
+ FFTOC implies that, for $x=b$, $A(b)= \int_{a}^{b} f(t)\d t $. Since $A(a)=0$, we can write\\
+\[\int_{a}^{b} f(t)\d t =A(b)-A(a)\]
+  \textbf{Note 4: } This is the Second Fundamental Theorem of Calculus (SFTOC).\\
+  \textbf{Note 5: }Equivalently, using the result in Note 3, for $x=b$, $f(b)= f(a)+\int_{a}^{b} f'(t)\d t  $. So $\int_{a}^{b} f'(t)\d t=f(b)-f(a)$, or equivalently,
+  \[ \int_a^b \dfrac{d}{dx} f(x) \d x = f(b) - f(a). \]
+
+
+
+\end{document}

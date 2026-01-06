@@ -1,0 +1,58 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from antiderivativesAndArea.tex, problem #1
+\begin{problem}
+The graph of the velocity (t in min, v in ft/min) of a particle moving along a straight line is given in the figure. 
+Assume that the particle was at the origin initially.
+\begin{image}
+\includegraphics[scale=.4]{figureAAA4.png}
+\end{image}
+\begin{enumerate}
+\item Evaluate the displacement of the particle over the following intervals.
+\begin{enumerate}
+\item $[0,10]$
+\begin{explanation}
+		\[
+			s(10)-s(0)=\int_0^{10} v(t)\d t= 3	ft		
+		\]
+		\end{explanation}
+		\item $[0,7]$
+\begin{explanation}
+		\[
+			s(7)-s(0)= -3	ft		
+		\]
+		\end{explanation}
+		\item $[0,5]$
+\begin{explanation}
+		\[
+			s(5)-s(0)= -5	ft		
+		\]
+		\end{explanation}
+\end{enumerate}
+\item  When was the particle farthest from the origin?
+[3]\begin{explanation}
+			
+		We check the end points: $s(0)=0$, $s(10)=s(0)+3=3$, and critical points. Since  the only critical point of $s$ is at  $t=5$, since $s'(5)=v(5)=0$ there, we evaluate $s(5)=s(0)-5=-5$. It follows that the particle was farthest from the origin at $t=5$ min.
+		\end{explanation}
+		\item  What was  the total distance the particle has travelled over the time interval $[0,10]$?
+\begin{explanation}The total distance travelled is given by the definite integral
+		\[
+			\int_0^{10}| v(t)|\d t=\int_0^{5}(- v(t))\d t+  \int_5^{10} v(t)\d t=5+8=13  ft		
+		\]
+				\end{explanation}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

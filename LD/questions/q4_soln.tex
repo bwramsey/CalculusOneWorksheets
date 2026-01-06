@@ -1,0 +1,130 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from logarithmicDifferentiation.tex, problem #4
+\begin{problem}
+Find the derivatives of the following functions:
+	\begin{enumerate}
+	
+	%part a
+	\item  $f(x) = x^{e^x} + 7x$
+\begin{explanation}
+		$f'(x) = \ddx \left(x^{e^x} \right) + \ddx(7x) = \ddx \left(x^{e^x} \right) + 7$.  So the real problem is to find $\ddx \left(x^{e^x} \right)$.\\
+		 
+		 We will use logarithmic differentiation. \\
+		 
+		First, we take natural logarithm of both sides of the equation $g(x)=x^{e^x}$.
+		 
+		 $\ln{(g(x))}=e^{x}\ln(x)$.
+		 
+		 Now, we differentiate both sides.
+		 
+		  $\dfrac{g'(x)}{g(x)}=e^x\ln(x)+\dfrac{e^{x}}{x}$.
+		  
+		  Next, we solve for $g'(x)$.\\
+		  
+		    $g'(x)=g(x)\Bigl(e^x\ln(x)+\dfrac{e^{x}}{x}\Bigr)$.
+		    
+		    Now, we substitute.
+		    
+		     $g'(x)=x^{e^x}\Bigl(e^x\ln(x)+\dfrac{e^{x}}{x}\Bigr)$.
+
+		  
+		ALTERNATIVE APPROACH
+		
+		\begin{align*}
+		\ddx \left( x^{e^x} \right) &= \ddx \left( e^{\ln(x)^{e^x}} \right) \\
+		&= \ddx \left( e^{e^x \ln(x)} \right) \\
+		&= e^{e^x \ln(x)} \left( e^x \ln(x) + \frac{e^x}{x} \right) \\
+		&= x^{e^x} \left( e^x \ln(x) + \frac{e^x}{x} \right).
+		\end{align*}
+		
+		Thus, $f'(x) = x^{e^x} \left( e^x \ln(x) + \frac{e^x}{x} \right) + 7$.  
+		
+		\end{explanation}
+
+	\item  $g(x) = (\ln(x) + 9)^{\sec(x^4)}$\\
+\begin{explanation}
+	We will use logarithmic differentiation.\\
+	
+	First, we take natural logarithm .\\
+	 
+	 $\ln{(g(x))} = \sec(x^4)\ln{(\ln(x) + 9)}$\\
+	 
+	Then, we differentiate.\\
+	
+	 $\dfrac{g'(x)}{g(x)} = \sec(x^4)\tan(x^4)4x^3\ln{(\ln(x) + 9)}+\dfrac{\sec(x^4)}{x(\ln(x) + 9)}$\\
+	 
+	We  multiply by $g(x)$.\\
+	
+		 $g'(x) = g(x)\Bigl(4x^3\sec(x^4)\tan(x^4)\ln{(\ln(x) + 9)}+\dfrac{\sec(x^4)}{x(\ln(x) + 9)}\Bigr)$\\
+		 
+		 We substitute.
+		 \\
+		 
+		  $g'(x) =(\ln(x) + 9)^{\sec(x^4)}\Bigl(4x^3\sec(x^4)\tan(x^4)\ln{(\ln(x) + 9)}+\dfrac{\sec(x^4)}{x(\ln(x) + 9)}\Bigr)$\\
+		 
+		 ALTERNATIVE APPROACH\\
+		 
+			\begin{align*}
+			g'(x) &= \ddx \left( (\ln(x) + 9)^{\sec(x^4)} \right) \\
+			&= \ddx \left( e^{\sec(x^4) \ln ( \ln(x) + 9) } \right) \\
+			&= e^{\sec(x^4) \ln ( \ln(x) + 9)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \sec(x^4) \frac{\frac{1}{x}}{\ln(x) + 9} \right) \\
+			&= (\ln(x) + 9)^{\sec(x^4)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \frac{\sec(x^4)}{x(\ln(x) + 9)} \right) .
+			\end{align*}
+		\end{explanation}
+\item  $f(x) = \frac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}$
+\begin{explanation}
+           \begin{align*}
+            \ln{(f(x))} &= \ln{(x+1)^5}+\ln{(\sin(x)+5)^4}-\ln{(x^2 + 5)}-\ln{\sqrt{x-3}}\\
+            &= 5\ln{(x+1)}+4\ln{(\sin(x)+5)}-\ln{(x^2 + 5)}-\dfrac{1}{2}\ln{(x-3)}\\
+             \end{align*}
+             Now we differentiate.\\
+             
+              $\dfrac{f'(x)}{f(x)} =\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}$
+              
+              Then we solve for $f'(x)$.
+              
+              
+                $f'(x) =f(x)\Bigl(\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}\Bigr)$
+                Then we substitute.\\
+                
+                   $f'(x) = \frac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}\Bigl(\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}\Bigr)$
+                
+          \end{explanation}
+	%part c
+	\item  $h(x) = \frac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}$
+\begin{explanation}
+            Since $h(x)$ changes sign on its domain, we write :
+            \begin{align*}
+              \ln |h(x)| &= \ln \left( \frac{|x^2 - 7|^5}{\ |cos^7(x^2 - 5)|}\right) \\
+                       &= 5 \cdot \ln (|x^2 - 7|) - 7 \cdot \ln(|\cos(x^2-5)|)
+            \end{align*}
+  Differentiate both sides with respect to $x$, (explanation given on the next page):\\[1em]
+             $ \dfrac{h'(x)}{h(x)} = 5 \dfrac{2x}{x^2 - 7}  - 7 \dfrac{-\sin(x^2-5)2x}{\cos(x^2 - 5)} $\\[1em]
+ $ h'(x) =h(x)\bigl( 5 \dfrac{2x}{x^2 - 7}  - 7 \dfrac{-\sin(x^2-5)2x}{\cos(x^2 - 5)} \bigr)=$\\[1em]
+ $  =\frac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}\bigl(  \dfrac{10x}{x^2 - 7}  + \dfrac{14x\sin(x^2-5)}{\cos(x^2 - 5)} \bigr)=$\\[1em]
+ $  =\frac{(x^2 - 7)^4}{\cos^7(x^2 - 5)}\bigl(  10x  + 14x(x^2-7) \tan(x^2-5) \bigr)$\\[1em]
+
+EXPLANATION: The function $h(x)$ assumes negative values on some intervals. On those intervals\\[1em]
+
+ $\bigl(\ln(|h(x)|)\bigr)'=\bigl(\ln(-h(x))\bigr)'=\dfrac{-h'(x)}{-h(x)}=\dfrac{h'(x)}{h(x)}$, \\[2em]
+ Also,  e.g., if   \hspace{0.2in} $x^2-7<0$\\[1em]
+
+$\bigl(\ln(|x^2-7|)\bigr)'=\bigl(\ln(-(x^2-7))\bigr)'=\dfrac{-2x}{-(x^2-7)}=\dfrac{2x}{x^2-7}$ .
+\end{explanation}
+	\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

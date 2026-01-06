@@ -1,0 +1,26 @@
+% Extracted from derivativesOfInverseFunctions.tex, problem #7
+\begin{problem}
+Given the expression for $f(x)$, find the derivative of $f^{-1}$ at the given point on the graph of $f^{-1}$,  without solving for $f^{-1}$.
+	\begin{enumerate}
+	
+	\item  $f(x) = x^2 + 1$ (for $x \geq 0$);  the point  on the graph of $f^{-1}$: $(5,2)$. 
+	
+	 Verify your answer by evaluating the derivative of $f^{-1}$ at the given point.
+\WkstHop
+
+		\begin{freeResponse}
+		$(f^{-1})'(5) = \frac{1}{f'(2)}$.  Since $f'(x) = 2x$, $f'(2) = 4$.  Thus, $(f^{-1})'(5) = \frac{1}{4}$. \\
+		Verifying: $f^{-1}(x)=\sqrt{x-1} \implies \ddx f^{-1}(x)= \frac{1}{2\sqrt{x-1}} \implies \eval{\ddx f^{-1}}_{x=5}=\frac{1}{2\sqrt{5-1}}=\frac{1}{4}$ 
+		
+		
+		\end{freeResponse}
+
+	\item  $f(x) = x^2 - 2x - 3$ (for $x \leq 1$); the point  on the graph of $f^{-1}$: $(12, -3)$. 
+\WkstHop
+
+		\begin{freeResponse}
+		$(f^{-1})'(12) = \frac{1}{f'(-3)}$.  Since $f'(x) = 2x - 2$, $f'(-3) = -6 - 2 = -8$.  Thus, $(f^{-1})'(12) = - \frac{1}{8}$. \\
+		Notice that for this problem, finding the inverse of $f(x)$ involves complicated algebra.  In this case, it's much easier to find the derivative of $f^{-1}$ without solving for $f^{-1}$
+		\end{freeResponse}
+	\end{enumerate}
+\end{problem}

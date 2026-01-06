@@ -1,0 +1,68 @@
+% Extracted from higherOrderDerivativesAndGraphs.tex, problem #11
+\begin{problem}
+The total number of people, $N$ who have contracted a common cold by a time $t$ days after its outbreak on an island is given by $N=N(t)= \frac{200000}{1+100e^{-0.1t}},t\geq0$.
+
+	\begin{enumerate}
+		%a
+		\item Evaluate and interpret the limit $\lim_{t \to \infty} N(t)$
+\WkstHop
+			\begin{freeResponse}	
+			$\lim_{t \to \infty} N(t)=\lim_{t \to \infty} \frac{200000}{1+100e^{-0.1t}}=200000$.  In the long run, 200000 people will get the cold.
+			\end{freeResponse}
+		%b
+		\item How long will it take for the number of people who have contracted the cold to reach 40,000?
+\WkstHop
+			\begin{freeResponse}
+				\begin{align*}
+				N(t)&=40000\\
+				\frac{200000}{1+100e^{-0.1t}}&=40000\\
+				200000&=40000(1+100e^{-0.1t})\\
+				1+100e^{-0.1t}&=\frac{200000}{40000}\\
+				100e^{-0.1t}&=5-1\\
+				e^{-0.1t}&=\frac{4}{100}\\
+				-0.1t&=\ln(.04)\\
+				t&=\frac{\ln(0.04)}{-0.1}=32.1888
+				\end{align*}
+			It will take 33 days for the number of people who have contracted the cold to reach 40,000.
+			\end{freeResponse}
+
+		\item The graph of the function $N$ on the interval $[0,100]$ is given below.  Sketch (as best you can) the graph of its derivative, $N'(t)$.
+			\begin{image}
+			\includegraphics[scale=.4]{Figure8.png}
+			\end{image}
+\WkstHop
+			\begin{freeResponse}\hfil
+				\begin{image}
+			\includegraphics[scale=.5]{Figure9.png}
+			\end{image}		
+			\end{freeResponse}
+		\item Calculate $N'(t)$.  What does $N'(t)$ represent?
+\WkstHop
+
+			\begin{freeResponse}	
+				$N'(t)=\frac{-200000(10)e^{-0.1t}}{(1+100e^{-0.1t})^2}=\frac{2000000e^{-0.1t}}{(1+100e^{-0.1t})^2}$.\\
+				$N'(t)$ represents the instantaneous growth rate of the number of people who have contracted the cold at the time $t$.
+			\end{freeResponse}
+\WkstNew
+
+		\item Evaluate and interpret the limit $\lim_{t \to \infty} N'(t)$
+\WkstHop
+			\begin{freeResponse}	
+				$\lim_{t \to \infty} N'(t)=\lim_{t \to \infty}\frac{2000000e^{-0.1t}}{(1+100e^{-0.1t})^2}=\frac{2000000(0)}{(1+100(0))^2}=\frac{0}{1}=0$.\\
+				In the long run, the number of people who have contracted the cold will stabilize.  There will be no growth in the long run.
+			\end{freeResponse}
+
+		\item Find the average growth rate of the number of people who have contracted the disease during the time interval $[5,6]$ (or during the sixth day after the outbreak).
+\WkstHop
+			\begin{freeResponse}	
+				$AVRG=\frac{N(6)-N(5)}{6-5}=N(6)-N(5)=\frac{200000}{1+100e^{-0.1(6)}}-\frac{200000}{1+100e^{-0.1(5)}} \approx 335.1$
+			\end{freeResponse}
+
+		\item Find the instantaneous growth rate of the number of people who have contracted the disease for $t=5$ (round to a whole number).
+\WkstHop
+			\begin{freeResponse}	
+				$N'(5)=\frac{2000000e^{-0.1(5)}}{(1+100e^{-0.1(5)})^2}=319$ people per day
+			\end{freeResponse}
+
+	\end{enumerate}
+\end{problem}

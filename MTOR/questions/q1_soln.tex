@@ -1,0 +1,48 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from moreThanOneRate.tex, problem #1
+\begin{problem} The radius of a circle is increasing at a rate of 2 inches per minute.  \\
+
+	\begin{image}
+		 
+		\includegraphics[scale=0.5]{Figure2.png}
+	\end{image}
+
+\begin{enumerate}
+	\item At what rate is the circumference of the circle changing when the radius is 10 inches?
+	\begin{explanation}
+	We know: ${\frac{dr}{dt}}=2$ inches per minute and we want to find ${\frac{dc}{dt}}$ when $r=10$.\\\\
+	\begin{align*}
+	c&=2\pi r\\
+	{\frac{dc}{dt}}&=2\pi {\frac{dr}{dt}}\\
+	\eval{{\frac{dc}{dt}}}_{r=10}&=2 \pi (2)\\
+	\eval{{\frac{dc}{dt}}}_{r=10}&=4 \pi\ \text{inches per minute}
+	\end{align*}
+	\end{explanation}
+\item At what rate is the area of the circle changing when the radius is 12 inches?
+		\begin{explanation}
+	We know: ${\frac{dr}{dt}}=2$ inches per minute and we want to find ${\frac{dA}{dt}}$ when $r=12$.\\\\
+	\begin{align*}
+	A&=\pi r^2\\
+	{\frac{dA}{dt}}&=2\pi r{\frac{dr}{dt}}\\
+	\eval{{\frac{dA}{dt}}}_{r=12}&=2 \pi (12)(2)\\
+	\eval{{\frac{dA}{dt}}}_{r=12}&=48 \pi\ \text{inches squared per minute}
+	\end{align*}
+	\end{explanation}
+\end{enumerate}
+
+\end{problem}
+
+
+
+\end{document}

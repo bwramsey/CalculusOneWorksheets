@@ -1,0 +1,30 @@
+% Extracted from implicitDifferentiation.tex, problem #8
+\begin{problem}
+	\begin{enumerate}
+		\item Let $f$ be a positive differentiable function, defined on an open interval $I$.
+			Find the formula for the derivative of the function $\ln{(f(x))}$.
+\WkstHop
+			\begin{freeResponse}
+				$\frac{d}{dx}\ln{(f(x))}=\dfrac{1}{f(x)}\cdot f'(x)=\dfrac{f'(x)}{f(x)}$
+			\end{freeResponse}
+
+		\item Using the formula obtained in part (a), compute the derivatives of the following functions.
+			\begin{enumerate}
+				\item $f(x)=\ln{(x^2+x+1)}$
+\WkstHop
+					\begin{freeResponse}
+						$f'(x)=\dfrac{2x+1}{x^2+x+1}$
+					\end{freeResponse}
+				\item $f(x)=\ln{(\sec(x) +\tan(x))}$
+\WkstHop
+					\begin{freeResponse}
+						$f'(x)=\dfrac{\sec(x)\tan(x)+\sec^2{(x)}}{\sec(x) +\tan(x)}=\dfrac{\sec(x)(\tan(x)+\sec(x))}{\sec(x) +\tan(x)}=\sec(x)$
+					\end{freeResponse}
+				\item $f(x)=\ln{(\ln(x))}$
+\WkstHop
+					\begin{freeResponse}
+						$f'(x)=\dfrac{\frac{1}{x}}{\ln(x)}=\dfrac{1}{x\ln(x)}$
+					\end{freeResponse}
+			\end{enumerate}
+	\end{enumerate}
+\end{problem}

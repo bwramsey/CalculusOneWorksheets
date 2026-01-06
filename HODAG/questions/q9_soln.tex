@@ -1,0 +1,90 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 9]{Problem 9}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from higherOrderDerivativesAndGraphs.tex, problem #9
+\begin{problem}
+	Suppose the function $f$ has derivative given by $\displaystyle f'(x) = \dfrac{2x}{4+x^2}$.
+
+	\begin{enumerate}
+	
+	%part a
+	\item  Find a formula for $f''(x)$.
+\begin{explanation}
+				The second derivative is given by $\displaystyle f''(x) = \dfrac{2(4-x^2)}{(4+x^2)^2}$.
+			\end{explanation}
+			
+			
+			
+	%part b
+	\item  Construct a sign-chart for $f'$ and $f''$.
+[2]
+		\begin{explanation}
+			For $f'$ we obtain:
+
+			\begin{tikzpicture} 
+				\tkzTabInit[lgt=2,espcl=1] 
+					{$x$         /1, 
+					$2x$   /1, 
+					$4+x^2$ /1, 
+					$f'(x)$      /1}% 
+					{   , $0$ ,  }% 
+				\tkzTabLine{ , - , t , + ,}
+				\tkzTabLine{ , + , t , + ,}
+				\tkzTabLine{ , - , t , + ,}
+			\end{tikzpicture} 
+			
+			For $f''$, using the factorization $4-x^2 = (2+x)(2-x)$ , we obtain:			
+
+			\begin{tikzpicture} 
+				\tkzTabInit[lgt=2,espcl=1] 
+					{$x$         /1, 
+					$2$   /1, 
+					$2+x$  /1,
+					$2-x$  /1,
+					$(4+x^2)^2$   /1, 
+					$f''(x)$    /1}% 
+					{  , $-2$ ,$2$,  }% 
+				\tkzTabLine{  , + , t , + , t , + ,}
+				\tkzTabLine{  , - , t , + , t , + ,}
+				\tkzTabLine{  , + , t , + , t , - ,}
+				\tkzTabLine{  , + , t , + , t , + ,}
+				\tkzTabLine{  , - , t , + , t , - ,}
+			\end{tikzpicture} 
+		\end{explanation}
+			
+			
+			
+	%part c
+	\item  On what interval(s) is $f$ increasing? On what interval(s) is $f$ concave down?
+\begin{explanation}
+				From the sign-chart for $f'$, we see that $f'$ is positive on $(0,\infty)$ 
+				and negative on $(-\infty, 0)$.  We know that $f$ is increasing on an interval if $f'$ is positive on that interval. 
+				That means: $f$ is increasing on the interval $(0,\infty)$.
+
+				From the sign-chart for $f''$, we see that $f'$ is positive on $(-2,2)$ 
+				and negative on $(-\infty, -2)$ and $(2, \infty)$.  We know that $f$ is concave down on an interval if $f''$ is negative on that interval. 
+				That means: $f$ is concave down on the intervals $(-\infty, -2)$ and $(2,\infty)$.
+			
+			\end{explanation}
+			
+			
+			
+	\end{enumerate}
+			
+			
+			
+		
+\end{problem}
+
+
+
+\end{document}

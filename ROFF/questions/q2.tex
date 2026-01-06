@@ -1,0 +1,80 @@
+% Extracted from reviewOfFamousFunctions.tex, problem #2
+\begin{problem}
+	Solve the following inequalities:
+	\begin{enumerate}
+
+
+		\item $\displaystyle  \dfrac{x^3 \left(2x-5\right)^2}{x+1} > 0$.
+\WkstHop
+			\begin{freeResponse}
+				Call $f(x) = \dfrac{x^3 \left(2x-5\right)^2}{x+1}$.
+				Since the right-hand side of the inequality is zero, we are really asking where $f(x)$ will be positive.  The only way
+				a nice function like $f$ can switch from positive to negative, or vice-versa, is if it is either zero
+				or undefined at the point where it changes.
+		
+				Notice where the value of $f$ would be either zero or undefined.  Those occur at $x = -1, 0, \frac{5}{2}$. (These are the places
+				where the corresponding factors of $f$ are themselves zero or undefined.)  
+				We'll use those points to split the number line into four regions. Inside each of those regions, our factors are either
+				always positive or always negative.
+				
+				\begin{tikzpicture} 
+					\tkzTabInit[lgt=2,espcl=1] 
+						{$x$         /1, 
+						$x^3$   /1, 
+						$\left(2x-5\right)^2$  /1,
+						$x+1$       /1,
+						$f(x)$       /1}% 
+						{  , $-1$ , $0$ ,$\dfrac{5}{2}$,  }% 
+					\tkzTabLine{ , - , t , - , d , + , d , + ,}
+					\tkzTabLine{ , + , t , + , d , + , d , + ,}
+					\tkzTabLine{ , - , t , + , d , + , d , +, }
+					\tkzTabLine{ , + , t , - , d , + , d , +, }
+				\end{tikzpicture} 
+				
+				For $x < -1$, we find $x^3 < 0$, $(2x-5)^2 > 0$, and $x+1 < 0$.  Together, that means the value of $f(x)$ is  
+				$\displaystyle \dfrac{ \textrm{negative} \cdot \textrm{positive}}{\textrm{negative}}$.  It is, therefore, positive in that region, and makes up
+				part of our solution.  We cannot include the endpoint $x=-1$ in the solution, as the fraction is undefined there.
+				
+				In the same way, we see that in the intervals $\left( 0, \frac{5}{2} \right)$ and $\left( \frac{5}{2}, 0\right)$, $f(x)$ is also positive.
+				Notice that the inequality is NOT satisfied at $x=\frac{5}{2}$, since $f(\frac{5}{2})$ equals zero.  
+				
+				The solution is $\left( -\infty, -1 \right) \cup \left( 0, \frac{5}{2} \right) \cup \left( \frac{5}{2}, \infty \right)$.
+			\end{freeResponse}
+
+		\item $\displaystyle  \dfrac{2\cdot 5^x - 10^x}{x^2-5} \leq 0$.
+\WkstHop
+			\begin{freeResponse}
+				Call $g(x) = \dfrac{2\cdot 5^x - 10^x}{x^2-5}$.
+				Start by factoring the numerator and denominator:
+				\begin{align*} 
+					\dfrac{2\cdot 5^x - 10^x}{x^2-5} &= \dfrac{2\cdot 5^x - 2^x\cdot 5^x}{x^2-5}\\
+						&= \dfrac{5^x(2 - 2^x)}{x^2-5}\\						
+						&= \dfrac{5^x(2 - 2^x)}{(x+\sqrt{5})(x-\sqrt{5})}
+				\end{align*}
+				Notice that $5^x$ is always positive, $2-2^x=0$ only when $x=1$, $x+\sqrt{5}=0$ only at $x=-\sqrt{5}$, 
+				and $x-\sqrt{5}=0$ only at $x=\sqrt{5}$. Our sign chart looks like this:
+				
+				\begin{tikzpicture} 
+					\tkzTabInit[lgt=2,espcl=1] 
+						{$x$         /1, 
+						$5^x$   /1, 
+						$2-2^x$  /1,
+						$x+\sqrt{5}$  /1,
+						$x-\sqrt{5}$       /1,
+						$g(x)$ /1 }% 
+						{  , $-\sqrt{5}$ , $1$ ,$\sqrt{5}$,  }% 
+					\tkzTabLine{ , + , t , + , d, + , t , + ,}
+					\tkzTabLine{ , + , t , + , d , - , t , - ,}
+					\tkzTabLine{ , - , t , + , d , + , t , +, }
+					\tkzTabLine{ , - , t , - , d , - , t , +, }
+					\tkzTabLine{ , + , t , - , d , + , t , -, }
+				\end{tikzpicture} 
+				
+				From the bottom row of the sign-chart, we see the solution to the inequality is:
+				$\left( -\sqrt{5}, 1\right] \cup \left( \sqrt{5}, \infty\right)$.
+			\end{freeResponse}
+			
+	\end{enumerate}
+
+
+\end{problem}

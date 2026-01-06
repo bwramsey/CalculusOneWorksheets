@@ -1,0 +1,65 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+ % for drawing cube in Optimization problem
+\usetikzlibrary{quotes,arrows.meta}
+\tikzset{
+  annotated cuboid/.pic={
+    \tikzset{%
+      every edge quotes/.append style={midway, auto},
+      /cuboid/.cd,
+      #1
+    }
+    \draw [every edge/.append style={pic actions, densely dashed, opacity=.5}, pic actions]
+    (0,0,0) coordinate (o) -- ++(-\cubescale*\cubex,0,0) coordinate (a) -- ++(0,-\cubescale*\cubey,0) coordinate (b) edge coordinate [pos=1] (g) ++(0,0,-\cubescale*\cubez)  -- ++(\cubescale*\cubex,0,0) coordinate (c) -- cycle
+    (o) -- ++(0,0,-\cubescale*\cubez) coordinate (d) -- ++(0,-\cubescale*\cubey,0) coordinate (e) edge (g) -- (c) -- cycle
+    (o) -- (a) -- ++(0,0,-\cubescale*\cubez) coordinate (f) edge (g) -- (d) -- cycle;
+    \path [every edge/.append style={pic actions, |-|}]
+    (b) +(0,-5pt) coordinate (b1) edge ["y"'] (b1 -| c)
+    (b) +(-5pt,0) coordinate (b2) edge ["x"] (b2 |- a)
+    (c) +(3.5pt,-3.5pt) coordinate (c2) edge ["x"'] ([xshift=3.5pt,yshift=-3.5pt]e)
+    ;
+  },
+  /cuboid/.search also={/tikz},
+  /cuboid/.cd,
+  width/.store in=\cubex,
+  height/.store in=\cubey,
+  depth/.store in=\cubez,
+  units/.store in=\cubeunits,
+  scale/.store in=\cubescale,
+  width=10,
+  height=10,
+  depth=10,
+  units=cm,
+  scale=.1,
+}
+
+% Extracted from optimization.tex, problem #4
+\begin{problem}
+A box with two square sides is constructed to have a volume of 27. Denote the dimensions of the length of the base as $y$, and the width and height as $x$, as labeled in the diagram below. Find the dimensions needed to minimize the surface area of the box.
+		\begin{center}
+		\begin{tikzpicture}
+			\pic {annotated cuboid={width=120, height=95, depth=95, scale=.02, units=cm}};
+		\end{tikzpicture}
+		\end{center}
+		Solve the problem by performing the following steps.
+
+		\begin{enumerate}
+			\item Find a formula for $S(x)$ the surface area of the box, as a function of only the variable $x$.
+ 
+ 	\item Find the{interval of interest} for $S(x)$. 
+\item Find the $x$-value that gives the minimum surface area over all 
+				such boxes.
+[2]
+
+	\end{enumerate}	
+
+\end{problem}
+
+\end{document}

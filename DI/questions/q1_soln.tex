@@ -1,0 +1,38 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from definiteIntegrals.tex, problem #1
+\begin{problem}
+  Consider the following limit of Riemann sums of a function $g$ on $[a, b]$:
+  \[
+    \lim_{n \to \infty} \sum_{k = 1}^n (x_k^* + \cos(x_k^*)) \Delta x\mbox{ , $[0, \pi]$.}
+  \]
+  Express the limit as a definite integral. Use geometry to evaluate the resulting definite integral.
+  \begin{explanation}
+    We have 
+    \[
+      \int_0^\pi(x + \cos(x))\d x = \lim_{n \to \infty} \sum_{k = 1}^n (x_k^* + \cos(x_k^*)) \Delta x.
+    \]
+    
+    To evaluate this definite integral, we'll start by writing $\displaystyle \int_0^\pi(x + \cos(x))\d x = \int_0^\pi x \d x + \int_0^\pi \cos(x) \d x$.
+    
+    The first term is the definite integral $\displaystyle \int_0^\pi x \d x$ which is the net area under the graph of $y = x$ on the interval $[0,\pi]$. This is a triangle of base $\pi$ and height $\pi$, so it has area $\dfrac{1}{2} \pi ^ 2$.
+ 
+    The second term $\displaystyle \int_0^\pi \cos(x) \d x$ is the net area between the graph of $y = \cos(x)$ and the $x$-axis on the interval $[0, \pi]$. In the interval $[0,\frac{\pi}{2}]$ the function is positive, and in the interval $[\frac{\pi}{2}, \pi]$ the function is negative. By the symmetry of the cosine function, these two regions have the same geometric area, so the net area is zero.
+ 
+    $\displaystyle \int_0^\pi(x + \cos(x))\d x = \int_0^\pi x \d x + \int_0^\pi \cos(x) \d x = \dfrac{\pi^2}{2}$.
+  \end{explanation}
+\end{problem}
+
+
+
+\end{document}

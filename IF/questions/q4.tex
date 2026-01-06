@@ -1,0 +1,49 @@
+% Extracted from indeterminateForms.tex, problem #4
+\begin{problem}
+	Two polynomials, $h$ and $g$, are given
+	\[ h(x)=\frac{x^2-4}{4} \]
+	\[ g(x)=x-2 \]
+	 State the form of the limit, evaluate the limit, or state that it does not exist.  Justify your answer.
+		
+		\begin{enumerate}
+		
+		\item $\lim_{x \to 2}\frac{h(x)}{g(x)}$
+
+\WkstHop
+		\begin{freeResponse}
+			$\lim_{x \to 2}\frac{h(x)}{g(x)}=\lim_{x \to 2}\frac{\frac{x^2-4}{4}}{x-2}$\\
+		Form: $\frac{{0}}{0}$ \\
+		\begin{align*}
+		\lim_{x \to 2}\frac{\frac{x^2-4}{4}}{x-2}&=\lim_{x \to 2}\frac{(x-2)(x+2)}{4(x-2)}\\
+		&= \lim_{x \to 2} \frac{x+2}{4}\\
+		&= \frac{4}{4}\\
+		&= 1
+		\end{align*}
+		\end{freeResponse}	
+\item $\lim_{x \to 3}\frac{g(x)-g(3)}{x-3}$
+\WkstHop
+			\begin{freeResponse}
+			$\lim_{x \to 3}\frac{g(x)-g(3)}{x-3}=\lim_{x \to 3}\frac{x-2-1}{x-3}$\\
+		Form: $\frac{{0}}{0}$ \\
+		\begin{align*}
+		\lim_{x \to 3}\frac{g(x)-g(3)}{x-3}&=\lim_{x \to 3}\frac{x-2-1}{x-3}\\
+		&=\lim_{x \to 3}1\\	
+		&=1		
+		\end{align*}
+		\end{freeResponse}	
+\item  $\lim_{x \to4}\frac{h(x)-h(4)}{x-4}$
+\WkstHop
+			\begin{freeResponse}
+			$\lim_{x \to 4}\frac{h(x)-h(4)}{x-4}=\lim_{x \to 4}\frac{\frac{x^2-4}{4}-3}{x-4}$\\
+		Form: $\frac{{0}}{0}$ \\
+		\begin{align*}
+		\lim_{x \to 4}\frac{h(x)-h(4)}{x-4}&=\lim_{x \to 4}\frac{\frac{x^2-4}{4}-3}{x-4}\\
+		&=\lim_{x \to 4}\dfrac{x^2-4-12}{4(x-4)}\\	
+		&=\lim_{x \to 4}\dfrac{x^2-16}{4(x-4)}\\
+		&=\lim_{x \to 4}\dfrac{(x-4)(x+4)}{4(x-4)}\\
+		&=\lim_{x \to 4}\dfrac{x+4}{4}\\	
+		&=2		
+		\end{align*}
+		\end{freeResponse}	
+\end{enumerate}
+\end{problem}

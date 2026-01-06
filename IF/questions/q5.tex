@@ -1,0 +1,92 @@
+% Extracted from indeterminateForms.tex, problem #5
+\begin{problem}
+  Evaluate each of the following limits. Possible answers include a number, $+\infty$,  $-\infty$ and ``Does Not Exist'' (DNE).  Make sure to state the form of the limit.
+ Justify your answer.
+
+  \begin{enumerate}
+	\item
+      $\displaystyle \lim_{x \to 3^-} \frac{x^2 - 3}{x^2 - x - 6}$
+\WkstHop
+      \begin{freeResponse} 
+
+         $ \lim_{x \to 3^-} \frac{x^2 - 3}{x^2 - x - 6} = \lim_{x \to 3^-} \frac{x^2 - 3}{(x-3)(x+2)}$  is of the form $\frac{\#}{0}$.\\[1em]
+Since  $ \lim_{x \to 3^-} (x^2 - 3)=6$, and $ \lim_{x \to 3^-} (x^2 - x - 6)= \lim_{x \to 3^-} (x-3)(x+2)=0$, and since \\[1em]$x^2 - x - 6=(x-3)(x+2)<0$, if $x<3$ and $x$ close to 3.
+	$$\lim_{x \to 3^-} \frac{x^2 - 3}{x^2 - x - 6} =-\infty$$
+      \end{freeResponse}
+
+    \item
+      $\displaystyle \lim_{x \to 5^+} \frac{x^2 + 6}{x^2 - 3x - 10}$
+\WkstHop
+      \begin{freeResponse}
+   The limit is of the form $\frac{\#}{0}$.\\[1em]
+  
+         $ \lim_{x \to 5^+} \frac{x^2 + 6}{x^2 - 3x - 10} = \lim_{x \to 5^+} \frac{x^2 + 6}{(x-5)(x+2)}  = \infty $,  because\\[1em]
+ $\lim_{x \to 5^+} (x^2 + 6)=31$ and  $ x^2 - 3x - 10= (x-5)(x+2)>0 $, for $x>5$ and $x$ close to 5.
+ 
+      \end{freeResponse}
+
+    \item
+      $\displaystyle \lim_{x \to 1} \frac{4-x}{x^2 - 2x + 1}$
+\WkstHop
+      \begin{freeResponse}
+       The limit is of the form $\frac{\#}{0}$.\\[1em]
+        Checking left and right sided limits we see:
+        \begin{align*}
+          \lim_{x \to 1^+} \frac{4-x}{x^2 - 2x + 1} &= \lim_{x \to 1^+}\frac{4-x}{(x-1)^2} = \infty\\
+        \end{align*}
+ 	 and
+        \begin{align*}
+ 	\lim_{x \to 1^-} \frac{4-x}{x^2 - 2x + 1} = \lim_{x \to 1^-}\frac{4-x}{(x-1)^2} = \infty\\
+	\end{align*}
+	Since $\lim_{x \to 1^-} \frac{4-x}{x^2 - 2x + 1}=\lim_{x \to 1^+} \frac{4-x}{x^2 - 2x + 1} \implies  \lim_{x \to 1} \frac{4-x}{x^2 - 2x + 1} = \infty$
+      \end{freeResponse}
+\WkstNew
+
+    \item
+      $\displaystyle \lim_{x \to 2} \frac{-e^x}{(2-x)^3}$
+\WkstHop
+      \begin{freeResponse}
+            The limit is of the form $\frac{\#}{0}$.\\[1em]
+        Checking right limit we have:
+ \begin{align*}
+          \lim_{x \to 2^+} \frac{-e^x}{(2-x)^3} &= \infty\\
+        \end{align*}
+ 	 and checking the left limit we have:
+        \begin{align*}
+ 	\lim_{x \to 2^-} \frac{-e^x}{(2-x)^3} &= - \infty\\
+	\end{align*}
+	Since $ \lim_{x \to 2^+} \frac{-e^x}{(2-x)^3} \ne \lim_{x \to 2^-} \frac{-e^x}{(2-x)^3} \implies   \lim_{x \to 2} \frac{-e^x}{(2-x)^3}$ Does not exist
+      \end{freeResponse}
+         \item
+      $\displaystyle \lim_{x \to 1} \frac{\sin{x}}{\sqrt{2-x^{2}}-1}$
+\WkstHop
+      \begin{freeResponse}
+            The limit is of the form $\frac{\#}{0}$.\\[1em]
+        Checking right limit we have:
+
+         $ \lim_{x \to 1^+} \frac{\sin{x}}{\sqrt{2-x^{2}}-1}= -\infty$,\\[1em]
+        $ \lim_{x \to 1^+} \sin{x}=\sin{1}>0$, since $1<\frac{\pi}{2}$.
+     Explanation: Note that for x near 1 and such that $x>1$, we have that \\[1em]
+      $x^{2}>1$,    and by multiplying by $(-1)$, we get\\[1em]
+  $ - x^{2}<-1$,   and by adding 2 on both sides, we get\\[1em]
+   $2 - x^{2}<2-1$, and by taking the square root, we get\\[1em]
+   $ \sqrt{2 - x^{2}}<\sqrt{1}$, or\\[1em]
+      $\sqrt{2 - x^{2}}<1$, and by subtracting 1 from both sides, we get\\[1em]
+        $ \sqrt{2 - x^{2}}-1<0$. \\[1em] Therefore the numerator is positive, and denominator is \textbf{negative} and goes to 0.\\[1em]
+
+ 	 Checking the left limit we have:
+      $\displaystyle \lim_{x \to 1^{-}} \frac{\sin{x}}{\sqrt{2-x^{2}}-1}=+\infty$\\[1em]
+      
+     Explanation: Note that and for x near 1 such that  $x<1$, we have that\\[1em]
+       
+      $x^{2}<1$,    and by multiplying by $(-1)$, we get\\[1em]
+  $ - x^{2}>-1$,   and by adding 2 on both sides, we get\\[1em]
+   $2 - x^{2}>2-1$, and by taking the square root, we get\\[1em]
+   $ \sqrt{2 - x^{2}}>\sqrt{1}$, or\\[1em]
+      $\sqrt{2 - x^{2}}>1$, and by subtracting 1 from both sides, we get\\[1em]
+        $ \sqrt{2 - x^{2}}-1>0$.\\[1em] Therefore the numerator is positive, and denominator is \textbf{positive} and goes to 0.\\[1em]
+        
+      	Since $ \lim_{x \to 1^+}  \frac{\sin{x}}{\sqrt{2-x^{2}}-1} \ne \lim_{x \to 1^-} \frac{\sin{x}}{\sqrt{2-x^{2}}-1} \implies   \lim_{x \to 1}  \frac{\sin{x}}{\sqrt{2-x^{2}}-1}$ does not exist.
+      \end{freeResponse}
+\end{enumerate}
+\end{problem}

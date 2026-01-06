@@ -1,0 +1,81 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from optimization.tex, problem #3
+\begin{problem}
+
+  A part of a circle centered at the origin with radius $r = 7 \text{ cm}$ is given in the figure (A) below.
+  A right triangle is formed in the first quadrant (see figure (A)).
+  One of its sides lies on the $x$-axis.
+  Its hypotenuse runs from the origin to a point on the circle.
+  The hypotenuse makes an angle $\theta$ with the $x$-axis.
+
+  \begin{image}
+    \includegraphics[scale = 0.1]{triangleInCircle.png}
+    \includegraphics[scale = 0.1]{figure7.png}
+  \end{image}
+  Make sure to label the picture.
+
+  \begin{enumerate}
+    \item
+      Draw 2 more examples of such a triangle in the figure (B).
+      \begin{explanation} \hfil
+      
+  \begin{image}
+    \includegraphics[scale = 0.15]{twoMoreTriangles.png}
+      \end{image}
+ 
+      \end{explanation}
+
+    \item
+      Express the area of such a triangle as a function of $\theta$ and state its domain.
+\begin{explanation}
+        The area of a triangle is $(1/2)\cdot\mbox{ base } \cdot \mbox{ height }$.
+        The base of the triangle is $7\cos(\theta)$ and the height is $7\sin(\theta)$.
+
+        Therefore:
+        \begin{align*}
+          A(\theta) &= \frac{1}{2}\cdot 7\cos(\theta) \cdot 7\sin(\theta)\\
+                    &= \frac{49}{2}\cos(\theta)\sin(\theta)
+        \end{align*}
+
+        and
+        \begin{align*}
+          \mbox{Domain of $A$ = $[0,\pi/2]$}
+        \end{align*}
+      \end{explanation}
+
+    \item
+      Find the value of $\theta$ which maximizes the area in part (b).
+      Show your work and justify your answer.
+[2]
+      \begin{explanation}
+        Finding critical points:
+        \begin{align*}
+          A'(\theta) &= \frac{-49}{2} \sin(\theta)\sin(\theta) + \frac{49}{2}\cos(\theta)\cos(\theta) \\
+          &\implies A'(\theta) = 0\\
+          &\implies \cos^2(\theta) = \sin^2(\theta)\\
+          &\implies \cos(\theta) = \sin(\theta)\\
+          &\implies \theta = \frac{\pi}{4}
+        \end{align*}
+
+        Locating global maximum:
+        \begin{align*}
+          A(0) = 0, A(\pi/4) = \frac{49}{4}, A(\pi/2) = 0 &\implies \mbox{global maximum at $\theta = \pi/4$}
+        \end{align*}
+      \end{explanation}
+  \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

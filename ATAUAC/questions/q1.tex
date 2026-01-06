@@ -1,0 +1,56 @@
+% Extracted from approximatingTheAreaUnderACurve.tex, problem #1
+\begin{problem} Evaluate the sum.
+\begin{enumerate}
+	\item  $\sum_{k=1}^{n}5$
+		\begin{freeResponse}
+		  $\sum_{k=1}^{n}5=n\cdot5$
+		\end{freeResponse}	
+\WkstHop
+
+	\item  $\sum_{k=1}^{10}5$
+		\begin{freeResponse}
+			Using the previous result for $n=10$, we get
+ 			$\sum_{k=1}^{10}5=10\cdot5=50$\\
+  			or\\
+
+   			$\sum_{k=1}^{10}5=5+5+5+5+5+5+5+5+5+5=50$
+		\end{freeResponse}	
+\WkstHop
+
+	\item  $\sum_{k=1}^{n}8k$
+		\begin{freeResponse}
+  			$\sum_{k=1}^{n}8k=8\sum_{k=1}^{n}k=8\frac{n(n+1)}{2}=4n(n+1)$
+		\end{freeResponse}	
+
+\vspace*{\stretch{1}}
+	\item  $\sum_{k=1}^{4}8k$
+		\begin{freeResponse}
+			Using the previous result for $n=4$, we get
+			  $\sum_{k=1}^{4}8k=4(4)(4+1)=80$\\
+			  or\\
+			  $\sum_{k=1}^{4}8k=8(1)+8(2)+8(3)+8(4)=8+16+24+32=80$
+		\end{freeResponse}	
+\WkstHop
+
+	\item  $\sum_{k=1}^{n}(6k^2-8k-5)$	
+		\begin{freeResponse}
+			$\sum_{k=1}^{n}(6k^2-8k-5)=\sum_{k=1}^{n}6k^2+\sum_{k=1}^{n}(-8k)+\sum_{k=1}^{n}(-5)=$\\
+			$=6\sum_{k=1}^{n}k^2-8\sum_{k=1}^{n}k-\sum_{k=1}^{n}5=$ \\
+			Now we use the formulas.\\[1em]
+			$=6\frac{n(n+1)(2n+1)}{6}-8\frac{n(n+1)}{2}-\sum_{k=1}^{n}5=n(n+1)(2n+1)-4n(n+1)-5n$=\\[1em]
+			$=2n^3-n^2-8n$
+		\end{freeResponse}	
+\WkstHop
+
+	\item  $\sum_{k=0}^{2} \cos\left( \dfrac{\pi}{2}k\right)$
+		\begin{freeResponse}
+		\begin{align*}
+			\sum_{k=0}^{2} \cos\left( \dfrac{\pi}{2}k\right) &= \cos\left( \dfrac{\pi}{2}(0)\right) + \cos\left( \dfrac{\pi}{2}(1)\right) + \cos\left( \dfrac{\pi}{2}(2)\right)\\
+			&= \cos\left( 0\right) + \cos\left( \dfrac{\pi}{2}\right) + \cos\left( \pi\right) \\
+			&= 1 + 0 + -1 = 0.
+		\end{align*}
+		\end{freeResponse}
+\WkstHop
+
+\end{enumerate}
+\end{problem}

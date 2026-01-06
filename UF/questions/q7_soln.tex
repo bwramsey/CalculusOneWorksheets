@@ -1,0 +1,57 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 7]{Problem 7}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from understandingFunctions.tex, problem #7
+\begin{problem}
+Determine if the function is even, odd, or neither.
+
+
+\begin{enumerate}	
+	\item  $h(x)=x^4+x^2-3$
+		\begin{explanation}
+
+			A function is even if $f(x)=f(-x)$, for all $x$ in the domain, which means its graph is symmetic about the y-axis.  A function is odd if $f(-x)=-f(x)$, for all $x$ in the domain, which means its graph is symmetic about the origin. 
+			 $$h(x)=x^4+x^2-3$$
+				$$h(-x)=(-x)^4+(-x)^2-3=x^4+x^2-3$$
+				$h(x)=h(-x)$.  Hence $h$ is even.  This can be verified by graphing $h$ and seeing that its graph is symmetric about the y-axis.
+		\end{explanation}
+
+	\item  $s(t)=t^2-t$
+		\begin{explanation}
+			$$s(t)=t^2-t$$
+			$$s(-t)=(-t)^2-(-t)=t^2+t$$ This does not equal $s(t)$ so $s(t)$ is not even.
+			$$-s(t)=-(t^2-t)=-t^2+t$$  This does not equal $s(-t)$ so $s$ is not odd.  Hence, $s(t)$ is neither even, nor odd.
+		\end{explanation}
+
+	\item  We know that $\sin(\theta)$ is odd and $\cos(\theta)$ is even.  Is $g(\theta)=\tan(\theta)$ even, odd, or neither?
+		\begin{explanation}
+			 $$g(\theta)=\tan(\theta)=\frac{\sin(\theta)}{\cos(\theta)}$$
+				\begin{align*}
+				g(-\theta)&=\frac{\sin(-\theta)}{\cos(-\theta)}\\
+				&=\frac{-\sin(\theta)}{\cos(\theta)}\\
+				&=-\frac{\sin(\theta)}{\cos(\theta)}
+				\end{align*}
+				\begin{center}
+				$$-g(\theta)=-\frac{\sin(\theta)}{\cos(\theta)}$$
+				$g(-\theta)=-g(\theta) \implies g$ odd
+				\end{center}
+		\end{explanation}
+
+	\end{enumerate}
+	
+
+	
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,54 @@
+% Extracted from applicationsOfIntegrals.tex, problem #5
+\begin{problem}
+	The graph of a function $f$ defined on the interval $[0,6]$  is given in the figure.
+  
+        \begin{image}
+          \includegraphics[scale = 0.6]{figure5.png}
+        \end{image}
+     \begin{enumerate}
+	     \item Compute the net area of the region between the graph of $f$ and the $x$-axis, on the interval $[0,6]$.
+		\WkstHop[3]
+		     \begin{freeResponse}
+		     The net area $= -1/2 + 1/2 +1 +3+1=5$
+		     \end{freeResponse}
+        
+     \item Draw a rectangle with base on the $x$-axis, $0\leq x \leq 6$, whose area is equal to the net area in part (a).
+  		\WkstHop
+     	\begin{freeResponse}
+	     Let $A$ be the area of the rectangle.  Then $A=$(base)(height)$=6h=5$.  \\
+	     So, $6h=5 \implies h=\frac{5}{6}$
+	            \begin{image}
+  			        \includegraphics[scale = 0.5]{figure6.png}
+        		\end{image}
+     	\end{freeResponse}
+     
+       \item In the figure, mark a point $c$ in $(0,6)$ such that $f(c)$ is the height of the rectangle from part (b).
+		\WkstHop
+	     \begin{freeResponse}
+    		$f(c)=h=\frac{5}{6}$
+            \begin{image}
+          		\includegraphics[scale = 0.5]{figure7.png}
+        	\end{image}
+        	Note: In this example, there is only one such point $c$.  In some cases there may be more than one.
+     	\end{freeResponse}
+     
+     
+     \item Using the figure and parts (a-c), what is the relationship between the rectangle from part (b), the 
+     	net area from part (a), and the average value of $f$ on $[0, 6]$?
+		\WkstHop[3]
+	      \begin{freeResponse}
+    		    The Mean Value Theorem for integrals states that there exists a point $d$ in $(a, b)$ such that
+		        \[
+		          f(d) = \frac{1}{b-a}\int_a^b f(x) \d x.
+		        \]
+		        The right-hand side of this equation is the average value of $f$ on $[a, b]$.
+		
+		        Rewriting we have
+		        \[
+		        f(d) \cdot (b-a) = \int_a^b f(x) \d x.
+		        \]
+		      The right-hand side of this equation is the net area found in part (a): $\int_0^6 f(x) \d x=5$.\\
+		       The left-hand side of this equation is the area of the rectangle in part (b).  The point $d$ is the point $c$ we found in part (c).  From (b) and (c), $f(c)=\frac{5}{6}$ is the average value of $f$ on $[0,6]$.
+		 \end{freeResponse}
+    \end{enumerate}
+\end{problem}

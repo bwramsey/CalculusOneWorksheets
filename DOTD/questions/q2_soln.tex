@@ -1,0 +1,98 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 2]{Problem 2}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from definitionOfTheDerivative.tex, problem #2
+\begin{problem}
+ For each of the following functions find an equation of the tangent line at the given point.
+  \begin{enumerate}
+    \item
+      $f(x) = -5x^2 + 7x - 9$\quad at $x = 3$.
+      \begin{explanation}
+        The slope of tangent line is given by this limit: $\displaystyle  f'(3) = \lim_{x \to 3} \frac{f(x) -f(3)}{x-3}$. Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+          f'(3) = \lim_{x \to 3} \frac{f(x) -f(3)}{x-3}
+		&= \lim_{x \to 3} \frac{(-5x^2 + 7x - 9) - (-45 + 21 - 9)}{x-3}  \\
+		&= \lim_{x \to 3} \frac{-5x^2 + 7x - 9 + 33}{x-3}  \\
+		&= \lim_{x \to 3} \frac{-5x^2 + 7x + 24}{x-3}  \\
+		&= \lim_{x \to 3} \frac{(x-3)(-5x -8)}{x-3}  \\
+		&= \lim_{x \to 3} (-5x - 8)  \\
+		&= -5(3) - 8 = -23.
+	\end{align*}
+        
+        Point on tangent line: $(3, f(3)) = (3, -33)$.
+
+        An equation of tangent line is:
+        \[ y + 33 = -23(x-3) \]
+%       \begin{align*}
+%	
+%          y - f(3) = -23(x-3) &\implies y + 33 = -23x + 69\\
+%          &\implies y = -23x + 36.
+%        \end{align*}
+      \end{explanation}
+
+    \item
+      $g(u) = \sqrt{5u-4}$\quad at $u = 3$.
+      \begin{explanation}
+        The slope of tangent line is given by: $\displaystyle g'(3)= \lim_{h \to 0} \frac{g(3+h) - g(3)}{h}$.  Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+          g'(3)= \lim_{h \to 0} \frac{g(3+h) - g(3)}{h}
+            &= \lim_{h \to 0} \frac{\sqrt{5(3+h) - 4} - \sqrt{11}}{h}\\
+          		&=\lim_{h \to 0} \frac{\sqrt{5(3+h) - 4} - \sqrt{11}}{h} \cdot \frac{\sqrt{5(3+h) - 4} + \sqrt{11}}{\sqrt{5(3+h) - 4} + \sqrt{11}} \\
+		&= \lim_{h \to 0} \frac{5(3+h) - 4 - 11}{h \left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \lim_{h \to 0} \frac{5h + 15 - 15}{h \left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \lim_{h \to 0} \frac{5}{\left( \sqrt{5(3+h) - 4} + \sqrt{11} \right) }  \\
+		&= \frac{5}{\sqrt{5(3+0) - 4} + \sqrt{11}}  \\
+		&= \frac{5}{2 \sqrt{11}}.
+        \end{align*}
+
+        Point on tangent line: $(3, g(3)) = (3, \sqrt{11})$.
+
+        Equation of tangent line:
+		\[ y - \sqrt{11} =  \frac{5}{2 \sqrt{11}} \left( u - 3\right) \]
+%        \begin{align*}
+%          y - g(3) = \frac{5}{2\sqrt{11}}(u-3)
+%          &\implies y - \sqrt{11} = \frac{5}{2\sqrt{11}}(u - 3)\\
+%          &\implies y = \frac{5}{2\sqrt{11}}u - \frac{15}{2\sqrt{11}} + \sqrt{11}.
+%        \end{align*}
+      \end{explanation}
+
+    \item
+      $\displaystyle s(z) = \frac{z}{z-5}$\quad at $z = 3$.
+      \begin{explanation}
+        The slope of tangent line is given by: $\displaystyle  s'(3) = \lim_{z \to 3} \frac{s(z) - s(3)}{z-3} $. Notice that this limit has form $\ZeroOverZero$, so it is indeterminate. 
+        \begin{align*}
+       s'(3) &= \lim_{z \to 3} \frac{s(z) - s(3)}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{z}{z-5} - \frac{3}{3-5}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{z}{z-5} + \frac{3}{2}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{2z}{2(z-5)} + \frac{3(z-5)}{2(z-5)}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{\frac{2z + 3z - 15}{2(z-5)}}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5z-15}{2(z-5)} \cdot \frac{1}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5(z-3)}{2(z-5)} \cdot \frac{1}{z-3}  \\
+		&= \lim_{z \to 3} \frac{5}{2(z-5)}  \\
+		&= \frac{5}{2(3-5)} = -\frac{5}{4}.
+	\end{align*}
+
+        Point on tangent line: $(3, s(3)) = (3, -3/2)$.
+
+        Equation of tangent line:
+	\[ y + \dfrac{3}{2} = -\dfrac{5}{4}(z - 3) \]
+%        \begin{align*}
+%          y - s(3) = - \frac{5}{4}(z-3) &\implies y + \frac{3}{2} = - \frac{5}{4}z + \frac{15}{4}\\
+%          &\implies y = - \frac{5}{4} z + \frac{9}{4}.
+%        \end{align*}
+      \end{explanation}
+  \end{enumerate}
+\end{problem}
+
+
+
+\end{document}

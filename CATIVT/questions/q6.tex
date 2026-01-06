@@ -1,0 +1,94 @@
+% Extracted from continuityAndIVT.tex, problem #6
+\begin{problem}
+Let 
+    \[
+      h(u) =
+      \begin{cases}
+        \frac{u^2-5u+4}{u - 4} & \mbox{if $u < 4$}\\ \\
+         \frac{-\sqrt{u+4}}{u - 6} & \mbox{if $u \ge 4, u \ne 6$}.
+      \end{cases}
+    \]
+
+\begin{enumerate}
+	\item What is the domain of $h$?
+\WkstHop
+	\begin{freeResponse}
+	For values of $u<4$ we check $\frac{u^2-5u+4}{u - 4}$.  This piece of the function is defined everywhere on $(-\infty,4)$\\
+	For values of $u\geq 4$ we check $\frac{-\sqrt{u+4}}{u - 6}$. This piece of the function is defined everywhere except $u=6$.  So $h$ is defined on $[4,6)\cup(6,\infty)$
+	The domain is $(-\infty,6)\cup(6,\infty)$
+	\end{freeResponse}
+
+	%x
+	\item Find all vertical asymptotes of $h$. \textbf{EXPLAIN}. 
+\WkstHop
+	\begin{freeResponse}
+	The only candidates are $u=6$ and $u=4$.
+	
+	\begin{align*}
+	&\lim_{u \to 6^+}\frac{-\sqrt{u+4}}{u - 6}=-\infty\ \text{because it is of the form}\ \frac{\#}{0}\text{, the numerator negative, the denominator positive and goes to $0$.}\ \\
+	&\lim_{u \to 4^-} \frac{u^2-5u+4}{u - 4}=\lim_{u \to 4^-} \frac{(u-1)(u-4)}{u - 4}=\lim_{u \to 4^-} (u-1)=3 \\ \\
+	&\lim_{u \to 4^+} \frac{-\sqrt{u+4}}{u - 6}=\frac{-\sqrt{8}}{-2}=\sqrt{2}
+	\end{align*}
+	The only vertical asympote is $u=6$, because $\displaystyle \lim_{u\to 6^+}h(u) = -\infty$.
+	\end{freeResponse}
+	
+	\item Find all horizontal asymptotes of $h$. \textbf{EXPLAIN}.
+\WkstHop
+	\begin{freeResponse}
+	\begin{align*}
+	\lim_{u \to \infty}\frac{-\sqrt{u+4}}{u - 6}&=\lim_{u \to \infty}\frac{-\frac{\sqrt{u+4}}{\sqrt{u}}}{\frac{u - 6}{\sqrt{u}}}\\ \\
+	&=\lim_{u \to \infty}\frac{-\sqrt{\frac{u+4}{u}}}{\frac{u}{\sqrt{u}} - \frac{6}{\sqrt{u}}}\\ \\
+	&=\lim_{u \to \infty}\frac{\sqrt{1+\frac{4}{u}}}{\sqrt{u} - \frac{6}{\sqrt{u}}}\\ \\
+	&=0\\ \text{because it is of the form:}\ \frac{\#}{\infty}
+	\end{align*}
+	This indicates that $y=0$ is a horizontal asymptote.\\
+	Checking as $u$ approaches $-\infty$ we have:
+	\begin{align*}
+	\lim_{u \to -\infty}\frac{u^2-5u+4}{u - 4}=\lim_{u \to -\infty} \frac{(u-1)(u-4)}{u - 4}=\lim_{u \to -\infty} (u-1)= -\infty
+	\end{align*}
+ Therefore, there is no horizontal asymptote as $u$ approaches $-\infty$
+	
+	There is one horizontal asymptote at $y=0$, because $\displaystyle \lim_{u \to \infty}h(u)=0$.
+	\end{freeResponse}
+
+	%d
+	\item List the \textbf{Intervals of Continuity} for the function $h$.
+\WkstHop
+	\begin{freeResponse}
+		Remember that finding Intervals of Continuity means to find the largest such intervals.
+		For values of $u<4$ we check $\frac{u^2-5u+4}{u - 4}$.  This is a piece of a rational function and  is continuous everywhere on $(-\infty,4)$. \\
+	For values of $u>4$ we check $\frac{-\sqrt{u+4}}{u - 6}$. This piece of the function is continuous everwhere where defined: $(4,6),(6,\infty)$\\
+
+	We need to check $u=4$ for continuity. A function is continuous at a point $a$ if:
+	\begin{center}
+	  $f$ is defined at $x = a$\\
+
+     	 $\lim_{x \to a} f(x)$ exists\\
+
+    	  $\lim_{x \to a} f(x) = f(a)$
+	\end{center}
+
+$h$ is defined at $u=4$, $h(4)=\frac{-\sqrt{4+4}}{4 - 6}=\sqrt{2}$\\
+Next we check if  $\lim_{u \to 4} h(u)$ exists.  That is, does $\lim_{u \to 4^-} h(u)=\lim_{u \to 4^+} h(u)$ ?
+
+	\begin{align*}
+	\lim_{u \to 4^-} h(u)&=\lim_{u \to 4^-}\frac{u^2-5u+4}{u - 4}\\
+	& \text{This is of the form:}\ \frac{0}{0^-}\ \text{so we need to do more algebra}\\
+	&=\lim_{u \to 4^-}\frac{(u-4)(u-1)}{(u-4)}\\
+	&=\lim_{u \to 4^-}(u-1)\\
+	&=4-1\\
+	&=3 \\ \\
+	\lim_{u \to 4^+} h(u)&=\lim_{u \to 4^+}\frac{-\sqrt{u+4}}{u - 6}\\
+	&=\frac{-\sqrt{4+4}}{4 - 6}\\
+	&=\frac{-\sqrt{8}}{-2}\\
+	&=\sqrt{2}\\ \\
+	&\lim_{u \to 4^-} h(u)\ne \lim_{u \to 4^+} h(u) \implies \lim_{u \to 4} h(u)\ \text{does not exist}
+	\end{align*}
+Thus $h(u)$ is not continuous at $u=4$. Remark: Since $\lim_{u \to 4^+} h(u)=h(4)$, $h$ is right continuous at $u=4$.   Its intervals of continuity are $(-\infty,4),[4,6),(6,\infty)$
+
+	\end{freeResponse}
+
+
+
+\end{enumerate}
+\end{problem}

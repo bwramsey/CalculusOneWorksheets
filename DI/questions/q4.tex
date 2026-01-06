@@ -1,0 +1,74 @@
+% Extracted from definiteIntegrals.tex, problem #4
+\begin{problem}
+Use geometry to evaluate the definite integral.  Sketch the graph of the function and shade the relevant regions.
+\begin{enumerate}
+
+
+	\item $\int_1^3 (2x-4) \d x$
+
+		\begin{freeResponse}
+		\begin{image}
+		\includegraphics[scale=.4]{DIimage007.png}
+		
+		\end{image}
+		
+		We want to find the net area of the shaded region.  We have two identical triangles, each with base $1$ and height $2$.  Since the triangles will have identical area and one lies above and the other below the $x$-axis, the total area will be $0$.
+		
+		Therefore, $\int_1^3 (2x-4) \d x=0$
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item $\int_1^3 |2x-4| \d x$
+
+		\begin{freeResponse}
+		
+		The functions changes the sign at $x=2$. Therefore, we will split the integral into two integrals:
+		
+		 $\int_1^3 |2x-4| \d x=\int_1^2 |2x-4| \d x+\int_2^3 |2x-4| \d x$.
+		 
+		 Since the function is negative for $x<2$ and positive for $x>2$, we write
+		 
+		$\int_1^3 |2x-4| \d x=-\int_1^2 (2x-4) \d x+\int_2^3 (2x-4) \d x=1+1=2$.
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item  $\int_0^1 (2x-4) \d x$
+
+		\begin{freeResponse}
+		\begin{image}
+		\includegraphics[scale=.35]{DIimage008.png}
+		\end{image}
+		
+		Here we need to find the area of a trapezoid.  The trapezoid is made up of a rectangular top with area $(2)(1)=2$ and triangle bottom with area $(1/2)(1)(2)=1$.  This gives us an area of $3$, but, since $f$ is negative on the interval $(0,1)$, the value of the integral is the negative of this area.
+		
+		Therefore,$\int_0^1 (2x-4) \d x=-3$
+		
+		
+		\end{freeResponse}
+
+\WkstHop
+
+	\item  $\int_{-1}^3 \sqrt{4-(x-1)^2} \d x$
+		\begin{freeResponse}
+		
+		\begin{image}
+		\includegraphics[scale=.4]{DIimage006.png}
+		\end{image}
+		
+		
+		We are looking for the area of the entire semi-circle above the $x$-axis.  This is a circle with radius $2$ so we have $(1/2)\pi 2^2=2 \pi$
+		
+		
+		$\int_{-1}^3 \sqrt{4-(x-1)^2} \d x= 2\pi$
+		
+		
+		\end{freeResponse}
+\WkstHop
+
+\end{enumerate}
+
+\end{problem}

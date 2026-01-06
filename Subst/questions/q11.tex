@@ -1,0 +1,25 @@
+% Extracted from substitution.tex, problem #11
+\begin{problem}
+	Compute the integral: $\displaystyle \int \dfrac{x}{\sqrt{x-4}} \, \d x$.
+\WkstHop
+	\begin{freeResponse}
+		There are two possible solutions: Let $w = \sqrt{x-4}$. Then
+		\[ dw = \dfrac{dx}{2\sqrt{x-4}} \implies 2 dw = \dfrac{dx}{\sqrt{x-4}} \]
+		and
+		\[ w = \sqrt{x-4} \implies x = w^2+4. \]
+		Substituting these into the original integral and evaluating:
+		\begin{align*}
+			\int \dfrac{x}{\sqrt{x-4}} \, dx &= \int 2(w^2+4) \, dw\\
+				&= 2\left( \dfrac{w^3}{3} + 4w \right) + C\\
+				&= 2\left( \dfrac{(\sqrt{x-4})^3}{3} + 4\sqrt{x-4} \right) + C.
+		\end{align*}
+		
+		The other solution: Let $v = x-4$. Then $dv = dx$ and $x=v+4$.
+		\begin{align*}
+			\int \dfrac{x}{\sqrt{x-4}} \, dx &= \int \dfrac{v+4}{\sqrt{v}} \, dv\\
+				&= \int \left( v^{1/2} + 4v^{-1/2}\right) \, dv\\
+				&= \dfrac{2}{3}v^{3/2} + 8v^{1/2} + C\\
+				&= \dfrac{2}{3}(x-4)^{3/2} + 8(x-4)^{1/2} + C\\
+		\end{align*}
+	\end{freeResponse}
+\end{problem}

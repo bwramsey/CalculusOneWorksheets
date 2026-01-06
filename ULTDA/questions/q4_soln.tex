@@ -1,0 +1,39 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 4]{Problem 4}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #4
+\begin{problem}
+Let $f(x)=\frac{\ln(x)}{x - 2}$. \\
+\begin{enumerate}
+    \item Evaluate the limit.\\[1em]
+      $$ \lim_{x \to 2^-} \frac{\ln(x)}{x - 2}$$
+\begin{explanation}
+     This limit  is of the form  $\frac{\#}{0}$, the numerator  positive, and the denominator is  negative.
+Therefore, $ \lim_{x \to 2^-} \frac{\ln{x}}{x - 2} = -\infty$.
+     
+      \end{explanation}
+\item Find the vertical asymptotes of $f$. \textbf{EXPLAIN} and justify your answer.\\
+\begin{explanation}
+  	$x=2$ is a vertical asymptote of $f$ since $\lim_{x \to 2^-} \frac{\ln{x}}{x - 2} = -\infty$ calculated in part (a). \\
+     On the other hand, we know that \\
+      $\displaystyle \lim_{x \to 0^+} \ln(x)=-\infty$.\\
+      So, it follows that\\
+       $\displaystyle \lim_{x \to 0^+} \frac{\ln(x)}{x - 2}=\infty$,\\
+       since the limit is of the form $\frac{\infty}{\#}$, the numerator negative, and  the denominator negative.
+       That means $x=0$ is a vertical asymptote of $f$ since $\lim_{x \to 0^+} \frac{\ln{x}}{x - 2} = \infty$
+      \end{explanation}
+	\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,95 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 2]{Problem 2}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from indeterminateForms.tex, problem #2
+\begin{problem}
+State the form of the limit and then evaluate the limit. 
+	
+	\begin{enumerate}
+	
+	%part a		
+	\item $ \lim_{x \to 6} \frac{4x^2 - 144}{x-6}  $
+\begin{explanation}
+		$\lim_{x \to 6} \frac{4x^2 - 144}{x-6} = \lim_{x \to 6}\dfrac{4(x^2 - 36)}{x-6}$.\\
+		 \hspace{0.5in}\text{Form:} \ZeroOverZero \\ 
+	\begin{align*}
+	\lim_{x \to 6} \frac{4x^2 - 144}{x-6} &= \lim_{x \to 6} \frac{4(x-6)(x+6)}{x-6} \\
+	&= \lim_{x \to 6} 4(x+6) \\
+	&= 4(12) = 48  
+	\end{align*}
+	\end{explanation}
+	
+	
+	%part b		
+	\item  $ \lim_{x \to 6} \frac{x-6}{\sqrt{2x-8} - 2}  $
+\begin{explanation}
+	\begin{align*}
+	\text{Form:} \ZeroOverZero\\
+	\lim_{x \to 6} \frac{x-6}{\sqrt{2x-8} - 2} &= \lim_{x \to 6} \frac{x-6}{\sqrt{2x-8} - 2} \cdot \frac{\sqrt{2x-8} + 2}{\sqrt{2x-8}+2} \\
+	&= \lim_{x \to 6} \frac{(x-6)(\sqrt{2x-8} + 2)}{2x - 8 - 4} \\
+	&= \lim_{x \to 6} \frac{(x-6)(\sqrt{2x-8} + 2)}{2(x-6)} \\
+	&= \lim_{x \to 6} \frac{\sqrt{2x-8}+2}{2} \\
+	&= \frac{\sqrt{12-8}+2}{2} \\
+	&= \frac{4}{2} = 2
+	\end{align*}
+			
+	\end{explanation}
+	
+	
+	%part c		
+	\item  $ \lim_{x \to 2} \frac{(3x-2)^2 - 16}{x-2}  $
+\begin{explanation}
+	\begin{align*}
+	\text{Form:} \ZeroOverZero\\
+	\lim_{x \to 2} \frac{(3x-2)^2-16}{x-2} &=\lim_{x \to 2} \frac{((3x-2)-4)((3x-2)+4)}{x-2} \\
+	&= \lim_{x \to 2} \frac{(3x-6)(3x+2)}{x-2} \\
+	&= \lim_{x \to 2} \frac{3(x-2)(3x+2)}{x-2} \\
+	&= \lim_{x \to 2} 3(3x+2)  \\
+	&= 3(6+2) = 24   
+	\end{align*}
+	\end{explanation}
+	
+
+	%part d		
+	\item $ \lim_{x \to 6} \frac{\frac{x}{x-2} - \frac{3}{2}}{x-6}  $
+\begin{explanation}
+	 \hspace{0.5in}\text{Form:} \ZeroOverZero\\ 
+	 \begin{align*}
+		\lim_{x \to 6} \frac{\frac{x}{x-2} - \frac{3}{2}}{x-6} &= \lim_{x \to 6} \frac{\frac{2x}{2(x-2)} - \frac{3(x-2)}{2(x-2}}{x-6}\\
+		&=\lim_{x \to 6} \frac{\frac{2x-3x+6}{2(x-2)} }{x-6} \\
+		&=\lim_{x \to 6} \frac{\frac{-x+6}{2(x-2)} }{x-6}\\
+		&=\lim_{x \to 6}\frac{-(x-6)}{2(x-2)(x-6)} \\
+		&=\lim_{x \to 6}\frac{-1}{2(x-2)} \\
+		&=\frac{-1}{2(6-2)}= \frac{-1}{2(4)}=\frac{-1}{8}\\
+			\end{align*}
+	\end{explanation}
+	
+	
+	%part f		
+	\item  $ \lim_{x \to 1} \frac{\sqrt{5x-2} - \sqrt{3}}{x-1} $
+\begin{explanation}
+	\begin{align*}
+	\text{Form:} \ZeroOverZero\\
+	\lim_{x \to 1} \frac{\sqrt{5x-2} - \sqrt{3}}{x-1} &= \lim_{x \to 1} \frac{\sqrt{5x-2} - \sqrt{3}}{x-1} \cdot \frac{\sqrt{5x-2} + \sqrt{3}}{\sqrt{5x-2} + \sqrt{3}} \\
+	&= \lim_{x \to 1} \frac{(5x-2)-3}{(x-1)(\sqrt{5x-2} + \sqrt{3})} \\
+	&= \lim_{x \to 1} \frac{5(x-1)}{(x-1)(\sqrt{5x-2} + \sqrt{3})} \\
+	&= \lim_{x \to 1} \frac{5}{\sqrt{5x-2} + \sqrt{3}} \\
+	&=   \frac{5}{\sqrt{5(1)-2} + \sqrt{3}} \\
+	&= \frac{5}{2 \sqrt{3}} 
+	\end{align*}
+	\end{explanation}
+	\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

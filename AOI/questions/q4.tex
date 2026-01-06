@@ -1,0 +1,20 @@
+% Extracted from applicationsOfIntegrals.tex, problem #4
+\begin{problem}
+	A cup of coffee has temperature $20 + 75e^{-.02t}$ degrees (Celsius) $t$ minutes after being poured into a cup.  
+      What is the average temperature of the coffee during the first half hour?
+		\WkstHop
+      \begin{freeResponse}
+        Let $T(t) := 20 + 75e^{-.02t}$.  We want the average value of $T$ on $[0,30]$.
+        \begin{align*}
+          T_{\text{avg}} &= \frac{1}{30-0} \int_0^{30} \left( 20 + 75e^{-.02t} \right) \d t  \\
+                         &= \frac{1}{30} \eval{20t - \frac{75}{.02} e^{-.02t}}_0^{30}  \\
+                         &= \frac{1}{30} \eval{20t - 3750 e^{-.02t}}_0^{30}  \\
+                         &= \frac{1}{30} \left[ \left( 20(30) - 3750e^{-0.6} \right) - (0 - 3750) \right]  \\
+                         &= \frac{1}{30} \left( 4350 - 3750e^{-0.6} \right)  \\
+                         &= 145 - 125e^{-0.6} 
+        \end{align*}
+        So the average temperature of the coffee during the first half hour is $145 - 125e^{-0.6} \approx 76.4$ degrees Celsius.
+      \end{freeResponse}
+    
+
+\end{problem}

@@ -1,0 +1,93 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 7]{Problem 7}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from higherOrderDerivativesAndGraphs.tex, problem #7
+\begin{problem}
+John is walking along a straight path.  His position at the time $t>0$ is given by $s=f(t)$.  He starts at $t=0$ from his house ($f(0)=0$) and the graph of $f$ is given below.
+
+
+	\begin{image}
+	\includegraphics[scale=.4]{Figure13.png}
+	\end{image}
+
+	\begin{image}
+	\includegraphics{Figure2a.png}
+	\end{image}
+	
+	\begin{enumerate}
+	
+	%part a
+	\item  Describe the motion of John as precisely as you can.
+\begin{explanation}
+		Let us assume that $f(t)$ gives the position of John from his house at time $t$.  If $f(t) < 0$, then John is west of his house;  if $f(t) > 0$, then John is east of his house; if $f(t)=0$, then John is in front of his house.  
+		
+		For the first hour, that is for $0 \leq t \leq 1$ John walks east away from his house.
+		
+		\begin{image}
+		\includegraphics[trim= 140 570 290 200]{Figure3.pdf}
+		\end{image}
+	
+		For the second hour, that is, for $1 \leq t \leq 2$, John turns around and starts walking back west.  However, he does not walk all the way back to his house.
+		
+		\begin{image}
+		\includegraphics[trim= 140 570 290 200]{Figure4.pdf}
+		\end{image}
+		
+		For the third hour, that is, for $2\le t\le 3$, John realizes he needs to pick up an apple from the store, which is way east of his house, for Elaine.  So he turns around again and walks east to the store.
+		
+		\begin{image}
+		\includegraphics[trim= 140 570 290 200]{Figure5.pdf}
+		\end{image}
+		
+		For the fourth hour, that is, for $t \ge 3$, John needs to drop the apple off at Elaine's house, which is west of his house.  He turns west and walks past his house until he makes it to Elaine's house.
+		
+		\begin{image}
+		\includegraphics[trim= 140 540 290 200]{Figure6.pdf}
+		\end{image}
+
+		\end{explanation}
+		
+		
+		
+	%part b
+	\item  When is John's velocity zero?  What is happening to John at those times? 
+\begin{explanation}
+		John's velocity is zero at times $t=0,t=1,t=2$, and $t=3$ (the times where the slopes of the tangent lines are zero). At these times, John changes direction since the sign of the slope of the tangent line to the graph of $f$ changes then.
+		\end{explanation}
+		
+		
+		
+	%part c
+	\item  When is John moving in the positive direction?  When is John the furthest in the positive direction and the furthest in the negative direction?
+\begin{explanation}
+		John is moving in the positive direction (in this story, east) during times in the region $(0,1) \cup (2,3)$.  John is furthest in the positive direction at time $t=3$ and furthest in the negative direction at (approximately) time $t=3.5$.
+		\end{explanation}
+		
+		
+		
+	%part d
+	\item  When is John's velocity increasing?  And when is it decreasing?  When is John going at maximum velocity?
+\begin{explanation}
+		John's velocity is increasing on the time intervals $(0,0.3),(1.5,2.5)$.  John's velocity is decreasing on the time intervals $(0.3, 1.5),(2.5,3.5)$.  John is moving the fastest at time $t = 3.5$, but that maximizes his speed, not his velocity, because he is moving in the negative direction at that time.  It appears that he maximizes his velocity at about $t=2.5$.  
+		\end{explanation}
+		
+		
+		
+	\end{enumerate}
+			
+			
+	
+\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+\textbf{Some notes on notation for finding limits:}
+\begin{enumerate}
+	\item {\bf The first step in evaluating any limit is to find the form.} This is true, even if the question does not specifically ask for the form.
+
+	\item To find the form of $\lim_{x \to a}\dfrac{f(x)}{g(x)}$, take the limits of the numerator and denominator SEPARATELY. Do not just ``plug in $x=a$''. ``Plugging in'' can not occur until after the function is noticed as continuous.
+	
+	\item When writing a form of a limit, we NEVER write $\lim_{x \to a}\dfrac{f(x)}{g(x)}=\frac{0}{0}$.  It is the $=$ that makes this a mathematically incorrect statement.  Instead, write $\lim_{x \to a}\dfrac{f(x)}{g(x)}$ is of the form $\frac{0}{0}$. 
+
+
+
+	\item When evaluating limits, do NOT drop the $\lim_{x \to a}$ until you have evaluated the limit.  For example, the following is INCORRECT:
+	\begin{center}
+		$\lim_{x \to 2}\frac{2x^2-4x}{x-2}=\frac{2x(x-2)}{x-2}=2x=4$\\	
+	\end{center}
+
+	Instead, we write: 
+	\begin{center}
+		$\lim_{x \to 2}\frac{2x^2-4x}{x-2}=\lim_{x \to 2}\frac{2x(x-2)}{x-2}=\lim_{x \to 2}2x=4$\\	
+	\end{center}
+
+\end{enumerate}
+
+
+
+
+\end{document}

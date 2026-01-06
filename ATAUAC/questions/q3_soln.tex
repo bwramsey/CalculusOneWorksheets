@@ -1,0 +1,67 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from approximatingTheAreaUnderACurve.tex, problem #3
+\begin{problem}
+The graph of the function $f(x)=x^2$ is given in the figure.   
+      \begin{image}
+      \includegraphics[scale=0.4]{figureR001.png}
+      \end{image}
+        Will a right Riemann sum approximation, for any value of $n$, be an underestimate or overestimate?
+        \begin{explanation}
+        	Since the function $f$ is positive and increasing on this interval, the right Riemann sum will always give an overestimate of the actual area.
+        \end{explanation}
+Approximate the shaded area using a right Riemann sum with $n=1,2,4$ , and $8$ rectangles, as illustrated in the figure below.
+        \begin{image}
+      \includegraphics[scale=0.5]{figureR002.png}
+      \end{image}
+
+  
+\begin{enumerate}
+\item Approximate the shaded area using a right Riemann sum with $n=1$ rectangles.
+
+\begin{explanation}
+ $\Delta x=\frac{2}{1}=2$\\
+ $ x_1^*=x_1=2$\\[1em]
+ $A\approx f(2)\Delta x=4(2)=8$
+\end{explanation}	
+\item Approximate the shaded area using a right Riemann sum with $n=2$ rectangles.
+\begin{explanation}
+ $\Delta x=\frac{2}{2}=1$\\
+ $ x_k^*=x_k=k\Delta x=k(1)$, for $k=1,2$\\
+ $A\approx \sum_{k=1}^{2}  f ( x_k^* ) \Delta x =f(1)\Delta x+ f(2)\Delta x=1(1)+4(1)=5$
+\end{explanation}
+\item Approximate the shaded area using a right Riemann sum with $n=4$ rectangles.
+\begin{explanation}
+ $\Delta x=\frac{2}{4}=\frac{1}{2}$\\
+  $ x_k^*=x_k=k\Delta x=k\left(\frac{1}{2}\right)=\frac{k}{2}$, for $k=1,2,3,4$\\
+
+ $A\approx \sum_{k=1}^{4}  f ( x_k^* ) \Delta x =f\left(\frac{1}{2}\right)\Delta x+ f(1)\Delta x+f\left(\frac{3}{2}\right)+ f(2)\Delta x=\Delta x\left(f\left(\frac{1}{2}\right)+f(1)+f\left(\frac{3}{2}\right)+f(2)\right)$\\
+ $A\approx \frac{1}{2}\left(\frac{1}{4}+1+\frac{9}{4}+4\right)=\frac{5}{2}+5=\frac{15}{2}$\\
+
+\end{explanation}
+\item Approximate the shaded area using a right Riemann sum with $n=8$ rectangles.
+\begin{explanation}
+ $\Delta x=\frac{2}{8}=\frac{1}{4}$\\
+  $ x_k^*=x_k=k\Delta x=k\left(\frac{1}{4}\right)=\frac{k}{4}$, for $k=1,...,8$\\
+
+ $A\approx \sum_{k=1}^{8}  f ( x_k^* ) \Delta x = \Delta x\cdot\sum_{k=1}^{8}  f ( x_k^* )=\frac{1}{4}\cdot\sum_{k=1}^{8} f \left( \frac{k}{4} \right)=\frac{1}{4}\cdot\sum_{k=1}^{8}  \left( \frac{k}{4} \right)^2= \frac{1}{4}\cdot\sum_{k=1}^{8}  \frac{k^2}{16} = \frac{1}{64}\cdot\sum_{k=1}^{8}k^2 $ \\[1em]
+Recall: $\sum_{k=1}^{n} k^2 =\frac{n(n+1)(2n+1)}{6}$
+Therefore\\
+ $A\approx \frac{1}{64}\cdot\sum_{k=1}^{8}k^2 = \frac{1}{64}\cdot\frac{8(9)(17)}{6}= \frac{1}{8}\cdot\frac{3(17)}{2}=\frac{51}{16}$ 
+\end{explanation}
+\end{enumerate}	
+\end{problem}
+
+
+
+\end{document}

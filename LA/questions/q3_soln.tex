@@ -1,0 +1,35 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from linearApproximation.tex, problem #3
+\begin{problem}
+	Estimate the value of $\sin\left(\dfrac{178\pi}{180}\right)$. Indicate whether your value is an overestimate or an underestimate. 
+	\begin{explanation}
+		Set $f(x) = \sin(x)$. The problem is asking us to use linear approximation to estimate the value of $f\left( \dfrac{178\pi}{180}\right)$.
+		Since $\dfrac{178\pi}{180}$ is very close to $\pi$, we will use $L$ as the linearization of $\sin(x)$ at $a=\pi$.
+		
+		$f'(x) = \cos(x)$ so $f'(a) = \cos(\pi) = -1$.
+		$f(a) = \sin(\pi) = 0$.
+		The linear approximation is given by $L(x) = -(x-\pi) + 0$.		
+		\begin{align*}
+			\sin\left(\dfrac{178\pi}{180}\right) &\approx L\left(\dfrac{178\pi}{180}\right) \\
+				&= - \left(\dfrac{178\pi}{180} - \pi \right)\\
+				&= \dfrac{\pi}{90}.
+		\end{align*}
+
+		$f''(x) = -\sin(x)$. That means $f''(\pi) = 0$, BUT $f''$ is negative for all $x$ in the interval $\left( \dfrac{178 \pi}{180}, \pi\right)$. The graph of $f$ is concave down across this interval, so the estimate is an overestimate. 		
+	\end{explanation}
+\end{problem}
+
+
+
+\end{document}

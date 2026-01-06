@@ -1,0 +1,68 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 8]{Problem 8}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #8
+\begin{problem}
+The function $f$ is  defined by $\displaystyle f(x) = \frac{\sqrt{2x^2 + 1}}{3x-5}$.
+  \begin{enumerate}
+    \item
+      Find all vertical asymptotes of $f$.  \textbf{EXPLAIN} and ustify your answer by using appropriate limits.
+\begin{explanation}
+        Candidate for vertical asymptotes: $3x - 5 = 0 \implies x = 5/3$.
+
+        Test of candidate $x = 5/3$:
+        \begin{align*}
+          &\lim_{x \to \frac{5}{3}^+} \frac{\sqrt{2x^2 + 1}}{3x-5} = \infty\\
+           \end{align*}
+	Note: the limit is of the form $\frac{\#}{0}$, the numerator positive, and the denominator\\
+	 $3x-5=3(x-5/3)$ is positive, since $x>5/3$.  \\
+	
+	The line $x = \frac{5}{3}$ is a vertical asymptote of $f$ since $\lim_{x\to \frac{5}{3}^+} f(x) = \infty$.
+       
+
+       \end{explanation}
+
+    \item
+      Find all horizontal asymptotes of $f$.   \textbf{EXPLAIN} and justify your answer by using appropriate limits..
+ 
+\begin{explanation}
+        Check End Behavior as $x \to \infty$:\\\\
+        $\lim_{x \to \infty} \frac{\sqrt{2x^2 + 1}}{3x-5}$ is of the form: $\frac{\infty}{\infty}$
+        \begin{align*}
+                   \lim_{x \to \infty} \frac{\sqrt{2x^2 + 1}}{3x-5}
+          &= \lim_{x \to \infty} \frac{\sqrt{2x^2 + 1}}{3x-5} \cdot \frac{\frac{1}{x}}{\frac{1}{x}} \\
+          &= \lim_{x \to \infty}  \frac{\frac{\sqrt{2x^2 + 1}}{\sqrt{x^2}}}{3 - \frac{5}{x}}\\
+          &= \lim_{x \to \infty}  \frac{\sqrt{2 + \frac{1}{x^2}}}{3 - \frac{5}{x}} \\
+          &= \frac{\sqrt{2}}{3}
+        \end{align*}
+         The line $y = \frac{\sqrt{2}}{3}$ is a horizontal asymptote of $f$ since $\lim_{x\to \infty} f(x) = \frac{\sqrt{2}}{3}$.
+
+
+        Check End Behavior as $x \to -\infty$:\\\\
+         $\lim_{x \to -\infty} \frac{\sqrt{2x^2 + 1}}{3x-5}$ is of the form: $\frac{\infty}{\infty}$
+        \begin{align*}
+          \lim_{x \to -\infty} \frac{\sqrt{2x^2 + 1}}{3x-5}
+          &= \lim_{x \to -\infty} \frac{\sqrt{2x^2 + 1}}{3x-5} \cdot \frac{\frac{1}{-x}}{\frac{1}{-x}} \\
+          &= \lim_{x \to -\infty}  \frac{\frac{\sqrt{2x^2 + 1}}{\sqrt{x^2}}}{-3 + \frac{5}{x}}\\
+          &= \lim_{x \to -\infty}  \frac{\sqrt{2 + \frac{1}{x^2}}}{-3 + \frac{5}{x}} \\
+          &= \frac{-\sqrt{2}}{3} \\
+            \end{align*}
+         The line $y = -\frac{\sqrt{2}}{3}$ is a horizontal asymptote of $f$ since $\lim_{x\to -\infty} f(x) = -\frac{\sqrt{2}}{3}$.
+      
+	
+      \end{explanation}
+ \end{enumerate}
+ \end{problem}
+
+
+
+\end{document}

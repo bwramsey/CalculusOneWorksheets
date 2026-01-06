@@ -1,0 +1,69 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 8]{Problem 8}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from higherOrderDerivativesAndGraphs.tex, problem #8
+\begin{problem}
+Suppose that a stone is thrown vertically upward from a cliff on Mars with an initial velocity of $24$ ft/s from a height of $192$ ft.  The height $s$ of the stone above the ground after $t$ seconds is given by $s(t) = -6t^2 + 24t + 192$.
+
+	\begin{enumerate}
+	
+	%part a
+	\item  Determine the velocity and acceleration of the stone after $t$ seconds.
+\begin{explanation}
+			The velocity $v(t)$ is:  $v(t) = s'(t) = -12t + 24$.
+			
+			The acceleration $a(t)$ is:  $a(t) = v'(t) = s''(t) = -12$.
+			\end{explanation}
+			
+			
+			
+	%part b
+	\item  What is the greatest height of the stone and when does it occur?  What are the velocity and acceleration at that time?
+\begin{explanation}
+			Since the function $s(t)$ is differentiable everywhere (it is a polynomial), the maximum height must occur at a time when the velocity is $0$.  So we solve:
+			\begin{align*}
+			v(t) = -12t+24 &= 0 \\
+			12t &= 24 \\
+			t &= 2
+			\end{align*}
+			
+			It is easy to check that $v(t) > 0$ for $0 \leq t < 2$ and $v(t) < 0$ for $2 < t$, and so the greatest height of the stone really does occur at time $t=2$.  The greatest height is $s(2) = -24 + 48 + 192 = 216$ ft.  For the second question we have already seen that $v(2) = 0$ ft/sec, and we have a constant acceleration of $-12$ ft/sec$^2$.  So $a(2) = -12$ ft/sec$^2$.
+			\end{explanation}
+			
+			
+			
+	%part c
+	\item  When does the stone hit the ground?  What are the velocity and acceleration at that time?
+\begin{explanation}
+			The stone hits the ground when $s(t) = 0$.  So we solve:
+			\begin{align*}
+			s(t) = -6t^2 + 24t + 192 &= 0 \\
+			-6(t^2 - 4t - 32) &= 0 \\
+			-6(t-8)(t+4) &= 0 
+			\end{align*}
+			
+			Since we are only considering $t \geq 0$, we must have $t=8$.  At this instant, $v(8) = -96 + 24 = -72$ ft/sec and $a(8) = -12$ ft/sec$^2$.  
+			
+			\end{explanation}
+			
+			
+			
+	\end{enumerate}
+			
+			
+			
+		
+\end{problem}
+
+
+
+\end{document}

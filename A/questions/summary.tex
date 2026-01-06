@@ -1,0 +1,42 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+
+A function $F$ is called an \dfn{antiderivative} of $f$ on an
+interval  $I$ if  $F'(x) = f(x)$, for all $x$ in  $I$.\\[0.8em]
+            
+If $F$ is an antiderivative of $f$ on an interval $I$, then the function $f$ has a whole \textbf{family of antiderivatives}.\\[0.8em] If a function $G$ is an antiderivative of $f$ on $I$, then $G(x)=F(x)+C$, for all $x$ in $I$, for some constant $C$.\\[0.8em]
+The family of of \emph{all} antiderivatives of $f$ is denoted by $\int f(x) \d x$ and called \textbf{ indefinite integral of $f$}. Therefore, if $F$ is an antiderivative of $f$, \hspace{0.3in} $\int f(x) \d x= F(x)+C.$\\\\[0.8em]
+\vspace*{\stretch{1}}	
+
+\textbf{Basic Indefinite Integrals}
+
+\begin{multicols}{2}
+\begin{itemize}
+	\item $\displaystyle \int k \d x= k x+C$\\
+	\item $\displaystyle \int \frac{1}{x} \d x= \ln|x|+C$\\
+	\item $\displaystyle \int x^n \d x= \frac{x^{n+1}}{n+1}+C\qquad(n\ne-1)$\\
+	\item $\displaystyle \int e^x \d x= e^x + C$\\
+	\item $\displaystyle \int a^x \d x= \frac{a^x}{\ln(a)}+C$\\
+	\item $\displaystyle \int \cos(x) \d x = \sin(x) + C$\\
+	\item $\displaystyle \int \sin(x) \d x = -\cos(x) + C$  \\
+	\item $\displaystyle \int \sec^2(x) \d x = \tan(x) + C$\\
+	\item $\displaystyle \int \csc^2(x) \d x = -\cot(x) + C$\\
+	\item $\displaystyle \int \sec(x)\tan(x) \d x = \sec(x) + C$\\
+	\item $\displaystyle \int \csc(x)\cot(x) \d x = -\csc(x) + C$\\
+	\item $\displaystyle \int \frac{1}{x^2+1}\d x = \arctan{(x)} + C$\\
+	\item $\displaystyle \int \frac{1}{\sqrt{1-x^2}}\d x= \arcsin{(x)}+C$\\
+\end{itemize}
+\end{multicols}
+
+
+
+\end{document}

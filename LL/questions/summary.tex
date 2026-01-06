@@ -1,0 +1,77 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+ \subsection{The Limit Laws:} 
+ 
+  \begin{description}
+    \item [Continuity] 
+  
+ 
+    If a function $f$ is \textbf{continuous at $a$}, then 
+     \[
+      \lim_{x \to a} f(x)  = f(a)
+  \]
+     \end{description}
+
+\begin{description}
+    \item [Composition Limit Law] 
+  
+ 
+    If a function $f$ is \textbf{continuous at $b= \lim_{x \to a} g(x)$}, then 
+     \[
+      \lim_{x \to a} f(g(x))  = f\Bigl( \lim_{x \to a}g(x)\Bigr)
+  \]
+     \end{description}
+
+  For the limit laws below, assume $\lim_{x \to a} f(x)$ and $\lim_{x \to a} g(x)$ both exist. The following properties hold.
+    \begin{description}
+      \item[Sum Limit Law]
+        \[
+          \lim_{x \to a} \bigl(f(x) + g(x)\bigr) = \lim_{x \to a} f(x) + \lim_{x \to a} g(x)
+        \]
+
+      \item[Difference Limit Law]
+        \[
+          \lim_{x \to a} \bigl(f(x) - g(x)\bigr) = \lim_{x \to a} f(x) - \lim_{x \to a} g(x)
+        \]
+
+    %  \item[Constant multiple]
+      %  \[
+        %  \lim_{x \to a} \left[c \cdot f(x) \right] = c \cdot \lim_{x \to a} f(x)
+       % \]
+
+      \item[Product Limit Law]
+        \[
+          \lim_{x \to a} \bigl(f(x) \cdot g(x)\bigr) = \bigl(\lim_{x \to a} f(x)\bigr) \cdot \bigl(\lim_{x \to a} g(x) \bigr)
+        \]
+
+      \item[Quotient Limit Law]
+        \[
+          \lim_{x \to a} \left(\frac{f(x)}{g(x)}\right) = \frac{\lim_{x \to a} f(x)}{\lim_{x \to a} g(x)},\ \text{provided} \lim_{x \to a} g(x) \ne 0
+        \]   
+
+     % \item[ Power]
+       % \[
+        %  \lim_{x \to a} \bigl(f(x)\bigr)^n = \bigl(\lim_{x \to a} f(x)\bigr)^n
+       % \]
+
+     % \item[Fractional power]
+      %  \[
+      %    \lim_{x \to a} \bigl(f(x)\bigr)^{n/m} = \bigl(\lim_{x \to a} f(x)\bigr)^{n/m},
+       % \]
+      %  provided $f(x) \ge 0$, for $x$ near $a$, if $m$ is even and $n/m$ is reduced to lowest terms
+    \end{description}
+Limit laws also hold for one-sided limits.
+
+
+
+
+\end{document}

@@ -1,0 +1,42 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 3]{Problem 3}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from FTC.tex, problem #3
+\begin{problem}
+  The \underline{limit of Riemann sums} for a function $f$ on the interval $[1, 5]$ is given by
+  \[
+    \lim_{n \to\infty} \sum_{k = 1}^n \left(2x_k^* + \frac{1}{x_k^*} \right) \Delta x\mbox{ on $[1, 5]$.}
+  \]
+  \begin{enumerate}
+    \item
+      Identify $f$ and express the limit as a \underline{definite integral}.
+      \begin{explanation}
+       
+        $$f(x)=2x+\frac{1}{x}$$\\
+        $$\int_1^5 \left( 2x + \frac{1}{x} \right) \d x = \lim_{n \to \infty} \sum_{k = 1}^n \left(2x_k^* + \frac{1}{x_k^*} \right) \Delta x$$
+      
+      \end{explanation}
+\item
+    Evaluate the \underline{limit of Riemann sums}.
+    \begin{explanation}
+      \[
+        \int_1^5 \left( 2x + \frac{1}{x} \right) \d x = \left(x^2 + \ln|x|\right) \bigm|_1^5 = (25 + \ln(5)) - (1 +\ln(1)) = 24 +\ln(5)
+      \]
+    \end{explanation}
+[4]
+  \end{enumerate}
+  
+\end{problem}
+
+
+
+\end{document}

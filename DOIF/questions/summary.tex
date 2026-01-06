@@ -1,0 +1,47 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+%summary in here
+
+	\begin{multicols}{2}
+		\begin{itemize}
+
+			\item $\displaystyle \ddx\left[ \sin^{-1}(x) \right] = \dfrac{1}{\sqrt{1-x^2}}$
+
+			\item $\displaystyle \ddx\left[ \tan^{-1}(x) \right] = \dfrac{1}{1+x^2}$
+			
+			\item $\displaystyle \ddx\left[ \sec^{-1}(x) \right] = \dfrac{1}{|x|\sqrt{x^2-1}}$ for $|x| \geq 1$
+			
+			\item $\displaystyle \ddx\left[ \cos^{-1}(x) \right] = \dfrac{-1}{\sqrt{1-x^2}}$
+
+			\item $\displaystyle \ddx\left[ \cot^{-1}(x) \right] = \dfrac{-1}{1+x^2}$
+			
+			\item $\displaystyle \ddx\left[ \csc^{-1}(x) \right] = \dfrac{-1}{|x|\sqrt{x^2-1}}$ for $|x| \geq 1$
+
+		\end{itemize}
+	\end{multicols}
+
+
+	\begin{theorem}[The Inverse Function Theorem]
+		If $f$ is a differentiable function that is one-to-one near $a$ and $f'(a) \neq 0$, then:
+		\begin{enumerate}
+			\item[(a)] $f^{-1}(x)$ is \textbf{defined} for $x$ near $b = f(a)$,
+
+			\item[(b)] $f^{-1}(x)$ is \textbf{differentiable} for $x$ near $b = f(a)$,
+
+			\item[(c)] last, but not least: $\displaystyle \eval{ \ddx f^{-1}(x) }_{x=b} = \dfrac{1}{f'(a)}$ where $b = f(a)$.
+
+		\end{enumerate}
+	\end{theorem}
+
+
+
+
+\end{document}

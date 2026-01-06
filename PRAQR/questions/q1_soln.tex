@@ -1,0 +1,40 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 1]{Problem 1}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from productRuleAndQuotientRule.tex, problem #1
+\begin{problem} Differentiate the functions using product or quotient rule.
+\begin{enumerate}
+	\item $h(u)=7ue^u$
+\begin{explanation}
+ Applying the power rule:
+  \begin{align*}
+    h(u) &=7ue^u\\
+    &\implies h'(u) = (7ue^u) '\\
+    &= 7\cdot e^u+7u \cdot e^u
+  \end{align*}
+  \end{explanation}
+	
+	\item $s(t)=\frac{\sqrt{t}}{e^t}$
+\begin{explanation}
+ Applying the quotient rule:
+  \begin{align*}
+    s(t)&=\frac{\sqrt{t}}{e^t}\\
+    &\implies s'(t) = \left(\frac{\sqrt{t}}{e^t}\right)' \\
+    &= \frac{\frac{1}{2}t^{-1/2} \cdot e^t -  \sqrt{t}\cdot e^t}{e^{2t}}
+  \end{align*}
+  \end{explanation}
+\end{enumerate}
+\end{problem}
+
+
+
+\end{document}

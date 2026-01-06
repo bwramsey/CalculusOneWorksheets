@@ -1,0 +1,38 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 6]{Problem 6}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from reviewOfFamousFunctions.tex, problem #6
+\begin{problem}
+ Without using a calculator, determine if the statement
+  \[
+    \cos^{-1}\bigl(\cos(7\pi/6)\bigr) = 7\pi/6
+  \]
+  is true or false.
+\begin{explanation}
+    This statement is \textbf{false}: the correct statement is $\cos^{-1}\bigl(\cos(7\pi/6)\bigr) = 5\pi/6$. (Why?)
+
+    \textbf{Spoiler Alert}: the cosine function is \emph{not} invertible since its graph fails the horizontal line test.
+    \begin{image}
+      \includegraphics[scale = 0.8]{figure12l.png}
+    \end{image}
+    To produce the inverse cosine we must first restrict the domain of cosine, to the interval $[0, \pi]$, to produce an invertible function:
+    \begin{image}
+      \includegraphics[scale = 0.8]{figure23l.png}
+    \end{image}
+    So, the range of $\cos^{-1}$ is $[0, \pi]$.
+    Since $7\pi/6$ is not in this range, $7\pi/6$ is \emph{never} a possible output of $\cos^{-1}$.
+  \end{explanation}
+\end{problem}
+
+
+
+\end{document}

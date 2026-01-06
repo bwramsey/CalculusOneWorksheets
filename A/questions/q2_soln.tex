@@ -1,0 +1,56 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+
+\title[Problem 2]{Problem 2}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+% Extracted from antiderivatives.tex, problem #2
+\begin{problem}
+Determine the following indefinite integrals.
+\begin{enumerate}
+	\item $$\int \left(\sec^2{(x)}+5\right)\d x$$\\
+\begin{explanation}
+		$$\int \left(\sec^2{(x)}+5\right)\d x=\tan{(x)}+5x +C$$\\
+		\end{explanation}
+	\item $$\int \left(\sec^2{(x)}-\sec{(x)}\tan{(x)}\right)\d x$$\\
+\begin{explanation}
+		We apply the Sum Rule.\\
+		 $$\int \left(\sec^2{(x)}-\sec{(x)}\tan{(x)}\right)\d x=\int \sec^2{(x)}\d x-\int\sec{(x)}\tan{(x)}\d x=\tan{(x)}-\sec{(x)}+C.$$\\
+		\end{explanation}
+	\item $$\int \frac{x+3x^5}{x^3}\d x$$\\
+\begin{explanation}
+		First, we express the function in a more convenient way.\\
+		 $$\int \frac{x+3x^5}{x^3}\d x=\int \left(\frac{x}{x^3}+\frac{3x^5}{x^3}\right)\d x=\int \left(x^{-2}+3x^2\right)\d x.$$\\
+		Now we apply the Sum Rule and the Constant Multiple Rule.\\
+		 $$\int \frac{x+3x^5}{x^3}\d x=\int \left(x^{-2}+3x^2\right)\d x=\int x^{-2}\d x+3\int x^{2} \d x.$$\\
+		  Now we determine each integral.\\
+		 $$\int \frac{x+3x^5}{x^3}\d x=\int x^{-2}\d x+3\int x^{2} \d x=-\frac{1}{x}+x^3+C.$$\\
+		\end{explanation}
+	\item $$\int \frac{1+2x}{1+x^2}\d x$$\\ (HINT: Think about the derivative of $\displaystyle \ln\left( f(x) \right)$.
+\begin{explanation}
+		First, we express the function in a more convenient way.\\
+		 $$\int \frac{1+2x}{1+x^2}\d x=\int \left(\frac{1}{1+x^2}+\frac{2x}{1+x^2}\right)\d x.$$\\
+		Now we apply the Sum Rule.\\
+		 $$\int \frac{1+2x}{1+x^2}\d x=\int\frac{1}{1+x^2}\d x+\int\frac{2x}{1+x^2}\d x.$$\\
+		 Now we determine each integral.\\
+		  $$\int \frac{1+2x}{1+x^2}\d x=\int\frac{1}{1+x^2}\d x+\int\frac{2x}{1+x^2}\d x=\arctan{(x)}+\ln{(1+x^2)}+C.$$\\
+		\end{explanation}
+	\item $$\int \frac{2+x^2}{1+x^2}\d x$$ 
+\begin{explanation}
+		First, we express the function in a more convenient way.\\
+		 $$\int \frac{2+x^2}{1+x^2}\d x=\int \frac{1+1+x^2}{1+x^2}\d x=\int \left(\frac{1}{1+x^2}+\frac{1+x^2}{1+x^2}\right)\d x=\int \left(\frac{1}{1+x^2}+1\right)\d x.$$
+		Now we apply the Sum Rule and the Constant Multiple Rule.\\
+		$$\int \frac{2+x^2}{1+x^2}\d x=\int \frac{1}{1+x^2}\d x+\int\d x=\arctan{(x)}+x+C.$$
+		\end{explanation}
+	\end{enumerate}
+	\end{problem}
+
+
+
+\end{document}

@@ -1,0 +1,37 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+
+\textbf{Definition} \\
+If function $f$ is continuous on interval $[a,b]$ then
+\begin{center}
+ {\large{$ \int_a^b f(x)\d x =  \lim_{n \to \infty} \sum_{k = 1}^n f(x_k^*) \Delta x$}}\\[2em]
+ \end{center}
+\textbf{Note 1: } When $f(x)\ge0$, on the interval $[a,b]$, the definite integral, $ \int_a^b f(x)\d x$, gives \\the \textbf{area} of the region between the graph of $f$ and the interval $[a,b]$ on the $x-$axis. \\[1em]
+\textbf{Note 2: } When $f(x)<0$, on some interval in $[a,b]$, then the definite integral, $ \int_a^b f(x)\d x$,\\ gives the \textbf{net area} of the region between the graph of $f$ and the interval $[a,b]$ on the $x-$axis. \\[2em]
+\textbf{Properties of Definite Integrals} \\[1em]
+(a) $ \int_a^a f(x)\d x =0$\\[0.8em]
+(b) $ \int_a^c f(x)\d x =\int_a^b f(x)\d x +  \int_b^c f(x)\d x$\\[0.8em]
+(c) $ \int_a^b f(x)\d x = - \int_b^a f(x)\d x $\\[0.8em]
+(d) $ \int_a^b k\cdot f(x)\d x = k\cdot \int_a^b f(x)\d x $\\[0.8em]
+(e) $ \int_a^b ( f(x)+g(x))\d x = \int_a^b f(x)\d x +  \int_a^b g(x)\d x$; 
+      $ \int_a^b ( f(x)-g(x))\d x = \int_a^b f(x)\d x -  \int_a^b g(x)\d x$\\[2em]
+      \textbf{Note 3: } If the function $f$ is \textbf{odd}, i.e, if $f(-x)=-f(x)$, for all $x$ in $[-a,a]$, then
+      \begin{center}
+      {\large{ $ \int_{-a}^a f(x)\d x =0$}}
+        \end{center}
+           \textbf{Note 4: } If the function $f$ is \textbf{even}, i.e, if $f(-x)=f(x)$, for all $x$ in $[-a,a]$, then
+      \begin{center}
+      {\large{ $ \int_{-a}^a f(x)\d x =2\cdot \int_{0}^a f(x)\d x$}}
+        \end{center}
+
+
+
+\end{document}

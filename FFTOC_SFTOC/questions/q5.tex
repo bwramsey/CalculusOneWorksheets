@@ -1,0 +1,66 @@
+% Extracted from FTC.tex, problem #5
+\begin{problem}
+  Find the derivative of the following functions:
+  \begin{enumerate}
+    
+%part a
+  \item  $F(x) = \int_{\sqrt{x}}^1 \frac{t^2}{2 + 3t^4} \d t$
+    \begin{freeResponse}
+      First notice that
+      $$ F(x) = \int_{\sqrt{x}}^1 \frac{t^2}{2 + 3t^4} \d t = - \int^{\sqrt{x}}_1 \frac{t^2}{2 + 3t^4} \d t .$$
+      So we can apply the First Fundamental Theorem of Calculus, along with the chain rule, to compute:
+      \begin{align*}
+        F^\prime (x) &= \ddx \left( - \int^{\sqrt{x}}_1 \frac{t^2}{2 + 3t^4} \d t \right)  \\
+       \text{we introduce the variable:}\ u=\sqrt x \implies F'(x)&=\frac{dF}{du}\frac{du}{dx}\\ 
+                     &= - \frac{u^2}{2 + 3(u)^4} \cdot \ddx(\sqrt{x})  \\
+                     &= - \frac{u^2}{2+3u^4} \cdot \frac{1}{2 \sqrt{x}}  \\
+            \text{substituting}\ u=\sqrt x \implies          F^\prime (x) &= - \frac{x}{2+3x^2} \cdot \frac{1}{2 \sqrt{x}}  \\
+            		&= - \frac{\sqrt{x}}{2(2+3x^2)}  
+      \end{align*}
+
+    \end{freeResponse}
+    \WkstHop
+    
+    %part b
+  \item  $G(x) = \int_x^{x^3} \sin(7t^2) \d t$
+    \begin{freeResponse}
+      First notice that
+      \begin{align*}
+        G(x) &= \int_x^{x^3} \sin(7t^2) \d t  \\
+             &= \int_x^0 \sin(7t^2) \d t + \int_0^{x^3} \sin(7t^2) \d t  \\
+             &=  - \int^x_0 \sin(7t^2) \d t + \int_0^{x^3} \sin(7t^2) \d t
+      \end{align*}
+      It is worth pointing out that breaking up the integral above at $0$ was arbitrary.  Since $\sin(7t^2)$ is continuous over $(-\infty, \infty)$, we could have chosen any real number in place of $0$.
+      
+      We can now apply the First Fundamental Theorem of Calculus, along with the chain rule, to compute:
+      \begin{align*}
+        G^\prime (x) &= \ddx \left( - \int^x_0 \sin(7t^2) \d t + \int_0^{x^3} \sin(7t^2) \d t \right)  \\
+                     &= \ddx \left( - \int^x_0 \sin(7t^2) \d t \right) + \ddx \left( \int_0^{x^3} \sin(7t^2) \d t \right)  
+        \end{align*}
+        The left integral requires no chain rule on the FFTOC.  $ \ddx \left( - \int^x_0 \sin(7t^2) \d t \right)=-\sin(7x^2)\\$
+        
+        The right integral requires chain rule.  We'll subsitute $u=x^3$.
+        \begin{align*}
+       \ddx \left( \int_0^{x^3} \sin(7t^2) \d t \right) &= \dd{u} \left( \int_0^{u} \sin(7t^2) \d t \right) \dd[u]{x}\\
+                                 &=\sin(7u^2) \cdot \ddx(x^3)\\
+                                 &=\sin(7u^2) \cdot 3x^2\\
+ 	\text{substituting}\ u=x^3  \implies \ddx \left( \int_0^{x^3} \sin(7t^2) \d t \right) &=3x^2 \sin(7x^6)
+           \end{align*}
+           Combining we have: 
+                  $$G^\prime (x) = 3x^2 \sin(7x^6) - \sin(7x^2).$$ \\[2em]
+
+
+	\textbf{An alternative approach} using SFTOC:
+	Call $h(t) = \sin(7t^2)$ and let $H$ be an antiderivative of $h$. By SFTOC, $\int_x^{x^3} \sin(7t^2) \d t = \eval{H(t)}_{t=x}^{x^3}$.
+	Then:
+	\begin{align*}
+		\ddx \left( \int_0^{x^3} \sin(7t^2) \d t \right)  &= \ddx \left( \eval{H(t)}_{t=x}^{x^3} \right)\\
+			&= \ddx \left( H(x^3) - H(x) \right) \\
+			&= H'(x^3) \cdot 3x^2 - H'(x)\\
+			&= h(x^3)\cdot 3x^2 - h(x)\\
+			&= \sin(7x^6) \cdot 3x^2 - \sin(7x^2)
+	\end{align*} 
+    \end{freeResponse}
+    \WkstHop
+  \end{enumerate}
+\end{problem}

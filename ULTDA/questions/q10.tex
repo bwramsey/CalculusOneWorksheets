@@ -1,0 +1,52 @@
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #10
+\begin{problem}
+ For the piecewise function $f$ defined by 
+ 
+	$f(x) =   \left\{ \begin{array}{cl}
+	\sin(x)		 	&	\qquad \text{if }\hspace{0.1in}  x \leq  0					\\ \\
+	\frac{x^{2}}{x^{2}-4}	&	\qquad \text{if } \hspace{0.1in}  0< x< 2 	\\ \\
+	\frac{x^{2}}{x^{2}+4}	&	\qquad \text{if } \hspace{0.1in}  2  \leq x 	\\ \\
+						\end{array} \right.  $
+  \begin{enumerate}
+    \item
+      Find all vertical asymptotes.   \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\WkstHop
+      \begin{freeResponse}
+        Candidates for vertical asymptote: $x^{2}-4 = 0 \implies x= -2$,  $x=2$ (Each piece of $f$ is continuous at all other points).
+
+       Note:  $x = -2$ is not a vertical asymptote, since $f(x)=\sin{(x)}$ near $-2$, so $\lim_{x\to -2} f(x) = \lim_{x\to -2} \sin(x) = \sin(-2)$.
+
+        \[\lim_{x \to 2^-} \frac{x^{2}}{x^{2}-4}=\lim_{x \to 2^-} \frac{x^{2}}{(x-2)(x+2)}= -\infty \]
+        
+	Note: the limit is of the form $ \frac{\#}{0}$, the numerator positive, and the denominator negative.  \\
+
+      The line $x=2$ is a vertical asymptote of $f$ because $\lim_{x\to 2^-} f(x) = -\infty$. This is the only vertical asymptote of $f$.
+     
+
+
+      \end{freeResponse}
+       \item
+      Find all horizontal asymptotes. \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\WkstHop
+      \begin{freeResponse}
+        Check End Behavior as $x \to \infty$:\\\\
+        $\lim_{x \to \infty}\frac{x^{2}}{x^{2}+4}$ is of the form: $\frac{\infty}{\infty}$
+        \begin{align*}
+                   \lim_{x \to \infty} \frac{x^{2}}{x^{2}+4}
+          &= \lim_{x \to \infty} \frac{x^{2}}{x^{2}+4} \cdot \frac{\frac{1}{x^{2}}}{\frac{1}{x^{2}}} \\
+          &= \lim_{x \to \infty}  \frac{1}{1+\frac{4}{x^{2}}}\\
+          &= 1 \\
+        \end{align*}
+The line $y = 1$ is a horizontal asymptote of $f$ since $\lim_{x \to \infty} f(x) = 1$.\\[2em]
+
+        Check End Behavior as $x \to -\infty$:\\\\
+        $\lim_{x \to -\infty}\sin(x)$  does not exist, since the function oscillates.\\[1em]
+        For example, $f(-n\pi)=\sin{(-n\pi)}=0$, while $f(-(2n+1)\frac{\pi}{2})=\sin{\Bigl(-(2n+1)\frac{\pi}{2}\Bigr)}=1$, for all positive integers $n$. 
+       
+There is no  horizontal asymptote as $x \to -\infty$ since $\lim_{x \to -\infty} f(x)$ does not exist.\\[1em]
+	
+      \end{freeResponse}
+
+\end{enumerate}
+    
+\end{problem}

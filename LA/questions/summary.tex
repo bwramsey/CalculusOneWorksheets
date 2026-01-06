@@ -1,0 +1,39 @@
+\documentclass{ximera}
+
+\input{../../preamble.tex}
+
+\title[Summary]{Summary}
+
+\begin{document}
+\begin{abstract} \end{abstract}
+\maketitle
+
+\textbf{Definition} \\
+If a function $f$ is \textbf{differentiable} at $x=a$, then a \textbf{linear approximation to $f$ at $a$} is a function given by\\
+\begin{center}
+{\large{$L_a(x)=f(a)+f'(a)(x-a)$}}
+\end{center}
+\textbf{Note 1: }When the value of $a$ is understood, the subscript is sometimes dropped from the notation. In this case, it is written as just $L(x)$ instead of $L_a(x)$.\\
+\textbf{Note 2: }The graph of $L$ is the line tangent to the graph of $f$ at the point where $x=a$.\\
+\textbf{Note 3: } If $x$ is near $a$, the value $f(x)$ can be approximated by the value of $L(x)$.\\
+\textbf{Note 4: } If the graph of $f$ is concave down \emph{on the interval} between $a$ and  $x$, then the approximation $f(x) \approx L(x)$ is an overestimate. If the graph of $f$ is concave up \emph{on the interval} between $a$ and  $x$, then the approximation $f(x) \approx L(x)$ is an underestimate. (The concavity has to be consistent across the interval, not just at a point.)\\[1em]
+
+
+A \textbf{differential}, $df$ of $f$ at $x$ is given by
+\begin{center}
+{\large{$df=f'(x)dx$}}
+\end{center}
+\textbf{Note 3: } If we consider a point $x$ and if $L$ is the linear approximation of $f$ at $x$, then for  any point $x+dx$ the following holds
+\begin{center}
+{\large{$f(x+dx)\approx L(x+dx)=f(x)+f'(x)dx=f(x)+df$}}
+\end{center}
+\textbf{Note 4: } The \textbf{increment} of $f$, $\Delta f$, is given by
+\begin{center}
+{\large{$\Delta f=f(x+dx)-f(x)\approx L(x+dx)-f(x)=f(x)+f'(x)dx-f(x)=f'(x)dx=df$}}
+\end{center}
+Therefore,{\large{ $\Delta f\approx df$.}}
+
+
+
+
+\end{document}

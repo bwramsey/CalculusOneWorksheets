@@ -1,0 +1,52 @@
+% Extracted from usingLimitsToDetectAsymptotes.tex, problem #11
+\begin{problem}
+
+  For the function $g$ defined by 
+  \[
+    g(t) = \frac{t^2 + 7t + 11}{t-3}
+  \]
+  \begin{enumerate}
+    \item
+      Find all vertical asymptotes.   \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\WkstHop
+      \begin{freeResponse}
+         The function $g$ is a rational function which is continuous on the intervals $(-\infty, 3)$ and $(3, \infty)$. 	
+         The only candidates for a vertical asymptote is $t = 3$, where $g$ is not defined.
+
+        Test of candidate $t = 3$:
+        \begin{align*}
+          &\lim_{t \to 3^+} \frac{t^2 + 7t + 11}{t-3}= \infty \\
+             \end{align*}
+	Note: the limit is of the form $ \frac{\#}{0}$, the numerator positive, and the denominator also positive.  \\
+      The line $t=3$ is a vertical asymptote of $g$ since $\lim_{t\to 3^+} g(t) = \infty$.
+     
+
+
+      \end{freeResponse}
+
+
+    \item
+
+      Find all horizontal asymptotes. \textbf{EXPLAIN} and justify your answer by using appropriate limits.
+\WkstHop
+      \begin{freeResponse}
+	To find the limits, we need to divide the numerator and denominator by the highest power of $t$ in the denominator.
+        \begin{align*} 
+         &\lim_{t \to \infty} \frac{t^2 + 7t + 11}{t-3} = \lim_{t \to \infty} \frac{t + 7 + \frac{11}{t}}{1-\frac{3}{t}} = \infty \\
+            \end{align*}
+	Note:  the last limit is of the form $ \frac{\infty}{\#}$, the numerator positive, the denominator  positive. \\
+
+        Therefore, $g$ has no horizontal asymptotes as $ t \to \infty$.
+     
+
+        \begin{align*} 
+         &\lim_{t \to -\infty} \frac{t^2 + 7t + 11}{t-3} = \lim_{t \to- \infty} \frac{t +7 + \frac{11}{t}}{1-\frac{3}{t}} = -\infty \\
+            \end{align*}
+	Note:  the last limit is of the form $ \frac{\infty}{\#}$, the numerator negative, the denominator positive.  \\
+	
+        Therefore, $g$ has no horizontal asymptotes as $ t \to -\infty$ either.
+     
+
+      \end{freeResponse}
+  \end{enumerate}
+\end{problem}
