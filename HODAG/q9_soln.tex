@@ -30,35 +30,55 @@
 		\begin{explanation}
 			For $f'$ we obtain:
 
-			\begin{tikzpicture} 
-				\tkzTabInit[lgt=2,espcl=1] 
-					{$x$         /1, 
-					$2x$   /1, 
-					$4+x^2$ /1, 
-					$f'(x)$      /1}% 
-					{   , $0$ ,  }% 
-				\tkzTabLine{ , - , t , + ,}
-				\tkzTabLine{ , + , t , + ,}
-				\tkzTabLine{ , - , t , + ,}
-			\end{tikzpicture} 
+%			\begin{tikzpicture} 
+%				\tkzTabInit[lgt=2,espcl=1] 
+%					{$x$         /1, 
+%					$2x$   /1, 
+%					$4+x^2$ /1, 
+%					$f'(x)$      /1}% 
+%					{   , $0$ ,  }% 
+%				\tkzTabLine{ , - , t , + ,}
+%				\tkzTabLine{ , + , t , + ,}
+%				\tkzTabLine{ , - , t , + ,}
+%			\end{tikzpicture} 
+\[
+\begin{array}{c|cc}
+ & (-\infty,\,0) & (0,\,\infty)\\\hline
+2x        & - &  +\\
+4+x^2     & + & +\\
+f'(x)=2x(4+x^2) & - & +\\
+\end{array}
+\]
 			
 			For $f''$, using the factorization $4-x^2 = (2+x)(2-x)$ , we obtain:			
 
-			\begin{tikzpicture} 
-				\tkzTabInit[lgt=2,espcl=1] 
-					{$x$         /1, 
-					$2$   /1, 
-					$2+x$  /1,
-					$2-x$  /1,
-					$(4+x^2)^2$   /1, 
-					$f''(x)$    /1}% 
-					{  , $-2$ ,$2$,  }% 
-				\tkzTabLine{  , + , t , + , t , + ,}
-				\tkzTabLine{  , - , t , + , t , + ,}
-				\tkzTabLine{  , + , t , + , t , - ,}
-				\tkzTabLine{  , + , t , + , t , + ,}
-				\tkzTabLine{  , - , t , + , t , - ,}
-			\end{tikzpicture} 
+%			\begin{tikzpicture} 
+%				\tkzTabInit[lgt=2,espcl=1] 
+%					{$x$         /1, 
+%					$2$   /1, 
+%					$2+x$  /1,
+%					$2-x$  /1,
+%					$(4+x^2)^2$   /1, 
+%					$f''(x)$    /1}% 
+%					{  , $-2$ ,$2$,  }% 
+%				\tkzTabLine{  , + , t , + , t , + ,}
+%				\tkzTabLine{  , - , t , + , t , + ,}
+%				\tkzTabLine{  , + , t , + , t , - ,}
+%				\tkzTabLine{  , + , t , + , t , + ,}
+%				\tkzTabLine{  , - , t , + , t , - ,}
+%			\end{tikzpicture} 
+
+\[
+\begin{array}{c|ccc}
+ & (-\infty,\,-2) & (-2,\,2) & (2,\,\infty)\\\hline
+2                 & + & + & +\\
+2+x               & - &  + & +\\
+2-x               & + & + &  -\\
+(4+x^2)^2         & + & + & +\\
+f''(x)            & - & + & -\\
+\end{array}
+\]
+
 		\end{explanation}
 			
 			
