@@ -44,11 +44,11 @@ Find the derivatives of the following functions:
 		\begin{align*}
 		\dfrac{d}{dx} \left( x^{e^x} \right) &= \dfrac{d}{dx} \left( e^{\ln(x)^{e^x}} \right) \\
 		&= \dfrac{d}{dx} \left( e^{e^x \ln(x)} \right) \\
-		&= e^{e^x \ln(x)} \left( e^x \ln(x) + \frac{e^x}{x} \right) \\
-		&= x^{e^x} \left( e^x \ln(x) + \frac{e^x}{x} \right).
+		&= e^{e^x \ln(x)} \left( e^x \ln(x) + \dfrac{e^x}{x} \right) \\
+		&= x^{e^x} \left( e^x \ln(x) + \dfrac{e^x}{x} \right).
 		\end{align*}
 		
-		Thus, $f'(x) = x^{e^x} \left( e^x \ln(x) + \frac{e^x}{x} \right) + 7$.  
+		Thus, $f'(x) = x^{e^x} \left( e^x \ln(x) + \dfrac{e^x}{x} \right) + 7$.  
 		
 		\end{explanation}
 
@@ -78,11 +78,11 @@ Find the derivatives of the following functions:
 			\begin{align*}
 			g'(x) &= \dfrac{d}{dx} \left( (\ln(x) + 9)^{\sec(x^4)} \right) \\
 			&= \dfrac{d}{dx} \left( e^{\sec(x^4) \ln ( \ln(x) + 9) } \right) \\
-			&= e^{\sec(x^4) \ln ( \ln(x) + 9)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \sec(x^4) \frac{\frac{1}{x}}{\ln(x) + 9} \right) \\
-			&= (\ln(x) + 9)^{\sec(x^4)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \frac{\sec(x^4)}{x(\ln(x) + 9)} \right) .
+			&= e^{\sec(x^4) \ln ( \ln(x) + 9)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \sec(x^4) \dfrac{\dfrac{1}{x}}{\ln(x) + 9} \right) \\
+			&= (\ln(x) + 9)^{\sec(x^4)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \dfrac{\sec(x^4)}{x(\ln(x) + 9)} \right) .
 			\end{align*}
 		\end{explanation}
-\item  $f(x) = \frac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}$
+\item  $f(x) = \dfrac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}$
 \begin{explanation}
            \begin{align*}
             \ln{(f(x))} &= \ln{(x+1)^5}+\ln{(\sin(x)+5)^4}-\ln{(x^2 + 5)}-\ln{\sqrt{x-3}}\\
@@ -98,22 +98,22 @@ Find the derivatives of the following functions:
                 $f'(x) =f(x)\Bigl(\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}\Bigr)$
                 Then we substitute.\\
                 
-                   $f'(x) = \frac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}\Bigl(\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}\Bigr)$
+                   $f'(x) = \dfrac{(x+1)^5(\sin(x)+5)^4}{(x^2 + 5)\sqrt{x-3}}\Bigl(\dfrac{5}{x+1}+\dfrac{4\cos(x)}{\sin(x)+5}-\dfrac{2x}{x^2+5}-\dfrac{1}{2(x-3)}\Bigr)$
                 
           \end{explanation}
 	%part c
-	\item  $h(x) = \frac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}$
+	\item  $h(x) = \dfrac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}$
 \begin{explanation}
             Since $h(x)$ changes sign on its domain, we write :
             \begin{align*}
-              \ln |h(x)| &= \ln \left( \frac{|x^2 - 7|^5}{\ |cos^7(x^2 - 5)|}\right) \\
+              \ln |h(x)| &= \ln \left( \dfrac{|x^2 - 7|^5}{\ |cos^7(x^2 - 5)|}\right) \\
                        &= 5 \cdot \ln (|x^2 - 7|) - 7 \cdot \ln(|\cos(x^2-5)|)
             \end{align*}
   Differentiate both sides with respect to $x$, (explanation given on the next page):\\[1em]
              $ \dfrac{h'(x)}{h(x)} = 5 \dfrac{2x}{x^2 - 7}  - 7 \dfrac{-\sin(x^2-5)2x}{\cos(x^2 - 5)} $\\[1em]
  $ h'(x) =h(x)\bigl( 5 \dfrac{2x}{x^2 - 7}  - 7 \dfrac{-\sin(x^2-5)2x}{\cos(x^2 - 5)} \bigr)=$\\[1em]
- $  =\frac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}\bigl(  \dfrac{10x}{x^2 - 7}  + \dfrac{14x\sin(x^2-5)}{\cos(x^2 - 5)} \bigr)=$\\[1em]
- $  =\frac{(x^2 - 7)^4}{\cos^7(x^2 - 5)}\bigl(  10x  + 14x(x^2-7) \tan(x^2-5) \bigr)$\\[1em]
+ $  =\dfrac{(x^2 - 7)^5}{\cos^7(x^2 - 5)}\bigl(  \dfrac{10x}{x^2 - 7}  + \dfrac{14x\sin(x^2-5)}{\cos(x^2 - 5)} \bigr)=$\\[1em]
+ $  =\dfrac{(x^2 - 7)^4}{\cos^7(x^2 - 5)}\bigl(  10x  + 14x(x^2-7) \tan(x^2-5) \bigr)$\\[1em]
 
 EXPLANATION: The function $h(x)$ assumes negative values on some intervals. On those intervals\\[1em]
 

@@ -17,7 +17,7 @@
 		Denote the \textbf{length of the base} (along the $x$-axis) of the rectangle by $x$, the 
 		\textbf{height of the rectangle} (along the $y$-axis) by $y$ (in meters), and the \textbf{PERIMETER} of the rectangle by $P$. 
 		When $x = 2$ m (and only at that moment), the height $y$ is shrinking at a rate of $\dfrac{1}{5}$ m/s.  
-		Find the value of $\displaystyle \eval{\dd[P]{t}}_{x=2 m}$ \textbf{by performing the steps below}.\\
+		Find the value of $\displaystyle \eval{\dfrac{dP}{dt}}_{x=2 m}$ \textbf{by performing the steps below}.\\
 		\begin{center}
 			  \begin{tikzpicture}
 						\begin{axis}[
@@ -51,14 +51,14 @@
 				\end{explanation}
 
 
-			\item\label{SpartB} \textbf{Find the value} of $\displaystyle \eval{\dd[x]{t}}_{x=2 m}$.
+			\item\label{SpartB} \textbf{Find the value} of $\displaystyle \eval{\dfrac{dx}{dt}}_{x=2 m}$.
 
 \begin{explanation}
-					Since $y = 9-x^2$, we know $\displaystyle \dd[y]{t} = -2x \dd[x]{t}$.
-					Solving for $\dd[x]{t}$ gives:
+					Since $y = 9-x^2$, we know $\displaystyle \dfrac{dy}{dt} = -2x \dfrac{dx}{dt}$.
+					Solving for $\dfrac{dx}{dt}$ gives:
 					\begin{align*}
-						\dd[x]{t} &= -\dfrac{ \dd[y]{t} }{2x} \\
-					\eval{\dd[x]{t}}_{x=2 m} &= -\dfrac{ \eval{\dd[y]{t}}_{x=2 m} }{2(2)} \\
+						\dfrac{dx}{dt} &= -\dfrac{ \dfrac{dy}{dt} }{2x} \\
+					\eval{\dfrac{dx}{dt}}_{x=2 m} &= -\dfrac{ \eval{\dfrac{dy}{dt}}_{x=2 m} }{2(2)} \\
 						&= -\dfrac{ (-1/5) }{4} \\
 						&= \dfrac{ 1 }{20}
 					\end{align*}
@@ -75,12 +75,12 @@
 				\end{explanation}			
 
 
-			\item\label{SpartD} \textbf{Find the value} of $\displaystyle \eval{\dd[P]{t}}_{x=2 m}$.
+			\item\label{SpartD} \textbf{Find the value} of $\displaystyle \eval{\dfrac{dP}{dt}}_{x=2 m}$.
 \begin{explanation}
 					\begin{align*}
 						P(x) &= -2x^2 + 2x + 18\\
-						\dd[P]{t} &= (-4x+2) \dd[x]{t} \\
-						\\eval{\dd[P]{t}}_{x=2 m} &= \eval{(-4x+2) \dd[x]{t}}_{x=2 m} \\
+						\dfrac{dP}{dt} &= (-4x+2) \dfrac{dx}{dt} \\
+						\\eval{\dfrac{dP}{dt}}_{x=2 m} &= \eval{(-4x+2) \dfrac{dx}{dt}}_{x=2 m} \\
 							&= (-4(2)+2) \left(\dfrac{ 1 }{20}\right)\\
 							&= -\dfrac{3}{10}
 					\end{align*}
