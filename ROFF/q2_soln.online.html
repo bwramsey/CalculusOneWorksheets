@@ -1,0 +1,62 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 2</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q2_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>  Solve the following inequalities:
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'> 
+(a) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(\displaystyle \dfrac {x^3 \left (2x-5\right )^2}{x+1} &gt; 0\)</span>. <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a>Call <span class='mathjax-inline'>\(f(x) = \dfrac {x^3 \left (2x-5\right )^2}{x+1}\)</span>. Since the right-hand side of the inequality is zero, we are really asking
+where <span class='mathjax-inline'>\(f(x)\)</span> will be positive. The only way a nice function like <span class='mathjax-inline'>\(f\)</span> can switch from
+positive to negative, or vice-versa, is if it is either zero or undefined at the point
+where it changes.
+<!-- l. 27 --><p class='noindent'>Notice where the value of <span class='mathjax-inline'>\(f\)</span> would be either zero or undefined. Those occur at <span class='mathjax-inline'>\(x = -1, 0, \frac {5}{2}\)</span>.
+(These are the places where the corresponding factors of <span class='mathjax-inline'>\(f\)</span> are themselves zero or
+undefined.) We’ll use those points to split the number line into four regions.
+Inside each of those regions, our factors are either always positive or always
+negative.
+</p>     
+<div class='mathjax-block'>\[ \begin {array}{c|cccc} \text {row} &amp; (-\infty ,-1) &amp; (-1,0) &amp; \left (0,\frac {5}{2}\right ) &amp; \left (\frac {5}{2},\infty \right )\\\hline x^3 &amp; - &amp; - &amp; + &amp; +\\ (2x-5)^2 &amp; + &amp; + &amp; + &amp; +\\ x+1 &amp; - &amp; + &amp; + &amp; +\\ f(x) &amp; + &amp; - &amp; + &amp; +\\ \end {array} \]</div>
+<!-- l. 61 --><p class='noindent'>For <span class='mathjax-inline'>\(x &lt; -1\)</span>, we find <span class='mathjax-inline'>\(x^3 &lt; 0\)</span>, <span class='mathjax-inline'>\((2x-5)^2 &gt; 0\)</span>, and <span class='mathjax-inline'>\(x+1 &lt; 0\)</span>. Together, that means the value of <span class='mathjax-inline'>\(f(x)\)</span> is <span class='mathjax-inline'>\(\displaystyle \dfrac { \textrm {negative} \cdot \textrm {positive}}{\textrm {negative}}\)</span>. It is,
+therefore, positive in that region, and makes up part of our solution. We
+cannot include the endpoint <span class='mathjax-inline'>\(x=-1\)</span> in the solution, as the fraction is undefined
+there.
+</p>     
+<!-- l. 65 --><p class='noindent'>In the same way, we see that in the intervals <span class='mathjax-inline'>\(\left ( 0, \frac {5}{2} \right )\)</span> and <span class='mathjax-inline'>\(\left ( \frac {5}{2}, 0\right )\)</span>, <span class='mathjax-inline'>\(f(x)\)</span> is also positive. Notice that
+the inequality is NOT satisfied at <span class='mathjax-inline'>\(x=\frac {5}{2}\)</span>, since <span class='mathjax-inline'>\(f(\frac {5}{2})\)</span> equals zero.
+</p>     
+<!-- l. 68 --><p class='noindent'>The solution is <span class='mathjax-inline'>\(\left ( -\infty , -1 \right ) \cup \left ( 0, \frac {5}{2} \right ) \cup \left ( \frac {5}{2}, \infty \right )\)</span>. </p></div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(\displaystyle \dfrac {2\cdot 5^x - 10^x}{x^2-5} \leq 0\)</span>. <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a>Call <span class='mathjax-inline'>\(g(x) = \dfrac {2\cdot 5^x - 10^x}{x^2-5}\)</span>. Start by factoring the numerator and denominator: <div class='mathjax-env mathjax-align*'>\begin{align*} \dfrac {2\cdot 5^x - 10^x}{x^2-5} &amp;= \dfrac {2\cdot 5^x - 2^x\cdot 5^x}{x^2-5}\\ &amp;= \dfrac {5^x(2 - 2^x)}{x^2-5}\\ &amp;= \dfrac {5^x(2 - 2^x)}{(x+\sqrt {5})(x-\sqrt {5})} \end{align*}</div>
+<!-- l. 80 --><p class='noindent'>Notice that <span class='mathjax-inline'>\(5^x\)</span> is always positive, <span class='mathjax-inline'>\(2-2^x=0\)</span> only when <span class='mathjax-inline'>\(x=1\)</span>, <span class='mathjax-inline'>\(x+\sqrt {5}=0\)</span> only at <span class='mathjax-inline'>\(x=-\sqrt {5}\)</span>, and <span class='mathjax-inline'>\(x-\sqrt {5}=0\)</span> only at <span class='mathjax-inline'>\(x=\sqrt {5}\)</span>. Our sign
+chart looks like this:
+</p>     
+<div class='mathjax-block'>\[ \begin {array}{c|cccc} &amp; (-\infty ,-\sqrt {5}) &amp; \left (-\sqrt {5},\,1\right ) &amp; \left (1,\,\sqrt {5}\right ) &amp; \left (\sqrt {5},\,\infty \right )\\\hline 5^{x} &amp; + &amp; + &amp; + &amp; +\\ 2-2^{x} &amp; + &amp; + &amp; - &amp; -\\ x+\sqrt {5} &amp; - &amp; + &amp; + &amp; +\\ x-\sqrt {5} &amp; - &amp; - &amp; - &amp; +\\ g(x) &amp; + &amp; - &amp; + &amp; -\\ \end {array} \]</div>
+<!-- l. 110 --><p class='noindent'>From the bottom row of the sign-chart, we see the solution to the inequality is: <span class='mathjax-inline'>\(\left ( -\sqrt {5}, 1\right ] \cup \left ( \sqrt {5}, \infty \right )\)</span>.
+</p>     
+</div>
+</dd></dl>
+</div>
+</body> 
+ 
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 4</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q4_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+<script type='math/tex'>\newenvironment {prompt}{}{}
+\newcommand {\accordion }[0]{}
+\newcommand {\ungraded }[0]{}
+\newcommand {\xmDefaultPreamble }[0]{xmPreamble.tex}
+\newcommand {\xmDefaultPrintstyle }[0]{xmPrintstyle.sty}
+\newcommand {\RR }[0]{\mathbb R}
+\newcommand {\d }[0]{\,d}
+\newcommand {\l }[0]{\ell }
+\newcommand {\ddx }[0]{\frac {d}{dx}}
+\newcommand {\dfn }[0]{\textbf }
+\newcommand {\eval }[1]{\bigg [ #1 \bigg ]}
+\newcommand {\theenumii }[0]{\textup {(\roman {enumii})}}
+\newcommand {\sfdefault }[0]{lmss}
+\newcommand {\ttdefault }[0]{lmtt}
+\newcommand {\ZeroOverZero }[0]{\ensuremath {\dfrac {0}{0}}}
+\newcommand {\opencircle }[1]{ \draw [fill=blue] #1 circle [color=blue,radius=3pt]; \draw [fill=white] #1 circle [color=white,radius=2pt] }
+\newcommand {\closedcircle }[1]{ \draw [fill=blue] #1 circle [color=blue,radius=3pt] }
+\newcommand {\luastring }[1]{"\luatexluaescapestring {#1}"}
+\newcommand {\luastringO }[1]{\luastring {\unexpanded \expandafter {#1}}}
+\newcommand {\luastringN }[1]{\luastring {\unexpanded {#1}}}
+\newcommand {\RestoreMathJaxEnvironment }[1]{\expandafter \let \csname #1\expandafter \endcsname \csname mathjax-#1\endcsname \expandafter \let \csname end#1\expandafter \endcsname \csname mathjax-end#1\endcsname }
+\newcommand {\DeclareMicrotypeVariants }[1]{}
+\newcommand {\DeclareMicrotypeAlias }[2]{}
+\newcommand {\LoadMicrotypeFile }[1]{}
+\newcommand {\DeclareMicrotypeFilePrefix }[1]{}
+\newcommand {\DeclareMicrotypeBabelHook }[2]{}
+\newcommand {\microtypesetup }[1]{}
+\newcommand {\microtypecontext }[1]{}
+\newcommand {\textmicrotypecontext }[2]{#2}
+\newcommand {\leftprotrusion }[1]{#1}
+\newcommand {\rightprotrusion }[1]{#1}
+\newcommand {\noprotrusionifhmode }[0]{}
+\newcommand {\lsstyle }[0]{}
+\newcommand {\lslig }[1]{#1}
+\newcommand {\microtypesetup  }[0]{\setkeys {MT}}
+\newcommand {\maketitle }[0]{}
+\newcommand {\problem }[0]{ }
+\newcommand {\exercise }[0]{ }
+\newcommand {\question }[0]{ }
+\newcommand {\exploration }[0]{ }
+\newcommand {\ConfigureTheoremEnv }[1]{\renewenvironment {#1}[1][]{\refstepcounter {problem}\ifthenelse {\equal {###1}{}}{}{\HCode {&lt;span class="theorem-like-title"&gt;}###1\HCode {&lt;/span&gt;}}}{} \ConfigureEnv {#1}{\stepcounter {identification}\ifvmode \IgnorePar \fi \EndP \HCode {&lt;div class="theorem-like problem-environment #1" id="problem\arabic {identification}" titletext=" \GetTranslation {#1}"&gt;}}{\ifvmode \IgnorePar \fi \EndP \HCode {&lt;/div&gt;}\IgnoreIndent }{}{}}
+\newcommand {\dialogue }[0]{\begin {description}}
+\newcommand {\foldable }[0]{\stepcounter {identification}\ifvmode \IgnorePar \fi \EndP \HCode {&lt;div id="foldable\arabic {identification}" class="foldable"&gt;}}
+\newcommand {\unfoldable }[1]{\HCode {&lt;span class="unfoldable"&gt;}#1\HCode {&lt;/span&gt;}}
+\newcommand {\selectAll }[0]{\refstepcounter {problem}}
+\newcommand {\freeResponse }[0]{\refstepcounter {problem}}
+\newcommand {\javascript }[0]{\NoFonts }
+\newcommand {\sageCell }[0]{\NoFonts }
+\newcommand {\sageOutput }[0]{\NoFonts }
+\newcommand {\sagesilent }[0]{\NoFonts }
+\newcommand {\ungraded }[0]{\ifvmode \IgnorePar \fi \EndP \HCode {&lt;div class="ungraded"&gt;}\IgnoreIndent }
+\newcommand {\accordion }[0]{\ifvmode \IgnorePar \fi \EndP \HCode {&lt;div class="accordion"&gt;} }
+\newcommand {\expandable }[2]{\stepcounter {identification}\ifvmode \IgnorePar \fi \EndP \HCode {&lt;div class="accordion"&gt;\Hnewline }\HCode {&lt;h3 class="#1"&gt;}#2\HCode {&lt;/h3&gt;\Hnewline }\HCode {&lt;div id="accordion-item\arabic {identification}" class="accordion-item #1-content"&gt;\Hnewline } }
+\newcommand {\paragraph }[1]{\HCode {&lt;span class="paragraphHead"&gt;}#1\HCode {&lt;/span&gt;}\par \IgnorePar }
+\newcommand {\subparagraph }[1]{\HCode {&lt;span class="subparagraphHead"&gt;}#1\HCode {&lt;/span&gt;}\par \IgnorePar }
+\newcommand {\outcome }[1]{\HCode {&lt;span class="learning-outcome"&gt;#1&lt;/span&gt;} }
+\newcommand {\javascriptCode }[0]{\NoFonts }
+\newcommand {\GetTranslation }[1]{#1}
+\newcommand {\microtypesetup  }[1]{\setkeys {MTX}{#1}\selectfont }
+\newcommand {\ref }[1]{\HCode {&lt;a class="reference" href="\##1"&gt;#1&lt;/a&gt;}}</script></div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>
+<!--  l. 16  --><p class='noindent'>Use the given graphs of <span class='mathjax-inline'>\(f\)</span> and <span class='mathjax-inline'>\(g\)</span> and their accompanying derivatives to answer the
+following questions. </p><div aria-labelledby='image-alt-1' class='image-environment' role='img'><img alt='PIC' src='./xmPictures/graphsquaringfunction.png' />    <img alt='PIC' src='./xmPictures/graphsquaringfunctionderiv.png' /> </div> <div aria-labelledby='image-alt-2' class='image-environment' role='img'><img alt='PIC' src='./xmPictures/graphidentityfunction.png' /> </div>
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'> 
+(a) 
+</dt><dd class='enumerate-enumitem'>Write an equation for the tangent line to <span class='mathjax-inline'>\(f\)</span> at <span class='mathjax-inline'>\(x=2\)</span>. <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a><span class='mathjax-inline'>\(f(2)=4\)</span>,   <span class='mathjax-inline'>\(f'(2)=4\)</span>,    <span class='mathjax-inline'>\(y-4=4(x-2)\)</span>,    <span class='mathjax-inline'>\(y=4x-4\)</span> </div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'>Draw the graph of <span class='mathjax-inline'>\(g'\)</span> <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a><div aria-labelledby='image-alt-3' class='image-environment' role='img'><img alt='PIC' src='./xmPictures/graphidentityfunctionderiv.png' /> </div> </div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(c) 
+</dt><dd class='enumerate-enumitem'>Compute the value of the <span class='mathjax-inline'>\((5f+3g)'(2)\)</span>. <div class='theorem-like problem-environment explanation' id='problem4' titletext=' explanation'><a id='x1-7r3'></a><div class='mathjax-env mathjax-align*'>\begin{align*} (5f+3g)'(2) &amp;= 5\cdot f'(2) + 3 \cdot g'(2)\\ &amp;= 5 \cdot 4 + 3 \cdot 1 \\ &amp;= 20 + 3 = 23. \end{align*}</div>
+</div>     
+</dd>
+<dt class='enumerate-enumitem'> 
+(d) 
+</dt><dd class='enumerate-enumitem'>Find the equation of the tangent line to the graph of <span class='mathjax-inline'>\((5f+3g)\)</span> at the point where <span class='mathjax-inline'>\(x=2\)</span>.
+<div class='theorem-like problem-environment explanation' id='problem5' titletext=' explanation'><a id='x1-9r4'></a><div class='mathjax-env mathjax-align*'>\begin{align*} (5f+3g)(2) &amp;= 5\cdot f(2) + 3 \cdot g(2)\\ &amp;= 5 \cdot 4 + 3 \cdot 2 \\ &amp;= 20 + 6 = 26\\\\ y-26 &amp;=23(x-2)\\ y&amp;=23x-20 \end{align*}</div>     
+</div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(e) 
+</dt><dd class='enumerate-enumitem'>Use the given graph of <span class='mathjax-inline'>\(f'\)</span> and <span class='mathjax-inline'>\(g'\)</span> to find the following:
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>      
+(i) 
+</dt><dd class='enumerate-enumitem'>A formula for <span class='mathjax-inline'>\(f'\)</span> <div class='theorem-like problem-environment explanation' id='problem6' titletext=' explanation'><a id='x1-12r5'></a><span class='mathjax-inline'>\(f'(x)=2x\)</span>. The graph shows a linear function through the point <span class='mathjax-inline'>\((0,0)\)</span> and <span class='mathjax-inline'>\((1,2)\)</span>.
+</div>         
+</dd>
+<dt class='enumerate-enumitem'>     
+(ii) 
+</dt><dd class='enumerate-enumitem'>A formula for <span class='mathjax-inline'>\(g'\)</span> <div class='theorem-like problem-environment explanation' id='problem7' titletext=' explanation'><a id='x1-14r6'></a><span class='mathjax-inline'>\(g'(x)=1\)</span>. The graph shows a linear function with slope <span class='mathjax-inline'>\(0\)</span> and
+through the point <span class='mathjax-inline'>\((0,1)\)</span>. </div></dd></dl>
+</dd>     
+<dt class='enumerate-enumitem'>
+(f) 
+</dt><dd class='enumerate-enumitem'>Find the expression for <span class='mathjax-inline'>\((5f+3g)'(x)\)</span>. <div class='theorem-like problem-environment explanation' id='problem8' titletext=' explanation'><a id='x1-16r7'></a><div class='mathjax-env mathjax-align*'>\begin{align*} (5f+3g)'(x) &amp;= 5\cdot f'(x) + 3 \cdot g'(x)\\ &amp;= 5 \cdot 2x + 3 \cdot 1 \\ &amp;= 10x+3 \end{align*}</div>
+</div>     
+</dd></dl>
+</div>
+</body> 
+ 
+</html>

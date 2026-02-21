@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 1</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q1_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>     
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+(a) 
+</dt><dd class='enumerate-enumitem'>True or False: To find <span class='mathjax-inline'>\(\lim _{x \to 2} f(x)\)</span>, it’s enough to know the values of <span class='mathjax-inline'>\(f(2.1)\)</span>, <span class='mathjax-inline'>\(f(2.01)\)</span>, <span class='mathjax-inline'>\(f(2.001)\)</span>, and so on. <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a>False.
+These values will only help us make a guess at <span class='mathjax-inline'>\(\lim _{x \to 2^+} f(x)\)</span>, the right hand limit of <span class='mathjax-inline'>\(f\)</span> as <span class='mathjax-inline'>\(x\)</span>
+approaches <span class='mathjax-inline'>\(2\)</span>. To determine <span class='mathjax-inline'>\(\lim _{x \to 2} f(x)\)</span>, we also need to know <span class='mathjax-inline'>\(\lim _{x \to 2^-} f(x)\)</span> which we cannot
+determine from the above values. For example, consider the function
+<div class='mathjax-block'>\[ f(x) = \begin {cases} -1 &amp; \mbox {if $x &lt; 2$,}\\ 0 &amp; \mbox {if $x = 2$, and}\\ 1 &amp; \mbox {if $2 &lt; x$.} \end {cases} \]</div>     
+<!-- l. 31 --><p class='noindent'>Looking at the graph of this function below, we can see that <span class='mathjax-inline'>\(\lim _{x \to 2^+} f(x) = 1\)</span> and <span class='mathjax-inline'>\(\lim _{x \to 2^-} f(x) = -1\)</span>. Thus, since <span class='mathjax-inline'>\(\lim _{x \to 2^+} f(x) \neq \lim _{x \to 2^-} f(x)\)</span>,
+<span class='mathjax-inline'>\(\lim _{x \to 2} f(x)\)</span> does not exist.
+</p>     
+<div aria-labelledby='image-alt-1' class='image-environment' role='img'>alt=graph of function that is 1 for x&gt;2, -1 for x&lt;2, and with f(2)=0
+</div>     
+</div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'>True or False: If we know the value of <span class='mathjax-inline'>\(f(2)\)</span>, then can we conclude that
+<span class='mathjax-inline'>\(\lim _{x \to 2} f(x)=f(2)\)</span>? <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a>False. In the above example, we have that <span class='mathjax-inline'>\(f(2) = 0\)</span>, while <span class='mathjax-inline'>\(\lim _{x \to 2} f(x)\)</span> does not exist.
+</div>     
+</dd></dl>
+</div>
+</body> 
+ 
+</html>
