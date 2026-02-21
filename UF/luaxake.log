@@ -1,0 +1,270 @@
+IE_20260221 20:25:28: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+IE_20260221 20:25:28: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+IE_20260221 20:25:28: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+IE_20260221 20:25:28: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+IE_20260221 20:25:28: [STATUS ] main : Start bake
+IE_20260221 20:25:28: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+IE_20260221 20:25:28: [STATUS ] bake : There are 2 commands to run for 1 files
+IE_20260221 20:25:28: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+IE_20260221 20:25:28: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+IE_20260221 20:25:31: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+IE_20260221 20:25:31: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+IE_20260221 20:25:37: [INFO   ] bake : Moving /code/UF/understandingFunctionsSoln.pdf to ximera-downloads/with-answers/understandingFunctionsSoln.pdf
+IE_20260221 20:25:37: [STATUS ] bake : Command   1/2 (1) returns OK after 9.6 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+IE_20260221 20:25:38: [STATUS ] bake : Finished compiling 1 files in 10.1 seconds
+IE_20260221 20:25:38: [STATUS ] main : Bake succeeded: Baked 1 files, no errors found
+EF_20260221 20:25:50: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+EF_20260221 20:25:50: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q7_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q8_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q9_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+EF_20260221 20:25:50: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+EF_20260221 20:25:50: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+EF_20260221 20:25:50: [STATUS ] main : Start bake
+EF_20260221 20:25:50: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+EF_20260221 20:25:50: [STATUS ] bake : There are 2 commands to run for 1 files
+EF_20260221 20:25:50: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+EF_20260221 20:25:50: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+EF_20260221 20:25:53: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+EF_20260221 20:25:53: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+EF_20260221 20:26:00: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+EF_20260221 20:26:00: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+EF_20260221 20:26:00: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+EF_20260221 20:26:00: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing } inserted.            at <inserted text> <- }
+EF_20260221 20:26:00: [ERROR  ] bake : Compilation of pdf for understandingFunctionsSoln.tex failed: returns 1 (not 0)
+EF_20260221 20:26:00: [INFO   ] bake : Moving output of failed compilation to /code/UF/understandingFunctionsSoln.pdf.failed
+EF_20260221 20:26:00: [STATUS ] bake : Command   1/2 (1) returns COMMAND_FAILED after 10.1 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+EF_20260221 20:26:00: [STATUS ] bake : Finished compiling 1 files in 10.6 seconds
+EF_20260221 20:26:00: [ERROR  ] bake : **************************
+EF_20260221 20:26:00: [ERROR  ] bake : * There were 1 errors: *
+EF_20260221 20:26:00: [ERROR  ] bake : **************************
+EF_20260221 20:26:00: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+EF_20260221 20:26:00: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+EF_20260221 20:26:00: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+EF_20260221 20:26:00: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing } inserted.            at <inserted text> <- }
+EF_20260221 20:26:00: [WARNING] bake : Baked 1 files, but 1 compilation failed
+EF_20260221 20:26:00: [ERROR  ] main : Bake failed: Baking resulted in 1 errors:
+pdf|understandingFunctionsSoln.tex
+KG_20260221 20:26:22: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+KG_20260221 20:26:22: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q9_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+KG_20260221 20:26:22: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+KG_20260221 20:26:22: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+KG_20260221 20:26:22: [STATUS ] main : Start bake
+KG_20260221 20:26:22: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+KG_20260221 20:26:22: [STATUS ] bake : There are 2 commands to run for 1 files
+KG_20260221 20:26:22: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+KG_20260221 20:26:22: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+KG_20260221 20:26:26: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+KG_20260221 20:26:26: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+KG_20260221 20:26:32: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+KG_20260221 20:26:32: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+KG_20260221 20:26:32: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+KG_20260221 20:26:32: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing } inserted.            at <inserted text> <- }
+KG_20260221 20:26:32: [ERROR  ] bake : Compilation of pdf for understandingFunctionsSoln.tex failed: returns 1 (not 0)
+KG_20260221 20:26:32: [INFO   ] bake : Moving output of failed compilation to /code/UF/understandingFunctionsSoln.pdf.failed
+KG_20260221 20:26:32: [STATUS ] bake : Command   1/2 (1) returns COMMAND_FAILED after 10.1 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+KG_20260221 20:26:33: [STATUS ] bake : Finished compiling 1 files in 10.6 seconds
+KG_20260221 20:26:33: [ERROR  ] bake : **************************
+KG_20260221 20:26:33: [ERROR  ] bake : * There were 1 errors: *
+KG_20260221 20:26:33: [ERROR  ] bake : **************************
+KG_20260221 20:26:33: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+KG_20260221 20:26:33: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+KG_20260221 20:26:33: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+KG_20260221 20:26:33: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing } inserted.            at <inserted text> <- }
+KG_20260221 20:26:33: [WARNING] bake : Baked 1 files, but 1 compilation failed
+KG_20260221 20:26:33: [ERROR  ] main : Bake failed: Baking resulted in 1 errors:
+pdf|understandingFunctionsSoln.tex
+EH_20260221 20:26:42: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+EH_20260221 20:26:42: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+EH_20260221 20:26:42: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+EH_20260221 20:26:42: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+EH_20260221 20:26:42: [STATUS ] main : Start bake
+EH_20260221 20:26:42: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+EH_20260221 20:26:42: [STATUS ] bake : There are 2 commands to run for 1 files
+EH_20260221 20:26:42: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+EH_20260221 20:26:42: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+EH_20260221 20:26:45: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+EH_20260221 20:26:45: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+EH_20260221 20:26:51: [INFO   ] bake : Moving /code/UF/understandingFunctionsSoln.pdf to ximera-downloads/with-answers/understandingFunctionsSoln.pdf
+EH_20260221 20:26:51: [STATUS ] bake : Command   1/2 (1) returns OK after 9.6 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+EH_20260221 20:26:52: [STATUS ] bake : Finished compiling 1 files in 10.1 seconds
+EH_20260221 20:26:52: [STATUS ] main : Bake succeeded: Baked 1 files, no errors found
+II_20260221 20:27:12: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+II_20260221 20:27:12: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q7_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q8_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q11_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q12_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q13_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NO_COMPILATION     for q14_soln.tex
+II_20260221 20:27:12: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+II_20260221 20:27:12: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+II_20260221 20:27:12: [STATUS ] main : Start bake
+II_20260221 20:27:12: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+II_20260221 20:27:12: [STATUS ] bake : There are 2 commands to run for 1 files
+II_20260221 20:27:12: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+II_20260221 20:27:12: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+II_20260221 20:27:15: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+II_20260221 20:27:15: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+II_20260221 20:27:22: [INFO   ] bake : Moving /code/UF/understandingFunctionsSoln.pdf to ximera-downloads/with-answers/understandingFunctionsSoln.pdf
+II_20260221 20:27:22: [STATUS ] bake : Command   1/2 (1) returns OK after 10.2 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+II_20260221 20:27:22: [STATUS ] bake : Finished compiling 1 files in 10.7 seconds
+II_20260221 20:27:22: [STATUS ] main : Bake succeeded: Baked 1 files, no errors found
+FJ_20260221 20:27:35: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+FJ_20260221 20:27:35: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q7_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q8_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q9_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q11_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q12_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q13_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NO_COMPILATION     for q14_soln.tex
+FJ_20260221 20:27:35: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+FJ_20260221 20:27:35: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+FJ_20260221 20:27:35: [STATUS ] main : Start bake
+FJ_20260221 20:27:35: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+FJ_20260221 20:27:35: [STATUS ] bake : There are 2 commands to run for 1 files
+FJ_20260221 20:27:35: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+FJ_20260221 20:27:35: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+FJ_20260221 20:27:39: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+FJ_20260221 20:27:39: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+FJ_20260221 20:27:45: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+FJ_20260221 20:27:45: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+FJ_20260221 20:27:45: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing $ inserted.            at <inserted text> <- $
+FJ_20260221 20:27:45: [ERROR  ] bake : Compile error in understandingFunctionsSoln.log:[l.24] Missing } inserted.            at <inserted text> <- }
+FJ_20260221 20:27:45: [ERROR  ] bake : Compilation of pdf for understandingFunctionsSoln.tex failed: returns 1 (not 0)
+FJ_20260221 20:27:45: [INFO   ] bake : Moving output of failed compilation to /code/UF/understandingFunctionsSoln.pdf.failed
+FJ_20260221 20:27:45: [STATUS ] bake : Command   1/2 (1) returns COMMAND_FAILED after 10.1 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+FJ_20260221 20:27:46: [STATUS ] bake : Finished compiling 1 files in 10.6 seconds
+FJ_20260221 20:27:46: [ERROR  ] bake : **************************
+FJ_20260221 20:27:46: [ERROR  ] bake : * There were 1 errors: *
+FJ_20260221 20:27:46: [ERROR  ] bake : **************************
+FJ_20260221 20:27:46: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+FJ_20260221 20:27:46: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+FJ_20260221 20:27:46: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+FJ_20260221 20:27:46: [ERROR  ] bake : [pdf       ] understandingFunctionsSoln.tex:[l.24] Missing } inserted.            at <inserted text> <- }
+FJ_20260221 20:27:46: [WARNING] bake : Baked 1 files, but 1 compilation failed
+FJ_20260221 20:27:46: [ERROR  ] main : Bake failed: Baking resulted in 1 errors:
+pdf|understandingFunctionsSoln.tex
+NK_20260221 20:28:09: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+NK_20260221 20:28:09: [INFO   ] main : Processing argument 1: q9_soln.tex
+NK_20260221 20:28:09: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for q9_soln.tex
+NK_20260221 20:28:09: [STATUS ] main : 1 file needs compiling: q9_soln.tex
+NK_20260221 20:28:09: [STATUS ] main : Start bake
+NK_20260221 20:28:09: [INFO   ] bake : Added 2 compile commands for file   1/1: q9_soln.tex
+NK_20260221 20:28:09: [STATUS ] bake : There are 2 commands to run for 1 files
+NK_20260221 20:28:09: [STATUS ] bake : Command   1/2 (1) starting for  pdf of q9_soln.tex (pdf|q9_soln.tex)
+NK_20260221 20:28:09: [STATUS ] bake : Command   2/2 (2) starting for html of q9_soln.tex (html|q9_soln.tex)
+NK_20260221 20:28:13: [INFO   ] html : Adapted html being saved as q9_soln.html (/code/UF/q9_soln.html)
+NK_20260221 20:28:13: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of q9_soln.tex
+NK_20260221 20:28:19: [ERROR  ] bake : Compile error in q9_soln.log         :[l.24] Missing $ inserted.            at <inserted text> <- $
+NK_20260221 20:28:19: [ERROR  ] bake : Compile error in q9_soln.log         :[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+NK_20260221 20:28:19: [ERROR  ] bake : Compile error in q9_soln.log         :[l.24] Missing $ inserted.            at <inserted text> <- $
+NK_20260221 20:28:19: [ERROR  ] bake : Compile error in q9_soln.log         :[l.24] Missing } inserted.            at <inserted text> <- }
+NK_20260221 20:28:19: [ERROR  ] bake : Compilation of pdf for q9_soln.tex failed: returns 1 (not 0)
+NK_20260221 20:28:19: [INFO   ] bake : Moving output of failed compilation to /code/UF/q9_soln.pdf.failed
+NK_20260221 20:28:19: [STATUS ] bake : Command   1/2 (1) returns COMMAND_FAILED after 9.5 seconds (0 failed) for pdf of q9_soln.tex
+NK_20260221 20:28:19: [STATUS ] bake : Finished compiling 1 files in 10.0 seconds
+NK_20260221 20:28:19: [ERROR  ] bake : **************************
+NK_20260221 20:28:19: [ERROR  ] bake : * There were 1 errors: *
+NK_20260221 20:28:19: [ERROR  ] bake : **************************
+NK_20260221 20:28:19: [ERROR  ] bake : [pdf       ] q9_soln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+NK_20260221 20:28:19: [ERROR  ] bake : [pdf       ] q9_soln.tex:[l.24] Extra }, or forgotten $.       at <inserted text> alt={sign-chart for x^2-9 showing that it is positive when x < -3 or when x>3, but is negative if -3<x<3.}
+NK_20260221 20:28:19: [ERROR  ] bake : [pdf       ] q9_soln.tex:[l.24] Missing $ inserted.            at <inserted text> <- $
+NK_20260221 20:28:19: [ERROR  ] bake : [pdf       ] q9_soln.tex:[l.24] Missing } inserted.            at <inserted text> <- }
+NK_20260221 20:28:19: [WARNING] bake : Baked 1 files, but 1 compilation failed
+NK_20260221 20:28:19: [ERROR  ] main : Bake failed: Baking resulted in 1 errors:
+pdf|q9_soln.tex
+EQ_20260221 20:30:36: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+EQ_20260221 20:30:36: [INFO   ] main : Processing argument 1: q9_soln.tex
+EQ_20260221 20:30:36: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for q9_soln.tex
+EQ_20260221 20:30:36: [STATUS ] main : 1 file needs compiling: q9_soln.tex
+EQ_20260221 20:30:36: [STATUS ] main : Start bake
+EQ_20260221 20:30:36: [INFO   ] bake : Added 2 compile commands for file   1/1: q9_soln.tex
+EQ_20260221 20:30:36: [STATUS ] bake : There are 2 commands to run for 1 files
+EQ_20260221 20:30:36: [STATUS ] bake : Command   1/2 (1) starting for  pdf of q9_soln.tex (pdf|q9_soln.tex)
+EQ_20260221 20:30:36: [STATUS ] bake : Command   2/2 (2) starting for html of q9_soln.tex (html|q9_soln.tex)
+EQ_20260221 20:30:40: [INFO   ] html : Adapted html being saved as q9_soln.html (/code/UF/q9_soln.html)
+EQ_20260221 20:30:40: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of q9_soln.tex
+EQ_20260221 20:30:45: [INFO   ] bake : Moving /code/UF/q9_soln.pdf to ximera-downloads/with-answers/q9_soln.pdf
+EQ_20260221 20:30:45: [STATUS ] bake : Command   1/2 (1) returns OK after 9.0 seconds (0 failed) for pdf of q9_soln.tex
+EQ_20260221 20:30:46: [STATUS ] bake : Finished compiling 1 files in 9.5 seconds
+EQ_20260221 20:30:46: [STATUS ] main : Bake succeeded: Baked 1 files, no errors found
+XQ_20260221 20:30:55: [INFO   ] main : Set compile_sequence=pdf,html (and output_formats=pdf,html)
+XQ_20260221 20:30:55: [INFO   ] main : Processing argument 1: understandingFunctionsSoln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for summary.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q1_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q2_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q3_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q4_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q5_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q6_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q7_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q8_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q9_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q10_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q11_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q12_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q13_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NO_COMPILATION     for q14_soln.tex
+XQ_20260221 20:30:55: [INFO   ] files: Marked source tex          NEEDS_COMPILATIONS for understandingFunctionsSoln.tex
+XQ_20260221 20:30:55: [STATUS ] main : 1 file needs compiling: understandingFunctionsSoln.tex
+XQ_20260221 20:30:55: [STATUS ] main : Start bake
+XQ_20260221 20:30:55: [INFO   ] bake : Added 2 compile commands for file   1/1: understandingFunctionsSoln.tex
+XQ_20260221 20:30:55: [STATUS ] bake : There are 2 commands to run for 1 files
+XQ_20260221 20:30:55: [STATUS ] bake : Command   1/2 (1) starting for  pdf of understandingFunctionsSoln.tex (pdf|understandingFunctionsSoln.tex)
+XQ_20260221 20:30:55: [STATUS ] bake : Command   2/2 (2) starting for html of understandingFunctionsSoln.tex (html|understandingFunctionsSoln.tex)
+XQ_20260221 20:30:59: [INFO   ] html : Adapted html being saved as understandingFunctionsSoln.html (/code/UF/understandingFunctionsSoln.html)
+XQ_20260221 20:30:59: [STATUS ] bake : Command   2/2 (2) returns OK after 3.5 seconds (0 failed) for html of understandingFunctionsSoln.tex
+XQ_20260221 20:31:05: [INFO   ] bake : Moving /code/UF/understandingFunctionsSoln.pdf to ximera-downloads/with-answers/understandingFunctionsSoln.pdf
+XQ_20260221 20:31:05: [STATUS ] bake : Command   1/2 (1) returns OK after 10.2 seconds (0 failed) for pdf of understandingFunctionsSoln.tex
+XQ_20260221 20:31:06: [STATUS ] bake : Finished compiling 1 files in 10.7 seconds
+XQ_20260221 20:31:06: [STATUS ] main : Bake succeeded: Baked 1 files, no errors found
