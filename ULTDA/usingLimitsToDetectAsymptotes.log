@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,9 +1063,9 @@ File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: ./xmPictures/figure1_pdf.png Graphic file (type png)
 <use ./xmPictures/figure1_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure1_pdf.png  used on input line 17.
-(pdftex.def)             Requested size: 369.37776pt x 645.40836pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 
-Overfull \hbox (24.37776pt too wide) in paragraph at lines 17--18
+Overfull \hbox (576.44026pt too wide) in paragraph at lines 17--18
  [] 
  []
 
@@ -1074,7 +1074,7 @@ Overfull \hbox (24.37776pt too wide) in paragraph at lines 17--18
 [4
 
 ]
-Overfull \vbox (95.40836pt too high) has occurred while \output is active []
+Overfull \vbox (642.4521pt too high) has occurred while \output is active []
 
 
 
@@ -1198,12 +1198,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 15--20
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 24--26
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 23--24
 
  []
 
@@ -1219,7 +1214,12 @@ LaTeX Warning: No \author given.
 
 [23
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+)
 
 [24
 
@@ -1267,13 +1267,13 @@ Package rerunfilecheck Info: Checksums for `usingLimitsToDetectAsymptotes.out':
 Here is how much of TeX's memory you used:
  39737 strings out of 469010
  917323 string characters out of 5456196
- 1398220 words of memory out of 5000000
+ 1398221 words of memory out of 5000000
  67202 multiletter control sequences out of 15000+600000
  677459 words of font info for 71 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,11n,138p,1263b,693s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on usingLimitsToDetectAsymptotes.pdf (28 pages, 469140 bytes).
+Output written on usingLimitsToDetectAsymptotes.pdf (28 pages, 469130 bytes).
 PDF statistics:
  250 PDF objects out of 1000 (max. 8388607)
  188 compressed objects within 2 object streams

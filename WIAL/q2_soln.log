@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:34
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:11
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,49 +1011,54 @@ File: ./xmPictures/graphrationalfunction.png Graphic file (type png)
 <use ./xmPictures/graphrationalfunction.png>
 Package pdftex.def Info: ./xmPictures/graphrationalfunction.png  used on input line 19.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 <./xmPictures/graphlinearfunction.png, id=9, 225.7233pt x 174.4116pt>
 File: ./xmPictures/graphlinearfunction.png Graphic file (type png)
 <use ./xmPictures/graphlinearfunction.png>
-Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 23.
+Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 25.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 27.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 29.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 27.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 29.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 27.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 29.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 27.
+(Font)              <10> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 27.
+(Font)              <7> on input line 29.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 27.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+(Font)              <5> on input line 29.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>]
-Overfull \hbox (0.2119pt too wide) in paragraph at lines 43--44
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>]
+Overfull \hbox (0.2119pt too wide) in paragraph at lines 45--46
 []\OT1/lmr/bx/n/10 Explanation. []\OT1/lmr/m/n/10 From the graphs we have that $[] \OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) = 2$ and $[] \OML/lmm/m/it/10 g\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
  []
 
 *********************************************************************
 
 
-[2] (./q2_soln.aux)
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./q2_soln.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1071,13 +1076,13 @@ Package rerunfilecheck Info: Checksums for `q2_soln.out':
 Here is how much of TeX's memory you used:
  39530 strings out of 469010
  914107 string characters out of 5456196
- 1395213 words of memory out of 5000000
+ 1394213 words of memory out of 5000000
  67093 multiletter control sequences out of 15000+600000
  666488 words of font info for 66 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 121i,7n,124p,1186b,743s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,6n,124p,1186b,749s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on q2_soln.pdf (2 pages, 212722 bytes).
+Output written on q2_soln.pdf (2 pages, 212706 bytes).
 PDF statistics:
  84 PDF objects out of 1000 (max. 8388607)
  55 compressed objects within 1 object stream
