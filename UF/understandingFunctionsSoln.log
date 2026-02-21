@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 20:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 20:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -997,14 +997,13 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count415
 Package hyperref Info: Link coloring ON on input line 8.
-(./understandingFunctionsSoln.out) (./understandingFunctionsSoln.out)
 \@outlinefile=\write9
 \openout9 = `understandingFunctionsSoln.out'.
 
 \ST@sf=\write10
 \openout10 = `understandingFunctionsSoln.sagetex.sage'.
 
- (./summary.tex
+(./summary.tex
 
 LaTeX Warning: No \author given.
 
@@ -1164,12 +1163,12 @@ LaTeX Warning: No \author given.
 [18
 
 ]
-<./xmPictures/uffigure8.png, id=121, 478.78876pt x 395.4775pt>
+<./xmPictures/uffigure8.png, id=115, 478.78876pt x 395.4775pt>
 File: ./xmPictures/uffigure8.png Graphic file (type png)
 <use ./xmPictures/uffigure8.png>
 Package pdftex.def Info: ./xmPictures/uffigure8.png  used on input line 25.
 (pdftex.def)             Requested size: 478.78758pt x 395.47653pt.
-<./xmPictures/uffigure4.png, id=122, 361.35pt x 300.12125pt>
+<./xmPictures/uffigure4.png, id=116, 361.35pt x 300.12125pt>
 File: ./xmPictures/uffigure4.png Graphic file (type png)
 <use ./xmPictures/uffigure4.png>
 Package pdftex.def Info: ./xmPictures/uffigure4.png  used on input line 35.
@@ -1187,7 +1186,7 @@ LaTeX Warning: No \author given.
 [20
 
 ]
-<./xmPictures/figure10.png, id=134, 1057.70157pt x 101.62968pt>
+<./xmPictures/figure10.png, id=128, 1057.70157pt x 101.62968pt>
 File: ./xmPictures/figure10.png Graphic file (type png)
 <use ./xmPictures/figure10.png>
 Package pdftex.def Info: ./xmPictures/figure10.png  used on input line 55.
@@ -1279,23 +1278,30 @@ Missing character: There is no ; in font nullfont!
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `understandingFunctionsSoln.out' has not changed.
-(rerunfilecheck)             Checksum: 8FF9A8D17EEE4328197CE53F430D9FF7;393.
+
+
+Package rerunfilecheck Warning: File `understandingFunctionsSoln.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `understandingFunctionsSoln.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  8FF9A8D17EEE4328197CE53F430D9FF7;393.
  ) 
 Here is how much of TeX's memory you used:
- 40390 strings out of 469010
- 934368 string characters out of 5456196
- 1563317 words of memory out of 5000000
- 67823 multiletter control sequences out of 15000+600000
+ 40382 strings out of 469010
+ 934183 string characters out of 5456196
+ 1563276 words of memory out of 5000000
+ 67819 multiletter control sequences out of 15000+600000
  689528 words of font info for 86 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,13n,138p,1260b,2768s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr8.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fo
 nts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on understandingFunctionsSoln.pdf (33 pages, 399923 bytes).
+Output written on understandingFunctionsSoln.pdf (33 pages, 399569 bytes).
 PDF statistics:
- 304 PDF objects out of 1000 (max. 8388607)
- 229 compressed objects within 3 object streams
+ 297 PDF objects out of 1000 (max. 8388607)
+ 222 compressed objects within 3 object streams
  72 named destinations out of 1000 (max. 500000)
- 44 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 28 words of extra memory for PDF output out of 10000 (max. 10000000)
 
