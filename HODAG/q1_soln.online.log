@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  20 FEB 2026 23:40
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 22:13
  system commands enabled.
  file:line:error style messages enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q1_soln.tex}"
@@ -1847,9 +1847,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-l.23 --- TeX4ht warning --- \HRestore\pageref ? ---
-l.31 --- TeX4ht warning --- \HRestore\pageref ? ---
-l.39 --- TeX4ht warning --- \HRestore\pageref ? ---
+l.24 --- TeX4ht warning --- \HRestore\pageref ? ---
+l.32 --- TeX4ht warning --- \HRestore\pageref ? ---
+l.43 --- TeX4ht warning --- \HRestore\pageref ? ---
 *********************************************************************
 
 
@@ -1867,8 +1867,8 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  591 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 9 attribute, 71 glue_spec, 9 attribute_list, 1 write nodes
-   avail lists: 2:456,3:808,4:32,5:151,6:42,7:2416,8:3,9:264,10:25,11:87
+   avail lists: 2:474,3:706,4:29,5:151,6:45,7:2296,8:3,9:291,10:24,11:87
  75041 multiletter control sequences out of 65536+600000
  35 fonts using 2076855 bytes
  124i,5n,142p,1671b,387s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q1_soln.online.dvi (1 page, 8396 bytes).
+Output written on q1_soln.online.dvi (1 page, 7608 bytes).
