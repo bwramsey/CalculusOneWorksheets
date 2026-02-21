@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 04:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,7 +1036,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./xmPictures/figure10.png Graphic file (type png)
 <use ./xmPictures/figure10.png>
 Package pdftex.def Info: ./xmPictures/figure10.png  used on input line 20.
-(pdftex.def)             Requested size: 180.67456pt x 124.96657pt.
+(pdftex.def)             Requested size: 361.34912pt x 249.93314pt.
 
 *********************************************************************
 
@@ -1067,7 +1067,7 @@ Here is how much of TeX's memory you used:
  430 hyphenation exceptions out of 8191
  121i,6n,124p,1186b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on q7_soln.pdf (1 page, 151855 bytes).
+Output written on q7_soln.pdf (1 page, 151845 bytes).
 PDF statistics:
  61 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream
