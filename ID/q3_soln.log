@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 04:39
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,7 +1036,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./xmPictures/figure4.png Graphic file (type png)
 <use ./xmPictures/figure4.png>
 Package pdftex.def Info: ./xmPictures/figure4.png  used on input line 18.
-(pdftex.def)             Requested size: 331.84232pt x 192.11923pt.
+(pdftex.def)             Requested size: 1106.1298pt x 640.39093pt.
 
 Overfull \hbox (12.72043pt too wide) detected at line 26
 []
@@ -1056,7 +1056,7 @@ Overfull \hbox (90.77377pt too wide) detected at line 33
 File: ./xmPictures/figure5.png Graphic file (type png)
 <use ./xmPictures/figure5.png>
 Package pdftex.def Info: ./xmPictures/figure5.png  used on input line 66.
-(pdftex.def)             Requested size: 242.40503pt x 320.19547pt.
+(pdftex.def)             Requested size: 484.81006pt x 640.39093pt.
 
 *********************************************************************
 
@@ -1085,7 +1085,7 @@ Here is how much of TeX's memory you used:
  430 hyphenation exceptions out of 8191
  121i,12n,124p,1186b,747s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on q3_soln.pdf (2 pages, 214882 bytes).
+Output written on q3_soln.pdf (2 pages, 214860 bytes).
 PDF statistics:
  85 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream

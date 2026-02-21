@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 04:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 04:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1046,13 +1046,13 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 <./xmPictures/figure1.png, id=14, 1690.81688pt x 1305.37688pt>
 File: ./xmPictures/figure1.png Graphic file (type png)
 <use ./xmPictures/figure1.png>
-Package pdftex.def Info: ./xmPictures/figure1.png  used on input line 18.
-(pdftex.def)             Requested size: 338.15738pt x 261.07076pt.
+Package pdftex.def Info: ./xmPictures/figure1.png  used on input line 19.
+(pdftex.def)             Requested size: 1690.81276pt x 1305.3737pt.
 <./xmPictures/figure2.png, id=16, 541.0614pt x 417.7206pt>
 File: ./xmPictures/figure2.png Graphic file (type png)
 <use ./xmPictures/figure2.png>
-Package pdftex.def Info: ./xmPictures/figure2.png  used on input line 23.
-(pdftex.def)             Requested size: 270.53003pt x 208.85979pt.
+Package pdftex.def Info: ./xmPictures/figure2.png  used on input line 26.
+(pdftex.def)             Requested size: 541.06007pt x 417.71957pt.
 )
 
 [2
@@ -1069,7 +1069,7 @@ LaTeX Warning: No \author given.
 File: ./xmPictures/figure1.png Graphic file (type png)
 <use ./xmPictures/figure1.png>
 Package pdftex.def Info: ./xmPictures/figure1.png  used on input line 19.
-(pdftex.def)             Requested size: 338.15738pt x 261.07076pt.
+(pdftex.def)             Requested size: 1690.81276pt x 1305.3737pt.
 
 
 [4
@@ -1078,7 +1078,7 @@ Package pdftex.def Info: ./xmPictures/figure1.png  used on input line 19.
 File: ./xmPictures/figure2.png Graphic file (type png)
 <use ./xmPictures/figure2.png>
 Package pdftex.def Info: ./xmPictures/figure2.png  used on input line 51.
-(pdftex.def)             Requested size: 324.63934pt x 250.6343pt.
+(pdftex.def)             Requested size: 541.06007pt x 417.71957pt.
 
 
 [5]
@@ -1086,7 +1086,7 @@ Package pdftex.def Info: ./xmPictures/figure2.png  used on input line 51.
 File: ./xmPictures/figure3.png Graphic file (type png)
 <use ./xmPictures/figure3.png>
 Package pdftex.def Info: ./xmPictures/figure3.png  used on input line 74.
-(pdftex.def)             Requested size: 324.63934pt x 250.6343pt.
+(pdftex.def)             Requested size: 541.06007pt x 417.71957pt.
 )
 
 [6 <./xmPictures/figure3.png>] (./q3_soln.tex
@@ -1102,7 +1102,7 @@ LaTeX Warning: No \author given.
 File: ./xmPictures/figure4.png Graphic file (type png)
 <use ./xmPictures/figure4.png>
 Package pdftex.def Info: ./xmPictures/figure4.png  used on input line 18.
-(pdftex.def)             Requested size: 331.84232pt x 192.11923pt.
+(pdftex.def)             Requested size: 1106.1298pt x 640.39093pt.
 
 Overfull \hbox (12.72043pt too wide) detected at line 26
 []
@@ -1122,7 +1122,7 @@ Overfull \hbox (90.77377pt too wide) detected at line 33
 File: ./xmPictures/figure5.png Graphic file (type png)
 <use ./xmPictures/figure5.png>
 Package pdftex.def Info: ./xmPictures/figure5.png  used on input line 66.
-(pdftex.def)             Requested size: 242.40503pt x 320.19547pt.
+(pdftex.def)             Requested size: 484.81006pt x 640.39093pt.
 )
 
 [9 <./xmPictures/figure5.png>] (./q4_soln.tex
@@ -1219,7 +1219,7 @@ LaTeX Warning: No \author given.
 File: ./xmPictures/figure10.png Graphic file (type png)
 <use ./xmPictures/figure10.png>
 Package pdftex.def Info: ./xmPictures/figure10.png  used on input line 20.
-(pdftex.def)             Requested size: 180.67456pt x 124.96657pt.
+(pdftex.def)             Requested size: 361.34912pt x 249.93314pt.
 )
 
 [17
@@ -1279,7 +1279,7 @@ Here is how much of TeX's memory you used:
  430 hyphenation exceptions out of 8191
  135i,12n,138p,1261b,850s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on implicitDifferentiationSoln.pdf (21 pages, 518986 bytes).
+Output written on implicitDifferentiationSoln.pdf (21 pages, 518927 bytes).
 PDF statistics:
  209 PDF objects out of 1000 (max. 8388607)
  147 compressed objects within 2 object streams
