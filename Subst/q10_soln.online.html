@@ -1,0 +1,32 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 10</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q10_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>  What are two substitutions that can be used to evaluate the integral <div class='mathjax-block'>\[ \int x \sqrt {x+8} \, \d x \]</div> <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-2r1'></a>Two
+substitutions which would work are <span class='mathjax-inline'>\(w = x+8\)</span> and <span class='mathjax-inline'>\(v = \sqrt {x+8}\)</span>.
+<!-- l. 20 --><p class='noindent'>The <span class='mathjax-inline'>\(w = x+8\)</span> is the more obvious choice, so let’s work through that one first. If <span class='mathjax-inline'>\(w = x+8\)</span>, then <span class='mathjax-inline'>\(\d w = \d x\)</span> and <span class='mathjax-inline'>\(x = w-8\)</span>.
+Substituting into the original integral: </p><div class='mathjax-env mathjax-align*'>\begin{align*} \int x \sqrt {x+8} \, \d x &amp;= \int (w-8) \sqrt {w} \, dw\\ &amp;= \int (w-8) w^{1/2} \, dw\\ &amp;= \int \left ( w^{3/2} - 8 w^{1/2} \right ) \, dw\\ &amp;= \dfrac {2}{5}w^{5/2} - 8 \cdot \dfrac {2}{3} w^{3/2} + C\\ &amp;= \dfrac {2}{5}(x+8)^{5/2} - \dfrac {16}{3} (x+8)^{3/2} + C \end{align*}</div>
+<!-- l. 31 --><p class='noindent'>If <span class='mathjax-inline'>\(v = \sqrt {x+8}\)</span>, then </p><div class='mathjax-block'>\[dv = \dfrac {1}{2\sqrt {x+8}} dx = \dfrac {1}{2v} dx \implies dx = 2v dv.\]</div> Also <div class='mathjax-block'>\[ v = \sqrt {x+8} \implies v^2=x+8 \implies x = v^2-8. \]</div> Substituting these into the original integral gives: <div class='mathjax-env mathjax-align*'>\begin{align*} \int x \sqrt {x+8} \, \d x &amp;= \int (v^2-8) (v)(2v) \, dv\\ &amp;= \int (2v^4-16v^2) \, dv\\ &amp;= \dfrac {2}{5} v^5 - \dfrac {16}{3}v^3 + C\\ &amp;= \dfrac {2}{5}(\sqrt {x+8})^5 - \dfrac {16}{3}(\sqrt {x+8})^3 + C. \end{align*}</div>
+</div>   </div>
+</body> 
+ 
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 4</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q4_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>  Compute the following integrals:
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'> 
+(a) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(\int _0^1 e^{5x} \d x\)</span> <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a><span class='mathjax-inline'>\(\int _0^1 e^{5x} \d x = \eval {\frac {1}{5} e^{5x}}_0^1= \frac {1}{5} \left ( e^5 - e^0 \right ) = \frac {1}{5} (e^5 - 1)\)</span> </div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(\int \limits _{-2}^{-1} \frac {1}{x^3} \d x\)</span> <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a><div class='mathjax-env mathjax-align*'>\begin{align*} \int \limits _{-2}^{-1} \frac {1}{x^3} \d x &amp;= \int \limits _{-2}^{-1} x^{-3} \d x \\ &amp;= \eval {\frac {x^{-2}}{-2}}_{-2}^{-1} \\ &amp;= \eval {\frac {-1}{2x^2}}_{-2}^{-1} \\ &amp;= - \frac {1}{2} - \left ( - \frac {1}{8} \right ) \\ &amp;= - \frac {1}{2} + \frac {1}{8} = - \frac {3}{8} \end{align*}</div>
+</div>     
+</dd>
+<dt class='enumerate-enumitem'> 
+(c) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(\int _0^4 \left ( 3x - 5 + 7 \sqrt {16-x^2} \right ) \d x\)</span> <div class='theorem-like problem-environment explanation' id='problem4' titletext=' explanation'><a id='x1-7r3'></a>First notice that: <div class='mathjax-env mathjax-equation'>\begin{equation}\label {eq1} \int _0^4 \left ( 3x - 5 + 7 \sqrt {16-x^2} \right ) \d x = \int _0^4 ( 3x - 5) \d x + 7 \int _0^4 \sqrt {16-x^2} \d x. \end{equation}</div><a id='x1-8r1'></a><a class='ximera-label' id='eq1'></a> To get the easy part out of the way first: <div class='mathjax-env mathjax-equation'>\begin{equation}\label {eq2} \int _0^4 (3x-5) \d x = \eval {\frac {3}{2} x^2 - 5x}_0^4 = (24 - 20) - (0-0) = 4. \end{equation}</div><a id='x1-9r2'></a><a class='ximera-label' id='eq2'></a> So the real issue is
+in computing <span class='mathjax-inline'>\(\int _0^4 \sqrt {16-x^2} \d x\)</span>.
+<!-- l. 45 --><p class='noindent'>We do not know how to integrate <span class='mathjax-inline'>\(\sqrt {16-x^2}\)</span> directly, but recall that the solution set to
+the equation <span class='mathjax-inline'>\(x^2 + y^2 = 16\)</span> is a circle with radius <span class='mathjax-inline'>\(4\)</span> centered at the origin. Solving for <span class='mathjax-inline'>\(y\)</span> we get <span class='mathjax-inline'>\(y = \pm \sqrt {16-x^2}\)</span>.
+So if we restrict ourselves to <span class='mathjax-inline'>\(y=\sqrt {16-x^2}\)</span> and <span class='mathjax-inline'>\(0 \leq x \leq 4\)</span>, this gives us the upper-right quarter of
+the circle (draw a picture and convince yourself of this). Since the
+total area of the circle of <span class='mathjax-inline'>\(\pi (4)^2 = 16\pi \)</span>, the area under this portion of the curve is <span class='mathjax-inline'>\(\frac {1}{4} (16\pi ) = 4\pi \)</span>.
+Thus we have computed (geometrically) that </p><div class='mathjax-env mathjax-equation'>\begin{equation}\label {eq3} \int _0^4 \sqrt {16-x^2} \d x = 4\pi . \end{equation}</div><a id='x1-10r3'></a><a class='ximera-label' id='eq3'></a> So, <span class='mathjax-inline'>\(\int _0^4 \left ( 3x - 5 + 7 \sqrt {16-x^2} \right ) \d x = 4 + 7(4\pi ) = 4 + 28\pi \)</span> by (1),(2), and (3) </div>
+[3]
+</dd></dl>
+</div>
+</body> 
+ 
+</html>

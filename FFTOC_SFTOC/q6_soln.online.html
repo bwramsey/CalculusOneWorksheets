@@ -1,0 +1,77 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 6</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q6_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>  Given the following graph of <span class='mathjax-inline'>\(y=f(x)\)</span>, let <span class='mathjax-inline'>\(g(x) = \int _{-1}^x f(t) \d t\)</span>.
+<div aria-labelledby='image-alt-1' class='image-environment' role='img'><img alt='PIC' src='./xmPictures/figure2.png' /> </div> 
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'>
+(a) 
+</dt><dd class='enumerate-enumitem'>Is <span class='mathjax-inline'>\(g\)</span> continuous? Why or why not? <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a><span class='mathjax-inline'>\(g(x)\)</span> represents the area function (or the signed
+area between the curve <span class='mathjax-inline'>\(y=f(x)\)</span> and the <span class='mathjax-inline'>\(x\)</span>-axis from -1 to <span class='mathjax-inline'>\(x\)</span>). By the FTC(I), <span class='mathjax-inline'>\(g(x)\)</span> is
+continuous. </div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'>Is <span class='mathjax-inline'>\(g\)</span> differentiable? Why or why not? <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a>Similarly by the FTC(I) the function <span class='mathjax-inline'>\(g\)</span> is
+differentiable, and moreover:
+<div class='mathjax-block'>                                   
+\[\dfrac {d}{dx} \left ( g(x) \right ) = \dfrac {d}{dx} \left ( \int _{-1}^x f(t) \d t \right )= f(x)\]
+</div> </div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(c) 
+</dt><dd class='enumerate-enumitem'>Where does <span class='mathjax-inline'>\(g\)</span> achieve its absolute maximum and minimum values? Where does <span class='mathjax-inline'>\(g\)</span>
+achieve any local extreme values? Assume the domain of <span class='mathjax-inline'>\(g\)</span> is <span class='mathjax-inline'>\([-1,7.6]\)</span>. <div class='theorem-like problem-environment explanation' id='problem4' titletext=' explanation'><a id='x1-7r3'></a>Since <span class='mathjax-inline'>\(g\)</span> is
+continuous on the closed interval <span class='mathjax-inline'>\([-1,7.6]\)</span>, <span class='mathjax-inline'>\(g\)</span> attains its absolute extreme values at either
+critical points or endpoints. But we just saw that <span class='mathjax-inline'>\(g^\prime (x) = f(x)\)</span>, and so the critical points of <span class='mathjax-inline'>\(g\)</span>
+are just the points where <span class='mathjax-inline'>\(f(x) = 0\)</span>. Thus, the critical points of <span class='mathjax-inline'>\(g\)</span> are approximately <span class='mathjax-inline'>\(3.1\)</span> and
+<span class='mathjax-inline'>\(6.25\)</span>.
+<!-- l. 40 --><p class='noindent'>Since <span class='mathjax-inline'>\(f = g^\prime \)</span>, <span class='mathjax-inline'>\(g\)</span> is increasing when <span class='mathjax-inline'>\(f\)</span> is positive and <span class='mathjax-inline'>\(g\)</span> is decreasing when <span class='mathjax-inline'>\(f\)</span> is negative. So
+we have that <span class='mathjax-inline'>\(x=3.1\)</span> is a local maximum while <span class='mathjax-inline'>\(x=6.25\)</span> is a local minimum of <span class='mathjax-inline'>\(g\)</span>. This takes care
+of the local extreme values.
+                                                                  
+
+                                                                  
+</p>     
+<!-- l. 44 --><p class='noindent'>To find the absolute extreme values of <span class='mathjax-inline'>\(g\)</span>, we need to determine what are
+the largest and smallest values among <span class='mathjax-inline'>\(g(-1), g(3.1), g(6.25),\)</span> and <span class='mathjax-inline'>\(g(7.6)\)</span>. And do not forget the <span class='mathjax-inline'>\(g(x)\)</span>
+denotes the (signed) area of the region bounded by the curve and the
+<span class='mathjax-inline'>\(x-axis\)</span>.
+</p>     
+<!-- l. 47 --><p class='noindent'>Clearly <span class='mathjax-inline'>\(g(-1) = 0\)</span> since a line segment does not have any area. At any time after <span class='mathjax-inline'>\(x=-1\)</span> we have
+a positive (net) area. Thus, our absolute minimum occurs at <span class='mathjax-inline'>\(x=-1\)</span>. To find the
+absolute maximum of <span class='mathjax-inline'>\(g\)</span>, we need to compare <span class='mathjax-inline'>\(g(3.1)\)</span> and <span class='mathjax-inline'>\(g(7.6)\)</span>. We see that we have the
+greatest area under the curve at <span class='mathjax-inline'>\(x=3.1\)</span> because by the time we get to <span class='mathjax-inline'>\(x=7.6\)</span>, the area
+we have subtracted off between <span class='mathjax-inline'>\(x=3.1\)</span> and <span class='mathjax-inline'>\(x=6.25\)</span> is greater than what we have
+added back on from <span class='mathjax-inline'>\(x=6.25\)</span> to <span class='mathjax-inline'>\(x=7.6\)</span>. Therefore, our absolute maximum occurs at <span class='mathjax-inline'>\(x=3.1\)</span>. </p></div>
+[4]
+</dd>     
+<dt class='enumerate-enumitem'>
+(d) 
+</dt><dd class='enumerate-enumitem'>Where is the graph of <span class='mathjax-inline'>\(g\)</span> concave up? Concave down? <div class='theorem-like problem-environment explanation' id='problem5' titletext=' explanation'><a id='x1-9r4'></a><span class='mathjax-inline'>\(g\)</span> is concave up when when <span class='mathjax-inline'>\(f\)</span>
+is increasing, which is on <span class='mathjax-inline'>\((-1,0) \cup (4.25,7.6)\)</span>. Similarly, <span class='mathjax-inline'>\(g\)</span> is concave down when <span class='mathjax-inline'>\(f\)</span> is decreasing,
+which is on <span class='mathjax-inline'>\((0,4.25)\)</span>. Remember, <span class='mathjax-inline'>\(g'=f\)</span>. </div> [2]
+</dd></dl>
+</div>
+</body> 
+ 
+</html>
