@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 02:19
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 04:26
  system commands enabled.
  file:line:error style messages enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q1_xm.tex}"
@@ -1846,9 +1846,9 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
-l.15 --- TeX4ht warning --- File `"./xmPictures/figure1.xbb"' not found ---
-l.15 --- TeX4ht warning --- Cannot determine size of graphic in "./xmPictures/figure1.xbb" (no BoundingBox) ---
-l. 15 --- needs --- ./xmPictures/figure1.png ---
+l.18 --- TeX4ht warning --- File `"./xmPictures/figure1.xbb"' not found ---
+l.18 --- TeX4ht warning --- Cannot determine size of graphic in "./xmPictures/figure1.xbb" (no BoundingBox) ---
+l. 18 --- needs --- ./xmPictures/figure1.png ---
 *********************************************************************
 
 
@@ -1862,12 +1862,12 @@ L3 programming layer <2020/03/25>
 )
 
 Here is how much of LuaTeX's memory you used:
- 49569 strings out of 470198
+ 49567 strings out of 470198
  100000,1977958 words of node,token memory allocated
  583 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 71 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:198,3:325,4:29,5:70,6:21,7:943,8:3,9:111,10:26,11:30
- 75033 multiletter control sequences out of 65536+600000
+   avail lists: 2:206,3:328,4:28,5:70,6:27,7:967,8:3,9:120,10:25,11:30
+ 75031 multiletter control sequences out of 65536+600000
  34 fonts using 1994175 bytes
  124i,5n,142p,1669b,387s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q1_xm.online.dvi (1 page, 4632 bytes).
+Output written on q1_xm.online.dvi (1 page, 4636 bytes).
