@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html lang='en-US' xml:lang='en-US'> 
+<head> <title>Problem 3</title> 
+<meta charset='utf-8' /> 
+<meta content='TeX4ht (https://tug.org/tex4ht/)' name='generator' /> 
+<meta content='width=device-width,initial-scale=1' name='viewport' /> 
+<link href='\aa:CssFile ' rel='stylesheet' type='text/css' /> 
+<meta content='q3_soln.online.tex' name='src' /> 
+<script>window.MathJax = { tex: { tags: "ams", }, }; </script> 
+<script async='async' id='MathJax-script' src='https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js' type='text/javascript'></script>  
+<meta content='' name='author' /> 
+<meta content='version 2.5.1' name='ximera' /> 
+<link href='https://ximera.osu.edu/public/stylesheets/standalone.css' media='screen' rel='stylesheet' /> 
+<script src='https://ximera.osu.edu/public/javascripts/standalone.min.js' type='text/javascript'></script> 
+</head><body> 
+<div class='preamble'>
+</div>
+<style> .activity-body pre { white-space: pre; background-color: lightgray; } .xmyoutube { aspect-ratio: 16/9; min-width: 75%; } .image-environment img { width: unset; } </style> 
+  
+<div class='abstract'>
+ 
+</div>
+<div class='maketitle'></div>
+<div class='problem-environment problem' id='problem1' numbered=' ' role='article' titletext=' Problem'>  Find the x-coordinates of global extrema and global extreme values of <span class='mathjax-inline'>\(f\)</span> on the given
+interval.
+<dl class='enumerate-enumitem'><dt class='enumerate-enumitem'> 
+(a) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(f(x) = x \sqrt {2-x^2}\)</span> on <span class='mathjax-inline'>\([ -\sqrt {2}, \sqrt {2} ]\)</span>. <div class='theorem-like problem-environment explanation' id='problem2' titletext=' explanation'><a id='x1-3r1'></a>First note that <span class='mathjax-inline'>\(f\)</span> is continuous on this closed interval so, by the Extreme
+Value Theorem, it must attain a maximum and minimum value on the interval <span class='mathjax-inline'>\([-\sqrt {2}, \sqrt {2}]\)</span>.
+Those global extrema must occur either at critical points or at the boundary
+points. <div class='mathjax-env mathjax-align*'>\begin{align*} f'(x) &amp;= \sqrt {2-x^2} + x \left ( \frac {1}{2 \sqrt {2-x^2}} (-2x) \right ) \\ &amp;= \sqrt {2-x^2} - \frac {x^2}{\sqrt {2-x^2}} \\ &amp;= \frac {2-x^2-x^2}{\sqrt {2-x^2}} \\ &amp;= \frac {2(1-x^2)}{\sqrt {2-x^2}} \end{align*}</div>
+<!-- l. 30 --><p class='noindent'>Critical points of <span class='mathjax-inline'>\(f\)</span> occur where <span class='mathjax-inline'>\(f'(x) = 0\)</span> or where <span class='mathjax-inline'>\(f'(x)\)</span> does not exist. Solving <span class='mathjax-inline'>\(f'(x) = 0\)</span>
+yields that <span class='mathjax-inline'>\(2(1-x^2) = 0\)</span>, or <span class='mathjax-inline'>\(x = \pm 1\)</span>. <span class='mathjax-inline'>\(f'(x)\)</span> does not exist when <span class='mathjax-inline'>\(2-x^2 \leq 0\)</span>. But since we are restricting to
+the interval <span class='mathjax-inline'>\([-\sqrt {2}, \sqrt {2}]\)</span>, the only points where <span class='mathjax-inline'>\(f'(x)\)</span> does not exist are the endpoints
+<span class='mathjax-inline'>\(\pm \sqrt {2}\)</span>.
+</p>     
+<!-- l. 32 --><p class='noindent'>The critical points of <span class='mathjax-inline'>\(f\)</span> in the interval <span class='mathjax-inline'>\([-\sqrt {2}, \sqrt {2}]\)</span> are <span class='mathjax-inline'>\(x = \pm 1\)</span>. (The points <span class='mathjax-inline'>\(x = \pm \sqrt {2}\)</span> technically are not
+critical points since they are the endpoints of the domain of <span class='mathjax-inline'>\(f\)</span>.) The functin <span class='mathjax-inline'>\(f\)</span>
+must attain its maximum and minimum values in this set <span class='mathjax-inline'>\(x =\{ \pm 1, \pm \sqrt {2}\}\)</span>. We compute
+</p><div class='mathjax-env mathjax-align*'>\begin{align*} f(-\sqrt {2}) &amp;= 0 \\ f(\sqrt {2}) &amp;= 0\\ f(1) &amp;= 1 \sqrt {2-1} = 1\\ f(-1) &amp;= -1 \sqrt {2-(-1)^2} = -1 \end{align*}</div>     
+<!-- l. 41 --><p class='noindent'>That means <span class='mathjax-inline'>\(f\)</span> has a maximum value of <span class='mathjax-inline'>\(1\)</span> (at <span class='mathjax-inline'>\(x= 1\)</span>) and a minimum value of -1 (at <span class='mathjax-inline'>\(x= -1 \)</span>)
+over the interval <span class='mathjax-inline'>\([-\sqrt {2}, \sqrt {2}]\)</span>. </p></div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(b) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(f(x) = x^3 e^{-x}\)</span> on <span class='mathjax-inline'>\([-1,5]\)</span>. <div class='theorem-like problem-environment explanation' id='problem3' titletext=' explanation'><a id='x1-5r2'></a>First note that <span class='mathjax-inline'>\(f\)</span> is continuous on this closed interval so, by the Extreme
+Value Theorem, it must attain a maximum and minimum value on the interval <span class='mathjax-inline'>\([-1,5]\)</span>.
+Those global extrema must occur either at critical points or at the boundary
+points. <div class='mathjax-env mathjax-align*'>\begin{align*} f'(x) &amp;= 3x^2 e^{-x} + x^3(-e^{-x}) \\ &amp;= x^2 e^{-x} (3-x) \end{align*}</div>
+<!-- l. 56 --><p class='noindent'>Notice that <span class='mathjax-inline'>\(f'(x)\)</span> always exists so any critical point of must <span class='mathjax-inline'>\(f\)</span> occur when <span class='mathjax-inline'>\(f'(x)=0\)</span>. Solving
+this equation: </p><div class='mathjax-env mathjax-align*'>\begin{align*} x^2 e^{-x} (3-x) &amp;= 0 \\ x^2 (3-x) &amp; = 0 \\ x &amp; = 0 \qquad \text {or} \qquad x=3 \end{align*}</div>
+<!-- l. 63 --><p class='noindent'>Since both critical points are in the given interval, the global extrema must
+occur at the points <span class='mathjax-inline'>\(x=-1,0,3,5\)</span>. </p><div class='mathjax-env mathjax-align*'>\begin{align*} f(-1) &amp;= -e \\ f(0) &amp;= 0 \\ f(3) &amp;= 27e^{-3} \\ f(5) &amp;= 125 e^{-5} \end{align*}</div>
+<!-- l. 71 --><p class='noindent'>Since <span class='mathjax-inline'>\(-e\)</span> is the only negative value, the minimum value of <span class='mathjax-inline'>\(f\)</span> over the interval is <span class='mathjax-inline'>\(-e\)</span>.
+Since <span class='mathjax-inline'>\(e^3 &lt; 27\)</span>, <span class='mathjax-inline'>\(27e^{-3} &gt; 1\)</span>. But <span class='mathjax-inline'>\(e^5 &gt; 125\)</span>, and so <span class='mathjax-inline'>\(125e^{-5} &lt; 1\)</span>. Thus the maximum value of <span class='mathjax-inline'>\(f\)</span> over the interval is
+<span class='mathjax-inline'>\(27e^{-3}\)</span>.
+</p>     
+</div>
+</dd>     
+<dt class='enumerate-enumitem'>
+(c) 
+</dt><dd class='enumerate-enumitem'><span class='mathjax-inline'>\(f(x) = x \ln \left ( \frac {x}{5} \right )\)</span> on <span class='mathjax-inline'>\([0.1, 5]\)</span>. <div class='theorem-like problem-environment explanation' id='problem4' titletext=' explanation'><a id='x1-7r3'></a>First note that <span class='mathjax-inline'>\(f\)</span> is continuous on this closed interval so, by the Extreme
+Value Theorem, it must attain a maximum and minimum value on the interval <span class='mathjax-inline'>\([0.1,5]\)</span>.
+<div class='mathjax-env mathjax-align*'>\begin{align*} f'(x) &amp;= \ln \left ( \frac {x}{5} \right ) + x \cdot \frac {5}{x} \cdot \frac {1}{5} \\ &amp;= \ln \left ( \frac {x}{5} \right ) + 1 \end{align*}</div>
+                                                                  
+
+                                                                  
+<!-- l. 83 --><p class='noindent'>Notice that <span class='mathjax-inline'>\(f'(x)\)</span> exists for all values in <span class='mathjax-inline'>\([0.1,5]\)</span>, and so all of the critical points of <span class='mathjax-inline'>\(f\)</span> occur
+when <span class='mathjax-inline'>\(f'(x)=0\)</span>. Solving this equation:
+</p>     
+<div class='mathjax-block'>                              
+\[ \ln \left ( \frac {x}{5} \right ) + 1 = 0 \]
+</div>     
+<div class='mathjax-block'>                              
+\[ \ln \left ( \frac {x}{5} \right ) = -1 \]
+</div>     
+<div class='mathjax-block'>                              
+\[ \frac {x}{5} = e^{-1} \]
+</div>
+                                                                  
+
+                                                                  
+<div class='mathjax-block'>                                   
+\[ x = 5e^{-1} = \frac {5}{e} \]
+</div>     
+<!-- l. 89 --><p class='noindent'>Since <span class='mathjax-inline'>\(1 &lt; \frac {5}{e} &lt; 2\)</span>, <span class='mathjax-inline'>\(\frac {5}{e}\)</span> is in the given interval. So we need to consider the points
+<span class='mathjax-inline'>\(x = \frac {1}{10}, \frac {5}{e}, 5\)</span>.
+</p>     
+<div class='mathjax-block'>                              
+\[ f \left ( \frac {1}{10} \right ) = \frac {1}{10} \ln \left ( \frac {1}{50} \right ) = \frac {1}{10} \left ( \ln 1 - \ln 50 \right ) = -\frac {1}{10} \ln 50 \]
+</div>     
+<div class='mathjax-block'>                              
+\[ f \left ( \frac {5}{e} \right ) = \frac {5}{e} \ln \left ( \frac {1}{e} \right ) = - \frac {5}{e} \]
+</div>
+                                                                  
+
+                                                                  
+<div class='mathjax-block'>                                   
+\[ f(5) = 5 \ln 1 = 0 \]
+</div>     
+<!-- l. 94 --><p class='noindent'>Since the first two values are negative, <span class='mathjax-inline'>\(0\)</span> is the maximum value of <span class='mathjax-inline'>\(f\)</span> on <span class='mathjax-inline'>\([0.1,5]\)</span>. Also,
+since <span class='mathjax-inline'>\(e^{10} &gt; 50\)</span>, <span class='mathjax-inline'>\(\ln 50 &lt; 10\)</span> and therefore <span class='mathjax-inline'>\(-1 &lt; -\frac {1}{10} \ln 50\)</span>. But clearly <span class='mathjax-inline'>\(\frac {-5}{e} &lt; -1\)</span>, and so <span class='mathjax-inline'>\(- \frac {5}{e}\)</span> is the minimum value of <span class='mathjax-inline'>\(f\)</span> on
+<span class='mathjax-inline'>\([0.1, 5]\)</span>.
+</p>     
+</div>
+</dd></dl>
+</div>
+</body> 
+ 
+</html>
