@@ -37,14 +37,14 @@ $$\begin{array}{c|c|c}
 		\item	Evaluate the limit $\displaystyle \lim_{x \to 2} \dfrac{f(x^2)-6}{x-2}$. \textbf{EXPLAIN}.
 \begin{explanation}
 				If we set $g(x) = f(x^2)$, this limit is $\displaystyle \lim_{x\to 2} \dfrac{g(x)-g(2)}{x-2}$. In other words, we're being asked to
-				evaluate $\displaystyle\ddx f(x^2)$ at $x = 2$. By the Chain Rule, $\displaystyle\ddx f(x^2) = 2x f'(x^2)$. When evaluated at $x=2$
+				evaluate $\displaystyle\dfrac{d}{dx} f(x^2)$ at $x = 2$. By the Chain Rule, $\displaystyle\dfrac{d}{dx} f(x^2) = 2x f'(x^2)$. When evaluated at $x=2$
 				this is $2(2) f'(4) = 4 (3) = 12$. The value of this limit is $12$.
 				
 				Our full explanation is then:
-				$\displaystyle \lim_{x\to 2} \dfrac{f(x^2)}{x-2} = \eval{\ddx f(x^2) }_{x=2}$ by the limit definition of the derivative. Our calculation above shows that this equals $12$.
+				$\displaystyle \lim_{x\to 2} \dfrac{f(x^2)}{x-2} = \eval{\dfrac{d}{dx} f(x^2) }_{x=2}$ by the limit definition of the derivative. Our calculation above shows that this equals $12$.
 			  \end{explanation}	
 
-	  	\item Evaluate $\displaystyle\ddx f(f(x))$ at $x = 3$.
+	  	\item Evaluate $\displaystyle\dfrac{d}{dx} f(f(x))$ at $x = 3$.
 		  \begin{enumerate}
 			    \item 6
 			    \item 25
@@ -56,7 +56,7 @@ $$\begin{array}{c|c|c}
 \begin{explanation}
 			    The answer is (d):
 			    \begin{align*}
-			      \eval{\ddx f(f(x))}_{x = 3} &= f'(f(3)) \cdot f'(3) \\
+			      \eval{\dfrac{d}{dx} f(f(x))}_{x = 3} &= f'(f(3)) \cdot f'(3) \\
 			      &= f'(4)\cdot 5 \\
 			      &= 3 \cdot 5 = 15
 			    \end{align*}

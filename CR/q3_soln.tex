@@ -42,7 +42,7 @@
   \begin{enumerate}	
   \item $u'(1)$
 \begin{explanation}
-      $u'(x) = \ddx(f(g(x))) = f'(g(x)) \cdot g'(x)$.  So,
+      $u'(x) = \dfrac{d}{dx}(f(g(x))) = f'(g(x)) \cdot g'(x)$.  So,
       \begin{align*}
         u'(1) &= f'(g(1)) \cdot g'(1) \\
               &= f'(1) \cdot (-1) \\
@@ -55,7 +55,7 @@
 	
   \item $v'(1)$
 \begin{explanation}
-      $v'(x) = \ddx(f(x)g(x)) = f'(x)g(x) + f(x)g'(x)$.  So,
+      $v'(x) = \dfrac{d}{dx}(f(x)g(x)) = f'(x)g(x) + f(x)g'(x)$.  So,
       \begin{align*}
         v'(1) &= f'(1) g(1) + f(1) g'(1) \\
               &= (2)(1) + (2)(-1) \\
@@ -65,10 +65,10 @@
 
   \item $\displaystyle \lim_{x\to 1} \dfrac{\sqrt{g(x)}-1}{x-1}$
 \begin{explanation}
-	This is asking for $\eval{\ddx( \sqrt{g(x)} )}_{x=1}$. 
-	By the Chain Rule, $\ddx( \sqrt{g(x)} ) = \dfrac{g'(x)}{2\sqrt{g(x)}}$ so 
+	This is asking for $\eval{\dfrac{d}{dx}( \sqrt{g(x)} )}_{x=1}$. 
+	By the Chain Rule, $\dfrac{d}{dx}( \sqrt{g(x)} ) = \dfrac{g'(x)}{2\sqrt{g(x)}}$ so 
 	\begin{align*}
-		\eval{\ddx( \sqrt{g(x)} )}_{x=1} &= \dfrac{g'(1)}{2\sqrt{g(1)}}\\
+		\eval{\dfrac{d}{dx}( \sqrt{g(x)} )}_{x=1} &= \dfrac{g'(1)}{2\sqrt{g(1)}}\\
 			&= \dfrac{-1}{2\sqrt{1}}\\
 			&= -\dfrac{1}{2}.
 	\end{align*}

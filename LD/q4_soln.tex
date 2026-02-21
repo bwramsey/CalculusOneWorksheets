@@ -18,7 +18,7 @@ Find the derivatives of the following functions:
 	%part a
 	\item  $f(x) = x^{e^x} + 7x$
 \begin{explanation}
-		$f'(x) = \ddx \left(x^{e^x} \right) + \ddx(7x) = \ddx \left(x^{e^x} \right) + 7$.  So the real problem is to find $\ddx \left(x^{e^x} \right)$.\\
+		$f'(x) = \dfrac{d}{dx} \left(x^{e^x} \right) + \dfrac{d}{dx}(7x) = \dfrac{d}{dx} \left(x^{e^x} \right) + 7$.  So the real problem is to find $\dfrac{d}{dx} \left(x^{e^x} \right)$.\\
 		 
 		 We will use logarithmic differentiation. \\
 		 
@@ -42,8 +42,8 @@ Find the derivatives of the following functions:
 		ALTERNATIVE APPROACH
 		
 		\begin{align*}
-		\ddx \left( x^{e^x} \right) &= \ddx \left( e^{\ln(x)^{e^x}} \right) \\
-		&= \ddx \left( e^{e^x \ln(x)} \right) \\
+		\dfrac{d}{dx} \left( x^{e^x} \right) &= \dfrac{d}{dx} \left( e^{\ln(x)^{e^x}} \right) \\
+		&= \dfrac{d}{dx} \left( e^{e^x \ln(x)} \right) \\
 		&= e^{e^x \ln(x)} \left( e^x \ln(x) + \frac{e^x}{x} \right) \\
 		&= x^{e^x} \left( e^x \ln(x) + \frac{e^x}{x} \right).
 		\end{align*}
@@ -76,8 +76,8 @@ Find the derivatives of the following functions:
 		 ALTERNATIVE APPROACH\\
 		 
 			\begin{align*}
-			g'(x) &= \ddx \left( (\ln(x) + 9)^{\sec(x^4)} \right) \\
-			&= \ddx \left( e^{\sec(x^4) \ln ( \ln(x) + 9) } \right) \\
+			g'(x) &= \dfrac{d}{dx} \left( (\ln(x) + 9)^{\sec(x^4)} \right) \\
+			&= \dfrac{d}{dx} \left( e^{\sec(x^4) \ln ( \ln(x) + 9) } \right) \\
 			&= e^{\sec(x^4) \ln ( \ln(x) + 9)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \sec(x^4) \frac{\frac{1}{x}}{\ln(x) + 9} \right) \\
 			&= (\ln(x) + 9)^{\sec(x^4)} \left( 4x^3 \sec(x^4) \tan(x^4) \ln(\ln(x) + 9) + \frac{\sec(x^4)}{x(\ln(x) + 9)} \right) .
 			\end{align*}
