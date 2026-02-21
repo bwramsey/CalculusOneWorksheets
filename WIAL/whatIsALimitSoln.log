@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1060,21 +1060,26 @@ File: ./xmPictures/graphrationalfunction.png Graphic file (type png)
 <use ./xmPictures/graphrationalfunction.png>
 Package pdftex.def Info: ./xmPictures/graphrationalfunction.png  used on input line 19.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
 <./xmPictures/graphlinearfunction.png, id=38, 225.7233pt x 174.4116pt>
 File: ./xmPictures/graphlinearfunction.png Graphic file (type png)
 <use ./xmPictures/graphlinearfunction.png>
-Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 23.
+Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 25.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
-
-Overfull \hbox (0.2119pt too wide) in paragraph at lines 43--44
-[]\OT1/lmr/bx/n/10 Explanation. []\OT1/lmr/m/n/10 From the graphs we have that $[] \OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) = 2$ and $[] \OML/lmm/m/it/10 g\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
- []
-
 
 
 [4
 
- <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>])
+ <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>]
+Overfull \hbox (0.2119pt too wide) in paragraph at lines 45--46
+[]\OT1/lmr/bx/n/10 Explanation. []\OT1/lmr/m/n/10 From the graphs we have that $[] \OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) = 2$ and $[] \OML/lmm/m/it/10 g\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
+ []
+
+)
 
 [5] (./q3_soln.tex
 
@@ -1115,15 +1120,28 @@ Package pdftex.def Info: ./xmPictures/sketchstage2.png  used on input line 32.
 
 [9
 
- <./xmPictures/sketchstage1.png>])
+ <./xmPictures/sketchstage1.png>]
+<./xmPictures/sketchstage3.png, id=80, 538.26094pt x 528.47438pt>
+File: ./xmPictures/sketchstage3.png Graphic file (type png)
+<use ./xmPictures/sketchstage3.png>
+Package pdftex.def Info: ./xmPictures/sketchstage3.png  used on input line 39.
+(pdftex.def)             Requested size: 538.25963pt x 528.47308pt.
+<./xmPictures/sketchstage4.png, id=81, 518.6878pt x 528.47438pt>
+File: ./xmPictures/sketchstage4.png Graphic file (type png)
+<use ./xmPictures/sketchstage4.png>
+Package pdftex.def Info: ./xmPictures/sketchstage4.png  used on input line 45.
+(pdftex.def)             Requested size: 518.68654pt x 528.47308pt.
 
-[10 <./xmPictures/sketchstage2.png>] (./q5_soln.tex
+
+[10 <./xmPictures/sketchstage2.png> <./xmPictures/sketchstage3.png>])
+
+[11 <./xmPictures/sketchstage4.png>] (./q5_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[11
+[12
 
 ]
 Overfull \hbox (1.37985pt too wide) in paragraph at lines 29--30
@@ -1132,7 +1150,7 @@ Overfull \hbox (1.37985pt too wide) in paragraph at lines 29--30
 
 )
 
-[12
+[13
 
 ]
 *********************************************************************
@@ -1152,18 +1170,18 @@ Package rerunfilecheck Info: Checksums for `whatIsALimitSoln.out':
 (rerunfilecheck)             After:  41201C66C0A25697C29153E9FF005F21;156.
  ) 
 Here is how much of TeX's memory you used:
- 39648 strings out of 469010
- 916323 string characters out of 5456196
+ 39667 strings out of 469010
+ 916920 string characters out of 5456196
  1400000 words of memory out of 5000000
- 67169 multiletter control sequences out of 15000+600000
+ 67187 multiletter control sequences out of 15000+600000
  671163 words of font info for 68 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 135i,10n,138p,1250b,845s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 135i,10n,138p,1250b,849s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on whatIsALimitSoln.pdf (12 pages, 401587 bytes).
+Output written on whatIsALimitSoln.pdf (13 pages, 603160 bytes).
 PDF statistics:
- 165 PDF objects out of 1000 (max. 8388607)
- 115 compressed objects within 2 object streams
- 31 named destinations out of 1000 (max. 500000)
- 33 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 174 PDF objects out of 1000 (max. 8388607)
+ 119 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 43 words of extra memory for PDF output out of 10000 (max. 10000000)
 

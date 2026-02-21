@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:12
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1011,43 +1011,50 @@ File: ./xmPictures/graphrationalfunction.png Graphic file (type png)
 <use ./xmPictures/graphrationalfunction.png>
 Package pdftex.def Info: ./xmPictures/graphrationalfunction.png  used on input line 17.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
 <./xmPictures/graphlinearfunction.png, id=9, 225.7233pt x 174.4116pt>
 File: ./xmPictures/graphlinearfunction.png Graphic file (type png)
 <use ./xmPictures/graphlinearfunction.png>
-Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 21.
+Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 23.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 25.
- (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 27.
+(/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 25.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 27.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 25.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 27.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 25.
+(Font)              <10> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 25.
+(Font)              <7> on input line 27.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 25.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 25.
+(Font)              <5> on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 25.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-*********************************************************************
-
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>] (./q2_xm.aux)
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./xmPictures/graphrationalfunction.png> <./xmPictures/graphlinearfunction.png>]
+*********************************************************************
+
+
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}] (./q2_xm.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1063,18 +1070,18 @@ Package rerunfilecheck Info: Checksums for `q2_xm.out':
 (rerunfilecheck)             After:  C7B56D6D78C515827B555305F8A9F966;92.
  ) 
 Here is how much of TeX's memory you used:
- 39525 strings out of 469010
- 913971 string characters out of 5456196
- 1395179 words of memory out of 5000000
+ 39526 strings out of 469010
+ 913977 string characters out of 5456196
+ 1394179 words of memory out of 5000000
  67090 multiletter control sequences out of 15000+600000
  663542 words of font info for 65 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 121i,6n,124p,1184b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,6n,124p,1184b,669s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on q2_xm.pdf (1 page, 179215 bytes).
+Output written on q2_xm.pdf (2 pages, 179739 bytes).
 PDF statistics:
- 68 PDF objects out of 1000 (max. 8388607)
- 44 compressed objects within 1 object stream
- 6 named destinations out of 1000 (max. 500000)
+ 74 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
+ 7 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

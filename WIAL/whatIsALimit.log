@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:40
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1060,10 +1060,15 @@ File: ./xmPictures/graphrationalfunction.png Graphic file (type png)
 <use ./xmPictures/graphrationalfunction.png>
 Package pdftex.def Info: ./xmPictures/graphrationalfunction.png  used on input line 17.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
 <./xmPictures/graphlinearfunction.png, id=33, 225.7233pt x 174.4116pt>
 File: ./xmPictures/graphlinearfunction.png Graphic file (type png)
 <use ./xmPictures/graphlinearfunction.png>
-Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 21.
+Package pdftex.def Info: ./xmPictures/graphlinearfunction.png  used on input line 23.
 (pdftex.def)             Requested size: 225.72273pt x 174.41118pt.
 )
 
@@ -1077,7 +1082,37 @@ LaTeX Warning: No \author given.
 
 [5
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 20--21
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--27
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+)
 
 [6
 
@@ -1136,7 +1171,7 @@ Here is how much of TeX's memory you used:
  430 hyphenation exceptions out of 8191
  135i,10n,138p,1246b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on whatIsALimit.pdf (10 pages, 209099 bytes).
+Output written on whatIsALimit.pdf (10 pages, 209078 bytes).
 PDF statistics:
  141 PDF objects out of 1000 (max. 8388607)
  101 compressed objects within 2 object streams

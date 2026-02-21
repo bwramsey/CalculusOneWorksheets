@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:15
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -997,14 +997,13 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 
 \c@lstlisting=\count415
 Package hyperref Info: Link coloring ON on input line 8.
-(./indeterminateFormsSoln.out) (./indeterminateFormsSoln.out)
 \@outlinefile=\write9
 \openout9 = `indeterminateFormsSoln.out'.
 
 \ST@sf=\write10
 \openout10 = `indeterminateFormsSoln.sagetex.sage'.
 
- (./summary.tex
+(./summary.tex
 
 LaTeX Warning: No \author given.
 
@@ -1135,8 +1134,8 @@ Underfull \hbox (badness 10000) in paragraph at lines 27--28
  []
 
 
-Overfull \hbox (68.31885pt too wide) in paragraph at lines 29--33
-[] [] \OT1/lmr/m/n/10 = [] [] = [] [] =
+Overfull \hbox (139.54088pt too wide) in paragraph at lines 29--33
+[] [][] \OT1/lmr/m/n/10 = [] [][] = [] [][] =
  []
 
 )
@@ -1186,6 +1185,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 31--32
  []
 
 
+Overfull \hbox (53.48409pt too wide) in paragraph at lines 49--51
+\OT1/lmr/m/n/10 Since $[] [][] = [] [][]  =[]\OMS/lmsy/m/n/10 )  [] [][] \OT1/lmr/m/n/10 =
+ []
+
+
 
 [15
 
@@ -1195,13 +1199,13 @@ Underfull \hbox (badness 10000) in paragraph at lines 72--81
  []
 
 
+
+[16]
 Underfull \hbox (badness 10000) in paragraph at lines 82--84
 
  []
 
 
-
-[16]
 Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
  []
@@ -1209,6 +1213,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 85--86
 
 Underfull \hbox (badness 10000) in paragraph at lines 87--93
 
+ []
+
+
+Overfull \hbox (50.7821pt too wide) in paragraph at lines 94--95
+[]\OT1/lmr/m/n/10 Since $[] [][] \OMS/lmsy/m/n/10 6\OT1/lmr/m/n/10 = [] [][]  =[]\OMS/lmsy/m/n/10 )  [] [][]$
  []
 
 )
@@ -1221,7 +1230,12 @@ LaTeX Warning: No \author given.
 
 [18
 
-])
+]
+Overfull \hbox (41.78714pt too wide) in paragraph at lines 40--41
+[]\OT1/lmr/bx/n/10 Explanation. []\OT1/lmr/m/n/10 The limit does not ex-ist, be-cause $[] []\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) \OMS/lmsy/m/n/10 6\OT1/lmr/m/n/10 = [] []\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 )$. 
+ []
+
+)
 
 [19
 
@@ -1261,22 +1275,29 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `indeterminateFormsSoln.out' has not changed.
-(rerunfilecheck)             Checksum: 38E57C4C4F18FBC030B7C4A39442ECB5;389.
+
+
+Package rerunfilecheck Warning: File `indeterminateFormsSoln.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `indeterminateFormsSoln.out':
+(rerunfilecheck)             Before: <no file>
+(rerunfilecheck)             After:  38E57C4C4F18FBC030B7C4A39442ECB5;389.
  ) 
 Here is how much of TeX's memory you used:
- 40193 strings out of 469010
- 930260 string characters out of 5456196
- 1495681 words of memory out of 5000000
- 67673 multiletter control sequences out of 15000+600000
+ 40185 strings out of 469010
+ 930095 string characters out of 5456196
+ 1495639 words of memory out of 5000000
+ 67669 multiletter control sequences out of 15000+600000
  671163 words of font info for 68 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,12n,138p,1256b,2327s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on indeterminateFormsSoln.pdf (22 pages, 257409 bytes).
+</usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
+Output written on indeterminateFormsSoln.pdf (22 pages, 251741 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 181 compressed objects within 2 object streams
+ 223 PDF objects out of 1000 (max. 8388607)
+ 171 compressed objects within 2 object streams
  60 named destinations out of 1000 (max. 500000)
- 29 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

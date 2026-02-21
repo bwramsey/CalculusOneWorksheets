@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 21:14
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1063,9 +1063,9 @@ File: ot1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 File: ./xmPictures/figure1_pdf.png Graphic file (type png)
 <use ./xmPictures/figure1_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure1_pdf.png  used on input line 19.
-(pdftex.def)             Requested size: 369.37776pt x 645.40836pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 
-Overfull \hbox (24.37776pt too wide) in paragraph at lines 19--20
+Overfull \hbox (576.44026pt too wide) in paragraph at lines 19--20
  [] 
  []
 
@@ -1074,7 +1074,7 @@ Overfull \hbox (24.37776pt too wide) in paragraph at lines 19--20
 [4
 
 ]
-Overfull \vbox (95.40836pt too high) has occurred while \output is active []
+Overfull \vbox (642.4521pt too high) has occurred while \output is active []
 
 
 
@@ -1331,22 +1331,32 @@ Underfull \hbox (badness 10000) in paragraph at lines 17--22
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 26--27
+Underfull \hbox (badness 10000) in paragraph at lines 25--26
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 29--33
+Overfull \hbox (6.10956pt too wide) in paragraph at lines 28--32
+\OT1/lmr/m/n/10 Therefore, the line $\OML/lmm/m/it/10 x \OT1/lmr/m/n/10 = 2$ is a ver-ti-cal asymp-tote of $\OML/lmm/m/it/10 f$ \OT1/lmr/m/n/10 since $[] []\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 28--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 37--38
+Underfull \hbox (badness 10000) in paragraph at lines 36--37
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 47--49
+Overfull \hbox (15.29439pt too wide) in paragraph at lines 46--48
+\OT1/lmr/m/n/10 Therefore, the line $\OML/lmm/m/it/10 y \OT1/lmr/m/n/10 = 1$ is a hor-i-zon-tal asymp-tote of $\OML/lmm/m/it/10 f$ \OT1/lmr/m/n/10 since $[] []\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
@@ -1355,7 +1365,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 47--49
 [33
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 58--60
+Overfull \hbox (23.07219pt too wide) in paragraph at lines 57--59
+\OT1/lmr/m/n/10 Therefore, the line $\OML/lmm/m/it/10 y \OT1/lmr/m/n/10 = 2$ is a hor-i-zon-tal asymp-tote of $\OML/lmm/m/it/10 f$ \OT1/lmr/m/n/10 since $[] []\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OML/lmm/m/it/10 x\OT1/lmr/m/n/10 ) =
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 57--59
 
  []
 
@@ -1370,27 +1385,27 @@ LaTeX Warning: No \author given.
 [35
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 32--33
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--44
+Underfull \hbox (badness 10000) in paragraph at lines 39--41
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 49--51
+Underfull \hbox (badness 10000) in paragraph at lines 46--48
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 52--55
+Underfull \hbox (badness 10000) in paragraph at lines 49--52
 
  []
 
 
-Overfull \hbox (38.63615pt too wide) in paragraph at lines 52--55
+Overfull \hbox (38.63615pt too wide) in paragraph at lines 49--52
 \OT1/lmr/m/n/10 For ex-am-ple, $\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OMS/lmsy/m/n/10 ^^@\OML/lmm/m/it/10 n^^Y\OT1/lmr/m/n/10 ) = [] [] = 0$, while $\OML/lmm/m/it/10 f\OT1/lmr/m/n/10 (\OMS/lmsy/m/n/10 ^^@\OT1/lmr/m/n/10 (2\OML/lmm/m/it/10 n \OT1/lmr/m/n/10 + 1)[]) = [] [] =
  []
 
@@ -1399,7 +1414,7 @@ Overfull \hbox (38.63615pt too wide) in paragraph at lines 52--55
 [36
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 56--57
+Underfull \hbox (badness 10000) in paragraph at lines 53--54
 
  []
 
@@ -1485,7 +1500,7 @@ Here is how much of TeX's memory you used:
  135i,18n,138p,1267b,913s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on usingLimitsToDetectAsymptotesSoln.pdf (42 pages, 2104518 bytes).
+Output written on usingLimitsToDetectAsymptotesSoln.pdf (42 pages, 2104243 bytes).
 PDF statistics:
  338 PDF objects out of 1000 (max. 8388607)
  243 compressed objects within 3 object streams

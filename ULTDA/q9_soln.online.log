@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 02:17
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 21:11
  system commands enabled.
  file:line:error style messages enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q9_soln.tex}"
@@ -1848,7 +1848,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 l.28 --- TeX4ht warning --- \HRestore\pageref ? ---
-l.39 --- TeX4ht warning --- \HRestore\pageref ? ---
+l.38 --- TeX4ht warning --- \HRestore\pageref ? ---
 
 
 [1
@@ -1869,8 +1869,8 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  583 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 71 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:537,3:804,4:28,5:149,6:40,7:2752,8:3,9:271,10:23,11:167
+   avail lists: 2:533,3:798,4:28,5:149,6:40,7:2749,8:3,9:268,10:23,11:167
  75045 multiletter control sequences out of 65536+600000
  35 fonts using 2076855 bytes
- 124i,5n,142p,1671b,713s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q9_soln.online.dvi (2 pages, 9996 bytes).
+ 124i,5n,142p,1671b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on q9_soln.online.dvi (2 pages, 10136 bytes).
