@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:19
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 04:31
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,7 +1036,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./xmPictures/figure4.png Graphic file (type png)
 <use ./xmPictures/figure4.png>
 Package pdftex.def Info: ./xmPictures/figure4.png  used on input line 16.
-(pdftex.def)             Requested size: 331.84232pt x 192.11923pt.
+(pdftex.def)             Requested size: 1106.1298pt x 640.39093pt.
 
 *********************************************************************
 
@@ -1067,7 +1067,7 @@ Here is how much of TeX's memory you used:
  430 hyphenation exceptions out of 8191
  121i,6n,124p,1184b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on q3_xm.pdf (1 page, 134578 bytes).
+Output written on q3_xm.pdf (1 page, 134569 bytes).
 PDF statistics:
  50 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
