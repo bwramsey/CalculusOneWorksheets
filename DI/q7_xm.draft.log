@@ -1,7 +1,7 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  22 FEB 2026 02:38
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  22 FEB 2026 02:35
  system commands enabled.
  file:line:error style messages enabled.
-**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{definiteIntegrals.tex}"
+**\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q7_xm.tex}"
 Lua module: luaotfload 2024-12-03 v3.29 Lua based OpenType font support
 Lua module: lualibs 2023-07-13 v2.76 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2023-07-13 v2.76 ConTeXt Lua libraries -- extended collection.
@@ -34,11 +34,9 @@ Package: tex4ht
 --- Note --- for ^ at preamble, use the command line option `early^'
 --------------------------------------
 \tmp:toks=\toks17
-) (./definiteIntegrals.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/usepackage.4ht
+) (./q7_xm.tex (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/usepackage.4ht
 version 2025-05-13-14:10
-) (/root/texmf/tex/latex/ximeraLatex/xourse.cls
-Document Class: xourse 2024/05/12 v1.5.1 Combining Ximera activities into Xourses
-(/root/texmf/tex/latex/ximeraLatex/ximera.cls
+) (/root/texmf/tex/latex/ximeraLatex/ximera.cls
 Document Class: ximera 2024/05/12 v1.5.1 Simultaneously write print and online interactive materials
 
 '::.   .::' ::  :::::     :::::  .:::::::::::::::::::.    ::: 
@@ -721,7 +719,7 @@ warning  (font): lua-loaded font '17' with name 'dummy' has no characters
 \c@warning=\count381
 \outcomefile=\write6
 
-\openout6 = definiteIntegrals.online.oc
+\openout6 = q7_xm.draft.oc
 \c@Iteration@probCnt=\count382
 \c@problem=\count383
 \c@problem@Depth=\count384
@@ -747,15 +745,15 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \c@ST@cmdline=\count390
 \sagetexindent=\skip69
 
-No file definiteIntegrals.online.sagetex.sout.
+No file q7_xm.draft.sagetex.sout.
 \sagecommandlineskip=\skip70
 )
 \myfile=\write7
 
-\openout7 = definiteIntegrals.online.xmjax
+\openout7 = q7_xm.draft.xmjax
 
 Info: No default preamble loaded (xmPreamble.tex)
-)) (../preamble.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
+) (../preamble.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
 Package: multicol 2025/05/25 v2.0a multicolumn formatting (FMi)
 \c@tracingmulticols=\count391
 \mult@box=\box74
@@ -1029,16 +1027,16 @@ version 2025-02-09-08:05
 version 2025-02-27-12:30
 
 l.875 --- TeX4ht warning --- nonprimitive \everypar ---
---- needs --- tex4ht definiteIntegrals.online ---
+--- needs --- tex4ht q7_xm.draft ---
 \tmp:cnt=\count409
 
-\openout15 = definiteIntegrals.online.tmp
-(./definiteIntegrals.online.tmp)
+\openout15 = q7_xm.draft.tmp
+(./q7_xm.draft.tmp)
 \tmp:dim=\skip73
- (./definiteIntegrals.online.xref)
+ (./q7_xm.draft.xref)
 \:refout=\write8
 
-\openout8 = definiteIntegrals.online.xref
+\openout8 = q7_xm.draft.xref
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 --------------------------------------
@@ -1129,8 +1127,8 @@ version 2025-06-11-13:51
 --------------------------------------
 \:tocout=\write9
 
-\openout9 = definiteIntegrals.online.4tc
- (definiteIntegrals.online.4tc) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/latex.4ht
+\openout9 = q7_xm.draft.4tc
+ (q7_xm.draft.4tc) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/latex.4ht
 version 2025-06-11-13:51
 LaTeX Info: Redefining \_ on input line 180.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
@@ -1138,8 +1136,8 @@ Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-))
-(/usr/local/texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2024/12/21 v2.1c Standard LaTeX file
 \@remove@tlig@@@=\luafunction29
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
@@ -1211,10 +1209,10 @@ LaTeX Info: Redefining \> on input line 840.
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
@@ -1291,10 +1289,10 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
-)) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/array.4ht
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/array.4ht
 version 2023-11-12-08:00
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
@@ -1323,22 +1321,10 @@ version 2018-12-30-09:33
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/colortbl.4ht
 version 2025-02-18-10:11
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xcolor-hooks.4ht
 version 2020-10-17-13:53
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
-version 2025-06-12-13:53
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
-version 2024-12-15-07:18
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
-version 2024-09-27-10:13
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
-version 2018-12-30-09:33
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
-version 2025-06-11-13:51
-)) (/root/texmf/tex/latex/ximeraLatex/xourse.4ht
-\c@ximera@part=\count411
- (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1352,7 +1338,7 @@ version 2025-06-11-13:51
 Package: microtype 2025/02/11 v3.2a Micro-typographical refinements (RS)
 \MT@toks=\toks70
 \MT@tempbox=\box128
-\MT@count=\count412
+\MT@count=\count411
 LaTeX Info: Redefining \noprotrusionifhmode on input line 1087.
 LaTeX Info: Redefining \leftprotrusion on input line 1088.
 \MT@prot@toks=\toks71
@@ -1361,7 +1347,7 @@ LaTeX Info: Redefining \textls on input line 1449.
 \MT@outer@kern=\dimen324
 LaTeX Info: Redefining \microtypecontext on input line 2053.
 LaTeX Info: Redefining \textmicrotypecontext on input line 2070.
-\MT@listname@count=\count413
+\MT@listname@count=\count412
  (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype-luatex.def
 File: microtype-luatex.def 2025/02/11 v3.2a Definitions specific to luatex (RS)
 Lua module: microtype 2025/02/11 v3.2a microtype module.
@@ -1371,16 +1357,15 @@ LaTeX Info: Redefining \lslig on input line 779.
 \MT@outer@space=\skip74
 )
 Package microtype Info: Loading configuration file microtype.cfg.
-
-(/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/microtype.cfg
 File: microtype.cfg 2025/02/11 v3.2a microtype main configuration file (RS)
 )
 LaTeX Info: Redefining \microtypesetup on input line 3065.
 )
-\c@identification=\count414
-\c@imagealt=\count415
-\c@choiceId=\count416
-\c@footnoteNum=\count417
+\c@identification=\count413
+\c@imagealt=\count414
+\c@choiceId=\count415
+\c@footnoteNum=\count416
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
@@ -1391,7 +1376,8 @@ version 2024-09-27-10:13
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
-)) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/article.4ht
+))
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/article.4ht
 version 2023-04-10-13:46
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
@@ -1416,8 +1402,7 @@ version 2025-06-11-13:51
 version 2022-05-19-13:37
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
@@ -1429,7 +1414,8 @@ version 2025-06-11-13:51
 version 2024-09-09-13:35
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
@@ -1445,8 +1431,7 @@ version 2025-06-12-13:53
 version 2024-12-15-07:18
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
@@ -1458,7 +1443,8 @@ version 2025-06-12-13:53
 version 2024-12-15-07:18
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
@@ -1477,8 +1463,7 @@ version 2024-09-27-10:13
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
-))
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xcolor.4ht
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xcolor.4ht
 version 2025-06-05-13:26
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/color.4ht
 version 2025-06-05-13:26
@@ -1490,7 +1475,8 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/dvips.4ht
 version 2009-05-21-09:32
@@ -1506,8 +1492,7 @@ version 2018-12-30-09:33
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/pgf.4ht
 version 2009-05-21-09:32
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1519,7 +1504,8 @@ version 2018-12-30-09:33
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/graphicx.4ht
 version 2022-01-12-13:53
- (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1541,8 +1527,7 @@ version 2025-06-12-13:53
 --------------------------------------
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1554,7 +1539,8 @@ version 2024-10-04-14:44
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1570,8 +1556,7 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/amssymb.4ht
 version 2009-05-21-09:32
@@ -1583,7 +1568,8 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/amsfonts.4ht
 version 2024-11-03-05:51
@@ -1600,8 +1586,7 @@ version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/amsmath.4ht
 version 2025-01-08-13:38
 \tmp:muskip=\muskip19
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1613,7 +1598,8 @@ version 2018-12-30-09:33
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/amstext.4ht
 version 2009-05-21-09:32
- (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1629,8 +1615,7 @@ version 2009-05-21-09:32
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1642,7 +1627,8 @@ version 2009-05-21-09:32
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1658,8 +1644,7 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/xifthen.4ht
 version 2021-12-25-13:54
@@ -1671,7 +1656,8 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/listings.4ht
 version 2025-02-27-12:30
@@ -1690,8 +1676,7 @@ version 2018-12-30-09:33
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/nameref.4ht
 version 2025-03-03-13:56
-
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+ (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1705,7 +1690,8 @@ version 2025-06-11-13:51
 version 2025-06-10-13:08
 LaTeX Info: Redefining \autoref on input line 88.
 \Hy@SectionHShift=\skip75
- (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
+
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
@@ -1721,8 +1707,7 @@ version 2009-05-21-09:32
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1734,7 +1719,8 @@ version 2021-07-04-09:13
 version 2025-06-12-13:53
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/unicode.4ht
 version 2024-12-15-07:18
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4-math.4ht
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
@@ -1750,8 +1736,7 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-)
-(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/float.4ht
 version 2009-05-21-09:32
@@ -1763,7 +1748,8 @@ version 2024-12-15-07:18
 version 2024-09-27-10:13
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/svg-option.4ht
 version 2018-12-30-09:33
-) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
+)
+(/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
 )) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
@@ -1775,8 +1761,8 @@ version 2024-09-27-10:13
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
-)) (./definiteIntegrals.online.oc) (./definiteIntegrals.online.aux)
-\openout1 = definiteIntegrals.online.aux
+)) (./q7_xm.draft.oc) (./q7_xm.draft.aux)
+\openout1 = q7_xm.draft.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
 LaTeX Font Info:    ... okay on input line 147.
@@ -1801,11 +1787,11 @@ LaTeX Font Info:    ... okay on input line 147.
 
 Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
 
-\c@lstlisting=\count418
+\c@lstlisting=\count417
 Package hyperref Info: Link coloring ON on input line 147.
 \ST@sf=\write10
 
-\openout10 = definiteIntegrals.online.sagetex.sage
+\openout10 = q7_xm.draft.sagetex.sage
 LaTeX Info: Redefining \microtypecontext on input line 147.
 Package microtype Info: Not applying patch `item' (for tex4ht) on input line 147.
 Package microtype Info: Not applying patch `toc' (for tex4ht) on input line 147.
@@ -1827,12 +1813,46 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
 LaTeX Warning: No \author given.
 
 )
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
+File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omllmm.fd
+File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omslmsy.fd
+File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/omxlmex.fd
+File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 17.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <7> on input line 17.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <5> on input line 17.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msa.cfg
+File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 17.
+ (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+) (/usr/local/texlive/2025/texmf-dist/tex/latex/microtype/mt-msb.cfg
+File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
+)
 *********************************************************************
 
 
 [1
 
-] (./definiteIntegrals.online.aux)
+] (./q7_xm.draft.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1840,12 +1860,12 @@ L3 programming layer <2020/03/25>
 )
 
 Here is how much of LuaTeX's memory you used:
- 49450 strings out of 470198
+ 49565 strings out of 470198
  100000,1977958 words of node,token memory allocated
  583 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 71 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:134,3:247,4:9,5:31,6:18,7:154,8:3,9:81,10:7
- 74936 multiletter control sequences out of 65536+600000
- 18 fonts using 938559 bytes
- 139i,5n,159p,1681b,389s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on definiteIntegrals.online.dvi (1 page, 4372 bytes).
+   avail lists: 2:272,3:361,4:10,5:52,6:36,7:640,8:3,9:165,10:7,11:36
+ 75032 multiletter control sequences out of 65536+600000
+ 35 fonts using 2076855 bytes
+ 124i,5n,142p,1669b,387s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on q7_xm.draft.dvi (1 page, 4592 bytes).
