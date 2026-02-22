@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:45
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1143,7 +1143,12 @@ LaTeX Warning: No \author given.
 
 [14
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 17--18
+
+ []
+
+)
 
 [15
 
@@ -1166,6 +1171,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 18--19
 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 20--22
+
+ []
+
 )
 
 [17
@@ -1178,7 +1193,17 @@ LaTeX Warning: No \author given.
 
 [18
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+)
 
 [19
 
@@ -1202,13 +1227,13 @@ Package rerunfilecheck Info: Checksums for `approximatingTheAreaUnderACurve.out'
 Here is how much of TeX's memory you used:
  39664 strings out of 469010
  916199 string characters out of 5456196
- 1399255 words of memory out of 5000000
+ 1399254 words of memory out of 5000000
  67162 multiletter control sequences out of 15000+600000
  665199 words of font info for 66 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,6n,138p,1210b,760s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on approximatingTheAreaUnderACurve.pdf (19 pages, 286313 bytes).
+Output written on approximatingTheAreaUnderACurve.pdf (19 pages, 286323 bytes).
 PDF statistics:
  187 PDF objects out of 1000 (max. 8388607)
  139 compressed objects within 2 object streams
