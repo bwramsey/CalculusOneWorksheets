@@ -51,7 +51,7 @@
         
         The right integral requires chain rule.  We'll subsitute $u=x^3$.
         \begin{align*}
-       \dfrac{d}{dx} \left( \int_0^{x^3} \sin(7t^2) \d t \right) &= \dd{u} \left( \int_0^{u} \sin(7t^2) \d t \right) \dd[u]{x}\\
+       \dfrac{d}{dx} \left( \int_0^{x^3} \sin(7t^2) \d t \right) &= \dfrac{d}{du} \left( \int_0^{u} \sin(7t^2) \d t \right) \cdot \dfrac{du}{dx}\\
                                  &=\sin(7u^2) \cdot \dfrac{d}{dx}(x^3)\\
                                  &=\sin(7u^2) \cdot 3x^2\\
  	\text{substituting}\ u=x^3  \implies \dfrac{d}{dx} \left( \int_0^{x^3} \sin(7t^2) \d t \right) &=3x^2 \sin(7x^6)
