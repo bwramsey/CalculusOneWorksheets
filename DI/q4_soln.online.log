@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 14:13
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  22 FEB 2026 02:37
  system commands enabled.
  file:line:error style messages enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q4_soln.tex}"
@@ -1856,12 +1856,12 @@ l.50 --- TeX4ht warning --- \HRestore\pageref ? ---
 l.51 --- TeX4ht warning --- File `"./xmPictures/diimage008.xbb"' not found ---
 l.51 --- TeX4ht warning --- Cannot determine size of graphic in "./xmPictures/diimage008.xbb" (no BoundingBox) ---
 l. 51 --- needs --- ./xmPictures/diimage008.png ---
-l.63 --- TeX4ht warning --- \HRestore\pageref ? ---
 
 
 [1
 
 ]
+l.63 --- TeX4ht warning --- \HRestore\pageref ? ---
 l.65 --- TeX4ht warning --- File `"./xmPictures/diimage006.xbb"' not found ---
 l.65 --- TeX4ht warning --- Cannot determine size of graphic in "./xmPictures/diimage006.xbb" (no BoundingBox) ---
 l. 65 --- needs --- ./xmPictures/diimage006.png ---
@@ -1880,8 +1880,8 @@ Here is how much of LuaTeX's memory you used:
  100000,1977958 words of node,token memory allocated
  583 words of node memory still in use:
    6 hlist, 2 vlist, 2 rule, 2 glue, 4 kern, 1 glyph, 7 attribute, 71 glue_spec, 7 attribute_list, 1 write nodes
-   avail lists: 2:557,3:779,4:38,5:213,6:73,7:3396,8:3,9:354,10:28,11:162
+   avail lists: 2:519,3:819,4:37,5:217,6:67,7:3304,8:3,9:340,10:28,11:158
  75063 multiletter control sequences out of 65536+600000
  35 fonts using 2076855 bytes
- 124i,5n,142p,1671b,644s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q4_soln.online.dvi (2 pages, 10324 bytes).
+ 124i,5n,142p,1671b,684s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on q4_soln.online.dvi (2 pages, 10860 bytes).
