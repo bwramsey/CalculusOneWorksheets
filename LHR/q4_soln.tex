@@ -17,29 +17,29 @@
   \begin{enumerate}
   
     %part a  
-  \item  $\lim_{x \to \infty} \frac{x}{\sqrt{x^2 + 1}}  $
+  \item  $\displaystyle \lim_{x \to \infty} \dfrac{x}{\sqrt{x^2 + 1}}  $
 
     \begin{explanation}
     
-    This limit is of the form:  $\frac{\infty}{\infty}$. L.R. is applicable, but we don't need to apply it.
+    This limit is of the form:  $\dfrac{\infty}{\infty}$. L.R. is applicable, but we don't need to apply it.
       \begin{align*}
-        \lim_{x \to \infty} \frac{x}{\sqrt{x^2 + 1}} &= \lim_{x \to \infty} \frac{x}{\sqrt{x^2 \left(1 + \frac{1}{x^2} \right)}} \\
-                                                     &=  \lim_{x \to \infty} \frac{x}{|x| \sqrt{1 + \frac{1}{x^2} }} \\
-                                                     &=  \lim_{x \to \infty} \frac{x}{x \sqrt{1 + \frac{1}{x^2} }} \\
-                                                     &=  \lim_{x \to \infty} \frac{1}{\sqrt{1 + \frac{1}{x^2} }} \\
-                                                     &= \frac{1}{\sqrt{1 + 0}} = 1
+        \displaystyle \lim_{x \to \infty} \dfrac{x}{\sqrt{x^2 + 1}} &= \displaystyle \lim_{x \to \infty} \dfrac{x}{\sqrt{x^2 \left(1 + \dfrac{1}{x^2} \right)}} \\
+                                                     &=  \displaystyle \lim_{x \to \infty} \dfrac{x}{|x| \sqrt{1 + \dfrac{1}{x^2} }} \\
+                                                     &=  \displaystyle \lim_{x \to \infty} \dfrac{x}{x \sqrt{1 + \dfrac{1}{x^2} }} \\
+                                                     &=  \displaystyle \lim_{x \to \infty} \dfrac{1}{\sqrt{1 + \dfrac{1}{x^2} }} \\
+                                                     &= \dfrac{1}{\sqrt{1 + 0}} = 1
       \end{align*}
     \end{explanation}
     
     
     %part b
-  \item  $\lim_{x \to - \infty} x^2 e^x $
+  \item  $\displaystyle \lim_{x \to - \infty} x^2 e^x $
     \begin{explanation}
     This limit is of the form: $\infty \cdot 0$
       \begin{align*}
-        \lim_{x \to - \infty} x^2 e^x &= \lim_{x \to - \infty} \frac{x^2}{ e^{-x}} \; \left( \text{of the form } \frac{\infty}{\infty} \right) \\
-                                      &\stackrel{L.R.}{=}  \lim_{x \to - \infty} \frac{2x}{- e^{-x}} \; \left( \text{of the form } \frac{\infty}{\infty} \right) \\
-                                      &\stackrel{L.R.}{=}  \lim_{x \to - \infty} \frac{2}{ e^{-x}}  \\
+        \displaystyle \lim_{x \to - \infty} x^2 e^x &= \displaystyle \lim_{x \to - \infty} \dfrac{x^2}{ e^{-x}} \; \left( \text{of the form } \dfrac{\infty}{\infty} \right) \\
+                                      &\stackrel{L.R.}{=}  \displaystyle \lim_{x \to - \infty} \dfrac{2x}{- e^{-x}} \; \left( \text{of the form } \dfrac{\infty}{\infty} \right) \\
+                                      &\stackrel{L.R.}{=}  \displaystyle \lim_{x \to - \infty} \dfrac{2}{ e^{-x}}  \\
                                       &= 0
       \end{align*}
       where ``L.R.'' above an equals sign means that that equality is due to ``L'H\^{o}pital's Rule''.  
@@ -48,45 +48,45 @@
     
 
     % part c
-  \item  $\lim_{x \to \infty} x^{\frac{1}{x}} $
+  \item  $\displaystyle \lim_{x \to \infty} x^{\dfrac{1}{x}} $
     \begin{explanation}
     This limit is of the form: $\infty^0$
       \begin{align*}
-        \lim_{x \to \infty} x^{\frac{1}{x}} &= \lim_{x \to \infty} e^{\ln \left( x^{\frac{1}{x}} \right) } \\
-                                            &= \lim_{x \to \infty} e^{\frac{1}{x} \ln x } \\
-                                            &= e^{ \lim_{x \to \infty} \frac{\ln x}{x} } \; \left( \text{limit is of the form } \frac{\infty}{\infty} \right) \\
-                                            &\stackrel{L.R.}{=} e^{\lim_{x \to \infty}\frac{\frac{1}{x}}{1}} \\
-                                            &= e^{\lim_{x \to \infty} \frac{1}{x}} \\
+        \displaystyle \lim_{x \to \infty} x^{\dfrac{1}{x}} &= \displaystyle \lim_{x \to \infty} e^{\ln \left( x^{\dfrac{1}{x}} \right) } \\
+                                            &= \displaystyle \lim_{x \to \infty} e^{\dfrac{1}{x} \ln x } \\
+                                            &= e^{ \displaystyle \lim_{x \to \infty} \dfrac{\ln x}{x} } \; \left( \text{limit is of the form } \dfrac{\infty}{\infty} \right) \\
+                                            &\stackrel{L.R.}{=} e^{\displaystyle \lim_{x \to \infty}\dfrac{\dfrac{1}{x}}{1}} \\
+                                            &= e^{\displaystyle \lim_{x \to \infty} \dfrac{1}{x}} \\
                                             &= e^0 = 1
       \end{align*}
     \end{explanation}
     %part d
-    \item $\lim_{x \to \infty} \left(1+\frac{2}{x}\right)^x$
+    \item $\displaystyle \lim_{x \to \infty} \left(1+\dfrac{2}{x}\right)^x$
         \begin{explanation}
     This limit is of the form: $1^\infty$
      \begin{align*}
-        \lim_{x \to \infty} \left(1+\frac{2}{x}\right)^x &= \lim_{x \to \infty} e^{\ln \left(\left(1+\frac{2}{x}\right)^x \right) } \\
-                                            &= \lim_{x \to \infty} e^{x \ln \left(1+\frac{2}{x}\right) } \\
-                                            &= e^{ \lim_{x \to \infty} \frac{\ln \left(1+\frac{2}{x}\right)}{1/x} } \; \left( \text{limit is of the form } \frac{0}{0} \right) \\
-                                            &\stackrel{L.R.}{=} e^{\lim_{x \to \infty}\frac{-2x^{-2}\cdot \frac{1}{(1+2/x)}}{-x^{-2}}} \\
-                                            &= e^{\lim_{x \to \infty} \left(2\left(\frac{1}{1+\frac{2}{x}}\right)\right)} \\
+        \displaystyle \lim_{x \to \infty} \left(1+\dfrac{2}{x}\right)^x &= \displaystyle \lim_{x \to \infty} e^{\ln \left(\left(1+\dfrac{2}{x}\right)^x \right) } \\
+                                            &= \displaystyle \lim_{x \to \infty} e^{x \ln \left(1+\dfrac{2}{x}\right) } \\
+                                            &= e^{ \displaystyle \lim_{x \to \infty} \dfrac{\ln \left(1+\dfrac{2}{x}\right)}{1/x} } \; \left( \text{limit is of the form } \dfrac{0}{0} \right) \\
+                                            &\stackrel{L.R.}{=} e^{\displaystyle \lim_{x \to \infty}\dfrac{-2x^{-2}\cdot \dfrac{1}{(1+2/x)}}{-x^{-2}}} \\
+                                            &= e^{\displaystyle \lim_{x \to \infty} \left(2\left(\dfrac{1}{1+\dfrac{2}{x}}\right)\right)} \\
                                             &= e^2 
         \end{align*}
     \end{explanation}
     
     
         %part e
-    \item $\lim_{\theta \to 0^+} \left(\sin(\theta)\right)^{\tan(\theta)}$
+    \item $\displaystyle \lim_{\theta \to 0^+} \left(\sin(\theta)\right)^{\tan(\theta)}$
         \begin{explanation}
     This limit is of the form: $0^0$
     
      \begin{align*}
-        \lim_{\theta \to 0^+} \left(\sin(\theta)\right)^{\tan\theta} &= \lim_{\theta \to 0^+} e^{\ln \left((\sin(\theta))^{\tan(\theta)} \right) } \\
-                                            &= \lim_{\theta \to 0^+} e^{\tan(\theta) \ln (\sin(\theta)) } \\
-                                            &= e^{ \lim_{\theta \to 0^+} \frac{\ln (\sin(\theta))}{\cot(\theta)} } \; \left( \text{limit is of the form } \frac{\infty}{\infty} \right) \\
-                                            &\stackrel{L.R.}{=} e^{\lim_{\theta \to 0^+}\frac{\cos(\theta) \cdot \frac{1}{\sin(\theta)}}{-\csc^2(\theta)}} \\
-                                            &= e^{\lim_{\theta \to 0^+} \left(\frac{\cos(\theta)}{\sin(\theta)}\cdot\frac{-\sin^2(\theta)}{1}\right)} \\
-                                              &= e^{\lim_{\theta \to 0^+} (-\cos(\theta)\cdot\sin(\theta))} \\
+        \displaystyle \lim_{\theta \to 0^+} \left(\sin(\theta)\right)^{\tan\theta} &= \displaystyle \lim_{\theta \to 0^+} e^{\ln \left((\sin(\theta))^{\tan(\theta)} \right) } \\
+                                            &= \displaystyle \lim_{\theta \to 0^+} e^{\tan(\theta) \ln (\sin(\theta)) } \\
+                                            &= e^{ \displaystyle \lim_{\theta \to 0^+} \dfrac{\ln (\sin(\theta))}{\cot(\theta)} } \; \left( \text{limit is of the form } \dfrac{\infty}{\infty} \right) \\
+                                            &\stackrel{L.R.}{=} e^{\displaystyle \lim_{\theta \to 0^+}\dfrac{\cos(\theta) \cdot \dfrac{1}{\sin(\theta)}}{-\csc^2(\theta)}} \\
+                                            &= e^{\displaystyle \lim_{\theta \to 0^+} \left(\dfrac{\cos(\theta)}{\sin(\theta)}\cdot\dfrac{-\sin^2(\theta)}{1}\right)} \\
+                                              &= e^{\displaystyle \lim_{\theta \to 0^+} (-\cos(\theta)\cdot\sin(\theta))} \\
                                             &= e^0=1
         \end{align*}
     \end{explanation}
