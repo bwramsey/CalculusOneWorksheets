@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 22:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,17 +1036,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 13--14
 
  []
 
-<./xmPictures/figure3_pdf.png, id=7, 921.4425pt x 1192.455pt>
-File: ./xmPictures/figure3_pdf.png Graphic file (type png)
-<use ./xmPictures/figure3_pdf.png>
-Package pdftex.def Info: ./xmPictures/figure3_pdf.png  used on input line 18.
-(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 *********************************************************************
 
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}
 
-{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./xmPictures/figure3_pdf.png (PNG copy)>] (./q3_xm.aux)
+{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}] (./q3_xm.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1062,18 +1057,18 @@ Package rerunfilecheck Info: Checksums for `q3_xm.out':
 (rerunfilecheck)             After:  CAD05959766B6D095563128022954234;92.
  ) 
 Here is how much of TeX's memory you used:
- 39508 strings out of 469010
- 913384 string characters out of 5456196
- 1393179 words of memory out of 5000000
- 67077 multiletter control sequences out of 15000+600000
+ 39624 strings out of 469010
+ 915578 string characters out of 5456196
+ 1398178 words of memory out of 5000000
+ 67193 multiletter control sequences out of 15000+600000
  663542 words of font info for 65 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 121i,6n,124p,1184b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,6n,124p,1184b,818s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on q3_xm.pdf (1 page, 144565 bytes).
+Output written on q3_xm.pdf (1 page, 101818 bytes).
 PDF statistics:
- 45 PDF objects out of 1000 (max. 8388607)
+ 44 PDF objects out of 1000 (max. 8388607)
  30 compressed objects within 1 object stream
  3 named destinations out of 1000 (max. 500000)
- 18 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 13 words of extra memory for PDF output out of 10000 (max. 10000000)
 

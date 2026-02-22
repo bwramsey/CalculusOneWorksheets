@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 02:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:24
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1197,7 +1197,7 @@ Package rerunfilecheck Warning: File `lHopitalsRuleSoln.out' has changed.
 
 Package rerunfilecheck Info: Checksums for `lHopitalsRuleSoln.out':
 (rerunfilecheck)             Before: <no file>
-(rerunfilecheck)             After:  F479000533BE22603C4B00AF597E8ACB;366.
+(rerunfilecheck)             After:  125BA5E5388C1DDBEF063DCF6016193A;363.
  ) 
 Here is how much of TeX's memory you used:
  39674 strings out of 469010
@@ -1209,7 +1209,7 @@ Here is how much of TeX's memory you used:
  135i,16n,138p,1196b,890s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/f
 onts/type1/public/lm/lmsy7.pfb>
-Output written on lHopitalsRuleSoln.pdf (20 pages, 283436 bytes).
+Output written on lHopitalsRuleSoln.pdf (20 pages, 283443 bytes).
 PDF statistics:
  266 PDF objects out of 1000 (max. 8388607)
  211 compressed objects within 3 object streams
