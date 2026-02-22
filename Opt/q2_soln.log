@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 00:01
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 01:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1036,28 +1036,23 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 File: ./xmPictures/figure1_pdf.png Graphic file (type png)
 <use ./xmPictures/figure1_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure1_pdf.png  used on input line 21.
-(pdftex.def)             Requested size: 570.12776pt x 459.71461pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 <./xmPictures/figure6_pdf.png, id=8, 921.4425pt x 1192.455pt>
 File: ./xmPictures/figure6_pdf.png Graphic file (type png)
 <use ./xmPictures/figure6_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure6_pdf.png  used on input line 28.
-(pdftex.def)             Requested size: 28.10277pt x 479.7896pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 
 
 [1{/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}
 
 {/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc} <./xmPictures/figure1_pdf.png (PNG copy)>]
-Overfull \vbox (3152.70973pt too high) has occurred while \output is active []
 
-
-
-[2 <./xmPictures/figure6_pdf.png (PNG copy)>]
-
-[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}]
+[2{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./xmPictures/figure6_pdf.png (PNG copy)>]
 *********************************************************************
 
 
-[4] (./q2_soln.aux)
+[3{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] (./q2_soln.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1073,18 +1068,18 @@ Package rerunfilecheck Info: Checksums for `q2_soln.out':
 (rerunfilecheck)             After:  C7B56D6D78C515827B555305F8A9F966;92.
  ) 
 Here is how much of TeX's memory you used:
- 39545 strings out of 469010
- 914120 string characters out of 5456196
- 1400234 words of memory out of 5000000
+ 39544 strings out of 469010
+ 914114 string characters out of 5456196
+ 1402236 words of memory out of 5000000
  67098 multiletter control sequences out of 15000+600000
  666488 words of font info for 66 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 121i,9n,124p,1186b,745s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 121i,10n,124p,1186b,752s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on q2_soln.pdf (4 pages, 231473 bytes).
+Output written on q2_soln.pdf (3 pages, 230791 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
- 16 named destinations out of 1000 (max. 500000)
+ 101 PDF objects out of 1000 (max. 8388607)
+ 71 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
  23 words of extra memory for PDF output out of 10000 (max. 10000000)
 

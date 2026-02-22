@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:43
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 01:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1107,126 +1107,121 @@ LaTeX Warning: No \author given.
 File: ./xmPictures/figure1_pdf.png Graphic file (type png)
 <use ./xmPictures/figure1_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure1_pdf.png  used on input line 21.
-(pdftex.def)             Requested size: 570.12776pt x 459.71461pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 <./xmPictures/figure6_pdf.png, id=50, 921.4425pt x 1192.455pt>
 File: ./xmPictures/figure6_pdf.png Graphic file (type png)
 <use ./xmPictures/figure6_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure6_pdf.png  used on input line 28.
-(pdftex.def)             Requested size: 28.10277pt x 479.7896pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 
 
 [7
 
  <./xmPictures/figure1_pdf.png (PNG copy)>]
-Overfull \vbox (3152.70973pt too high) has occurred while \output is active []
 
+[8{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <./xmPictures/figure6_pdf.png (PNG copy)>])
 
-
-[8 <./xmPictures/figure6_pdf.png (PNG copy)>]
-
-[9{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}])
-
-[10] (./q3_soln.tex
+[9{/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathex.enc}] (./q3_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[11
+[10
 
 ]
-<./xmPictures/triangleincircle.png, id=89, 853.9905pt x 696.4419pt>
+<./xmPictures/triangleincircle.png, id=85, 853.9905pt x 696.4419pt>
 File: ./xmPictures/triangleincircle.png Graphic file (type png)
 <use ./xmPictures/triangleincircle.png>
 Package pdftex.def Info: ./xmPictures/triangleincircle.png  used on input line 25.
 (pdftex.def)             Requested size: 853.98842pt x 696.44019pt.
-<./xmPictures/figure7.png, id=91, 853.9905pt x 696.4419pt>
+<./xmPictures/figure7.png, id=87, 853.9905pt x 696.4419pt>
 File: ./xmPictures/figure7.png Graphic file (type png)
 <use ./xmPictures/figure7.png>
 Package pdftex.def Info: ./xmPictures/figure7.png  used on input line 25.
 (pdftex.def)             Requested size: 853.98842pt x 696.44019pt.
-<./xmPictures/twomoretriangles.png, id=92, 853.9905pt x 696.4419pt>
+<./xmPictures/twomoretriangles.png, id=88, 853.9905pt x 696.4419pt>
 File: ./xmPictures/twomoretriangles.png Graphic file (type png)
 <use ./xmPictures/twomoretriangles.png>
 Package pdftex.def Info: ./xmPictures/twomoretriangles.png  used on input line 35.
 (pdftex.def)             Requested size: 853.98842pt x 696.44019pt.
 
 
-[12
+[11
 
  <./xmPictures/triangleincircle.png> <./xmPictures/figure7.png> <./xmPictures/twomoretriangles.png>])
 
-[13] (./q4_soln.tex
+[12] (./q4_soln.tex
 
 LaTeX Warning: No \author given.
 
 
+
+[13
+
+]
 
 [14
 
-]
-
-[15
-
 ])
 
-[16] (./q5_soln.tex
+[15] (./q5_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[17
+[16
 
 ]
-<./xmPictures/figure1.png, id=127, 324.46219pt x 236.38312pt>
+<./xmPictures/figure1.png, id=123, 324.46219pt x 236.38312pt>
 File: ./xmPictures/figure1.png Graphic file (type png)
 <use ./xmPictures/figure1.png>
 Package pdftex.def Info: ./xmPictures/figure1.png  used on input line 20.
 (pdftex.def)             Requested size: 324.46138pt x 236.38254pt.
 
 
-[18
+[17
 
  <./xmPictures/figure1.png>])
 
-[19] (./q6_soln.tex
+[18] (./q6_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[20
+[19
 
 ]
-<./xmPictures/figure2_pdf.png, id=142, 921.4425pt x 1192.455pt>
+<./xmPictures/figure2_pdf.png, id=138, 921.4425pt x 1192.455pt>
 File: ./xmPictures/figure2_pdf.png Graphic file (type png)
 <use ./xmPictures/figure2_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure2_pdf.png  used on input line 21.
 (pdftex.def)             Requested size: 570.12776pt x 469.7521pt.
 
 
-[21
+[20
 
  <./xmPictures/figure2_pdf.png (PNG copy)>])
 
-[22] (./q7_soln.tex
+[21] (./q7_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[23
+[22
 
 ]
-<./xmPictures/disttoparabola.png, id=171, 1146.4431pt x 934.9329pt>
+<./xmPictures/disttoparabola.png, id=167, 1146.4431pt x 934.9329pt>
 File: ./xmPictures/disttoparabola.png Graphic file (type png)
 <use ./xmPictures/disttoparabola.png>
 Package pdftex.def Info: ./xmPictures/disttoparabola.png  used on input line 19.
 (pdftex.def)             Requested size: 1146.4403pt x 934.93063pt.
 )
 
-[24
+[23
 
  <./xmPictures/disttoparabola.png>] (./q8_soln.tex
 
@@ -1234,31 +1229,31 @@ LaTeX Warning: No \author given.
 
 
 
-[25
+[24
 
 ]
-<./xmPictures/figure8.png, id=182, 280.79906pt x 442.65375pt>
+<./xmPictures/figure8.png, id=177, 280.79906pt x 442.65375pt>
 File: ./xmPictures/figure8.png Graphic file (type png)
 <use ./xmPictures/figure8.png>
 Package pdftex.def Info: ./xmPictures/figure8.png  used on input line 21.
 (pdftex.def)             Requested size: 280.79837pt x 442.65265pt.
 
 
-[26
+[25
 
  <./xmPictures/figure8.png>])
 
-[27] (./q9_soln.tex
+[26] (./q9_soln.tex
 
 LaTeX Warning: No \author given.
 
 
 
-[28
+[27
 
 ])
 
-[29
+[28
 
 ]
 *********************************************************************
@@ -1267,6 +1262,9 @@ LaTeX Warning: No \author given.
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
  ***********
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
 
 Package rerunfilecheck Warning: File `optimizationSoln.out' has changed.
@@ -1278,19 +1276,19 @@ Package rerunfilecheck Info: Checksums for `optimizationSoln.out':
 (rerunfilecheck)             After:  F5543B7B95807F22B551118542BEB118;683.
  ) 
 Here is how much of TeX's memory you used:
- 39987 strings out of 469010
- 922858 string characters out of 5456196
- 1402124 words of memory out of 5000000
+ 39986 strings out of 469010
+ 922851 string characters out of 5456196
+ 1403123 words of memory out of 5000000
  67458 multiletter control sequences out of 15000+600000
  681677 words of font info for 72 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,11n,138p,1195b,1444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy5.pfb></usr/local/texlive/2025/texmf-dist/
 fonts/type1/public/lm/lmsy7.pfb>
-Output written on optimizationSoln.pdf (29 pages, 929794 bytes).
+Output written on optimizationSoln.pdf (28 pages, 929160 bytes).
 PDF statistics:
- 285 PDF objects out of 1000 (max. 8388607)
- 205 compressed objects within 3 object streams
- 60 named destinations out of 1000 (max. 500000)
+ 281 PDF objects out of 1000 (max. 8388607)
+ 202 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
  58 words of extra memory for PDF output out of 10000 (max. 10000000)
 

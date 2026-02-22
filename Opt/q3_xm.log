@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 01:40
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1066,13 +1066,13 @@ Package rerunfilecheck Info: Checksums for `q3_xm.out':
 Here is how much of TeX's memory you used:
  39527 strings out of 469010
  913841 string characters out of 5456196
- 1396179 words of memory out of 5000000
+ 1396178 words of memory out of 5000000
  67092 multiletter control sequences out of 15000+600000
  669506 words of font info for 67 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  121i,6n,124p,1184b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb>
-Output written on q3_xm.pdf (1 page, 293887 bytes).
+Output written on q3_xm.pdf (1 page, 293683 bytes).
 PDF statistics:
  52 PDF objects out of 1000 (max. 8388607)
  34 compressed objects within 1 object stream
