@@ -21,11 +21,11 @@ YOUR_EMAIL="ramsey.313@math.osu.edu"
 # !! DO NOT SAVE THE KEY IN THIS config.txt FILE   !!
 #
 
- : "${XIMERA_NAME:=calculushandouts}"
-# : "${XIMERA_NAME:=calculusworksheets}"
+# : "${XIMERA_NAME:=calculushandouts}"
+ : "${XIMERA_NAME:=calculusworksheets}"
 ## : "${XIMERA_URL:=http://localhost:2000/}"
-## : "${XIMERA_URL:=https://xerxes.ximera.org/}"
- : "${XIMERA_URL:=https://ximera.osu.edu/}"
+ : "${XIMERA_URL:=https://xerxes.ximera.org/}"
+## : "${XIMERA_URL:=https://ximera.osu.edu/}"
 ## : "${XIMERA_URL:=https://set-p-dsb-zomercursus-latest.cloud-ext.icts.kuleuven.be/}"
 ## : "${XIMERA_URL:=https://set.kuleuven.be/voorkennis/}"
 
