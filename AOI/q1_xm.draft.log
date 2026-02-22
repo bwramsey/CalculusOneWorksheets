@@ -719,7 +719,7 @@ warning  (font): lua-loaded font '17' with name 'dummy' has no characters
 \c@warning=\count381
 \outcomefile=\write6
 
-\openout6 = q1_xm.online.oc
+\openout6 = q1_xm.draft.oc
 \c@Iteration@probCnt=\count382
 \c@problem=\count383
 \c@problem@Depth=\count384
@@ -745,12 +745,12 @@ Package: ifxetex 2019/10/25 v0.7 ifxetex legacy package. Use iftex instead.
 \c@ST@cmdline=\count390
 \sagetexindent=\skip69
 
-No file q1_xm.online.sagetex.sout.
+No file q1_xm.draft.sagetex.sout.
 \sagecommandlineskip=\skip70
 )
 \myfile=\write7
 
-\openout7 = q1_xm.online.xmjax
+\openout7 = q1_xm.draft.xmjax
 
 Info: No default preamble loaded (xmPreamble.tex)
 ) (../preamble.tex (/usr/local/texlive/2025/texmf-dist/tex/latex/tools/multicol.sty
@@ -1027,16 +1027,16 @@ version 2025-02-09-08:05
 version 2025-02-27-12:30
 
 l.875 --- TeX4ht warning --- nonprimitive \everypar ---
---- needs --- tex4ht q1_xm.online ---
+--- needs --- tex4ht q1_xm.draft ---
 \tmp:cnt=\count409
 
-\openout15 = q1_xm.online.tmp
-(./q1_xm.online.tmp)
+\openout15 = q1_xm.draft.tmp
+(./q1_xm.draft.tmp)
 \tmp:dim=\skip73
- (./q1_xm.online.xref)
+ (./q1_xm.draft.xref)
 \:refout=\write8
 
-\openout8 = q1_xm.online.xref
+\openout8 = q1_xm.draft.xref
  (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html4.4ht
 version 2025-06-12-13:53
 --------------------------------------
@@ -1127,8 +1127,8 @@ version 2025-06-11-13:51
 --------------------------------------
 \:tocout=\write9
 
-\openout9 = q1_xm.online.4tc
- (q1_xm.online.4tc) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/latex.4ht
+\openout9 = q1_xm.draft.4tc
+ (q1_xm.draft.4tc) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/latex.4ht
 version 2025-06-11-13:51
 LaTeX Info: Redefining \_ on input line 180.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/base/fontenc.sty
@@ -1136,7 +1136,8 @@ Package: fontenc 2024/12/21 v2.1c Standard LaTeX package
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 116.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)) (/usr/local/texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex) (/usr/local/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
+)) (/usr/local/texlive/2025/texmf-dist/tex/generic/kastrup/binhex.tex)
+(/usr/local/texlive/2025/texmf-dist/tex/latex/base/tuenc.def
 File: tuenc.def 2024/12/21 v2.1c Standard LaTeX file
 \@remove@tlig@@@=\luafunction29
 LaTeX Font Info:    Redeclaring font encoding TU on input line 105.
@@ -1760,8 +1761,8 @@ version 2024-09-27-10:13
 version 2018-12-30-09:33
 ) (/usr/local/texlive/2025/texmf-dist/tex/generic/tex4ht/html5.4ht
 version 2025-06-11-13:51
-)) (./q1_xm.online.oc) (./q1_xm.online.aux)
-\openout1 = q1_xm.online.aux
+)) (./q1_xm.draft.oc) (./q1_xm.draft.aux)
+\openout1 = q1_xm.draft.aux
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
 LaTeX Font Info:    ... okay on input line 147.
@@ -1790,7 +1791,7 @@ Package pgfplots notification 'compat/show suggested version=true': document has
 Package hyperref Info: Link coloring ON on input line 147.
 \ST@sf=\write10
 
-\openout10 = q1_xm.online.sagetex.sage
+\openout10 = q1_xm.draft.sagetex.sage
 LaTeX Info: Redefining \microtypecontext on input line 147.
 Package microtype Info: Not applying patch `item' (for tex4ht) on input line 147.
 Package microtype Info: Not applying patch `toc' (for tex4ht) on input line 147.
@@ -1851,7 +1852,7 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 
 [1
 
-] (./q1_xm.online.aux)
+] (./q1_xm.draft.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2020/03/25>
@@ -1867,4 +1868,4 @@ Here is how much of LuaTeX's memory you used:
  75035 multiletter control sequences out of 65536+600000
  35 fonts using 2076855 bytes
  124i,5n,142p,1669b,494s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q1_xm.online.dvi (1 page, 7108 bytes).
+Output written on q1_xm.draft.dvi (1 page, 7104 bytes).
