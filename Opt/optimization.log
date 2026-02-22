@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:44
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 01:41
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1107,7 +1107,7 @@ LaTeX Warning: No \author given.
 File: ./xmPictures/figure1_pdf.png Graphic file (type png)
 <use ./xmPictures/figure1_pdf.png>
 Package pdftex.def Info: ./xmPictures/figure1_pdf.png  used on input line 19.
-(pdftex.def)             Requested size: 570.12776pt x 459.71461pt.
+(pdftex.def)             Requested size: 921.44026pt x 1192.4521pt.
 )
 
 [7
@@ -1239,13 +1239,13 @@ Package rerunfilecheck Info: Checksums for `optimization.out':
 Here is how much of TeX's memory you used:
  39916 strings out of 469010
  920948 string characters out of 5456196
- 1398932 words of memory out of 5000000
+ 1398931 words of memory out of 5000000
  67405 multiletter control sequences out of 15000+600000
  681677 words of font info for 72 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,10n,138p,1191b,1444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbxo10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmri10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on optimization.pdf (21 pages, 506259 bytes).
+Output written on optimization.pdf (21 pages, 506022 bytes).
 PDF statistics:
  198 PDF objects out of 1000 (max. 8388607)
  144 compressed objects within 2 object streams
