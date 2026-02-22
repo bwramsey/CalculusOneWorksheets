@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:54
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1230,7 +1230,7 @@ Package pdftex.def Info: ./xmPictures/figure3.png  used on input line 80.
 <./xmPictures/figure4.png, id=223, 283.0575pt x 230.36063pt>
 File: ./xmPictures/figure4.png Graphic file (type png)
 <use ./xmPictures/figure4.png>
-Package pdftex.def Info: ./xmPictures/figure4.png  used on input line 175.
+Package pdftex.def Info: ./xmPictures/figure4.png  used on input line 174.
 (pdftex.def)             Requested size: 283.0568pt x 230.36005pt.
 
 
@@ -1256,13 +1256,13 @@ Package rerunfilecheck Info: Checksums for `FTCSoln.out':
 Here is how much of TeX's memory you used:
  39815 strings out of 469010
  917750 string characters out of 5456196
- 1404922 words of memory out of 5000000
+ 1404921 words of memory out of 5000000
  67215 multiletter control sequences out of 15000+600000
  677235 words of font info for 81 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 135i,13n,138p,1241b,951s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 135i,13n,138p,1241b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on FTCSoln.pdf (25 pages, 889537 bytes).
+Output written on FTCSoln.pdf (25 pages, 889498 bytes).
 PDF statistics:
  345 PDF objects out of 1000 (max. 8388607)
  275 compressed objects within 3 object streams

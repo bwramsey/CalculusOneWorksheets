@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:42
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1273,13 +1273,13 @@ Package rerunfilecheck Info: Checksums for `substitutionSoln.out':
 Here is how much of TeX's memory you used:
  39695 strings out of 469010
  916631 string characters out of 5456196
- 1408000 words of memory out of 5000000
+ 1407999 words of memory out of 5000000
  67176 multiletter control sequences out of 15000+600000
  665199 words of font info for 66 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  135i,12n,138p,1195b,963s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on substitutionSoln.pdf (30 pages, 316495 bytes).
+Output written on substitutionSoln.pdf (30 pages, 316497 bytes).
 PDF statistics:
  243 PDF objects out of 1000 (max. 8388607)
  179 compressed objects within 2 object streams
