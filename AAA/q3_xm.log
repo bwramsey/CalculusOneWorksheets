@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  20 FEB 2026 23:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:50
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -956,8 +956,7 @@ LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 7.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-No file q3_xm.aux.
+) (./q3_xm.aux)
 \openout1 = `q3_xm.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 7.
@@ -978,7 +977,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 7.
 LaTeX Font Info:    ... okay on input line 7.
-(/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+ (/usr/local/texlive/2025/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count409
 \scratchdimen=\dimen325
@@ -1033,6 +1032,45 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 14.
  (/usr/local/texlive/2025/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--18
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 19--20
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--23
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
 *********************************************************************
 
 
@@ -1054,15 +1092,15 @@ Package rerunfilecheck Info: Checksums for `q3_xm.out':
 (rerunfilecheck)             After:  CAD05959766B6D095563128022954234;92.
  ) 
 Here is how much of TeX's memory you used:
- 39501 strings out of 469010
- 913091 string characters out of 5456196
- 1396188 words of memory out of 5000000
- 67067 multiletter control sequences out of 15000+600000
+ 39504 strings out of 469010
+ 913133 string characters out of 5456196
+ 1396178 words of memory out of 5000000
+ 67068 multiletter control sequences out of 15000+600000
  663542 words of font info for 65 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
  121i,6n,124p,1184b,609s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb>
-Output written on q3_xm.pdf (1 page, 109898 bytes).
+Output written on q3_xm.pdf (1 page, 109723 bytes).
 PDF statistics:
  56 PDF objects out of 1000 (max. 8388607)
  40 compressed objects within 1 object stream

@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  21 FEB 2026 00:06
+This is LuaTeX, Version 1.22.0 (TeX Live 2025)  (format=dvilualatex 2025.6.15)  22 FEB 2026 02:52
  system commands enabled.
  file:line:error style messages enabled.
 **\makeatletter\def\HCode{\futurelet\HCode\HChar}\def\HChar{\ifx"\HCode\def\HCode"##1"{\Link##1}\expandafter\HCode\else\expandafter\Link\fi}\def\Link#1.a.b.c.{\let\HCode\documentstyle\def\documentstyle{\let\documentstyle\HCode\expandafter\def\csname tex4ht\endcsname{#1,html}\def\HCode####1{\documentstyle[tex4ht,}\@ifnextchar[{\HCode}{\documentstyle[tex4ht]}}\RequirePackage[#1,html]{tex4ht}}\makeatother\HCode ximera.cfg,svg,htex4ht,mathjax,-css,charset=utf-8,html5.a.b.c.\input "\detokenize{q4_soln.tex}"
@@ -1870,5 +1870,5 @@ Here is how much of LuaTeX's memory you used:
    avail lists: 2:450,3:712,4:35,5:121,6:42,7:2548,8:3,9:255,10:30,11:117
  75056 multiletter control sequences out of 65536+600000
  35 fonts using 2076855 bytes
- 124i,5n,142p,1671b,734s stack positions out of 10000i,1000n,20000p,200000b,200000s
-Output written on q4_soln.online.dvi (1 page, 8656 bytes).
+ 124i,5n,142p,1671b,770s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on q4_soln.online.dvi (1 page, 8852 bytes).

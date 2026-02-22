@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  21 FEB 2026 14:38
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025) (preloaded format=pdflatex 2025.6.15)  22 FEB 2026 02:53
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -1086,10 +1086,60 @@ File: ./xmPictures/graphfunction.png Graphic file (type png)
 Package pdftex.def Info: ./xmPictures/graphfunction.png  used on input line 17.
 (pdftex.def)             Requested size: 676.52583pt x 341.27415pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
 
 [6
 
- <./xmPictures/graphfunction.png>])
+ <./xmPictures/graphfunction.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 60--61
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+)
 
 [7] (./q3_xm.tex
 
@@ -1111,7 +1161,27 @@ LaTeX Warning: No \author given.
 
 [10
 
-])
+]
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 16--17
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 18--19
+
+ []
+
+)
 
 [11
 
@@ -1141,6 +1211,46 @@ File: ./xmPictures/figure2.png Graphic file (type png)
 <use ./xmPictures/figure2.png>
 Package pdftex.def Info: ./xmPictures/figure2.png  used on input line 17.
 (pdftex.def)             Requested size: 302.62988pt x 197.9892pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--22
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--25
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--32
+
+ []
+
 )
 
 [15
@@ -1160,12 +1270,112 @@ File: ./xmPictures/graphcontfunction.png Graphic file (type png)
 Package pdftex.def Info: ./xmPictures/graphcontfunction.png  used on input line 17.
 (pdftex.def)             Requested size: 658.4584pt x 481.79881pt.
 
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--28
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--38
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--48
+
+ []
+
+
 
 [17
 
  <./xmPictures/graphcontfunction.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
 
-[18])
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 59--60
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--73
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 82--83
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 94--95
+
+ []
+
+
+
+[18]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--117
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 125--126
+
+ []
+
+)
 
 [19]
 *********************************************************************
@@ -1187,13 +1397,13 @@ Package rerunfilecheck Info: Checksums for `FTC.out':
 Here is how much of TeX's memory you used:
  39770 strings out of 469010
  916567 string characters out of 5456196
- 1402779 words of memory out of 5000000
+ 1401778 words of memory out of 5000000
  67179 multiletter control sequences out of 15000+600000
  677235 words of font info for 81 fonts, out of 8000000 for 9000
  430 hyphenation exceptions out of 8191
- 135i,6n,138p,1237b,889s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 135i,6n,138p,1237b,884s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmex10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmmi7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr5.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmr7.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmro10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmssbx10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2025/texmf-dist/fonts/type1/public/lm/lmsy7.pfb>
-Output written on FTC.pdf (19 pages, 679090 bytes).
+Output written on FTC.pdf (19 pages, 679101 bytes).
 PDF statistics:
  310 PDF objects out of 1000 (max. 8388607)
  252 compressed objects within 3 object streams
